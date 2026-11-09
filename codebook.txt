@@ -1,0 +1,42 @@
+F  Codebook
+
+The full list of codes applied to the sampled dataset, with abbreviated definitions for each code.
+
+Codes about Call Categories and Topics
+
+- "Telemarketing": 
+	Calls to sell any physical/virtual goods or services: e.g., "accident_claim", "auto_warranty", "final_expense", "house_improvement", "medicare".
+- "Vishing_gov": 
+	Calls to impersonate a government agency, e.g., "subsidy", "tax_relief".
+- "Vishing_co": 
+	Calls to impersonate a well-known company, e.g., "online_shopping", "utility".
+- "Nuisance": 
+	Calls that do not display any malicious intentions, e.g., "hello_calls", "silent".
+- "Others": 
+	Unrelated calls to telemarketing or vishing, e.g., "genuine_wrong_numbers".
+
+Codes about Hook Phase
+
+- Hook Phase Existence": 
+	"Yes" (the call clearly displays features of pre-screening and/or transferring) or "No".
+- Execution Entity: 
+	The hook phase is carried out by "action_bot" (a call-to-action bot), "interaction_bot" (a call-to-interaction bot), "human", or "bot".
+- Consent: 
+	"Yes" (the caller asks for consent to continue contact, or at least ask for interest) or "No" (the caller does not ask for consent to continue contact, and does not ask for interest).
+- Only_greeting_turns: 
+	The number of caller turns that contain greetings only, without any additional information such as caller identification, or purpose.
+- Caller_identification: 
+	Information the caller provides or displays about their identity, including name, organization, background_noise ("noisy", "human_noisy", "silent"), accent ("yes": non-American or "no": American).
+- Qualification: 
+	A summary of qualification question.
+- Transfer: 
+	Including whether the intent is displayed ("yes" or "no"), whether the transfer succeeds ("yes" or "no"), and the failure_reason (if transfer fails).
+
+Codes about Caller Utterance
+
+- Requested_information: 
+	All the information callers are requesting besides qualification questions, e.g., "address", "city", "zip_code".
+- Persuasion: 
+	What persuasion techniques are used ("AUTH", "CRC", "DIS", "LSD", "SP", "TIME", "NG", "DSH"), which can be multiple. The description is in the paper.
+- Functional_states: 
+	Including caller identification, purpose, qualification, transfer.
