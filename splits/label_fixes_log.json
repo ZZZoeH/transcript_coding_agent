@@ -1,0 +1,632 @@
+[
+ {
+  "call_id": "artifact_call_00254",
+  "field": "functional_states",
+  "old": "auth",
+  "new": null,
+  "reason": "out of vocabulary, dropped"
+ },
+ {
+  "call_id": "artifact_call_00284",
+  "field": "hook.consent",
+  "old": "bella",
+  "new": null,
+  "reason": "not yes/no, treated as missing"
+ },
+ {
+  "call_id": "artifact_call_00333",
+  "field": "functional_states",
+  "old": "crc",
+  "new": null,
+  "reason": "out of vocabulary, dropped"
+ },
+ {
+  "call_id": "artifact_call_00361",
+  "field": "transfer.intent",
+  "old": "unsure",
+  "new": null,
+  "reason": "not yes/no, treated as missing"
+ },
+ {
+  "call_id": "artifact_call_02067",
+  "field": "functional_states",
+  "old": "jailbreak",
+  "new": null,
+  "reason": "out of vocabulary, dropped"
+ },
+ {
+  "call_id": "artifact_call_00715",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00719",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00725",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00732",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00741",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00745",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00750",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00762",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00764",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00782",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00784",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00790",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00814",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00816",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01678",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01682",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01684",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01693",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01698",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01701",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01719",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01721",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01725",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01728",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01730",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01737",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01749",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01751",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01753",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01762",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01767",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01776",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01788",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02116",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02125",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02285",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02304",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02384",
+  "field": "functional_states",
+  "old": "q",
+  "new": "qualification",
+  "reason": "alias/typo"
+ },
+ {
+  "call_id": "artifact_call_00822",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00824",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00825",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00826",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00847",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00858",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00865",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00874",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00882",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00885",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00889",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00892",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00895",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00903",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00914",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00921",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00924",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_00930",
+  "field": "hook.consent",
+  "old": "yesno",
+  "new": null,
+  "reason": "not yes/no, treated as missing"
+ },
+ {
+  "call_id": "artifact_call_01790",
+  "field": "transfer.failure_reason",
+  "old": "will callback",
+  "new": "will_callback",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01793",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01797",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01805",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01806",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01807",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01808",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01819",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01832",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01835",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01837",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01844",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01846",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01848",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01851",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01873",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01875",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01877",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01907",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01952",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01957",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01962",
+  "field": "transfer.failure_reason",
+  "old": "not in service",
+  "new": "not_in_service",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01965",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_01966",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02159",
+  "field": "transfer.failure_reason",
+  "old": "office closed",
+  "new": "office_closed",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02174",
+  "field": "functional_states",
+  "old": "purpsoe",
+  "new": "purpose",
+  "reason": "alias/typo"
+ },
+ {
+  "call_id": "artifact_call_02314",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02327",
+  "field": "transfer.failure_reason",
+  "old": "conversation stops",
+  "new": "conversation_stops",
+  "reason": "spaces -> underscores"
+ },
+ {
+  "call_id": "artifact_call_02394",
+  "field": "functional_states",
+  "old": "puprose",
+  "new": "purpose",
+  "reason": "alias/typo"
+ }
+]
