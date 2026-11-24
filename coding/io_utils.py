@@ -19,6 +19,8 @@ def load_records():
         for bucket, calls in data.items():     # bucket = call length group like "1-3m"
             for call in calls:
                 call["_bucket"] = bucket
+                if call["call_id"] in records:
+                    raise ValueError("duplicate call_id requires explicit adjudication: " + call["call_id"])
                 records[call["call_id"]] = call
     return records
 
@@ -41,8 +43,17 @@ def read_ids(path):
 
 def write_json(path, obj):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=1)
+    # Same-directory replace keeps interrupted writes from leaving a half-written checkpoint.
+    import tempfile
+    folder = os.path.dirname(path) or "."
+    fd, temporary = tempfile.mkstemp(prefix=".coding-", suffix=".tmp", dir=folder)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(obj, f, ensure_ascii=False, indent=1, allow_nan=False)
+            f.write("\n")
+        os.replace(temporary, path)
+    finally:
+        if os.path.exists(temporary): os.unlink(temporary)
 
 
 def write_manifest(path, system, version, inputs, outputs):

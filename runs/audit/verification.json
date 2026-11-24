@@ -1,0 +1,19 @@
+{
+  "time_utc": "2026-11-22T07:28:56.357018+00:00",
+  "new_unittest_cases_passed": 13,
+  "original_pipeline_self_checks_passed": 3,
+  "baseline_calls_validated": 583,
+  "frozen_source_data_split_and_human_sheets_unchanged": true,
+  "live_api_called": false,
+  "dry_run_duration_buckets": 6,
+  "word_total_pages": 14,
+  "word_body_and_reference_pages": 12,
+  "presentation_slides": 18,
+  "planned_presentation_seconds": 1500,
+  "word_visual_qa": "all pages checked after title formatting fix",
+  "slides_visual_qa": "all slides checked independently and spacing/caveat fixes verified",
+  "deliverable_hashes": {
+    "Project_Report_Draft.docx": "e96632f1715d4780059cc981984db43cea4ef2b09f1960dad5e9e5714fac394e",
+    "Project_Presentation_Draft.pptx": "d773038f48c7a68c4823b47efb31c720f5218ea201ebfc66ffb09d3073bec4ee"
+  }
+}

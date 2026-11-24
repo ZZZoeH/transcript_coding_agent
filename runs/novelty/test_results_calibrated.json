@@ -1,0 +1,8350 @@
+{
+ "system": "topic_reference_detector",
+ "calls": 583,
+ "flagged": 23,
+ "threshold": 0.066026,
+ "metrics": {
+  "withheld_recall": {
+   "n": 30,
+   "flagged": 2,
+   "rate": 0.06666666666666667,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  },
+  "known_false_positive_rate": {
+   "n": 545,
+   "flagged": 21,
+   "rate": 0.03853211009174312,
+   "ci95": [
+    0.022,
+    0.055
+   ]
+  },
+  "naturally_unseen_recall": {
+   "n": 8,
+   "flagged": 0,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "calls_detail": [
+  {
+   "call_id": "artifact_call_00206",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.126328,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00209",
+   "gold_topic": "auto_finance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_finance",
+   "similarity": 0.963734,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00211",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.358302,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00215",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.091915,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "innocent",
+    "sustaining",
+    "injuries"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00218",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.53396,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00219",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.140997,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00220",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.415949,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00223",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.145111,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00227",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.218181,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "renovations"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00230",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.179911,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00231",
+   "gold_topic": "loan",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.321192,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "collateral",
+    "utilized",
+    "settling",
+    "ongoing",
+    "rising"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00234",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "mortgage",
+   "similarity": 0.068866,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "flying"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00235",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.082108,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00238",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.091425,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00239",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.182432,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00244",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.198611,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00252",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.081064,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00253",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.068636,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00254",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.124842,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "stageable",
+    "bell"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00260",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.157698,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00272",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "final_expense",
+   "similarity": 0.059541,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00278",
+   "gold_topic": "loan",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.541788,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "aidvantage"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00279",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_security",
+   "similarity": 0.09017,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00280",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.274356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00281",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "debt_relief",
+   "similarity": 0.101736,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00287",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.10049,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00289",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.331279,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00293",
+   "gold_topic": "employment_services",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.139995,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00294",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.14024,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00296",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.083393,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00298",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "aca_card",
+   "similarity": 0.0,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00301",
+   "gold_topic": "medication_shipment",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.110259,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "doorsteps"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00304",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "aca_card",
+   "similarity": 0.0,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00306",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.182432,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00311",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.211588,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reports"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00319",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.245581,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00327",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.278995,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00330",
+   "gold_topic": "auto_finance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_finance",
+   "similarity": 0.963734,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00338",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.059723,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "tragedies",
+    "uncertain",
+    "duress"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00340",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.214248,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00341",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.141663,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00345",
+   "gold_topic": "online_shopping",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "customer_support",
+   "similarity": 0.242787,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00350",
+   "gold_topic": "hello_calls",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.392626,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00359",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_transaction",
+   "similarity": 0.127643,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "medihear",
+    "medigap"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00366",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.107555,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00369",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.135446,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "quotation"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00370",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "medicare",
+   "similarity": 0.051647,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00372",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.344673,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00377",
+   "gold_topic": "extended_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "extended_warranty",
+   "similarity": 0.553484,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00378",
+   "gold_topic": "solar_program",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "solar_program",
+   "similarity": 0.210825,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00380",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.105428,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "welch"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00384",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.153555,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "wright"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00390",
+   "gold_topic": "employment_service",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.140257,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00391",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cash_giveaway",
+   "similarity": 0.162776,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00393",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.24477,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00396",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.309286,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "sesso"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00397",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cash_giveaway",
+   "similarity": 0.162776,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00402",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.107139,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00412",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.087762,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "qualifier"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00416",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.237475,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00417",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.274356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00418",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.216575,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00419",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.373125,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00420",
+   "gold_topic": "tax_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tax_relief",
+   "similarity": 0.312895,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "resolved",
+    "allocation"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00422",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.162167,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mistake",
+    "passenger"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00427",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.144684,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00429",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "benefit",
+   "similarity": 0.057918,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00431",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.159304,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00433",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.085969,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "jajaja"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00436",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.111586,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00438",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.428092,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00439",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.384416,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00440",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.177947,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00442",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "medical_device",
+   "similarity": 0.043312,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "supplies"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00444",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.136593,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00453",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.150106,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00457",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "mortgage",
+   "similarity": 0.068866,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "flying"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00462",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.053394,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00463",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.093123,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00465",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.209404,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00470",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.187095,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00472",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.262627,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "legislative"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00475",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.130132,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00477",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.160542,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mistake"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00481",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "mortgage",
+   "similarity": 0.068866,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "flying"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00488",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.274356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00491",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.156245,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00492",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.236349,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00497",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_warranty",
+   "similarity": 0.098027,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "noon"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00502",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.242121,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00503",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.373388,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00504",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.358703,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00505",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.551188,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00506",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cash_giveaway",
+   "similarity": 0.161862,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "investigator"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00516",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.273137,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00517",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.154617,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "luck",
+    "bert"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00518",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.306084,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00526",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "aca_card",
+   "similarity": 0.0,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00527",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.211024,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "travel",
+    "caridade"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00528",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.111074,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00534",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.091915,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "innocent",
+    "sustaining",
+    "injuries"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00535",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "aca_card",
+   "similarity": 0.0,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00540",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.112382,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "vivo"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00542",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.146596,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "essentially"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00545",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.205959,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00548",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.12851,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00550",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.071013,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00551",
+   "gold_topic": "reward_card",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.265539,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "stores",
+    "restaurants",
+    "retailers"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00554",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.323188,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00556",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.24753,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00557",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.155738,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00566",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.231253,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00568",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.151004,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00570",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.334112,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00583",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.10049,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00584",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "aca_card",
+   "similarity": 0.0,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "savi"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00585",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_warranty",
+   "similarity": 0.215453,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "breaks",
+    "tear"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00586",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.309174,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00589",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.347433,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00593",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.233368,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00594",
+   "gold_topic": "vehicle_maintenance",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.077919,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00595",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.082931,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00598",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.159881,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "investigator"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00599",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.229413,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00604",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.274356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00606",
+   "gold_topic": "extended_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "extended_warranty",
+   "similarity": 0.556887,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00612",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.24753,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00613",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "utility",
+   "similarity": 0.053149,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mistakenly",
+    "xper",
+    "askece",
+    "erkegotyu"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00614",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.096345,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "targeting",
+    "bedinged"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00616",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.373125,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00620",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.091425,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00629",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.091133,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00630",
+   "gold_topic": "online_shopping",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_shopping",
+   "similarity": 0.219231,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00634",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "aca_card",
+   "similarity": 0.11858,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00636",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.164709,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00640",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.078158,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00641",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.245581,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00646",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.187129,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00647",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.358703,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00648",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_phone",
+   "similarity": 0.135246,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00651",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "benefit",
+   "similarity": 0.055048,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00656",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.2244,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00658",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.251381,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00665",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "aca_card",
+   "similarity": 0.096589,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00666",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.190751,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00667",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "unwanted_calls",
+   "similarity": 0.075375,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00668",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.093102,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00669",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.178131,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00676",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.12919,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00677",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.153738,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00678",
+   "gold_topic": "customer_support",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "phone_bill_relief",
+   "similarity": 0.168352,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "lag"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00679",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "aca_card",
+   "similarity": 0.128555,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00689",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "aca_card",
+   "similarity": 0.0,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00690",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.164598,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00692",
+   "gold_topic": "debt_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.160497,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00707",
+   "gold_topic": "extended_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.218217,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00715",
+   "gold_topic": "solar_program",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "solar_program",
+   "similarity": 0.240734,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "installment"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00716",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.12266,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00718",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.135365,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00719",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.117762,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "investigator"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00729",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.388276,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00732",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.340193,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00737",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.113274,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "weren"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00740",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.104736,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00750",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.342877,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00757",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.23698,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00763",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.18183,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00764",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.376407,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00766",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.108616,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00767",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.193372,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "americans"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00771",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.17911,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "advanced",
+    "greater"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00773",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.129304,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00778",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.074476,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "involves"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00784",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.104325,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00789",
+   "gold_topic": "loan",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.140987,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00790",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.129703,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "trump"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00791",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.358703,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00799",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.201021,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00802",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.073961,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00804",
+   "gold_topic": "online_shopping",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_shopping",
+   "similarity": 0.21009,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00806",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.126967,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00811",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.194753,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00812",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.13695,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00814",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.075925,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00816",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.100186,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00830",
+   "gold_topic": "tax_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tax_relief",
+   "similarity": 0.223259,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00832",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.276873,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00833",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.185309,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00834",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.135158,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00839",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.125883,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "heather",
+    "supporting",
+    "closing"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00842",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.083969,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mute"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00843",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "prize_package",
+   "similarity": 0.116546,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "innocent",
+    "hasn"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00845",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.073056,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "lai"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00846",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.321415,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00848",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cash_giveaway",
+   "similarity": 0.066105,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00851",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.325014,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "araniidavakachum"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00852",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.081461,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00853",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.207138,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00859",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.101502,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "lava"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00864",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "extended_warranty",
+   "similarity": 0.198333,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "costly"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00866",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.247399,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00867",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.117226,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00868",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.1209,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00872",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.1017,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00879",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.126328,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00885",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.208876,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00886",
+   "gold_topic": "online_shopping",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.160422,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00891",
+   "gold_topic": "online_shopping",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_shopping",
+   "similarity": 0.223434,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00904",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.195652,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00910",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.352302,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00915",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.082676,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00919",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.064966,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00921",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.199672,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00923",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "lottery",
+   "similarity": 0.101392,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00926",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.263363,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "shortfall"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00927",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "unwanted_calls",
+   "similarity": 0.069169,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00928",
+   "gold_topic": "fund_raising",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "fund_raising",
+   "similarity": 0.324221,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "alliance"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00930",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.166407,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00932",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.070337,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00935",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.033797,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00940",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.2378,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00942",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "utility",
+   "similarity": 0.113962,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00946",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "prize_package",
+   "similarity": 0.120732,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "innocent",
+    "hasn"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00952",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.427871,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00953",
+   "gold_topic": "hello_calls",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.274356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00956",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.521627,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00959",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.099194,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "supplies",
+    "monitors"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00960",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.085805,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00966",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.542368,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00967",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "tv_service",
+   "similarity": 0.061858,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00969",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.274356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00971",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.206035,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "prod"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00974",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.261775,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00981",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.506022,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00983",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.114466,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "innocent",
+    "hasn"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00984",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.224381,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00985",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.441254,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "anne"
+   ]
+  },
+  {
+   "call_id": "artifact_call_00986",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.536457,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00988",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "unwanted_calls",
+   "similarity": 0.157041,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_00996",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.080015,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01002",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.155236,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01004",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "mortgage",
+   "similarity": 0.06504,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01005",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "mortgage",
+   "similarity": 0.08777,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "cane",
+    "helpline",
+    "reported",
+    "saf",
+    "flying"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01006",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.480473,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01008",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.047755,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01217",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.147933,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "audible"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01222",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.233265,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "escalpado",
+    "wiarporu",
+    "saare",
+    "rails"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01223",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.112466,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "supervising",
+    "pharmacist",
+    "bartman",
+    "olha"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01224",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.523691,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01226",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.157511,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01233",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.15588,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01237",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.075625,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "election"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01239",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.229549,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "lately"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01241",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.264274,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01242",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.088273,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01245",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_phone",
+   "similarity": 0.128681,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01247",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.155722,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "recommend"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01252",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.169479,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01254",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.173479,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ile",
+    "giroboc",
+    "belki"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01255",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.378246,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "vague"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01256",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.123844,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01257",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.090734,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "nationally",
+    "reevaluate",
+    "violations",
+    "substantial",
+    "hot"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01261",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cable_service",
+   "similarity": 0.107591,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01266",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.343557,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01270",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.414738,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01272",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.131139,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01277",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.108865,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01278",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.077853,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01284",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "utility",
+   "similarity": 0.141238,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "innocent",
+    "hasn",
+    "investigator"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01286",
+   "gold_topic": "auto_finance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_finance",
+   "similarity": 0.98151,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01290",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.185774,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01292",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.134507,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "tie"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01295",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.182426,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01297",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.19719,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "subsides",
+    "transport",
+    "bunny"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01300",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.244338,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01302",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.087416,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "alp"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01303",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.239436,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "sicil",
+    "schl",
+    "dichja"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01310",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.238633,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "nam"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01311",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.1258,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01316",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.225042,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01318",
+   "gold_topic": "home_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.153521,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reliable",
+    "condominium",
+    "tricia"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01320",
+   "gold_topic": "senior_benefit",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.130992,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "convictions",
+    "supporting",
+    "lifestyle",
+    "exclusive"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01321",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.189358,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01331",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.359796,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01334",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.220129,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01335",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "fund_raising",
+   "similarity": 0.102875,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01337",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.204912,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "packages",
+    "bart"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01338",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.268284,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "development",
+    "construction"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01347",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.465887,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01348",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.09471,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01349",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.205828,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01350",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.079669,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "travel",
+    "accommodation",
+    "underage",
+    "iggi",
+    "nagin"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01354",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.183388,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "envision"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01357",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.267551,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01362",
+   "gold_topic": "tax_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tax_relief",
+   "similarity": 0.561574,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01363",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.183109,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01364",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.228974,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01366",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.08234,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01373",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.08621,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01378",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.174777,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hamar"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01379",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.180406,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "benjamin"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01380",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.097642,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "surf",
+    "slide"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01393",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.42045,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01395",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.149049,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01397",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.275919,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01399",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.284767,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "terrace"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01403",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.105617,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01410",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.118894,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "lank"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01418",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.244843,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "pres"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01421",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.098352,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "description",
+    "class",
+    "booth"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01424",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.091217,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01425",
+   "gold_topic": "medicare_refund",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.140119,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01426",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.291327,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "optimize"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01429",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "tv_service",
+   "similarity": 0.057641,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "jamaica",
+    "dna"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01430",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.265636,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hover",
+    "batter"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01432",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.102793,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "bump",
+    "fender",
+    "bender",
+    "counts",
+    "bell"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01433",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.306156,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "nir"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01437",
+   "gold_topic": "auto_finance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_finance",
+   "similarity": 0.925032,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01438",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.224676,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01443",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.12652,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01445",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.109554,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "breakdown",
+    "brad",
+    "axle",
+    "steering",
+    "generic"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01452",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.076456,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "rising"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01454",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.177797,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "accuracy"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01456",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.234046,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01460",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.216203,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "theory",
+    "ans"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01462",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.335353,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01464",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.2866,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01467",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.176431,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01468",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.258418,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01470",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.250771,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "howard"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01472",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.071335,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01477",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.329309,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "cater"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01484",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.273552,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01486",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.112443,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01487",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.121293,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "burglary",
+    "inclation"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01490",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.200481,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01491",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.097802,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "fent"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01492",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.353912,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01498",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.201925,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "spam",
+    "centers",
+    "ace"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01503",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.393856,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01504",
+   "gold_topic": "utility",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "utility",
+   "similarity": 0.095173,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "empress"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01505",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.106907,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01507",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.189531,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01517",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.141081,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01524",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.245637,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "wasn",
+    "knock"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01531",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.436092,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01534",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.213345,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "description",
+    "drives",
+    "artist",
+    "clinic"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01537",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.336447,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01539",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.250912,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "farmers",
+    "violations",
+    "clears"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01541",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.492361,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01545",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.25048,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "insurances"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01546",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.098089,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01555",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.107808,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01570",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.26654,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01571",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.16983,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01573",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "utility",
+   "similarity": 0.117271,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "innocent",
+    "hasn",
+    "investigator"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01576",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.324456,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "healthier"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01579",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medication_shipment",
+   "similarity": 0.128876,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01589",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.381611,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01594",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.440872,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01595",
+   "gold_topic": "solar_program",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "solar_program",
+   "similarity": 0.285984,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01606",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.146568,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "aohor",
+    "ebaonor",
+    "hca",
+    "medkit",
+    "medgel",
+    "sooner",
+    "fork"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01607",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.148149,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01611",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.265525,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01621",
+   "gold_topic": "medical_claim",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.457356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ovarian",
+    "marine",
+    "force"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01624",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_phone",
+   "similarity": 0.115829,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mecha",
+    "yaibai",
+    "teras",
+    "biigve",
+    "deaywai"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01633",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.119844,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "recommend",
+    "der",
+    "mann"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01634",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.175134,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01638",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.222356,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "maria"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01639",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.305251,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "fried",
+    "pace"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01646",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.146694,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "optimize"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01648",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cable_service",
+   "similarity": 0.090881,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01649",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.101945,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01653",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.083493,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01659",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.075814,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01664",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.089861,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "moore",
+    "gaguribas"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01668",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.078472,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "miguel",
+    "github"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01671",
+   "gold_topic": "solar_program",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "solar_program",
+   "similarity": 0.283385,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01674",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.260023,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "none",
+    "reject",
+    "pressed"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01675",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_relief",
+   "similarity": 0.136139,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "heather",
+    "closing"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01676",
+   "gold_topic": "tax_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tax_relief",
+   "similarity": 0.264976,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "dismissal",
+    "assistants",
+    "director",
+    "federally",
+    "unpaid",
+    "june",
+    "settlement"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01677",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.22767,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01682",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.127061,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01684",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.190857,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "pineapple"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01686",
+   "gold_topic": "tax_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tax_relief",
+   "similarity": 0.58043,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "portal"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01688",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.069081,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hiphode"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01690",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.198068,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01691",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.149599,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01694",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.382797,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01695",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.118714,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ashley"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01697",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.330924,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "strap",
+    "sani",
+    "amagensi",
+    "panik",
+    "betfal",
+    "saajkek",
+    "breakens",
+    "kardezius"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01701",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_security",
+   "similarity": 0.435254,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01702",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.097035,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01708",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.187823,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01712",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.172493,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01719",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.248575,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01727",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.142325,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01729",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.120259,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01731",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.157763,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "expected"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01733",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.070552,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "admire"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01735",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.077976,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01736",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.325488,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01737",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.292114,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01738",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_security",
+   "similarity": 0.331301,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hub"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01739",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.237192,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "accessible",
+    "detects"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01744",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "aca_card",
+   "similarity": 0.062007,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01746",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.07412,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "celeste"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01749",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.287426,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01752",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.11977,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01753",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.34293,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "remedication",
+    "apart"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01755",
+   "gold_topic": "cash_giveaway",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cash_giveaway",
+   "similarity": 0.423929,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "global",
+    "category",
+    "reader",
+    "digest",
+    "millions",
+    "lottery"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01762",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.205119,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01763",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.094567,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01765",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.379613,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01766",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.291563,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01774",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.088498,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01775",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.129389,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01778",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.105004,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "seme",
+    "aowke",
+    "deske",
+    "bydewe",
+    "edward"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01783",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.117498,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01784",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.092576,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "grain",
+    "holiday"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01785",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.206087,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "maim",
+    "idir",
+    "akar",
+    "aur",
+    "buaidhbhala",
+    "vives",
+    "graffiti"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01789",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.096776,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01792",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.134526,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "dois",
+    "testes",
+    "promotions",
+    "kroz",
+    "raj",
+    "airobo",
+    "eric"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01798",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.128137,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01801",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.463099,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01805",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.225438,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01806",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.374281,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "eyed",
+    "cottage"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01812",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.110931,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01822",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.258156,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "force",
+    "trouble",
+    "paula",
+    "suppose",
+    "whomever",
+    "spills",
+    "arrange",
+    "setup"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01823",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.149902,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01824",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.278081,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01836",
+   "gold_topic": "fund_raising",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "fund_raising",
+   "similarity": 0.542566,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "sadly",
+    "attacked",
+    "political",
+    "organization",
+    "fight",
+    "legislations",
+    "brave"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01839",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "senior_benefit",
+   "similarity": 0.226014,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "matthew"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01842",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.103742,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "admire"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01843",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.374746,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01849",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.238872,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "rem"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01850",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.214209,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "noting",
+    "frequently"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01852",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_finance",
+   "similarity": 0.100929,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "tidy",
+    "breaker"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01857",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.185853,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01865",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.247456,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "zel",
+    "markley",
+    "merito",
+    "emtude"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01866",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.193574,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "algekenang"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01867",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.140194,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "passenger",
+    "reported",
+    "pedestrian",
+    "sides"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01869",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_warranty",
+   "similarity": 0.088787,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "urine",
+    "bacteria",
+    "yeast",
+    "study"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01884",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.240396,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01889",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.469128,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01891",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.095893,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01896",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "aca_card",
+   "similarity": 0.165785,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01898",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cable_service",
+   "similarity": 0.104512,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01909",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.250672,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "costing"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01910",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.195957,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01912",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.146444,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01916",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.210314,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "garmin"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01917",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.264565,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "gentlemen"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01918",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.458728,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01919",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.194463,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "greatest"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01926",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.189333,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ovic"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01929",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.131182,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "funal",
+    "incremental"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01931",
+   "gold_topic": "benefit",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.435385,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "billings",
+    "envy"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01933",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_claim",
+   "similarity": 0.129434,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "innocent",
+    "hasn",
+    "investigator",
+    "settlements"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01935",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.135766,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01937",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.092907,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "bidding",
+    "abbot"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01938",
+   "gold_topic": "medication_shipment",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.285251,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "pharmacist"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01945",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.203733,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "banned",
+    "explaining",
+    "departments"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01946",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.070606,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "funyl"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01948",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.525593,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01949",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.215566,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ben"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01956",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.270859,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "recommend",
+    "entitlement"
+   ]
+  },
+  {
+   "call_id": "artifact_call_01964",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.297651,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01965",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.211283,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01966",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.266251,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01967",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.149549,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01970",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.243638,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01972",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.39938,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01974",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.076687,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_01975",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.328215,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "enballed",
+    "western",
+    "morale"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02020",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "unwanted_calls",
+   "similarity": 0.105284,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "smoothly"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02023",
+   "gold_topic": "solar_program",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "solar_program",
+   "similarity": 0.337649,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "tarde",
+    "amen"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02024",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.18297,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "pin",
+    "barry",
+    "acceptable"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02026",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.262044,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ginme",
+    "worcester"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02028",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.134621,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "soi",
+    "hanton",
+    "dentos",
+    "dentes",
+    "implant",
+    "lenses",
+    "heringet",
+    "earing",
+    "description"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02029",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.262771,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "adina",
+    "supplemental"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02032",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.231078,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "informations",
+    "guyko",
+    "george",
+    "fayda",
+    "books",
+    "relaxation",
+    "dog",
+    "scratch",
+    "pets",
+    "soul"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02034",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.266417,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "gupta",
+    "renovate",
+    "houses",
+    "cooking",
+    "bottle",
+    "matthew"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02035",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_phone",
+   "similarity": 0.118731,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_02039",
+   "gold_topic": "hospital_indemnity",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "hospital_indemnity",
+   "similarity": 0.14544,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ind",
+    "outpatient",
+    "onto",
+    "supplemental",
+    "caesar",
+    "regions",
+    "particular",
+    "luck"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02045",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.324835,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "fairly"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02049",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.236669,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "trial",
+    "flow"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02051",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.186998,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "frogs",
+    "pablo"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02058",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.15084,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "band",
+    "alphanumerical",
+    "kenny"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02060",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.243159,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "shortlisted",
+    "seso",
+    "alcoholic",
+    "malls"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02062",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.17256,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_02065",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cash_giveaway",
+   "similarity": 0.123307,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "glance",
+    "sulfur",
+    "guardian",
+    "explanations",
+    "explanation",
+    "lois"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02069",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.277777,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "droop",
+    "grouping",
+    "deciding",
+    "misguided",
+    "chu",
+    "plaza",
+    "noon",
+    "apart"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02073",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tv_service",
+   "similarity": 0.194916,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "pairs",
+    "maz",
+    "moist",
+    "conscious"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02074",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.199036,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "didis",
+    "war",
+    "impossa",
+    "acelisa",
+    "despa",
+    "desparpansa",
+    "padre",
+    "hogesa",
+    "magic",
+    "ang"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02080",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "aca_card",
+   "similarity": 0.149732,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "fax",
+    "perceive",
+    "therapy",
+    "fifth"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02084",
+   "gold_topic": "prize_package",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "prize_package",
+   "similarity": 0.153133,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "laste",
+    "islim",
+    "duh",
+    "monies",
+    "regulation",
+    "walgreens",
+    "safeway",
+    "cvs",
+    "lushwan",
+    "wagon"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02089",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.137633,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "force"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02092",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.227714,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "dope",
+    "preglass",
+    "celine",
+    "tab"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02093",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.115347,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "goals",
+    "livery",
+    "misery",
+    "seasons",
+    "andrian",
+    "llc",
+    "mesu",
+    "businessman"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02095",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.113382,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "inexpensive",
+    "evenings",
+    "ports",
+    "advanced",
+    "obtaining"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02097",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.281752,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "sabrina",
+    "selecting",
+    "reflect",
+    "boucher",
+    "sample",
+    "nav"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02103",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "cable_service",
+   "similarity": 0.052643,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hallelujah",
+    "omeainoha",
+    "nokebey",
+    "asus",
+    "keyboard",
+    "tried"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02112",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "new_medicare_card",
+   "similarity": 0.179361,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "anv",
+    "patiently"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02113",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_phone",
+   "similarity": 0.102017,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_02115",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.130434,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "horo",
+    "kia",
+    "sowie",
+    "enna",
+    "siyamillinga"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02117",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.128061,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "matthew",
+    "kontrakt",
+    "travel",
+    "ech",
+    "ewl",
+    "inspired"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02120",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.140115,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "tabii",
+    "enioreria",
+    "nelson",
+    "mandela"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02126",
+   "gold_topic": "home_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_security",
+   "similarity": 0.121172,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "dodging",
+    "donald",
+    "trump"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02130",
+   "gold_topic": "home_improvement",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_improvement",
+   "similarity": 0.140735,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "refreshing",
+    "gish",
+    "schlurr",
+    "sigue",
+    "william",
+    "mansfield",
+    "nevis",
+    "dormat",
+    "eni",
+    "annie"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02132",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.130945,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "complications"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02134",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.185522,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "info"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02135",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.128506,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "season",
+    "rev",
+    "branches"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02137",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.076912,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_02138",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.08078,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "smooth",
+    "specialisten",
+    "albi",
+    "habe",
+    "resistifor",
+    "tabe"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02151",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_transaction",
+   "similarity": 0.142781,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "grass",
+    "nozzle",
+    "messenger",
+    "dang",
+    "info",
+    "wolf"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02154",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.14474,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_02156",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.273952,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "sublu",
+    "tracker"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02160",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.233139,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "omana"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02166",
+   "gold_topic": "tax_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tax_relief",
+   "similarity": 0.240947,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "settlement",
+    "wave"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02168",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_transaction",
+   "similarity": 0.107155,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "eid",
+    "aghair",
+    "idse",
+    "nisan",
+    "evirir",
+    "september",
+    "eas"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02174",
+   "gold_topic": "accident_claim",
+   "group": "withheld",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "utility",
+   "similarity": 0.130696,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "lese",
+    "autoclaim"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02210",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.202711,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "believing",
+    "barfagatanback",
+    "slezzi",
+    "mai",
+    "madi",
+    "pervoid",
+    "approach",
+    "ynardd",
+    "syngl",
+    "portelai"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02214",
+   "gold_topic": "tax_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "tax_relief",
+   "similarity": 0.242857,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "dolphin",
+    "rain",
+    "mitigate",
+    "bounce",
+    "penalties",
+    "involves",
+    "entails",
+    "consideration",
+    "undergo",
+    "investigation"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02216",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.210867,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "relatively",
+    "straightforward",
+    "trio",
+    "almend",
+    "handrail",
+    "akin",
+    "benefis",
+    "sierra"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02221",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.219989,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "isayken",
+    "pairing",
+    "foodcard",
+    "preloaded",
+    "practically",
+    "neither",
+    "wii",
+    "brokers",
+    "ecco",
+    "karly"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02225",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.137283,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ien",
+    "lots",
+    "misguide",
+    "squish",
+    "truck",
+    "foria",
+    "lora",
+    "mor",
+    "wasted"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02226",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.250859,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "preparation",
+    "watkins",
+    "pivs",
+    "pag",
+    "birthdate",
+    "june",
+    "bounced",
+    "chikular",
+    "rep",
+    "registering"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02230",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.151203,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "assured",
+    "purple",
+    "larger",
+    "dasmalisvanis",
+    "murder",
+    "equal",
+    "flarmen",
+    "samir",
+    "bukas",
+    "samer"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02234",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.336137,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "meghi",
+    "wearable",
+    "gadget",
+    "wristwatch",
+    "advanced",
+    "katja",
+    "naam"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02238",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.140123,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "jay"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02244",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.114018,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "fitness",
+    "okemen",
+    "perf",
+    "perfekt",
+    "nambarsen",
+    "elphabetsnix",
+    "dit",
+    "goeie",
+    "ekin",
+    "wight"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02245",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.151768,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "billy",
+    "amma",
+    "essentially",
+    "whereas",
+    "eso",
+    "ley",
+    "requiere",
+    "maria",
+    "texts",
+    "aivoyva"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02252",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.096918,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "regulators",
+    "straightforward",
+    "appearance"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02253",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.141226,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "stopped",
+    "robo",
+    "mom"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02255",
+   "gold_topic": "hospital_indemnity",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "hospital_indemnity",
+   "similarity": 0.259766,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ind",
+    "invasion",
+    "science",
+    "cancers",
+    "smokers",
+    "headed"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02263",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.208113,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "zare",
+    "arveni",
+    "ania",
+    "bury",
+    "meksiko",
+    "alain",
+    "william",
+    "maxwell",
+    "approximate",
+    "debtor"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02268",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "business_listing",
+   "similarity": 0.102327,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "tale",
+    "mylar",
+    "chelsea",
+    "parker",
+    "dawning",
+    "laila",
+    "beak",
+    "transcribe",
+    "lai"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02272",
+   "gold_topic": "health_insurance",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.220053,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "overqualified",
+    "discovered",
+    "seise",
+    "hede",
+    "altogether",
+    "baie",
+    "kaard",
+    "dits",
+    "lendable",
+    "adum"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02273",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.164066,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "representing",
+    "shortcut",
+    "turning",
+    "gentle",
+    "humble",
+    "whereas"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02275",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.211913,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "brian",
+    "branding",
+    "bright",
+    "corporation",
+    "larkin"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02278",
+   "gold_topic": "tv_service",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "cable_service",
+   "similarity": 0.420697,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "channel",
+    "bhai",
+    "haiarmi",
+    "interruption",
+    "tomam",
+    "keni",
+    "rrsiane",
+    "nichan",
+    "sari",
+    "atearthcontroller"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02286",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.239551,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "asset",
+    "molo",
+    "blacklist",
+    "granny"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02289",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.234208,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "reported",
+    "princeton",
+    "margins",
+    "baker",
+    "discovery",
+    "operations"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02293",
+   "gold_topic": "defective_products",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_transaction",
+   "similarity": 0.087871,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "firefighter",
+    "receipt",
+    "ugiar",
+    "aquinus",
+    "recalls",
+    "defective",
+    "hier",
+    "paracord",
+    "roundup",
+    "rideshare"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02295",
+   "gold_topic": "medical_device",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medical_device",
+   "similarity": 0.261687,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "maidis",
+    "esso",
+    "elwes",
+    "luis",
+    "seme",
+    "yuase",
+    "oneline",
+    "safer",
+    "meddler",
+    "ero"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02299",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.138985,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "quasi",
+    "asp",
+    "shirts",
+    "sneakers",
+    "dull",
+    "seventh"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02302",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.126359,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "info",
+    "slot",
+    "ons"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02306",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.220446,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "burgular",
+    "correctly",
+    "rychard",
+    "brow",
+    "virtue",
+    "beggar",
+    "gorgeous"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02309",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.208671,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ends",
+    "predict",
+    "tank",
+    "expected",
+    "expecting",
+    "doorsteps",
+    "regent"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02313",
+   "gold_topic": "home_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.193359,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "kaste",
+    "panda",
+    "kosten",
+    "vais",
+    "quotation",
+    "farmers"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02316",
+   "gold_topic": "financial_aid",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.225665,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "travel",
+    "confidence",
+    "hoarding",
+    "bow",
+    "submitted",
+    "onto",
+    "portal",
+    "hulk",
+    "dependence",
+    "halgia"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02317",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.152305,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mistake"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02320",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "loan",
+   "similarity": 0.138745,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "locals",
+    "debits",
+    "criticians",
+    "mite",
+    "amit",
+    "marisha",
+    "autocol",
+    "faddle",
+    "cult",
+    "picked"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02322",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "reward_card",
+   "similarity": 0.129904,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": []
+  },
+  {
+   "call_id": "artifact_call_02323",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "free_medication",
+   "similarity": 0.155216,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "carrymation",
+    "saturax"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02325",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "benefit",
+   "similarity": 0.123778,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "prod",
+    "rosies",
+    "tdb"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02326",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.187078,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "expansions",
+    "category",
+    "burglary"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02332",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": true,
+   "reasons": [
+    "low_topic_similarity"
+   ],
+   "nearest_topic": "financial_aid",
+   "similarity": 0.064726,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "channel",
+    "laga",
+    "cna"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02333",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.17782,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "godfrey",
+    "informations",
+    "scenes"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02334",
+   "gold_topic": "home_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_warranty",
+   "similarity": 0.16123,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "refrigerator",
+    "washer",
+    "washing"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02354",
+   "gold_topic": "customer_support",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "customer_support",
+   "similarity": 0.210746,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hindi",
+    "buhim",
+    "jako",
+    "harbors",
+    "inconvenience",
+    "promotions",
+    "calculate",
+    "earlier",
+    "cancellation",
+    "ith"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02356",
+   "gold_topic": "extended_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "extended_warranty",
+   "similarity": 0.357807,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "drew",
+    "pet",
+    "braun",
+    "authorities",
+    "expecting",
+    "broad",
+    "sears",
+    "nav",
+    "fed",
+    "gap"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02363",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.224357,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "griffin",
+    "surely",
+    "bard",
+    "absolut",
+    "nfda",
+    "compose",
+    "accordingly",
+    "brehm",
+    "tewli",
+    "founding"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02365",
+   "gold_topic": "package_delivery",
+   "group": "naturally_unseen",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "online_transaction",
+   "similarity": 0.178882,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "photo",
+    "withdrawal",
+    "sixteen",
+    "atm",
+    "escort",
+    "ses",
+    "odder",
+    "pois",
+    "unique",
+    "cvc"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02367",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.234448,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "lux",
+    "finished",
+    "audible",
+    "beings",
+    "misty",
+    "apart",
+    "edna",
+    "reid",
+    "prepaid",
+    "locality"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02369",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "medicare",
+   "similarity": 0.237767,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "landline",
+    "births",
+    "ban",
+    "cooperation",
+    "movement"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02371",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.207044,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hits",
+    "renter",
+    "christian",
+    "reliability",
+    "lease",
+    "earl",
+    "unit",
+    "capitals",
+    "inconvenience"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02373",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.284518,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "eis",
+    "ler",
+    "underwrite",
+    "locality",
+    "iorimendiana",
+    "tired",
+    "billag",
+    "colonial",
+    "pens",
+    "heritage"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02375",
+   "gold_topic": "subsidy",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "subsidy",
+   "similarity": 0.140415,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "illeberisibing",
+    "diagon",
+    "cior",
+    "disclose",
+    "acta",
+    "yearly",
+    "individual",
+    "manually",
+    "finalizing",
+    "restarted"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02377",
+   "gold_topic": "medicare",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "health_insurance",
+   "similarity": 0.17984,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "seventh",
+    "glendale",
+    "september",
+    "del",
+    "sixteen",
+    "blank",
+    "ninth",
+    "fifth",
+    "converge",
+    "advisers"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02380",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "extended_warranty",
+   "similarity": 0.310598,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mitsubishi",
+    "vin",
+    "hook",
+    "angry",
+    "mirage",
+    "isuha",
+    "renty",
+    "mechanic",
+    "housing",
+    "candle"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02383",
+   "gold_topic": "debt_relief",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "phone_bill_relief",
+   "similarity": 0.140044,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "timothy",
+    "expecting",
+    "increases",
+    "kill",
+    "frank",
+    "zai",
+    "correctly",
+    "burning",
+    "print",
+    "luck"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02384",
+   "gold_topic": "home_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "home_auto_warranty",
+   "similarity": 0.176734,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "sara",
+    "duplex",
+    "freitag",
+    "courses",
+    "informations",
+    "rip",
+    "ideally",
+    "clysi",
+    "problema",
+    "skeumewome"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02385",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.271889,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mutualophoma",
+    "chamber",
+    "misguide",
+    "prana",
+    "regastrial",
+    "complications",
+    "gaffana",
+    "niche",
+    "cashier"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02387",
+   "gold_topic": "auto_warranty",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "auto_warranty",
+   "similarity": 0.242421,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "ashley",
+    "interrupting",
+    "exclusive",
+    "curious",
+    "honor",
+    "sensible",
+    "gavinmesin",
+    "markup",
+    "reg",
+    "luck"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02408",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.251602,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "heather",
+    "niece",
+    "tara",
+    "war",
+    "berw",
+    "ltigend",
+    "viele",
+    "anrufe",
+    "erhalten",
+    "felt"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02409",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.231242,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "chavez",
+    "cesar",
+    "september",
+    "courage",
+    "dead",
+    "cca",
+    "ashley",
+    "inconvenience",
+    "hill",
+    "tight"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02410",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.121631,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "mendoza",
+    "purchased",
+    "coats",
+    "extent"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02411",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.141395,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "bobby",
+    "oskaero",
+    "julius",
+    "nicer",
+    "malta",
+    "lessons",
+    "danny",
+    "doyle",
+    "explaining",
+    "sopor"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02416",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.232711,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "hax",
+    "flatmate",
+    "raigad",
+    "alach",
+    "korda",
+    "sketch",
+    "nfda",
+    "proskaltisov",
+    "paten",
+    "mumpaypimimus"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02427",
+   "gold_topic": "hospital_indemnity",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "hospital_indemnity",
+   "similarity": 0.334196,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "outpatient",
+    "rider",
+    "visions",
+    "elijah",
+    "indemnities",
+    "leftover",
+    "mls",
+    "onto",
+    "dentals",
+    "michael"
+   ]
+  },
+  {
+   "call_id": "artifact_call_02429",
+   "gold_topic": "final_expense",
+   "group": "known",
+   "flagged": false,
+   "reasons": [],
+   "nearest_topic": "final_expense",
+   "similarity": 0.300087,
+   "threshold": 0.066026,
+   "candidates": [],
+   "unmatched_terms": [
+    "closing",
+    "outer",
+    "container",
+    "papers",
+    "jana",
+    "iswat",
+    "shar",
+    "expectencio",
+    "faithful",
+    "bangor"
+   ]
+  }
+ ]
+}

@@ -1,68 +1,55 @@
-# validate.py
-# Checks a predictions file before we score it.
-#   python3 -m coding.validate runs/baseline/test_predictions.json splits/test_ids.txt
-
+"""Validate legacy/baseline predictions or the full evidence-grounded agent contract."""
+import argparse
 import json
-import sys
+from pathlib import Path
+from .io_utils import ROOT, load_records, read_ids, record_hash
+from .schema import PREDICTION_SCHEMA, SCHEMA, check_model_output, schema_errors
 
-from .io_utils import load_records, read_ids, record_hash
-from .labels import CATEGORIES, EXECUTION, PERSUASION, COMP_PERSUASION, FUNCTIONAL, YES_NO
 
-
-def check_call(pred, record):
-    errors = []
-    hook = pred["hook_phase"]
-
-    # 1. we must have coded the original transcript (not an edited one)
-    if pred["input_hash"] != record_hash(record):
-        errors.append("transcript was changed")
-
-    # 2. labels must be from the codebook
-    if pred["category"] not in CATEGORIES + [None]:
-        errors.append("bad category")
-    if hook["execution"] not in EXECUTION + [None]:
-        errors.append("bad execution")
-    for name in ["exists", "consent"]:
-        if hook[name] not in YES_NO + [None]:
-            errors.append("bad " + name)
-
-    # 3. one coded entry for every caller turn, in order
+def check_call(pred, record, strict=False):
+    if not isinstance(pred, dict): return ["prediction must be an object"]
+    core = {k: pred[k] for k in PREDICTION_SCHEMA["properties"] if k in pred}
+    errors = schema_errors(core, PREDICTION_SCHEMA)
+    if errors: return errors
+    if pred["call_id"] != record["call_id"]: errors.append("call_id does not match source")
+    if pred["input_hash"] != record_hash(record): errors.append("transcript was changed")
     caller_turns = [t["turn_index"] for t in record["conversation"] if t["role"] == "user"]
-    coded_turns = [u["turn_index"] for u in pred["caller_utterances"]]
-    if coded_turns != caller_turns:
-        errors.append("turns do not match")
-
-    for u in pred["caller_utterances"]:
-        if not set(u["persuasion"]) <= set(PERSUASION):
-            errors.append(f"bad persuasion in turn {u['turn_index']}")
-        if not set(u["complementary_persuasion"]) <= set(COMP_PERSUASION):
-            errors.append(f"bad complementary persuasion in turn {u['turn_index']}")
-        if not set(u["functional_states"]) <= set(FUNCTIONAL):
-            errors.append(f"bad functional state in turn {u['turn_index']}")
+    coded_turns = [t["turn_index"] for t in pred["caller_utterances"]]
+    if coded_turns != caller_turns: errors.append("turns do not match")
+    if strict:
+        model = {k: pred[k] for k in SCHEMA["properties"] if k in pred}
+        errors += check_model_output(model, record)
     return errors
 
 
-def validate(pred_file, ids):
+def validate(pred_file, ids, strict=False):
+    if not ids or len(ids) != len(set(ids)): return ["requested IDs must be nonempty and unique"]
     records = load_records()
-    with open(pred_file) as f:
-        preds = json.load(f)["predictions"]
-
-    errors = []
+    try:
+        data = json.loads(Path(pred_file).read_text()); preds = data["predictions"]
+    except (ValueError, KeyError, OSError, TypeError) as e: return ["cannot read predictions: " + str(e)]
+    if not isinstance(preds, list): return ["predictions must be an array"]
+    errors, coded = [], []
     for pred in preds:
-        try:
-            errors += [pred["call_id"] + ": " + e for e in check_call(pred, records[pred["call_id"]])]
-        except KeyError as e:
-            errors.append(f"{pred.get('call_id')}: missing {e}")
-
-    # 4. every requested call has exactly one prediction
-    coded = [p.get("call_id") for p in preds]
-    if sorted(coded) != sorted(ids):
-        errors.append("predicted calls do not match the id list")
+        if not isinstance(pred, dict): errors.append("prediction must be an object"); continue
+        c = pred.get("call_id")
+        if not isinstance(c, str): errors.append("missing or invalid call_id"); continue
+        coded.append(c)
+        if c not in records: errors.append(c + ": unknown call_id"); continue
+        errors += [c + ": " + e for e in check_call(pred, records[c], strict)]
+    if sorted(coded) != sorted(ids): errors.append("predicted calls do not match the id list")
+    frozen = json.loads((Path(ROOT)/"splits/test_hashes.json").read_text())
+    for c in set(ids) & set(frozen):
+        if c not in records or frozen[c] != record_hash(records[c]): errors.append(c + ": frozen transcript hash mismatch")
     return errors
 
 
 if __name__ == "__main__":
-    errors = validate(sys.argv[1], read_ids(sys.argv[2]))
-    for e in errors[:20]:
-        print("ERROR", e)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("predictions"); parser.add_argument("ids_file")
+    parser.add_argument("--strict", action="store_true")
+    args = parser.parse_args()
+    errors = validate(args.predictions, read_ids(args.ids_file), args.strict)
+    for error in errors[:20]: print("ERROR", error)
     print(f"{len(errors)} errors")
+    raise SystemExit(bool(errors))

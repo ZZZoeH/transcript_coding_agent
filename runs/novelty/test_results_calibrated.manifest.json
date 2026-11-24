@@ -1,0 +1,18 @@
+{
+ "time_utc": "2026-11-22T07:16:00.098602+00:00",
+ "system": "topic_reference_detector",
+ "version": "v1",
+ "inputs": {
+  "transcript_inputs/input1.json": "d125db24b4933598bca714dc72149c1b4991e7bffd138805490191e558595d2a",
+  "transcript_inputs/input2.json": "f778f4f5f37b6f4678216b8e19a366ba896f77456d067336dae2969f7d654d30",
+  "transcript_inputs/input3.json": "0b238c49e1f7771630fbb4ccb8c2d76afc523815c3d2f7ae87e3dc9f881226fe",
+  "transcript_inputs/input4.json": "074917cc0244a7e2b4df8a2d60420ca27a7e770c8dbbff73b94fbb6509fc368b",
+  "transcript_inputs/input5.json": "d0f891b54682effb296ebe47ef27256627920773ab95b4fb4d522555b3e43981",
+  "runs/novelty/reference_calibrated.json": "2e14b0a1b18e4f101ef8031834f64883a6c8267ac518008e836409c8ca896688",
+  "splits/test_ids.txt": "df65e933ca31022d3fa294c29a4fa4eaa46458a7a743a93e3abceaabf6206ce5",
+  "coding/novelty_eval.py": "fb097247bcbaf92a7a373c3230c6c137ca52ccb8e50129a0b29d05b81bb2a7ad"
+ },
+ "outputs": {
+  "runs/novelty/test_results_calibrated.json": "110181396981e7957e333a0dcb7a203118e468b21022a1657191768321553f5d"
+ }
+}

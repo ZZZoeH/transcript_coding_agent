@@ -14,6 +14,9 @@ FOLDER = os.path.join(ROOT, "qual_sample")
 
 
 def sample(n=50):
+    # Never overwrite the packet or independent human coding.
+    if any(os.path.exists(os.path.join(FOLDER, name)) for name in ["packet.md", "sheet_A.csv", "sheet_B.csv"]):
+        raise ValueError("qualification packet already exists; preserve existing human work")
     # 50 test calls that have qualification questions
     records = load_records()
     ids = [c for c in read_ids(os.path.join(ROOT, "splits", "test_ids.txt"))
@@ -42,17 +45,23 @@ def sample(n=50):
 
 def read_sheet(path):
     with open(path) as f:
-        return {row["call_id"]: row["outcome"].strip() for row in csv.DictReader(f)}
+        rows = list(csv.DictReader(f))
+    if len({r["call_id"] for r in rows}) != len(rows): raise ValueError("duplicate call in coding sheet")
+    if any(r["outcome"].strip() and r["outcome"].strip() not in OUTCOMES for r in rows):
+        raise ValueError("unsupported outcome in coding sheet")
+    return {row["call_id"]: row["outcome"].strip() for row in rows}
 
 
 def compare(path_a, path_b):
     a, b = read_sheet(path_a), read_sheet(path_b)
+    if set(a) != set(b): raise ValueError("independent sheets must contain the same calls")
     ids = [c for c in a if a[c] in OUTCOMES and b.get(c) in OUTCOMES]
     if not ids:
         return print("No calls labeled by both people yet. Fill sheet_A.csv and sheet_B.csv first.")
     k = kappa([a[c] for c in ids], [b[c] for c in ids])
     ci = bootstrap_ci(ids, lambda s: kappa([a[c] for c in s], [b[c] for c in s]))
-    print(f"calls: {len(ids)}  kappa: {k:.3f}  95% CI: {ci}")
+    formatted = "undefined (only one category used)" if k is None else f"{k:.3f}"
+    print(f"calls: {len(ids)}/{len(a)}  kappa: {formatted}  95% CI: {ci}")
     # disagreements go to a third person, who decides without seeing A or B
     print("disagreements:", [c for c in ids if a[c] != b[c]])
 

@@ -1,2 +1,12 @@
 __pycache__/
 runs/baseline/*_predictions.json
+
+.env
+.env.*
+!.env.example
+runs/agent/
+runs/dry_run/
+runs/*/*_predictions.json
+runs/**/calls/
+.DS_Store
+create-ai_api-key.text

@@ -1,0 +1,82 @@
+{
+ "unique_calls": 2429,
+ "coded_calls": 1941,
+ "split_counts": {
+  "dev": 1358,
+  "test": 583,
+  "uncoded": 488
+ },
+ "test_hash_mismatches": [],
+ "dev_categories": {
+  "telemarketing": 1081,
+  "vishing_co": 55,
+  "vishing_gov": 222
+ },
+ "dev_topics": {
+  "final_expense": 288,
+  "medicare": 385,
+  "subsidy": 146,
+  "home_improvement": 59,
+  "accident_claim": 100,
+  "health_insurance": 101,
+  "auto_warranty": 95,
+  "medical_device": 40,
+  "online_shopping": 16,
+  "debt_relief": 12,
+  "customer_support": 4,
+  "lottery": 2,
+  "home_warranty": 6,
+  "unwanted_calls": 4,
+  "senior_benefit": 1,
+  "financial_relief": 3,
+  "business_listing": 1,
+  "home_security": 4,
+  "utility": 11,
+  "financial_aid": 10,
+  "medication_shipment": 1,
+  "auto_finance": 8,
+  "extended_warranty": 3,
+  "law_enforcement": 1,
+  "tv_service": 1,
+  "reward_card": 1,
+  "loan": 3,
+  "free_phone": 1,
+  "tax_relief": 16,
+  "new_medicare_card": 3,
+  "real_estate": 2,
+  "solar_program": 11,
+  "aca_card": 2,
+  "hospital_indemnity": 3,
+  "cash_giveaway": 1,
+  "online_transaction": 2,
+  "mortgage": 1,
+  "free_medication": 1,
+  "fund_raising": 1,
+  "medical_claim": 3,
+  "prize_package": 1,
+  "benefit": 1,
+  "home_auto_warranty": 1,
+  "cable_service": 1,
+  "phone_bill_relief": 1
+ },
+ "qualification_sheets": {
+  "A": {
+   "calls": 50,
+   "completed": 0
+  },
+  "B": {
+   "calls": 50,
+   "completed": 0
+  }
+ },
+ "independent_reliability_annotations_available": false,
+ "reliability_note": "Local records have one codes object per call and no 337-call pairwise coder files or mapping.",
+ "files": {
+  "transcript_inputs/input1.json": "d125db24b4933598bca714dc72149c1b4991e7bffd138805490191e558595d2a",
+  "transcript_inputs/input2.json": "f778f4f5f37b6f4678216b8e19a366ba896f77456d067336dae2969f7d654d30",
+  "transcript_inputs/input3.json": "0b238c49e1f7771630fbb4ccb8c2d76afc523815c3d2f7ae87e3dc9f881226fe",
+  "transcript_inputs/input4.json": "074917cc0244a7e2b4df8a2d60420ca27a7e770c8dbbff73b94fbb6509fc368b",
+  "transcript_inputs/input5.json": "d0f891b54682effb296ebe47ef27256627920773ab95b4fb4d522555b3e43981"
+ },
+ "errors": []
+}

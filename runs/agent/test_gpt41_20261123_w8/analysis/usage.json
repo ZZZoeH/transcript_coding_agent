@@ -1,0 +1,25 @@
+{
+ "run_status": "incomplete",
+ "requested_calls": 583,
+ "validated_calls": 582,
+ "failed_calls": 1,
+ "recorded_model_responses": 795,
+ "provider_models": {
+  "openai/gpt4_1": 795
+ },
+ "reported_usage_all_recorded_responses": {
+  "input_token_count": 4327927,
+  "output_token_count": 1048758,
+  "total_token_count": 5376685,
+  "input_token_cost": 8.655854000000009,
+  "output_token_cost": 8.390063999999995,
+  "total_token_cost": 17.045917999999997
+ },
+ "wall_seconds_this_invocation": 33.707,
+ "reviewed_calls": 573,
+ "review_fraction": 0.9845360824742269,
+ "multi_chunk_calls": 35,
+ "normalization_operations": 2384,
+ "note": "Usage includes every saved model response, including rejected validation attempts; requests that failed without a usage response may not be included.",
+ "total_recorded_active_wall_seconds": 1276.198
+}

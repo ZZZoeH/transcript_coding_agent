@@ -1,0 +1,20 @@
+{
+ "time_utc": "2026-11-24T01:18:16.680934+00:00",
+ "tests_passed": 24,
+ "original_pipeline_self_checks_passed": 3,
+ "requested_calls": 583,
+ "valid_model_outputs": 582,
+ "explicit_abstentions": 1,
+ "full_denominator_scoring_valid": true,
+ "exact_inference_source_snapshot_hashes_valid": true,
+ "post_inference_bugfix_files": [
+  "coding/schema.py"
+ ],
+ "post_inference_fix": "Call-level greeting upper bound uses all source caller turns, including when validating an output chunk; full-call scoring is unchanged.",
+ "credential_read_from_local_file_per_transmission": true,
+ "credential_scan_occurrences_outside_key_file": 0,
+ "credential_ignored": true,
+ "credential_tracked": false,
+ "original_data_splits_human_sheets_unchanged": true,
+ "report_and_slides_unchanged": true
+}

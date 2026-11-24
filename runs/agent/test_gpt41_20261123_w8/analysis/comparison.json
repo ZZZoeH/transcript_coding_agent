@@ -1,0 +1,129 @@
+{
+ "calls": 583,
+ "bootstrap_unit": "call",
+ "bootstrap_rounds": 1000,
+ "seed": 598,
+ "metrics": [
+  {
+   "field": "category",
+   "metric": "kappa",
+   "baseline": 0.537519831911153,
+   "agent": 0.5545577937779217,
+   "difference": 0.017037961866768647,
+   "difference_ci95": [
+    -0.071,
+    0.116
+   ]
+  },
+  {
+   "field": "subcategory",
+   "metric": "kappa",
+   "baseline": 0.6774851658186635,
+   "agent": 0.7009676167239659,
+   "difference": 0.023482450905302432,
+   "difference_ci95": [
+    -0.021,
+    0.068
+   ]
+  },
+  {
+   "field": "hook_phase.execution",
+   "metric": "kappa",
+   "baseline": 0.38549761845073954,
+   "agent": 0.027740393055079523,
+   "difference": -0.35775722539566,
+   "difference_ci95": [
+    -0.422,
+    -0.291
+   ]
+  },
+  {
+   "field": "hook_phase.consent",
+   "metric": "kappa",
+   "baseline": 0.36416788473585276,
+   "agent": 0.3883259204915401,
+   "difference": 0.024158035755687313,
+   "difference_ci95": [
+    -0.096,
+    0.15
+   ]
+  },
+  {
+   "field": "hook_phase.only_greeting_turns",
+   "metric": "kappa",
+   "baseline": 0.43063283399571994,
+   "agent": 0.21128232384881826,
+   "difference": -0.21935051014690168,
+   "difference_ci95": [
+    -0.28,
+    -0.164
+   ]
+  },
+  {
+   "field": "hook_phase.transfer.intent",
+   "metric": "kappa",
+   "baseline": 0.7273389828086372,
+   "agent": 0.7958790679761217,
+   "difference": 0.06854008516748455,
+   "difference_ci95": [
+    0.005,
+    0.136
+   ]
+  },
+  {
+   "field": "hook_phase.transfer.success",
+   "metric": "kappa",
+   "baseline": 0.32344920630364277,
+   "agent": 0.1620488991184262,
+   "difference": -0.16140030718521656,
+   "difference_ci95": [
+    -0.264,
+    -0.054
+   ]
+  },
+  {
+   "field": "persuasion",
+   "metric": "micro_f1",
+   "baseline": 0.5488416527346548,
+   "agent": 0.3256830601092896,
+   "difference": -0.2231585926253652,
+   "difference_ci95": [
+    -0.256,
+    -0.191
+   ]
+  },
+  {
+   "field": "complementary_persuasion",
+   "metric": "micro_f1",
+   "baseline": 0.6031528444139822,
+   "agent": 0.28681424446583254,
+   "difference": -0.31633859994814967,
+   "difference_ci95": [
+    -0.373,
+    -0.258
+   ]
+  },
+  {
+   "field": "functional_states",
+   "metric": "micro_f1",
+   "baseline": 0.5665706051873199,
+   "agent": 0.5740192450037009,
+   "difference": 0.0074486398163809975,
+   "difference_ci95": [
+    -0.02,
+    0.032
+   ]
+  },
+  {
+   "field": "requested_info",
+   "metric": "micro_f1",
+   "baseline": 0.5639555714797564,
+   "agent": 0.572893772893773,
+   "difference": 0.008938201414016578,
+   "difference_ci95": [
+    -0.021,
+    0.038
+   ]
+  }
+ ]
+}

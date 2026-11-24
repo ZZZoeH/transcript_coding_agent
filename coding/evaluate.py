@@ -14,6 +14,10 @@ CALL_FIELDS = ["category", "subcategory", "hook_phase.execution", "hook_phase.co
 TURN_FIELDS = ["persuasion", "complementary_persuasion", "functional_states", "requested_info"]
 
 
+def format_score(score):
+    return "undefined" if score is None else f"{score:.3f}"
+
+
 def get(call, path):
     # get(call, "hook_phase.consent") -> call["hook_phase"]["consent"]
     for key in path.split("."):
@@ -36,23 +40,47 @@ def turn_f1(field, ids, gold, pred):
     return f1(tp, fp, fn)[2]
 
 
-def evaluate(pred_file, ids):
+def evaluate(pred_file, ids, extended=False):
+    from .validate import validate
+    errors = validate(pred_file, ids)
+    if errors: raise ValueError("predictions must validate before scoring: " + "; ".join(errors[:5]))
     records = load_records()
+    if any(normalize_codes(c, records[c]["codes"]) is None for c in ids):
+        raise ValueError("all scored calls require human codes")
     gold = {c: normalize_codes(c, records[c]["codes"]) for c in ids}
     with open(pred_file) as f:
         pred = {p["call_id"]: p for p in json.load(f)["predictions"]}
 
     table = ["| field | score | 95% CI |", "|---|---|---|"]
-    for field in CALL_FIELDS:
+    extra_call = ["hook_phase.exists", "hook_phase.caller_identification.name",
+                  "hook_phase.caller_identification.organization", "hook_phase.transfer.failure_reason"] if extended else []
+    for field in CALL_FIELDS + extra_call:
         score = call_kappa(field, ids, gold, pred)
         ci = bootstrap_ci(ids, lambda s: call_kappa(field, s, gold, pred))
-        table.append(f"| {field} (kappa) | {score:.3f} | {ci} |")
+        table.append(f"| {field} (kappa) | {format_score(score)} | {ci} |")
     for field in TURN_FIELDS:
         score = turn_f1(field, ids, gold, pred)
         ci = bootstrap_ci(ids, lambda s: turn_f1(field, s, gold, pred))
-        table.append(f"| {field} (F1) | {score:.3f} | {ci} |")
+        table.append(f"| {field} (F1) | {format_score(score)} | {ci} |")
+    if extended:
+        def question_f1(sample):
+            tp = fp = fn = 0
+            for c in sample:
+                g = set(gold[c]["hook_phase"]["qualification"]["question"])
+                p = set(pred[c]["hook_phase"]["qualification"]["question"])
+                tp += len(g & p); fp += len(p - g); fn += len(g - p)
+            return f1(tp, fp, fn)[2]
+        table.append(f"| hook_phase.qualification.question (F1) | {question_f1(ids):.3f} | {bootstrap_ci(ids, question_f1)} |")
     return "\n".join(table)
 
 
 if __name__ == "__main__":
-    print(evaluate(sys.argv[1], read_ids(sys.argv[2])))
+    import argparse
+    from pathlib import Path
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("predictions"); parser.add_argument("ids_file")
+    parser.add_argument("--extended", action="store_true"); parser.add_argument("--output")
+    args = parser.parse_args()
+    table = evaluate(args.predictions, read_ids(args.ids_file), args.extended)
+    if args.output: Path(args.output).write_text(table + "\n")
+    print(table)

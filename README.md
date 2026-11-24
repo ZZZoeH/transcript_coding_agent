@@ -1,66 +1,55 @@
-# transcript_coding_agent
+# Codebook-guided scam-call transcript coding
 
-the original paper's materials are available at https://github.com/sefcom/calltrap-artifact.
+CSE 598/494 Forensics Computing project, Tech Girls. The project compares an evidence-grounded LLM coder with a deterministic baseline using the released [CallTrap artifact](https://github.com/sefcom/calltrap-artifact).
 
-CSE 598/494 Forensics Computing group project (Tech Girls).
-Can an LLM agent apply the CallTrap codebook to scam-call transcripts reliably enough
-to replace most of the manual coding?
+The baseline and offline checks run without an API key. The ASU agent is implemented and tested with mocked transport, but **live model results are pending API access**. The qualification study still needs two independent human coders. See [current status](docs/PROJECT_STATUS.md) and [the complete runbook](docs/RUNBOOK.md).
 
-The original paper's materials are available at https://github.com/sefcom/calltrap-artifact.
+## Data and experiments
 
-## Folders
+- 2,429 distinct calls; 1,941 coded and 488 uncoded.
+- Existing frozen split: 1,358 development / 583 test calls. Do not regenerate it.
+- Source transcripts and existing human sheets remain unchanged.
+- Baseline category kappa: 0.538; subcategory kappa: 0.677.
+- Lexical novelty has an unfavorable recall/false-positive tradeoff. Both experiments are preserved; see [methods](docs/METHODS.md). The calibrated test is exploratory.
 
-| path | what it is |
-|---|---|
-| `transcript_inputs/` | 2,429 calls. input1 has no human codes; input2-5 (1,941 calls) are coded |
-| `codebook.txt`, `appendix.pdf` | CallTrap codebook and paper appendix |
-| `coding/` | our pipeline code (see below) |
-| `splits/` | frozen dev (1,358) / test (583) split by call_id |
-| `runs/baseline/` | baseline scores and run manifest (file hashes) |
-| `qual_sample/` | 50-call qualification-outcome hand-coding sample |
-| `tests/` | self-check tests |
+## Offline verification
 
-## Pipeline (`coding/`)
-
-| file | job |
-|---|---|
-| `labels.py` | cleans the human labels into one format (fixes are logged, data is never changed) |
-| `io_utils.py` | loads transcripts, sha256 hashes, run manifests |
-| `split.py` | makes the dev/test split (already run, do not re-run) |
-| `validate.py` | checks a predictions file: format, codebook labels, every caller turn, transcript hash |
-| `baseline.py` | rule-based baseline (keyword lists, no API key) |
-| `agreement.py` | Cohen's kappa, F1, call-level bootstrap 95% CI |
-| `evaluate.py` | scores a predictions file against the human codes |
-| `qual_kit.py` | makes the 50-call sample and computes kappa between two coders |
-
-## How to run
+Python 3.10+; the research pipeline has no external Python dependencies.
 
 ```bash
 python3 tests/test_pipeline.py
+python3 -m unittest discover -s tests -p 'test_agent.py' -v
+python3 -m coding.audit
 python3 -m coding.baseline splits/test_ids.txt runs/baseline/test_predictions.json
 python3 -m coding.validate runs/baseline/test_predictions.json splits/test_ids.txt
-python3 -m coding.evaluate runs/baseline/test_predictions.json splits/test_ids.txt
+python3 -m coding.evaluate runs/baseline/test_predictions.json splits/test_ids.txt --extended
 ```
 
-**For the LLM agent:** write predictions in the same format as `baseline.py` output
-(fields listed in `validate.py`), then run `validate` and `evaluate` the same way.
-Tune prompts and pick few-shot examples from `splits/dev_ids.txt` only.
+## Prepare the agent
 
-## Baseline results (test split, 583 calls)
+```bash
+python3 -m coding.agent splits/dev_ids.txt runs/novelty/reference_calibrated.json runs/dry_run/new --dry-run --limit 3
+```
 
-| field | score | 95% CI |
-|---|---|---|
-| category (kappa) | 0.538 | [0.442, 0.619] |
-| subcategory (kappa) | 0.677 | [0.640, 0.717] |
-| execution (kappa) | 0.385 | [0.315, 0.455] |
-| transfer intent (kappa) | 0.727 | [0.672, 0.779] |
-| persuasion (F1) | 0.549 | [0.526, 0.573] |
-| functional states (F1) | 0.567 | [0.539, 0.592] |
-| requested info (F1) | 0.564 | [0.532, 0.597] |
+Dry runs save requests and make no API calls. When access is granted, use `.env.example` to configure `ASU_API_KEY`, `ASU_MODEL_PROVIDER`, and `ASU_MODEL_NAME` locally, then follow the development smoke test and final-run commands in [RUNBOOK.md](docs/RUNBOOK.md). Actual provider/model identifiers must come from the ASU project. Never commit the key.
 
-Full table: `runs/baseline/test_scores.md`. The LLM agent should beat these numbers.
+## Components
 
-## Notes from the data
+| Module | Purpose |
+|---|---|
+| `agent.py`, `prompts.py`, `schema.py` | ASU structured coding, evidence contract, checkpoints and failure handling |
+| `novelty.py`, `novelty_eval.py` | Frozen dev reference, calibration, novelty evaluation |
+| `review.py`, `sensitivity.py` | Human review queue and conservative derived information tiers |
+| `baseline.py`, `validate.py` | Deterministic comparator and schema/preservation checks |
+| `evaluate.py`, `agreement.py`, `compare.py` | Agreement, call bootstrap and paired comparison |
+| `audit.py`, `io_utils.py` | Read-only data audit, source hashes and run manifests |
+| `qual_kit.py`, `qualification_eval.py` | Independent qualification coding and model scoring |
+| `time_savings.py` | Labor scenarios from measured coding/review minutes |
 
-- `requested_info` in the human codes **includes** qualification questions (age, possession_medicare, ...).
-- Complementary persuasion labels in the data are `nag` / `time` / `dh` (= NG / TIME /
+Modules above live in `coding/`. `paper_system_implementation.py` is the original telephony implementation and is not used by this coding pipeline.
+
+## Deliverables and remaining work
+
+`deliverables/` contains editable report and presentation drafts and their sources. These are not final submissions. Integrate live agent results, independent human coding, measured time/costs and verified member contributions; verify the final report has at least 12 body pages in 12-point single spacing. The report is due December 7, 2026. The approximately 25-minute presentation is due before the actual presentation date. Each member must personally complete the integrity attachment.
+
+Important interpretation details: released requested-information labels include qualification questions; organization names are redacted; the 337-call pairwise reliability set is not identifiable locally; and the paper's 115 hours is audio duration, not annotation labor. These limits are documented in the report and methods.

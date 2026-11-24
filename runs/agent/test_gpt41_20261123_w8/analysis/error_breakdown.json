@@ -1,0 +1,2587 @@
+{
+ "calls": 583,
+ "turn_fields": {
+  "persuasion": {
+   "precision": 0.5004198152812762,
+   "recall": 0.24139327663021465,
+   "f1": 0.3256830601092896,
+   "counts": {
+    "tp": 596,
+    "fn": 1873,
+    "fp": 595
+   },
+   "labels": [
+    {
+     "label": "auth",
+     "tp": 208,
+     "fn": 782,
+     "fp": 125,
+     "precision": 0.6246246246246246,
+     "recall": 0.2101010101010101,
+     "f1": 0.31443688586545726
+    },
+    {
+     "label": "crc",
+     "fn": 541,
+     "tp": 152,
+     "fp": 178,
+     "precision": 0.46060606060606063,
+     "recall": 0.21933621933621933,
+     "f1": 0.2971652003910068
+    },
+    {
+     "label": "dis",
+     "fn": 435,
+     "tp": 197,
+     "fp": 176,
+     "precision": 0.5281501340482574,
+     "recall": 0.31170886075949367,
+     "f1": 0.3920398009950249
+    },
+    {
+     "label": "lsd",
+     "fp": 96,
+     "fn": 104,
+     "tp": 27,
+     "precision": 0.21951219512195122,
+     "recall": 0.20610687022900764,
+     "f1": 0.2125984251968504
+    },
+    {
+     "label": "sp",
+     "fp": 20,
+     "tp": 12,
+     "fn": 11,
+     "precision": 0.375,
+     "recall": 0.5217391304347826,
+     "f1": 0.43636363636363634
+    }
+   ]
+  },
+  "complementary_persuasion": {
+   "precision": 0.38107416879795397,
+   "recall": 0.22993827160493827,
+   "f1": 0.28681424446583254,
+   "counts": {
+    "fn": 499,
+    "fp": 242,
+    "tp": 149
+   },
+   "labels": [
+    {
+     "label": "nag",
+     "fn": 484,
+     "fp": 96,
+     "tp": 132,
+     "precision": 0.5789473684210527,
+     "recall": 0.21428571428571427,
+     "f1": 0.31279620853080564
+    },
+    {
+     "label": "time",
+     "fp": 119,
+     "tp": 8,
+     "fn": 14,
+     "precision": 0.06299212598425197,
+     "recall": 0.36363636363636365,
+     "f1": 0.10738255033557047
+    },
+    {
+     "label": "dh",
+     "fp": 27,
+     "tp": 9,
+     "fn": 1,
+     "precision": 0.25,
+     "recall": 0.9,
+     "f1": 0.391304347826087
+    }
+   ]
+  },
+  "functional_states": {
+   "precision": 0.42975893599334997,
+   "recall": 0.864066852367688,
+   "f1": 0.5740192450037009,
+   "counts": {
+    "tp": 1551,
+    "fn": 244,
+    "fp": 2058
+   },
+   "labels": [
+    {
+     "label": "qualification",
+     "tp": 842,
+     "fn": 94,
+     "fp": 1032,
+     "precision": 0.44930629669156885,
+     "recall": 0.8995726495726496,
+     "f1": 0.5992882562277579
+    },
+    {
+     "label": "purpose",
+     "tp": 433,
+     "fp": 672,
+     "fn": 115,
+     "precision": 0.3918552036199095,
+     "recall": 0.7901459854014599,
+     "f1": 0.5238959467634604
+    },
+    {
+     "label": "transfer",
+     "tp": 246,
+     "fp": 258,
+     "fn": 12,
+     "precision": 0.4880952380952381,
+     "recall": 0.9534883720930233,
+     "f1": 0.6456692913385826
+    },
+    {
+     "label": "id_check",
+     "fp": 94,
+     "fn": 18,
+     "tp": 26,
+     "precision": 0.21666666666666667,
+     "recall": 0.5909090909090909,
+     "f1": 0.3170731707317074
+    },
+    {
+     "label": "obscene",
+     "fn": 5,
+     "fp": 2,
+     "tp": 4,
+     "precision": 0.6666666666666666,
+     "recall": 0.4444444444444444,
+     "f1": 0.5333333333333333
+    }
+   ]
+  },
+  "requested_info": {
+   "precision": 0.4922366764582459,
+   "recall": 0.6851635514018691,
+   "f1": 0.572893772893773,
+   "counts": {
+    "tp": 1173,
+    "fp": 1210,
+    "fn": 539
+   },
+   "labels": [
+    {
+     "label": "age",
+     "tp": 281,
+     "fn": 9,
+     "fp": 39,
+     "precision": 0.878125,
+     "recall": 0.9689655172413794,
+     "f1": 0.9213114754098362
+    },
+    {
+     "label": "possession_medicare",
+     "tp": 143,
+     "fp": 64,
+     "fn": 78,
+     "precision": 0.6908212560386473,
+     "recall": 0.6470588235294118,
+     "f1": 0.6682242990654207
+    },
+    {
+     "label": "name",
+     "fp": 85,
+     "tp": 96,
+     "fn": 6,
+     "precision": 0.5303867403314917,
+     "recall": 0.9411764705882353,
+     "f1": 0.6784452296819787
+    },
+    {
+     "label": "zip_code",
+     "tp": 89,
+     "fp": 39,
+     "fn": 2,
+     "precision": 0.6953125,
+     "recall": 0.978021978021978,
+     "f1": 0.8127853881278538
+    },
+    {
+     "label": "decision_making",
+     "tp": 53,
+     "fn": 5,
+     "fp": 5,
+     "precision": 0.9137931034482759,
+     "recall": 0.9137931034482759,
+     "f1": 0.9137931034482759
+    },
+    {
+     "label": "possession_medicare_medicaid",
+     "fn": 53,
+     "tp": 1,
+     "fp": 3,
+     "precision": 0.25,
+     "recall": 0.018518518518518517,
+     "f1": 0.034482758620689655
+    },
+    {
+     "label": "dob",
+     "tp": 50,
+     "fp": 21,
+     "fn": 3,
+     "precision": 0.704225352112676,
+     "recall": 0.9433962264150944,
+     "f1": 0.8064516129032259
+    },
+    {
+     "label": "state",
+     "fn": 23,
+     "tp": 23,
+     "fp": 9,
+     "precision": 0.71875,
+     "recall": 0.5,
+     "f1": 0.5897435897435898
+    },
+    {
+     "label": "possession_health_insurance",
+     "tp": 8,
+     "fp": 10,
+     "fn": 36,
+     "precision": 0.4444444444444444,
+     "recall": 0.18181818181818182,
+     "f1": 0.2580645161290322
+    },
+    {
+     "label": "car_accident",
+     "tp": 29,
+     "fn": 6,
+     "fp": 13,
+     "precision": 0.6904761904761905,
+     "recall": 0.8285714285714286,
+     "f1": 0.7532467532467533
+    },
+    {
+     "label": "interest",
+     "tp": 11,
+     "fp": 10,
+     "fn": 22,
+     "precision": 0.5238095238095238,
+     "recall": 0.3333333333333333,
+     "f1": 0.40740740740740733
+    },
+    {
+     "label": "insurance_carrier",
+     "tp": 27,
+     "fn": 3,
+     "fp": 11,
+     "precision": 0.7105263157894737,
+     "recall": 0.9,
+     "f1": 0.7941176470588235
+    },
+    {
+     "label": "possession_bank_account",
+     "tp": 15,
+     "fn": 12,
+     "fp": 1,
+     "precision": 0.9375,
+     "recall": 0.5555555555555556,
+     "f1": 0.6976744186046512
+    },
+    {
+     "label": "smoke",
+     "tp": 20,
+     "fn": 4,
+     "fp": 1,
+     "precision": 0.9523809523809523,
+     "recall": 0.8333333333333334,
+     "f1": 0.888888888888889
+    },
+    {
+     "label": "disability_status",
+     "fn": 5,
+     "tp": 18,
+     "fp": 3,
+     "precision": 0.8571428571428571,
+     "recall": 0.782608695652174,
+     "f1": 0.8181818181818182
+    },
+    {
+     "label": "homeownership",
+     "tp": 16,
+     "fn": 6,
+     "fp": 5,
+     "precision": 0.7619047619047619,
+     "recall": 0.7272727272727273,
+     "f1": 0.7441860465116279
+    },
+    {
+     "label": "beneficiary",
+     "fn": 1,
+     "tp": 21,
+     "fp": 10,
+     "precision": 0.6774193548387096,
+     "recall": 0.9545454545454546,
+     "f1": 0.7924528301886793
+    },
+    {
+     "label": "address",
+     "fp": 27,
+     "tp": 14,
+     "fn": 6,
+     "precision": 0.34146341463414637,
+     "recall": 0.7,
+     "f1": 0.4590163934426229
+    },
+    {
+     "label": "health_condition1",
+     "fn": 20,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "callback_availability",
+     "fn": 17,
+     "tp": 1,
+     "fp": 1,
+     "precision": 0.5,
+     "recall": 0.05555555555555555,
+     "f1": 0.09999999999999999
+    },
+    {
+     "label": "possession_medicare_card",
+     "fp": 28,
+     "tp": 16,
+     "precision": 0.36363636363636365,
+     "recall": 1.0,
+     "f1": 0.5333333333333333
+    },
+    {
+     "label": "plan_tier",
+     "fn": 16,
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_compensation",
+     "fn": 14,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_auto_insurance",
+     "tp": 12,
+     "fp": 2,
+     "fn": 1,
+     "precision": 0.8571428571428571,
+     "recall": 0.9230769230769231,
+     "f1": 0.888888888888889
+    },
+    {
+     "label": "living_status",
+     "fp": 3,
+     "tp": 8,
+     "fn": 5,
+     "precision": 0.7272727272727273,
+     "recall": 0.6153846153846154,
+     "f1": 0.6666666666666667
+    },
+    {
+     "label": "possession_vehicle",
+     "tp": 8,
+     "fn": 4,
+     "precision": 1.0,
+     "recall": 0.6666666666666666,
+     "f1": 0.8
+    },
+    {
+     "label": "possession_final_expense",
+     "fn": 8,
+     "tp": 4,
+     "precision": 1.0,
+     "recall": 0.3333333333333333,
+     "f1": 0.5
+    },
+    {
+     "label": "medication",
+     "fn": 5,
+     "tp": 5,
+     "fp": 2,
+     "precision": 0.7142857142857143,
+     "recall": 0.5,
+     "f1": 0.588235294117647
+    },
+    {
+     "label": "burial_info",
+     "tp": 2,
+     "fp": 7,
+     "fn": 7,
+     "precision": 0.2222222222222222,
+     "recall": 0.2222222222222222,
+     "f1": 0.2222222222222222
+    },
+    {
+     "label": "ssn",
+     "tp": 8,
+     "fp": 8,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "email",
+     "fn": 1,
+     "fp": 12,
+     "tp": 7,
+     "precision": 0.3684210526315789,
+     "recall": 0.875,
+     "f1": 0.5185185185185185
+    },
+    {
+     "label": "employment_status",
+     "fp": 3,
+     "tp": 5,
+     "fn": 2,
+     "precision": 0.625,
+     "recall": 0.7142857142857143,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "health_condition",
+     "fp": 39,
+     "tp": 5,
+     "fn": 2,
+     "precision": 0.11363636363636363,
+     "recall": 0.7142857142857143,
+     "f1": 0.19607843137254902
+    },
+    {
+     "label": "reception_subsidy",
+     "tp": 6,
+     "fn": 1,
+     "precision": 1.0,
+     "recall": 0.8571428571428571,
+     "f1": 0.923076923076923
+    },
+    {
+     "label": "ssdi",
+     "fn": 6,
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 0.14285714285714285,
+     "f1": 0.25
+    },
+    {
+     "label": "insurance_duration",
+     "tp": 6,
+     "fp": 2,
+     "fn": 1,
+     "precision": 0.75,
+     "recall": 0.8571428571428571,
+     "f1": 0.7999999999999999
+    },
+    {
+     "label": "phone_number",
+     "fn": 1,
+     "tp": 6,
+     "fp": 6,
+     "precision": 0.5,
+     "recall": 0.8571428571428571,
+     "f1": 0.631578947368421
+    },
+    {
+     "label": "height_weight",
+     "tp": 7,
+     "fp": 1,
+     "precision": 0.875,
+     "recall": 1.0,
+     "f1": 0.9333333333333333
+    },
+    {
+     "label": "home_improvement_type",
+     "tp": 4,
+     "fp": 3,
+     "fn": 2,
+     "precision": 0.5714285714285714,
+     "recall": 0.6666666666666666,
+     "f1": 0.6153846153846153
+    },
+    {
+     "label": "vehicle_number",
+     "tp": 5,
+     "fn": 1,
+     "fp": 2,
+     "precision": 0.7142857142857143,
+     "recall": 0.8333333333333334,
+     "f1": 0.7692307692307692
+    },
+    {
+     "label": "possession_final_expense_interest",
+     "fn": 6,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "driving_record",
+     "tp": 4,
+     "fn": 2,
+     "precision": 1.0,
+     "recall": 0.6666666666666666,
+     "f1": 0.8
+    },
+    {
+     "label": "residence_duration",
+     "fn": 1,
+     "tp": 5,
+     "precision": 1.0,
+     "recall": 0.8333333333333334,
+     "f1": 0.9090909090909091
+    },
+    {
+     "label": "health_condition2",
+     "fn": 6,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "donotcall_disclaimer",
+     "fn": 6,
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "vehicle_make_model",
+     "tp": 3,
+     "fp": 10,
+     "fn": 2,
+     "precision": 0.23076923076923078,
+     "recall": 0.6,
+     "f1": 0.33333333333333337
+    },
+    {
+     "label": "vehicle_mile",
+     "fp": 2,
+     "tp": 5,
+     "precision": 0.7142857142857143,
+     "recall": 1.0,
+     "f1": 0.8333333333333333
+    },
+    {
+     "label": "reception_medicare_benefit_letter",
+     "fn": 4,
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 0.2,
+     "f1": 0.33333333333333337
+    },
+    {
+     "label": "home_type",
+     "tp": 5,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "health_condition3",
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicaid",
+     "fp": 52,
+     "tp": 4,
+     "precision": 0.07142857142857142,
+     "recall": 1.0,
+     "f1": 0.13333333333333333
+    },
+    {
+     "label": "say_yes",
+     "fn": 4,
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_tricare",
+     "fp": 3,
+     "tp": 1,
+     "fn": 3,
+     "precision": 0.25,
+     "recall": 0.25,
+     "f1": 0.25
+    },
+    {
+     "label": "plan_option",
+     "fp": 18,
+     "tp": 2,
+     "fn": 2,
+     "precision": 0.1,
+     "recall": 0.5,
+     "f1": 0.16666666666666669
+    },
+    {
+     "label": "medicare_id",
+     "fn": 1,
+     "tp": 3,
+     "fp": 4,
+     "precision": 0.42857142857142855,
+     "recall": 0.75,
+     "f1": 0.5454545454545454
+    },
+    {
+     "label": "vehicle_type",
+     "fn": 3,
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 0.25,
+     "f1": 0.4
+    },
+    {
+     "label": "tax_debt_amount",
+     "tp": 3,
+     "fp": 3,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.75,
+     "f1": 0.6
+    },
+    {
+     "label": "city",
+     "fp": 16,
+     "tp": 3,
+     "fn": 1,
+     "precision": 0.15789473684210525,
+     "recall": 0.75,
+     "f1": 0.2608695652173913
+    },
+    {
+     "label": "doctor_visit",
+     "tp": 2,
+     "fn": 2,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "bank_provider",
+     "tp": 4,
+     "fp": 1,
+     "precision": 0.8,
+     "recall": 1.0,
+     "f1": 0.888888888888889
+    },
+    {
+     "label": "possession_medicare_medicaid_va",
+     "fn": 2,
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 0.3333333333333333,
+     "f1": 0.5
+    },
+    {
+     "label": "possession_additional_benefit",
+     "fn": 2,
+     "fp": 1,
+     "tp": 1,
+     "precision": 0.5,
+     "recall": 0.3333333333333333,
+     "f1": 0.4
+    },
+    {
+     "label": "callback_number",
+     "tp": 3,
+     "fp": 5,
+     "precision": 0.375,
+     "recall": 1.0,
+     "f1": 0.5454545454545454
+    },
+    {
+     "label": "reception_health_insurance_card",
+     "tp": 3,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "possession_food_card",
+     "tp": 2,
+     "fn": 1,
+     "fp": 2,
+     "precision": 0.5,
+     "recall": 0.6666666666666666,
+     "f1": 0.5714285714285715
+    },
+    {
+     "label": "possession_cashback",
+     "tp": 2,
+     "fn": 1,
+     "fp": 1,
+     "precision": 0.6666666666666666,
+     "recall": 0.6666666666666666,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "donotcall_registered",
+     "fn": 2,
+     "fp": 1,
+     "tp": 1,
+     "precision": 0.5,
+     "recall": 0.3333333333333333,
+     "f1": 0.4
+    },
+    {
+     "label": "reception_benefit",
+     "fp": 1,
+     "tp": 1,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.3333333333333333,
+     "f1": 0.4
+    },
+    {
+     "label": "reception_final_expense_card",
+     "fn": 3,
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "disability_type",
+     "tp": 3,
+     "fp": 7,
+     "precision": 0.3,
+     "recall": 1.0,
+     "f1": 0.4615384615384615
+    },
+    {
+     "label": "annual_income",
+     "tp": 3,
+     "fp": 6,
+     "precision": 0.3333333333333333,
+     "recall": 1.0,
+     "f1": 0.5
+    },
+    {
+     "label": "payment_type",
+     "fp": 3,
+     "tp": 3,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "marriage_status",
+     "tp": 2,
+     "fn": 1,
+     "fp": 1,
+     "precision": 0.6666666666666666,
+     "recall": 0.6666666666666666,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "possession_military_coverage",
+     "fn": 1,
+     "tp": 2,
+     "precision": 1.0,
+     "recall": 0.6666666666666666,
+     "f1": 0.8
+    },
+    {
+     "label": "credit_card_number",
+     "fp": 4,
+     "tp": 3,
+     "precision": 0.42857142857142855,
+     "recall": 1.0,
+     "f1": 0.6
+    },
+    {
+     "label": "phone_alternative",
+     "tp": 3,
+     "fp": 1,
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571428571428571
+    },
+    {
+     "label": "health_condition4",
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "health_condition5",
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "medication_number",
+     "fp": 6,
+     "tp": 2,
+     "precision": 0.25,
+     "recall": 1.0,
+     "f1": 0.4
+    },
+    {
+     "label": "possession_medicare_medicaid_tricare_va",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "problem_in_service",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_insurance_card",
+     "fn": 1,
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "compensation",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_cashback",
+     "fp": 2,
+     "tp": 1,
+     "fn": 1,
+     "precision": 0.3333333333333333,
+     "recall": 0.5,
+     "f1": 0.4
+    },
+    {
+     "label": "reception_medicare_letter",
+     "fp": 2,
+     "fn": 1,
+     "tp": 1,
+     "precision": 0.3333333333333333,
+     "recall": 0.5,
+     "f1": 0.4
+    },
+    {
+     "label": "reception_welcome_package",
+     "tp": 1,
+     "fn": 1,
+     "fp": 1,
+     "precision": 0.5,
+     "recall": 0.5,
+     "f1": 0.5
+    },
+    {
+     "label": "reception_food_card",
+     "fp": 3,
+     "fn": 1,
+     "tp": 1,
+     "precision": 0.25,
+     "recall": 0.5,
+     "f1": 0.3333333333333333
+    },
+    {
+     "label": "possession_medicare_medicaid_va_tricare",
+     "tp": 1,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5,
+     "f1": 0.5
+    },
+    {
+     "label": "vehicle_year",
+     "tp": 2,
+     "fp": 2,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "car_accident_fault",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "car_accident_time",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "firefighter",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "military_status",
+     "tp": 2,
+     "fp": 2,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "appointment_availability",
+     "fp": 1,
+     "fn": 1,
+     "tp": 1,
+     "precision": 0.5,
+     "recall": 0.5,
+     "f1": 0.5
+    },
+    {
+     "label": "utility_bill_amount",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_advantage_plan",
+     "fp": 1,
+     "tp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5,
+     "f1": 0.5
+    },
+    {
+     "label": "reception_flex_card",
+     "tp": 1,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5,
+     "f1": 0.5
+    },
+    {
+     "label": "nearest_store",
+     "fn": 1,
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "plan_benefits",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "debt_amount",
+     "fp": 8,
+     "tp": 2,
+     "precision": 0.2,
+     "recall": 1.0,
+     "f1": 0.33333333333333337
+    },
+    {
+     "label": "callback_color",
+     "tp": 2,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "vehicle_registration",
+     "tp": 2,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "possession_driver_license",
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "name_beneficiary",
+     "fp": 8,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "license_plate_number",
+     "tp": 2,
+     "fp": 3,
+     "precision": 0.4,
+     "recall": 1.0,
+     "f1": 0.5714285714285715
+    },
+    {
+     "label": "cvv_number",
+     "tp": 2,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "payment_date",
+     "tp": 2,
+     "fp": 1,
+     "precision": 0.6666666666666666,
+     "recall": 1.0,
+     "f1": 0.8
+    },
+    {
+     "label": "vehicle_condition",
+     "tp": 2,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "ss_money_date",
+     "tp": 1,
+     "fn": 1,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "reception_medicare_card",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "callback_permission",
+     "tp": 1,
+     "fp": 4,
+     "precision": 0.2,
+     "recall": 1.0,
+     "f1": 0.33333333333333337
+    },
+    {
+     "label": "monthly_payment",
+     "fp": 5,
+     "tp": 1,
+     "precision": 0.16666666666666666,
+     "recall": 1.0,
+     "f1": 0.2857142857142857
+    },
+    {
+     "label": "possession_debt",
+     "fn": 1,
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "id_check",
+     "fp": 24,
+     "tp": 1,
+     "precision": 0.04,
+     "recall": 1.0,
+     "f1": 0.07692307692307693
+    },
+    {
+     "label": "reception_medicare_benefit",
+     "fn": 1,
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_retirement_plan",
+     "fp": 4,
+     "tp": 1,
+     "precision": 0.2,
+     "recall": 1.0,
+     "f1": 0.33333333333333337
+    },
+    {
+     "label": "copay",
+     "fn": 1,
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_monthly_allowance",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_additional_health_benefits",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_life_insurance",
+     "fp": 7,
+     "tp": 1,
+     "precision": 0.125,
+     "recall": 1.0,
+     "f1": 0.2222222222222222
+    },
+    {
+     "label": "medicare_expiration",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "medical_condition",
+     "fp": 8,
+     "tp": 1,
+     "precision": 0.1111111111111111,
+     "recall": 1.0,
+     "f1": 0.19999999999999998
+    },
+    {
+     "label": "disability_duration",
+     "tp": 1,
+     "fp": 1,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "tax_info",
+     "fp": 6,
+     "tp": 1,
+     "precision": 0.14285714285714285,
+     "recall": 1.0,
+     "f1": 0.25
+    },
+    {
+     "label": "bankruptcy",
+     "fp": 3,
+     "tp": 1,
+     "precision": 0.25,
+     "recall": 1.0,
+     "f1": 0.4
+    },
+    {
+     "label": "consent_transfer",
+     "fp": 7,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "coverage_for",
+     "fp": 13,
+     "tp": 1,
+     "precision": 0.07142857142857142,
+     "recall": 1.0,
+     "f1": 0.13333333333333333
+    },
+    {
+     "label": "possession_home_security_system",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "reception_medical_card",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "donation",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "credit_score",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "utility_bill_carrier",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "sunlight",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "citizenship",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "window_number",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "home_improvement_timeline",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "ss_money",
+     "fp": 4,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_prize_package",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "consent_callback",
+     "fn": 1,
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "diabetic",
+     "tp": 1,
+     "fp": 1,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "blood_sugar_frequency",
+     "tp": 1,
+     "fp": 1,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "insulin_frequency",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "plan_budget",
+     "fp": 2,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "roof_type",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "medicare_reason",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "bank_account_type",
+     "fp": 8,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "tax_year",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicare_advantage_card",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "auto_insurance_type",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "enrollment_automatic_payment",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "bank_account_number",
+     "fp": 1,
+     "tp": 1,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "routing_number",
+     "fp": 1,
+     "tp": 1,
+     "precision": 0.5,
+     "recall": 1.0,
+     "f1": 0.6666666666666666
+    },
+    {
+     "label": "debt_type",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "birthplace",
+     "fp": 5,
+     "tp": 1,
+     "precision": 0.16666666666666666,
+     "recall": 1.0,
+     "f1": 0.2857142857142857
+    },
+    {
+     "label": "system_update",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "tv_brand",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "rideshare_usage",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "rideshare_carrier",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_rideshare_receipt",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "coverage_other",
+     "fn": 1,
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "health_condition7",
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_home_warranty",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "line_number",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "awareness_burial_cost",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "policy_effective_date",
+     "fp": 3,
+     "tp": 1,
+     "precision": 0.25,
+     "recall": 1.0,
+     "f1": 0.4
+    },
+    {
+     "label": "credit_card_expiration_date",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "credit_card_photo",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "awareness_green_dot_bank",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "awareness_flex_card",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "medicare_effective_date",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "auto_warranty_expiration_status",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "vehicle_modification",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "vehicle_vin_number",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "license_plate_state",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "interest_rates",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "hospitality",
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "final_expense_duration",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "dob_beneficiary",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "country",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "name_doctor",
+     "fp": 4,
+     "tp": 1,
+     "precision": 0.2,
+     "recall": 1.0,
+     "f1": 0.33333333333333337
+    },
+    {
+     "label": "age_beneficiary",
+     "tp": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    {
+     "label": "health_condition6",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "plan_detail1",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "plan_detail2",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "plan_detail3",
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_gov_coverage",
+     "fp": 26,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicare_part_a",
+     "fp": 70,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicare_part_b",
+     "fp": 74,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "health_insurance_type",
+     "fp": 26,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_job_insurance",
+     "fp": 7,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_marketplace_plan",
+     "fp": 6,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_va_tricare",
+     "fp": 11,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_health_insurance_source",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "callback_time",
+     "fp": 10,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "health_insurance_source",
+     "fp": 5,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_homeownership",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicare_part_a_and_b",
+     "fp": 21,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_unwanted_calls",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "credit_card_balance",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_veteran_coverage",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicare_advantage",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "recollection_of_accident",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_free_medication",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "address_home",
+     "fp": 24,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "disability_income",
+     "fp": 4,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_employment_coverage",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicare_party",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_additional_benefit",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "county",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "qualification",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_flex_card",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "firefighter_status",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medicare_part_d",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "household_income",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "monthly_income",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_subsidy_card",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "are_you_the_homeowner",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "vehicle",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "donation_amount",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_grocery_card",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_employer_coverage",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "smoker_status",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "enrollment",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_supplemental_plan",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_medical_benefit",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "windows_number",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "prior_quote",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_ssdi",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "store_location",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "insulin_intake",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "business_number",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "donotcall_permission",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "nursing_home",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_package",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "complication",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_employee_coverage",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "bank_account_holder",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "middle_name",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "assets",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "expenses",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "web_code",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "tickets_past_five_years",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "number_of_vehicles",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "coverage_type",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "vehicle_info",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "weather",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "account_access_location",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "driver_license_id",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "automatic_payment",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "valid_lot_of_payments",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "hospitalization_history",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "medical_bill",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_loan",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_personal_loan",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_business_loan",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "hobby",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "plan_start_timeframe",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_tv_channel",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_remote_control",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_tv",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "remote_control_carrier",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_receiver",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "background_noise",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "firefighter_experience",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "rideshare_booking_time",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "rideshare_app_used",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "receipt_possession",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "basic_details",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_payment_method",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "problem_with_service",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "number_of_lines",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "accountownership",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "name_pet",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_attorney",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_debit_card",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_credit_card",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "photo_credit_card",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "possession_green_dot_bank",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "purchase_green_dot_card",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "residence_location",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "insurance_amount",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "debt_status",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "consent",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "income_stability",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "consent_pull_credit_report",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "household_status",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "hospitalization",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "pending_surgery",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "reception_benefit_card",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "occupation_duration",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "gender",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "home_health_care",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "hospital_stay",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "surgery_advised",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "tobacco_use",
+     "fp": 3,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "hospitalization_status",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "daily_activities",
+     "fp": 2,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "burial_preference",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    },
+    {
+     "label": "retirement_status",
+     "fp": 1,
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0
+    }
+   ]
+  }
+ },
+ "call_field_prediction_distributions": {
+  "category": {
+   "human": {
+    "telemarketing": 463,
+    "vishing_co": 25,
+    "vishing_gov": 95
+   },
+   "model": {
+    "telemarketing": 480,
+    "others": 20,
+    "vishing_gov": 65,
+    "vishing_co": 9,
+    "nuisance": 7,
+    "None": 2
+   }
+  },
+  "subcategory": {
+   "human": {
+    "medicare": 175,
+    "auto_finance": 4,
+    "subsidy": 61,
+    "accident_claim": 30,
+    "health_insurance": 60,
+    "financial_aid": 11,
+    "home_improvement": 17,
+    "loan": 3,
+    "final_expense": 122,
+    "medical_device": 16,
+    "employment_services": 1,
+    "medication_shipment": 2,
+    "auto_warranty": 31,
+    "online_shopping": 5,
+    "hello_calls": 2,
+    "extended_warranty": 4,
+    "solar_program": 5,
+    "employment_service": 1,
+    "tax_relief": 7,
+    "reward_card": 1,
+    "vehicle_maintenance": 1,
+    "customer_support": 2,
+    "debt_relief": 2,
+    "fund_raising": 2,
+    "home_warranty": 5,
+    "senior_benefit": 1,
+    "medicare_refund": 1,
+    "utility": 1,
+    "medical_claim": 1,
+    "cash_giveaway": 1,
+    "benefit": 1,
+    "hospital_indemnity": 3,
+    "prize_package": 1,
+    "tv_service": 1,
+    "defective_products": 1,
+    "package_delivery": 1
+   },
+   "model": {
+    "medicare": 172,
+    "None": 26,
+    "subsidy": 62,
+    "car_accident": 14,
+    "benefit": 18,
+    "home_improvement": 13,
+    "loan": 1,
+    "final_expense": 119,
+    "student_loan": 1,
+    "ticket_to_work": 1,
+    "medication_shipment": 1,
+    "auto_finance": 13,
+    "medical_device": 9,
+    "online_shopping": 4,
+    "new_medicare_card": 1,
+    "extended_warranty": 4,
+    "solar_program": 5,
+    "health_insurance": 34,
+    "disability_work_benefit": 1,
+    "tax_relief": 7,
+    "auto_accident_claim": 3,
+    "insurance": 1,
+    "accident_claim": 4,
+    "medical_claim": 3,
+    "auto_insurance": 13,
+    "car_accident_compensation": 1,
+    "reward_card": 1,
+    "home_warranty": 2,
+    "auto_warranty": 6,
+    "feedback_survey": 1,
+    "credit_card": 1,
+    "auto_accident_compensation": 3,
+    "online_transaction": 1,
+    "financial_benefit": 1,
+    "fund_raising": 2,
+    "home_insurance": 4,
+    "cash_giveaway": 3,
+    "medicare_refund": 1,
+    "utility": 1,
+    "financial_benefits_package": 1,
+    "medical_alert_device": 2,
+    "home_security": 2,
+    "service_coordination": 1,
+    "medical_test": 1,
+    "aca_card": 2,
+    "free_medication": 1,
+    "government_grant": 1,
+    "hospital_indemnity": 3,
+    "prize_package": 1,
+    "auto_insurance_discount": 1,
+    "flex_card": 1,
+    "debt_relief": 2,
+    "tv_service": 1,
+    "recall_claim": 1,
+    "financial_aid": 1,
+    "cell_phone_service_discount": 1,
+    "green_dot_money_transfer": 1,
+    "life_insurance": 1
+   }
+  },
+  "hook_phase.execution": {
+   "human": {
+    "interaction_bot": 326,
+    "human": 231,
+    "action_bot": 26
+   },
+   "model": {
+    "human": 433,
+    "None": 137,
+    "action_bot": 11,
+    "bot": 1,
+    "interaction_bot": 1
+   }
+  },
+  "hook_phase.only_greeting_turns": {
+   "human": {
+    "2": 109,
+    "None": 7,
+    "1": 321,
+    "0": 127,
+    "3": 17,
+    "5": 2
+   },
+   "model": {
+    "0": 349,
+    "1": 194,
+    "2": 39,
+    "None": 1
+   }
+  },
+  "hook_phase.transfer.success": {
+   "human": {
+    "None": 324,
+    "no": 68,
+    "yes": 191
+   },
+   "model": {
+    "None": 428,
+    "no": 57,
+    "yes": 98
+   }
+  }
+ }
+}

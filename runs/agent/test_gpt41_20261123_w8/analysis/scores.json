@@ -1,0 +1,138 @@
+{
+ "calls": 583,
+ "valid_model_outputs": 582,
+ "explicit_abstentions": 1,
+ "bootstrap_unit": "call",
+ "bootstrap_rounds": 1000,
+ "seed": 598,
+ "metrics": [
+  {
+   "field_metric": "category (kappa)",
+   "score": 0.555,
+   "ci95": [
+    0.473,
+    0.628
+   ]
+  },
+  {
+   "field_metric": "subcategory (kappa)",
+   "score": 0.701,
+   "ci95": [
+    0.66,
+    0.739
+   ]
+  },
+  {
+   "field_metric": "hook_phase.execution (kappa)",
+   "score": 0.028,
+   "ci95": [
+    -0.003,
+    0.061
+   ]
+  },
+  {
+   "field_metric": "hook_phase.consent (kappa)",
+   "score": 0.388,
+   "ci95": [
+    0.246,
+    0.525
+   ]
+  },
+  {
+   "field_metric": "hook_phase.only_greeting_turns (kappa)",
+   "score": 0.211,
+   "ci95": [
+    0.161,
+    0.261
+   ]
+  },
+  {
+   "field_metric": "hook_phase.transfer.intent (kappa)",
+   "score": 0.796,
+   "ci95": [
+    0.748,
+    0.845
+   ]
+  },
+  {
+   "field_metric": "hook_phase.transfer.success (kappa)",
+   "score": 0.162,
+   "ci95": [
+    0.113,
+    0.215
+   ]
+  },
+  {
+   "field_metric": "hook_phase.exists (kappa)",
+   "score": 0.103,
+   "ci95": [
+    -0.007,
+    0.216
+   ]
+  },
+  {
+   "field_metric": "hook_phase.caller_identification.name (kappa)",
+   "score": 0.624,
+   "ci95": [
+    0.496,
+    0.733
+   ]
+  },
+  {
+   "field_metric": "hook_phase.caller_identification.organization (kappa)",
+   "score": 0.44,
+   "ci95": [
+    0.381,
+    0.501
+   ]
+  },
+  {
+   "field_metric": "hook_phase.transfer.failure_reason (kappa)",
+   "score": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "field_metric": "persuasion (F1)",
+   "score": 0.326,
+   "ci95": [
+    0.3,
+    0.351
+   ]
+  },
+  {
+   "field_metric": "complementary_persuasion (F1)",
+   "score": 0.287,
+   "ci95": [
+    0.242,
+    0.336
+   ]
+  },
+  {
+   "field_metric": "functional_states (F1)",
+   "score": 0.574,
+   "ci95": [
+    0.543,
+    0.606
+   ]
+  },
+  {
+   "field_metric": "requested_info (F1)",
+   "score": 0.573,
+   "ci95": [
+    0.546,
+    0.603
+   ]
+  },
+  {
+   "field_metric": "hook_phase.qualification.question (F1)",
+   "score": 0.37,
+   "ci95": [
+    0.336,
+    0.406
+   ]
+  }
+ ]
+}
