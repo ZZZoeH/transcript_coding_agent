@@ -1,0 +1,17 @@
+{
+ "authored_content_language": "English",
+ "translated_question_types": 7,
+ "full_packet_cases": 32,
+ "source_evidence_preserved_verbatim": true,
+ "reviewer_response_fields_preserved": true,
+ "model_inference_performed": false,
+ "documentation_modified": false,
+ "files": {
+  "tools/prepare_dev_alignment.py": "efe0f86f83954b66c66819e1c2750da77bac744996043ab7dce82a3e83bd687c",
+  "tools/prepare_numbering_cases.py": "2fb9a4f128078d28f004114d5b17c28e75f4907338eeb0212c8e6c19887b0fe1",
+  "runs/agent/dev_alignment_20261123/team_review_cases.json": "4cb70f05e893fa8b42d9e947690ce8c746a1890f62e7de5d738d3a5319a67c88",
+  "runs/agent/dev_alignment_20261123/team_review_cases_all.json": "3b5634017d076be26dbd2daad784c7c6df24d652b434015c5a7021dc0b110dac",
+  "runs/agent/dev_alignment_20261123/team_decisions.csv": "004742b03beb428ec49699ebe22baa02f9662aa9d0d47ef3ba3c6519a54d2547",
+  "runs/agent/dev_alignment_20261123/team_decisions_all.csv": "980d9f2b54692bb4593b3d7997d0fe8104e4af2c4be3aea6cea4add54baaf534"
+ }
+}

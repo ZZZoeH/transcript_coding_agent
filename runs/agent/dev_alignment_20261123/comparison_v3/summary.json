@@ -1,0 +1,618 @@
+{
+ "calls": 80,
+ "partition": "development_comparison_not_final_test",
+ "seed": 59803,
+ "examples_from_disjoint_fitting_pool": true,
+ "example_snippets": 72,
+ "pending_human_cases": 32,
+ "profile_version": "dev-alignment-v3-numbering-guard",
+ "test_inference_performed": false,
+ "same_development_ids_used_for_retuning": true,
+ "documentation_and_original_splits_unchanged": true,
+ "arms": {
+  "control": {
+   "valid_model_outputs": 80,
+   "explicit_abstentions": 0,
+   "usage": {
+    "run_status": "complete",
+    "requested_calls": 80,
+    "validated_calls": 80,
+    "failed_calls": 0,
+    "recorded_model_responses": 105,
+    "provider_models": {
+     "openai/gpt4_1": 105
+    },
+    "reported_usage_all_recorded_responses": {
+     "input_token_count": 584997,
+     "output_token_count": 143904,
+     "total_token_count": 728901,
+     "input_token_cost": 1.1699939999999995,
+     "output_token_cost": 1.1512320000000003,
+     "total_token_cost": 2.321226
+    },
+    "wall_seconds_this_invocation": 3.957,
+    "reviewed_calls": 78,
+    "review_fraction": 0.975,
+    "multi_chunk_calls": 7,
+    "normalization_operations": 372,
+    "note": "Usage includes every saved model response, including rejected validation attempts; requests that failed without a usage response may not be included."
+   },
+   "prompt_version": "codebook-prompt-v2",
+   "execution": {
+    "arm": "control",
+    "requested_calls": 80,
+    "remaining_failures": 0,
+    "invocations": 2,
+    "total_wall_seconds": 235.19
+   }
+  },
+  "improved": {
+   "valid_model_outputs": 80,
+   "explicit_abstentions": 0,
+   "usage": {
+    "run_status": "complete",
+    "requested_calls": 80,
+    "validated_calls": 80,
+    "failed_calls": 0,
+    "recorded_model_responses": 97,
+    "provider_models": {
+     "openai/gpt4_1": 97
+    },
+    "reported_usage_all_recorded_responses": {
+     "input_token_count": 1000732,
+     "output_token_count": 149186,
+     "total_token_count": 1149918,
+     "input_token_cost": 2.0014640000000004,
+     "output_token_cost": 1.1934879999999999,
+     "total_token_cost": 3.194952000000002
+    },
+    "wall_seconds_this_invocation": 135.446,
+    "reviewed_calls": 80,
+    "review_fraction": 1.0,
+    "multi_chunk_calls": 7,
+    "normalization_operations": 969,
+    "note": "Usage includes every saved model response, including rejected validation attempts; requests that failed without a usage response may not be included."
+   },
+   "prompt_version": "dev-alignment-v3-numbering-guard",
+   "execution": {
+    "arm": "improved",
+    "requested_calls": 80,
+    "remaining_failures": 0,
+    "invocations": 1,
+    "total_wall_seconds": 135.446
+   }
+  }
+ },
+ "metrics": {
+  "control": [
+   {
+    "metric": "category (kappa)",
+    "score": 0.76,
+    "ci95": [
+     0.536,
+     0.938
+    ]
+   },
+   {
+    "metric": "subcategory (kappa)",
+    "score": 0.757,
+    "ci95": [
+     0.659,
+     0.851
+    ]
+   },
+   {
+    "metric": "hook_phase.execution (kappa)",
+    "score": -0.05,
+    "ci95": [
+     -0.119,
+     0.026
+    ]
+   },
+   {
+    "metric": "hook_phase.consent (kappa)",
+    "score": 0.415,
+    "ci95": [
+     -0.037,
+     0.803
+    ]
+   },
+   {
+    "metric": "hook_phase.only_greeting_turns (kappa)",
+    "score": 0.184,
+    "ci95": [
+     0.047,
+     0.31
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.intent (kappa)",
+    "score": 0.844,
+    "ci95": [
+     0.719,
+     0.948
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.success (kappa)",
+    "score": 0.182,
+    "ci95": [
+     0.059,
+     0.319
+    ]
+   },
+   {
+    "metric": "hook_phase.exists (kappa)",
+    "score": -0.042,
+    "ci95": [
+     -0.086,
+     0.0
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.name (kappa)",
+    "score": 0.751,
+    "ci95": [
+     0.462,
+     0.94
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.organization (kappa)",
+    "score": 0.469,
+    "ci95": [
+     0.325,
+     0.635
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.failure_reason (kappa)",
+    "score": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "metric": "persuasion (F1)",
+    "score": 0.353,
+    "ci95": [
+     0.289,
+     0.412
+    ]
+   },
+   {
+    "metric": "complementary_persuasion (F1)",
+    "score": 0.316,
+    "ci95": [
+     0.215,
+     0.409
+    ]
+   },
+   {
+    "metric": "functional_states (F1)",
+    "score": 0.587,
+    "ci95": [
+     0.508,
+     0.679
+    ]
+   },
+   {
+    "metric": "requested_info (F1)",
+    "score": 0.622,
+    "ci95": [
+     0.561,
+     0.675
+    ]
+   },
+   {
+    "metric": "hook_phase.qualification.question (F1)",
+    "score": 0.101,
+    "ci95": [
+     0.044,
+     0.465
+    ]
+   }
+  ],
+  "improved": [
+   {
+    "metric": "category (kappa)",
+    "score": 0.702,
+    "ci95": [
+     0.454,
+     0.896
+    ]
+   },
+   {
+    "metric": "subcategory (kappa)",
+    "score": 0.788,
+    "ci95": [
+     0.688,
+     0.881
+    ]
+   },
+   {
+    "metric": "hook_phase.execution (kappa)",
+    "score": 0.024,
+    "ci95": [
+     -0.003,
+     0.054
+    ]
+   },
+   {
+    "metric": "hook_phase.consent (kappa)",
+    "score": 0.738,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "metric": "hook_phase.only_greeting_turns (kappa)",
+    "score": 0.165,
+    "ci95": [
+     0.027,
+     0.295
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.intent (kappa)",
+    "score": 0.775,
+    "ci95": [
+     0.651,
+     0.893
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.success (kappa)",
+    "score": 0.133,
+    "ci95": [
+     0.018,
+     0.279
+    ]
+   },
+   {
+    "metric": "hook_phase.exists (kappa)",
+    "score": -0.045,
+    "ci95": [
+     -0.099,
+     0.0
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.name (kappa)",
+    "score": 0.424,
+    "ci95": [
+     0.197,
+     0.639
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.organization (kappa)",
+    "score": 0.509,
+    "ci95": [
+     0.359,
+     0.683
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.failure_reason (kappa)",
+    "score": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "metric": "persuasion (F1)",
+    "score": 0.542,
+    "ci95": [
+     0.486,
+     0.605
+    ]
+   },
+   {
+    "metric": "complementary_persuasion (F1)",
+    "score": 0.601,
+    "ci95": [
+     0.513,
+     0.705
+    ]
+   },
+   {
+    "metric": "functional_states (F1)",
+    "score": 0.614,
+    "ci95": [
+     0.535,
+     0.701
+    ]
+   },
+   {
+    "metric": "requested_info (F1)",
+    "score": 0.67,
+    "ci95": [
+     0.613,
+     0.732
+    ]
+   },
+   {
+    "metric": "hook_phase.qualification.question (F1)",
+    "score": 0.655,
+    "ci95": [
+     0.576,
+     0.732
+    ]
+   }
+  ],
+  "rule_baseline": [
+   {
+    "metric": "category (kappa)",
+    "score": 0.895,
+    "ci95": [
+     0.704,
+     1.0
+    ]
+   },
+   {
+    "metric": "subcategory (kappa)",
+    "score": 0.742,
+    "ci95": [
+     0.634,
+     0.849
+    ]
+   },
+   {
+    "metric": "hook_phase.execution (kappa)",
+    "score": 0.347,
+    "ci95": [
+     0.149,
+     0.541
+    ]
+   },
+   {
+    "metric": "hook_phase.consent (kappa)",
+    "score": 0.181,
+    "ci95": [
+     -0.059,
+     0.583
+    ]
+   },
+   {
+    "metric": "hook_phase.only_greeting_turns (kappa)",
+    "score": 0.403,
+    "ci95": [
+     0.246,
+     0.537
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.intent (kappa)",
+    "score": 0.838,
+    "ci95": [
+     0.709,
+     0.946
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.success (kappa)",
+    "score": 0.474,
+    "ci95": [
+     0.221,
+     0.703
+    ]
+   },
+   {
+    "metric": "hook_phase.exists (kappa)",
+    "score": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.name (kappa)",
+    "score": 0.582,
+    "ci95": [
+     0.122,
+     0.886
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.organization (kappa)",
+    "score": 0.469,
+    "ci95": [
+     0.324,
+     0.617
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.failure_reason (kappa)",
+    "score": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "metric": "persuasion (F1)",
+    "score": 0.533,
+    "ci95": [
+     0.477,
+     0.598
+    ]
+   },
+   {
+    "metric": "complementary_persuasion (F1)",
+    "score": 0.552,
+    "ci95": [
+     0.459,
+     0.66
+    ]
+   },
+   {
+    "metric": "functional_states (F1)",
+    "score": 0.58,
+    "ci95": [
+     0.517,
+     0.648
+    ]
+   },
+   {
+    "metric": "requested_info (F1)",
+    "score": 0.577,
+    "ci95": [
+     0.527,
+     0.646
+    ]
+   },
+   {
+    "metric": "hook_phase.qualification.question (F1)",
+    "score": 0.691,
+    "ci95": [
+     0.619,
+     0.758
+    ]
+   }
+  ],
+  "control_alias_only": [
+   {
+    "metric": "category (kappa)",
+    "score": 0.76,
+    "ci95": [
+     0.536,
+     0.938
+    ]
+   },
+   {
+    "metric": "subcategory (kappa)",
+    "score": 0.757,
+    "ci95": [
+     0.659,
+     0.851
+    ]
+   },
+   {
+    "metric": "hook_phase.execution (kappa)",
+    "score": -0.05,
+    "ci95": [
+     -0.119,
+     0.026
+    ]
+   },
+   {
+    "metric": "hook_phase.consent (kappa)",
+    "score": 0.415,
+    "ci95": [
+     -0.037,
+     0.803
+    ]
+   },
+   {
+    "metric": "hook_phase.only_greeting_turns (kappa)",
+    "score": 0.184,
+    "ci95": [
+     0.047,
+     0.31
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.intent (kappa)",
+    "score": 0.844,
+    "ci95": [
+     0.719,
+     0.948
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.success (kappa)",
+    "score": 0.182,
+    "ci95": [
+     0.059,
+     0.319
+    ]
+   },
+   {
+    "metric": "hook_phase.exists (kappa)",
+    "score": -0.042,
+    "ci95": [
+     -0.086,
+     0.0
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.name (kappa)",
+    "score": 0.751,
+    "ci95": [
+     0.462,
+     0.94
+    ]
+   },
+   {
+    "metric": "hook_phase.caller_identification.organization (kappa)",
+    "score": 0.469,
+    "ci95": [
+     0.325,
+     0.635
+    ]
+   },
+   {
+    "metric": "hook_phase.transfer.failure_reason (kappa)",
+    "score": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "metric": "persuasion (F1)",
+    "score": 0.353,
+    "ci95": [
+     0.289,
+     0.412
+    ]
+   },
+   {
+    "metric": "complementary_persuasion (F1)",
+    "score": 0.316,
+    "ci95": [
+     0.215,
+     0.409
+    ]
+   },
+   {
+    "metric": "functional_states (F1)",
+    "score": 0.587,
+    "ci95": [
+     0.508,
+     0.679
+    ]
+   },
+   {
+    "metric": "requested_info (F1)",
+    "score": 0.622,
+    "ci95": [
+     0.561,
+     0.675
+    ]
+   },
+   {
+    "metric": "hook_phase.qualification.question (F1)",
+    "score": 0.101,
+    "ci95": [
+     0.044,
+     0.465
+    ]
+   }
+  ]
+ },
+ "alias_only_operations": 62,
+ "unresolved_policies": [
+  "dh_definition",
+  "time_without_explicit_pressure",
+  "topic_boundary",
+  "execution_observability",
+  "greeting_definition",
+  "repeated_turn_annotation",
+  "numbered_health_information"
+ ]
+}

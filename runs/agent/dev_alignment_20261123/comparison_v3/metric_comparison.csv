@@ -1,0 +1,17 @@
+metric,rule_baseline,control,control_alias_only,improved
+category (kappa),0.895,0.76,0.76,0.702
+subcategory (kappa),0.742,0.757,0.757,0.788
+hook_phase.execution (kappa),0.347,-0.05,-0.05,0.024
+hook_phase.consent (kappa),0.181,0.415,0.415,0.738
+hook_phase.only_greeting_turns (kappa),0.403,0.184,0.184,0.165
+hook_phase.transfer.intent (kappa),0.838,0.844,0.844,0.775
+hook_phase.transfer.success (kappa),0.474,0.182,0.182,0.133
+hook_phase.exists (kappa),0.0,-0.042,-0.042,-0.045
+hook_phase.caller_identification.name (kappa),0.582,0.751,0.751,0.424
+hook_phase.caller_identification.organization (kappa),0.469,0.469,0.469,0.509
+hook_phase.transfer.failure_reason (kappa),0.0,0.0,0.0,0.0
+persuasion (F1),0.533,0.353,0.353,0.542
+complementary_persuasion (F1),0.552,0.316,0.316,0.601
+functional_states (F1),0.58,0.587,0.587,0.614
+requested_info (F1),0.577,0.622,0.622,0.67
+hook_phase.qualification.question (F1),0.691,0.101,0.101,0.655

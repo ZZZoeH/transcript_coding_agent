@@ -15,6 +15,7 @@ from .io_utils import ROOT, INPUT_FILES, file_hash, load_records, read_ids, reco
 from .labels import normalize_codes
 from .novelty import attach
 from .output_normalization import normalize_output
+from .dev_profiles import load_profile, augment_query, normalize_labels, source_bound_schema, restrict_turn_schema, profile_contract_errors
 from .schema import SCHEMA, VERSION as SCHEMA_VERSION, check_model_output
 
 PROJECT = "ecc2a166ce994c6280373e494d39aa28"
@@ -27,7 +28,12 @@ def digest(value):
 
 def payload_for(record, reference, vocabulary, config):
     root = Path(ROOT)
-    return {"endpoint": "query", "request_source": "override_params",
+    query = json.loads(prompts.make_query(record, reference, vocabulary,
+                                        (root/"codebook.txt").read_text(),
+                                        (root/"qual_sample/coding_guide.md").read_text()))
+    if config.get("profile_file"):
+        query = augment_query(query, record, load_profile(config["profile_file"]))
+    payload = {"endpoint": "query", "request_source": "override_params",
             "project_id": config["project_id"], "model_provider": config["provider"],
             "model_name": config["model"], "enable_search": False, "enable_history": False,
             "semantic_caching": False,
@@ -36,9 +42,11 @@ def payload_for(record, reference, vocabulary, config):
                              "response_format": {"type": "json_schema", "json_schema": {
                                  "name": "calltrap_coding", "strict": True, "schema": SCHEMA}}},
             "response_format": {"type": "json"},
-            "query": prompts.make_query(record, reference, vocabulary,
-                                        (root/"codebook.txt").read_text(),
-                                        (root/"qual_sample/coding_guide.md").read_text())}
+            "query": json.dumps(query, ensure_ascii=False)}
+
+    if config.get("profile_file"):
+        payload["model_params"]["response_format"]["json_schema"]["schema"] = source_bound_schema(SCHEMA,record)
+    return payload
 
 
 def post_query(payload, endpoint, timeout=55):
@@ -109,6 +117,10 @@ def chunk_request(request, indices, chunked):
     result = json.loads(json.dumps(request))
     query = json.loads(result["query"])
     query["target_caller_turn_indices"] = indices
+    if "target_contract" in query:
+        query["target_contract"]["caller_turn_indices"] = indices
+        result["model_params"]["response_format"]["json_schema"]["schema"] = restrict_turn_schema(
+            result["model_params"]["response_format"]["json_schema"]["schema"], indices)
     query["chunk_instructions"] = (
         "Read the COMPLETE transcript for call-level context. Emit caller_utterances ONLY for "
         "target_caller_turn_indices, in exactly that order. Produce the complete call/hook metadata "
@@ -170,8 +182,14 @@ def process_call(record, reference, vocabulary, config, output_dir, resume):
                 try:
                     output, metadata = extract_output(raw)
                     part_metadata.append(metadata)
+                    alias_changes = []
+                    if config.get("profile_file"):
+                        output, alias_changes = normalize_labels(output, load_profile(config["profile_file"]))
                     output, normalizations = normalize_output(output)
+                    normalizations = alias_changes + normalizations
                     errors = check_model_output(output, record, indices)
+                    if config.get("profile_file"):
+                        errors += profile_contract_errors(output, load_profile(config["profile_file"]))
                     if not errors:
                         outputs.append(output); metadata_rows.extend(part_metadata)
                         write_json(str(accepted), {"output": output, "attempt_metadata": part_metadata,
@@ -233,9 +251,21 @@ def run(ids_file, reference_file, output_dir, config, dry_run=False, limit=None,
                          for label in t["requested_info"]})
     inputs = INPUT_FILES + [str(ids_file), str(reference_file), str(root/"codebook.txt"),
                            str(root/"qual_sample/coding_guide.md")] + [str(p) for p in sorted((root/"coding").glob("*.py"))]
+    profile = None
+    if config.get("profile_file"):
+        profile = load_profile(config["profile_file"])
+        if not set(ids) <= set(dev):
+            raise ValueError("development profiles may only run on development IDs")
+        if set(ids) & set(profile["fit_call_ids"]):
+            raise ValueError("comparison calls must be disjoint from profile fitting calls")
+        if set(profile["fit_call_ids"]) != set(reference["included_ids"]):
+            raise ValueError("profile fitting IDs must match the development-only reference pool")
+        if not set(profile["example_call_ids"]) <= set(profile["fit_call_ids"]):
+            raise ValueError("profile examples escape the fitting pool")
+        inputs.append(str(config["profile_file"]))
     fingerprints = {os.path.relpath(p, ROOT): file_hash(p) for p in inputs}
     identity = {"config": config, "ids": ids, "inputs": fingerprints, "dry_run": dry_run,
-                "prompt_version": prompts.VERSION, "schema_version": SCHEMA_VERSION}
+                "prompt_version": profile["version"] if profile else prompts.VERSION, "schema_version": SCHEMA_VERSION}
     run_hash = digest(identity)
     manifest_file = output_dir/"manifest.json"
     if output_dir.exists() and any(output_dir.iterdir()):
@@ -293,11 +323,13 @@ def main():
     parser.add_argument("--workers", type=int, default=1)
     parser.add_argument("--turns-per-chunk", type=int, default=32)
     parser.add_argument("--validation-repairs", type=int, default=2)
+    parser.add_argument("--profile-file", type=Path)
     args = parser.parse_args()
     if args.timeout <= 0: parser.error("timeout must be positive")
     config = {"provider": args.provider, "model": args.model, "project_id": args.project_id,
               "endpoint": args.endpoint, "timeout": args.timeout, "workers": args.workers,
               "turns_per_chunk": args.turns_per_chunk, "validation_repairs": args.validation_repairs}
+    if args.profile_file: config["profile_file"] = str(args.profile_file.resolve())
     try:
         failures = run(args.ids_file, args.reference_file, args.output_dir, config,
                        args.dry_run, args.limit, args.resume)
