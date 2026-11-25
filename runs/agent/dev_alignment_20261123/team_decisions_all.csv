@@ -3,40 +3,40 @@ DEV-001,dh_definition,artifact_call_02271,Should DH follow the proposal definiti
 [33] CALLEE: This is Richard Brown.
 [34] CALLER: richard brown alright richard that's pretty much information all i needed i'm gonna pass your a call with my licensed insurance agent in united state ***** they will definitely help you out providing some pre codes about life insurance plan even if your number is on a parallel state not call alright 
 [35] CALLEE: Okay, sounds good. I'll wait for the call.
-[36] CALLER: alright alright bear with me richard i'm gonna patch you call carry down ",,,,
+[36] CALLER: alright alright bear with me richard i'm gonna patch you call carry down ",paper_definition,,ZZZoeH,
 DEV-002,dh_definition,artifact_call_02310,Should DH follow the proposal definition (instructing false answers) or the original paper definition (illegal activity or being under another person's control)? Could this annotation be incorrect?,proposal_definition | paper_definition | annotation_error | insufficient_evidence,"{""turn_index"": 14, ""requested_info"": [], ""persuasion"": [""auth"", ""crc"", ""dis""], ""complementary_persuasion"": [""dh"", ""nag"", ""time""], ""functional_states"": []}","[12] CALLER: okay but 
 [13] CALLEE: Is there something else you need from me?
 [14] CALLER: we can definitely help you but what i'm gonna do that like i actually i do have the today i do have the excess to connect your call of direct insurance department agent so i'm gonna go ahead and directly connect your call of insurance department agent just tell them an agent is on the line you just tell them i already have health insurance but i don't know is the name of it and 
 [15] CALLEE: Alright, I’ll tell them that. What should I expect from the insurance department agent?
-[16] CALLER: my agent will be double check your profile like are you where which kind of help yes ",,,,
+[16] CALLER: my agent will be double check your profile like are you where which kind of help yes ",paper_definition,,ZZZoeH,
 DEV-003,dh_definition,artifact_call_02382,Should DH follow the proposal definition (instructing false answers) or the original paper definition (illegal activity or being under another person's control)? Could this annotation be incorrect?,proposal_definition | paper_definition | annotation_error | insufficient_evidence,"{""turn_index"": 24, ""requested_info"": [""awareness_illegal_activity""], ""persuasion"": [""auth"", ""crc""], ""complementary_persuasion"": [""dh""], ""functional_states"": []}","[22] CALLER: And it is your account, right sir, Mr. Thomas? Okay, so first of all, let me check properly, okay? So give me a minute or two, so I can pull up your details in front of me, then I'll give you all the information, okay? So stay online, give me a moment please.
 [23] CALLEE: Alright, I’ll hang on. Take your time. Yes, I’m still here. I can hear you fine. Did you find anything out?
 [24] CALLER: Thank you so much for your patience. Mr. Thomas, are you there? Can you hear me? Yeah All right sir, so as I can see on my system, your ***** account has been properly restricted by our fraud department and there is any unusual activity or anything suspicious illegal things going on your ***** account. So do you know what is exactly happening?
 [25] CALLEE: No, I had no idea… this is the first I’m hearing about anything unusual. I didn’t see any emails or anything like that either.
-[26] CALLER: Ok",,,,
+[26] CALLER: Ok",paper_definition,,ZZZoeH,
 DEV-004,dh_definition,artifact_call_02390,Should DH follow the proposal definition (instructing false answers) or the original paper definition (illegal activity or being under another person's control)? Could this annotation be incorrect?,proposal_definition | paper_definition | annotation_error | insufficient_evidence,"{""turn_index"": 110, ""requested_info"": [], ""persuasion"": [""auth"", ""crc"", ""dis""], ""complementary_persuasion"": [""dh""], ""functional_states"": []}","[108] CALLER: So what's about your copy? What's about your prescription medication? Drugs? Are you currently. Paying any kind of prescription medication right now.
 [109] CALLEE: Yes, I do pay for some prescriptions.
 [110] CALLER: Okay, no problem, sir. We will definitely help in load on your prescription as well. And right now. Because you don't have a part seat, so that's why you're paying. Out of your pocket. A lot of copayment out of your pocket, like you're. Spending a lot of money out of your pocket, okay? Don't worry about Ms. Johnson. We will definitely help you to load on your copayment as well. We are. Going to provide you a privacy next time. You don't have to pay anything out of your pocket, okay?
 [111] CALLEE: That sounds very helpful.
-[112] CALLER: Okay, Ms. Johnson, give me a moment.",,,,
+[112] CALLER: Okay, Ms. Johnson, give me a moment.",paper_definition,,ZZZoeH,
 DEV-005,time_without_explicit_pressure,artifact_call_00358,"Which utterance provides evidence of time pressure for this TIME annotation? Should the label be retained, moved to another turn, or corrected?",keep_with_evidence | move_to_other_turn | annotation_error | insufficient_evidence,"{""turn_index"": 0, ""requested_info"": [], ""persuasion"": [""auth"", ""dis""], ""complementary_persuasion"": [""time""], ""functional_states"": []}","[0] CALLER: This is ***** calling with *****
 [1] CALLEE: Oh… I think maybe you’ve got the wrong number. I don’t have a business or anything like that. Is this something else I need to worry about
-[2] CALLER: Your Google listing is currently under audit and flagged for review. If you are the business owner, press 1 to speak to an authorized representative to ensure your listing is still visible to customers in your area. Press 1 now. Call ***** or press 9 if call is in error.",,,,
+[2] CALLER: Your Google listing is currently under audit and flagged for review. If you are the business owner, press 1 to speak to an authorized representative to ensure your listing is still visible to customers in your area. Press 1 now. Call ***** or press 9 if call is in error.",keep_with_evidence,[2],ZZZoeH,
 DEV-006,time_without_explicit_pressure,artifact_call_00607,"Which utterance provides evidence of time pressure for this TIME annotation? Should the label be retained, moved to another turn, or corrected?",keep_with_evidence | move_to_other_turn | annotation_error | insufficient_evidence,"{""turn_index"": 2, ""requested_info"": [""possession_medicare""], ""persuasion"": [""auth"", ""crc"", ""dis""], ""complementary_persuasion"": [""nag"", ""time""], ""functional_states"": [""purpose"", ""qualification""]}","[0] CALLER: hello 
 [1] CALLEE: Hey. What's up?
 [2] CALLER: can you hear me hi my name is ***** to let you know that in this annual enroll moment if you have medicare part a and b you are eligible for various newly added benefits like food card for flex card prescription coverage cash back of up to two hundred and fifty dollars and a lot more so do you have medicare part a and b 
 [3] CALLEE: Yeah, I think I have both Part A and B. Could you tell me more about these benefits?
-[4] CALLER: sorry i think there's some signal issue i was asking if you have medicare ",,,,
+[4] CALLER: sorry i think there's some signal issue i was asking if you have medicare ",keep_with_evidence,[2],ZZZoeH,
 DEV-007,time_without_explicit_pressure,artifact_call_00978,"Which utterance provides evidence of time pressure for this TIME annotation? Should the label be retained, moved to another turn, or corrected?",keep_with_evidence | move_to_other_turn | annotation_error | insufficient_evidence,"{""turn_index"": 0, ""requested_info"": [], ""persuasion"": [""auth"", ""crc"", ""dis""], ""complementary_persuasion"": [""nag"", ""time""], ""functional_states"": [""purpose""]}","[0] CALLER: Hello. I assist ***** at *****. Your back tax debt has been classified as non collectible. Meaning you no longer need to pay it back. This is part of the new federal economic recovery. Program you've heard about in the news before you file or make any arrangements to settle. Your tax debt, press five. Now, if you have already settled your tax debt, press. Seven. To opt out of future notifications, please call 350-3508 Arrow three five. We appreciate your time and look forward to assisting you.
-[1] CALLEE: Oh, um, hey there. So, like, what do you need from me to get this sorted out?",,,,
+[1] CALLEE: Oh, um, hey there. So, like, what do you need from me to get this sorted out?",keep_with_evidence,[0],ZZZoeH,
 DEV-008,time_without_explicit_pressure,artifact_call_01268,"Which utterance provides evidence of time pressure for this TIME annotation? Should the label be retained, moved to another turn, or corrected?",keep_with_evidence | move_to_other_turn | annotation_error | insufficient_evidence,"{""turn_index"": 4, ""requested_info"": [], ""persuasion"": [""dis""], ""complementary_persuasion"": [""nag"", ""time""], ""functional_states"": []}","[2] CALLER: It's part of government-backed relief effort. aimed at helping families reduce or even eliminate back taxes due to financial hardship. And I think we might be able to get you enrolled into this. Because your current situation, if you're available, press one to speak with a tax resolution officer and find out if you're eligible.
 [3] CALLEE: Alright… I’m not too sure what this
-[4] CALLER: It could save you thousands. There's still budget left for your state and the window is open until the end of the year, so now's a great time to check where you stand. You can also call us back at *****.",,,,
+[4] CALLER: It could save you thousands. There's still budget left for your state and the window is open until the end of the year, so now's a great time to check where you stand. You can also call us back at *****.",keep_with_evidence,[4],ZZZoeH,
 DEV-009,time_without_explicit_pressure,artifact_call_01499,"Which utterance provides evidence of time pressure for this TIME annotation? Should the label be retained, moved to another turn, or corrected?",keep_with_evidence | move_to_other_turn | annotation_error | insufficient_evidence,"{""turn_index"": 10, ""requested_info"": [], ""persuasion"": [""dis""], ""complementary_persuasion"": [""nag"", ""time""], ""functional_states"": []}","[8] CALLER: Timing is key at this time.
 [9] CALLEE: Got it… Should I give you some details or… what’s the next step?
 [10] CALLER: Availability can vary. And even a day of waiting can reduce the number of options available. including smaller or short-term amounts that many people prefer.
 [11] CALLEE: I see… so it’s best to act quickly then? What would you need from me first?
-[12] CALLER: If you would like to see what options may still be available to you today, press 1 now to continue your review. If you do not need this, press 9 to decline calls. Support is available by calling *****",,,,
+[12] CALLER: If you would like to see what options may still be available to you today, press 1 now to continue your review. If you do not need this, press 9 to decline calls. Support is available by calling *****",keep_with_evidence,[8][10],ZZZoeH,
 DEV-010,topic_boundary,artifact_call_00224,Is this call about auto_warranty or auto_insurance? Please clarify the topic boundary and the appropriate label.,keep_released_topic | different_topic | insufficient_evidence,"""auto_warranty""","[0] CALLER: Hello
 [1] CALLEE: Oh... hi there. Yeah, I'm here. Yeah, I can hear you… it’s a little faint, but I can hear you.
 [2] CALLER: Can you hear me? Hi, this is ***** from *****. How are you doing today?
@@ -48,7 +48,7 @@ DEV-010,topic_boundary,artifact_call_00224,Is this call about auto_warranty or a
 [8] CALLER: Your call is very important to us.
 [9] CALLEE: Okay… I’ll just wait here then.
 [10] CALLER: Please stay on the line and you'll be transferred to the next available agent. ジョマ。 Hello, my name is ***** you doing?
-[11] CALLEE: Uh, yeah, I’m doing okay… just a bit confused on what exactly this is for. Could you help me understand a bit more?",,,,
+[11] CALLEE: Uh, yeah, I’m doing okay… just a bit confused on what exactly this is for. Could you help me understand a bit more?",keep_released_topic,,ZZZoeH,"actually we merged ""auto_insurance"" into ""auto_warranty"" when coding to reduce replication"
 DEV-011,topic_boundary,artifact_call_00271,Is this call about auto_warranty or auto_insurance? Please clarify the topic boundary and the appropriate label.,keep_released_topic | different_topic | insufficient_evidence,"""auto_warranty""","[0] CALLER: That.
 [1] CALLEE: Hello?
 [2] CALLER: Hi. This is *****. How are you today? Doing good.
@@ -60,7 +60,7 @@ DEV-011,topic_boundary,artifact_call_00271,Is this call about auto_warranty or a
 [8] CALLER: Okay.
 [9] CALLEE: That's interesting.
 [10] CALLER: Can you hear me?
-[11] CALLEE: Yes, I can.",,,,
+[11] CALLEE: Yes, I can.",keep_released_topic,,ZZZoeH,"actually we merged ""auto_insurance"" into ""auto_warranty"" when coding to reduce replication"
 DEV-012,topic_boundary,artifact_call_00302,Is this call about auto_warranty or auto_insurance? Please clarify the topic boundary and the appropriate label.,keep_released_topic | different_topic | insufficient_evidence,"""auto_warranty""","[0] CALLER: Hello.
 [1] CALLEE: Oh, hello there… I’m here. What’s this about again?
 [2] CALLER: This is ***** from *****. How are you doing today?
@@ -68,7 +68,7 @@ DEV-012,topic_boundary,artifact_call_00302,Is this call about auto_warranty or a
 [4] CALLER: The reason for my call is we're helping drivers in your state save money on their auto insurance with updated coverage options and new rate reductions. I just want to make sure I'm speaking with the right person. So do you own a car?
 [5] CALLEE: Oh... yeah, I do have a car. It’s an old one though... Why do you ask?
 [6] CALLER: Sorry, I did not get that. Can you please confirm, do you own a car?
-[7] CALLEE: Yes, I do. I’ve had it for a while now. What do you need to know about it?",,,,
+[7] CALLEE: Yes, I do. I’ve had it for a while now. What do you need to know about it?",keep_released_topic,,ZZZoeH,"actually we merged ""auto_insurance"" into ""auto_warranty"" when coding to reduce replication"
 DEV-013,topic_boundary,artifact_call_00328,Is this call about auto_warranty or auto_insurance? Please clarify the topic boundary and the appropriate label.,keep_released_topic | different_topic | insufficient_evidence,"""auto_warranty""","[0] CALLER: Us. Thank you so much for picking up my call. This is ***** with us, autocay. How are you doing today?
 [1] CALLEE: Hi Zach. I'm doing alright, thanks. What's this about?
 [2] CALLER: Hi. Is there anyone on the line?
@@ -76,11 +76,11 @@ DEV-013,topic_boundary,artifact_call_00328,Is this call about auto_warranty or a
 [4] CALLER: You said. Good to know. This call is about auto insurance, so I believe you already have car. Insurance.
 [5] CALLEE: Yeah,
 [6] CALLER: Hello.
-[7] CALLEE: Yes, I'm here. I do have car insurance.",,,,
+[7] CALLEE: Yes, I'm here. I do have car insurance.",keep_released_topic,,ZZZoeH,"actually we merged ""auto_insurance"" into ""auto_warranty"" when coding to reduce replication"
 DEV-014,topic_boundary,artifact_call_00354,Is this call about auto_warranty or auto_insurance? Please clarify the topic boundary and the appropriate label.,keep_released_topic | different_topic | insufficient_evidence,"""auto_warranty""","[0] CALLER: thank you so much for picking up my call this is ***** with ***** okay how are you doing today 
 [1] CALLEE: Hey *****, I'm doing alright. What's this about?
 [2] CALLER: sir this call is about auto insurance and i believe that you already have bad insurance 
-[3] CALLEE: I do have some insurance, yes. What exactly are you offering?",,,,
+[3] CALLEE: I do have some insurance, yes. What exactly are you offering?",keep_released_topic,,ZZZoeH,"actually we merged ""auto_insurance"" into ""auto_warranty"" when coding to reduce replication"
 DEV-015,execution_observability,artifact_call_00207,What textual evidence is sufficient to assign interaction_bot? Is audio or other metadata required?,text_supports_label | requires_audio_or_metadata | insufficient_evidence,"""interaction_bot""","[0] CALLER: Hi, this is *****, I'm calling you from ***** on a recorded line, how are you doing today?
 [1] CALLEE: Oh, hi there. I’m doing alright, I suppose. What’s this about?
 [2] CALLER: That's going to cover 100% of your funeral, burial, and cremation expenses. Now, are you between the ages of 40 and 80?
@@ -88,22 +88,22 @@ DEV-015,execution_observability,artifact_call_00207,What textual evidence is suf
 [4] CALLER: That's awesome.
 [5] CALLEE: Alright… what do I need to do for that?
 [6] CALLER: All right, just a second. Let me get one of the specialists over the phone to give you the quote.
-[7] CALLEE: Okay... I can hold on.",,,,
+[7] CALLEE: Okay... I can hold on.",text_supports_label,,ZZZoeH,"an annotation error, here should be ""bot""; we assign interaction_bot only when the bot caller asked with action interaction, e.g., need to  press button to continue"
 DEV-016,execution_observability,artifact_call_00208,What textual evidence is sufficient to assign interaction_bot? Is audio or other metadata required?,text_supports_label | requires_audio_or_metadata | insufficient_evidence,"""interaction_bot""","[0] CALLER: My name is ***** How are you today? This is about your Medicare benefits. We're just going to go ahead and review your Medicare options just to make sure that you're not missing any benefits.
 [1] CALLEE: Oh… I’m 27. Is that… is that okay for Medicare stuff?
-[2] CALLER: Along with your $170 cashback and your Flex card. Let me know how old are you?",,,,
+[2] CALLER: Along with your $170 cashback and your Flex card. Let me know how old are you?",text_supports_label,,ZZZoeH,"an annotation error, here should be ""bot""; we assign interaction_bot only when the bot caller asked with action interaction, e.g., need to  press button to continue"
 DEV-017,execution_observability,artifact_call_00210,What textual evidence is sufficient to assign interaction_bot? Is audio or other metadata required?,text_supports_label | requires_audio_or_metadata | insufficient_evidence,"""interaction_bot""","[0] CALLER: Hello.
 [1] CALLEE: Hello, who's this?
 [2] CALLER: Hey. Good morning, *****. Here I am actually here to help you achieve the most out of your Medicare plan in this open enrollment, including food card, free medications and cashback of up to $250 so that you can benefit more without paying any. Extra cost. So, do you have Medicare part a and B?
 [3] CALLEE: Yes, I have Medicare Part A and B. How can you help with that?
 [4] CALLER: You are eligible for the new update. I am just connecting in a verification officer to assist you. Now, please hold on for a second.
-[5] CALLEE: Sure, I'll wait.",,,,
+[5] CALLEE: Sure, I'll wait.",text_supports_label,,ZZZoeH,"an annotation error, here should be ""bot""; we assign interaction_bot only when the bot caller asked with action interaction, e.g., need to  press button to continue"
 DEV-018,execution_observability,artifact_call_00213,What textual evidence is sufficient to assign interaction_bot? Is audio or other metadata required?,text_supports_label | requires_audio_or_metadata | insufficient_evidence,"""interaction_bot""","[0] CALLER: Hello.
 [1] CALLEE: Hi there. Who's calling?
 [2] CALLER: Hey, good morning, *****. Here. I have some great news about a new subsidy opportunity available to you. In this special enrollment period? Just a quick check. Are you currently receiving benefits from government programs like Medicaid or Medicare.
 [3] CALLEE: Morning, *****. I don't have Medicare. What kind of subsidy is this?
 [4] CALLER: Okay. And are you under the age of 65?
-[5] CALLEE: I'm actually 66. Is that still okay for the subsidy?",,,,
+[5] CALLEE: I'm actually 66. Is that still okay for the subsidy?",text_supports_label,,ZZZoeH,"an annotation error, here should be ""bot""; we assign interaction_bot only when the bot caller asked with action interaction, e.g., need to  press button to continue"
 DEV-019,execution_observability,artifact_call_00216,What textual evidence is sufficient to assign interaction_bot? Is audio or other metadata required?,text_supports_label | requires_audio_or_metadata | insufficient_evidence,"""interaction_bot""","[0] CALLER: Hello.
 [1] CALLEE: Hello, who's calling?
 [2] CALLER: Hey, good morning, *****. Here I am calling to let you know that you can now qualify for a new subsidy recently announced in your state for this annual enrollment period. I just need to confirm. If you already getting any government coverage like Medicaid or Medicare.
@@ -111,11 +111,11 @@ DEV-019,execution_observability,artifact_call_00216,What textual evidence is suf
 [4] CALLER: Okay. And are you under the age of 65?
 [5] CALLEE: No, I'm 66. Is that okay?
 [6] CALLER: Sorry. You don't seem to qualify for the benefit plans I have. Have a good day.
-[7] CALLEE: Alright, thank you. Take care.",,,,
+[7] CALLEE: Alright, thank you. Take care.",text_supports_label,,ZZZoeH,"an annotation error, here should be ""bot""; we assign interaction_bot only when the bot caller asked with action interaction, e.g., need to  press button to continue"
 DEV-020,greeting_definition,artifact_call_00222,"Which turns count as greetings: only consecutive opening greeting-only turns, all greeting-only turns, or turns that also include self-identification?",initial_greeting_only | all_greeting_only | includes_identification | needs_other_rule,1,"[0] CALLER: Hello?
 [1] CALLEE: Oh, hi there… Um, is everything okay?
 [2] CALLER: Hi, this is ***** from *****. This call is about a final expense insurance plan, which is designed to cover all funeral and burial expenses. To check if you qualify for a low-cost plan, please tell me your age.
-[3] CALLEE: Oh, I’m 45 years old. Is that too young for this kind of plan?",,,,
+[3] CALLEE: Oh, I’m 45 years old. Is that too young for this kind of plan?",needs_other_rule,[0],ZZZoeH,"we count initial greeting, repeat greetings, and online confirm as greeting number"
 DEV-021,greeting_definition,artifact_call_00225,"Which turns count as greetings: only consecutive opening greeting-only turns, all greeting-only turns, or turns that also include self-identification?",initial_greeting_only | all_greeting_only | includes_identification | needs_other_rule,1,"[0] CALLER: hello 
 [1] CALLEE: Hello there. Who am I speaking with?
 [2] CALLER: hi hi debt hi this is ***** how are you doing today 
@@ -125,7 +125,7 @@ DEV-021,greeting_definition,artifact_call_00225,"Which turns count as greetings:
 [6] CALLER: i say you already have a health insurance from market based right 
 [7] CALLEE: Oh, yes, I do. I've got Medicare. Why do you ask?
 [8] CALLER: so 
-[9] CALLEE: What do you need to know about my Medicare?",,,,
+[9] CALLEE: What do you need to know about my Medicare?",needs_other_rule,[0],ZZZoeH,"we count initial greeting, repeat greetings, and online confirm as greeting number"
 DEV-022,greeting_definition,artifact_call_00226,"Which turns count as greetings: only consecutive opening greeting-only turns, all greeting-only turns, or turns that also include self-identification?",initial_greeting_only | all_greeting_only | includes_identification | needs_other_rule,1,"[0] CALLER: Hello.
 [1] CALLEE: Hello, who's this?
 [2] CALLER: My name is ***** you doing today?
@@ -133,49 +133,49 @@ DEV-022,greeting_definition,artifact_call_00226,"Which turns count as greetings:
 [4] CALLER: So the reason of my call today is to let you know about a new state approved final. Expense. Whole life insurance plan. It covers 100% cost of your funerals, burials or cremation. Expenses, and I do have a product specialist with me on the line who can simply provide you information right away, and you're under no obligation if you like the plan.
 [5] CALLEE: I see.
 [6] CALLER: You can go on. Otherwise you can stay where you are.
-[7] CALLEE: Sure, tell me more.",,,,
+[7] CALLEE: Sure, tell me more.",needs_other_rule,[0],ZZZoeH,"we count initial greeting, repeat greetings, and online confirm as greeting number"
 DEV-023,greeting_definition,artifact_call_00228,"Which turns count as greetings: only consecutive opening greeting-only turns, all greeting-only turns, or turns that also include self-identification?",initial_greeting_only | all_greeting_only | includes_identification | needs_other_rule,1,"[0] CALLER: hello 
 [1] CALLEE: Hey, who am I speaking with?
 [2] CALLER: good morning my name is ***** administration has changed the medicare poll cease for your state of ***** we have to check the benefits available for you believe you already have medicare part a and b correct 
 [3] CALLEE: Yes, I do have Medicare Part A and B. What kind of changes are happening?
 [4] CALLER: understood the adviser will take over in just a moment please stay on the line 
-[5] CALLEE: Sure, I can wait.",,,,
+[5] CALLEE: Sure, I can wait.",needs_other_rule,[0],ZZZoeH,"we count initial greeting, repeat greetings, and online confirm as greeting number"
 DEV-024,greeting_definition,artifact_call_00233,"Which turns count as greetings: only consecutive opening greeting-only turns, all greeting-only turns, or turns that also include self-identification?",initial_greeting_only | all_greeting_only | includes_identification | needs_other_rule,2,"[0] CALLER: Hello.
 [1] CALLEE: Hello.
 [2] CALLER: Are you there?
 [3] CALLEE: Yes, I'm here. How can I help?
 [4] CALLER: Hi, this is ***** from *****. I'm calling to let you know that after this recent open enrollment. If you have Medicare part A and B, you're eligible for great newly added benefits like monthly $180 cash back, dental, hearing, vision, prescription coverages and food. Card. At absolutely no cost. So, do you have medicare part a and b?
-[5] CALLEE: I do have Medicare Part A and B. Can you tell me more about these benefits?",,,,
+[5] CALLEE: I do have Medicare Part A and B. Can you tell me more about these benefits?",needs_other_rule,[0][2],ZZZoeH,"we count initial greeting, repeat greetings, and online confirm as greeting number"
 DEV-025,repeated_turn_annotation,artifact_call_00993,"The same question appears repeatedly with different annotations. Should each occurrence be labeled, only the first occurrence, or should the label depend on context?",label_each_occurrence | label_first_only | context_dependent | annotation_error,"{""turn_index"": 8, ""requested_info"": [], ""persuasion"": [], ""complementary_persuasion"": [], ""functional_states"": []}","[6] CALLER: I'm calling you from *****.
 [7] CALLEE: Real estate, interesting.
 [8] CALLER: I'm calling you from *****.
 [9] CALLEE: Okay,
-[10] CALLER: Are you interested in selling any property?",,,,
+[10] CALLER: Are you interested in selling any property?",label_first_only,,ZZZoeH,
 DEV-026,repeated_turn_annotation,artifact_call_01236,"The same question appears repeatedly with different annotations. Should each occurrence be labeled, only the first occurrence, or should the label depend on context?",label_each_occurrence | label_first_only | context_dependent | annotation_error,"{""turn_index"": 8, ""requested_info"": [], ""persuasion"": [], ""complementary_persuasion"": [], ""functional_states"": []}","[6] CALLER: i'm reaching out from ***** to provide you with updated information about medicare plans including new benefits such as food card over the counter allowances and grocery cards that you may qualify for do you currently have both meta care parts a and b 
 [7] CALLEE: Yes, I have both Parts A and B. How do these new benefits work?
 [8] CALLER: sorry i didn't catch that so you have medicare parts a and b 
 [9] CALLEE: Yes, I have those. Can you explain more about the benefits you mentioned?
-[10] CALLER: we offer a range of benefits including vision dental hearing grocery assistance a food card and up to two hundred fifty dollars cash back each with their own eligibility criteria just to confirm do you currently have act is medicare a and b card ",,,,
+[10] CALLER: we offer a range of benefits including vision dental hearing grocery assistance a food card and up to two hundred fifty dollars cash back each with their own eligibility criteria just to confirm do you currently have act is medicare a and b card ",label_first_only,,ZZZoeH,
 DEV-027,repeated_turn_annotation,artifact_call_01894,"The same question appears repeatedly with different annotations. Should each occurrence be labeled, only the first occurrence, or should the label depend on context?",label_each_occurrence | label_first_only | context_dependent | annotation_error,"{""turn_index"": 10, ""requested_info"": [], ""persuasion"": [], ""complementary_persuasion"": [], ""functional_states"": []}","[8] CALLER: Sir, this call is about subsidies or additional benefit.
 [9] CALLEE: Subsidies for what exactly?
 [10] CALLER: Sir, this call is about subsidies or additional benefit.
 [11] CALLEE: Yeah, but what kind of subsidies or benefits are we talking about?
-[12] CALLER: Can you hear me, sir?",,,,
+[12] CALLER: Can you hear me, sir?",label_first_only,,ZZZoeH,
 DEV-028,repeated_turn_annotation,artifact_call_01962,"The same question appears repeatedly with different annotations. Should each occurrence be labeled, only the first occurrence, or should the label depend on context?",label_each_occurrence | label_first_only | context_dependent | annotation_error,"{""turn_index"": 8, ""requested_info"": [], ""persuasion"": [], ""complementary_persuasion"": [], ""functional_states"": []}","[6] CALLER: just stay on the line please 
 [7] CALLEE: Sure thing, I can wait.
 [8] CALLER: just stay on the line please 
 [9] CALLEE: Alright, I'm here.
-[10] CALLER: the number you have dialed is not in service please check the number and try again goodbye ",,,,
+[10] CALLER: the number you have dialed is not in service please check the number and try again goodbye ",label_first_only,,ZZZoeH,
 DEV-029,repeated_turn_annotation,artifact_call_02075,"The same question appears repeatedly with different annotations. Should each occurrence be labeled, only the first occurrence, or should the label depend on context?",label_each_occurrence | label_first_only | context_dependent | annotation_error,"{""turn_index"": 48, ""requested_info"": [], ""persuasion"": [], ""complementary_persuasion"": [], ""functional_states"": [""obscene""]}","[46] CALLER: Because I like you.
 [47] CALLEE: That’s really sweet of you to say. I’m flattered. Was there anything else on your mind?
 [48] CALLER: Because I like you.
 [49] CALLEE: I appreciate that. It’s nice to talk with you. What else would you like to chat about?
-[50] CALLER: you know my number",,,,
+[50] CALLER: you know my number",label_first_only,,ZZZoeH,
 DEV-030,numbered_health_information,artifact_call_01264,"Do health_condition1, health_condition2, and similar labels refer to a fixed condition dictionary or to question order within each call? How should these labels be assigned consistently across calls?",fixed_global_taxonomy | call_local_question_order | needs_explicit_code_dictionary | annotation_error,"{""turn_index"": 12, ""requested_info"": [""health_condition1""], ""persuasion"": [""crc""], ""complementary_persuasion"": [], ""functional_states"": [""purpose"", ""qualification""]}","[11] CALLEE: Sure, what information do you need?
 [12] CALLER: This call is about your new talking diabetic meter in which you don't need to prick your fingers anymore. So are you still testing your blood sugar level, like, once a day or twice a day?
 [13] CALLEE: Yeah, I do check my blood sugar regularly. How does this new meter work without pricking?
 [14] CALLER: All right, hold on. Are you injecting insulin, sir?
-[15] CALLEE: I do use insulin to manage my diabetes. How is this related to the offer?",,,,
+[15] CALLEE: I do use insulin to manage my diabetes. How is this related to the offer?",fixed_global_taxonomy,,ZZZoeH,all merge into health_condition
 DEV-031,numbered_health_information,artifact_call_02330,"Do health_condition1, health_condition2, and similar labels refer to a fixed condition dictionary or to question order within each call? How should these labels be assigned consistently across calls?",fixed_global_taxonomy | call_local_question_order | needs_explicit_code_dictionary | annotation_error,"{""turn_index"": 8, ""requested_info"": [""health_condition1""], ""persuasion"": [], ""complementary_persuasion"": [], ""functional_states"": [""qualification""]}","[7] CALLEE: I'm 54 years old.
 [8] CALLER: do you have any major health conditions like cancer answer heart problems or kidney failure 
 [9] CALLEE: No, nothing like that. I've been doing alright health-wise.
@@ -183,7 +183,7 @@ DEV-031,numbered_health_information,artifact_call_02330,"Do health_condition1, h
 [36] CALLER: so do you have any kind of bad health condition like diabetes hydro pressure dementia copd 
 [37] CALLEE: No, I don't have any of those conditions.
 [38] CALLER: okay any hard disease any bleeding issue nothing i think 
-[39] CALLEE: Yeah, none of those either.",,,,
+[39] CALLEE: Yeah, none of those either.",fixed_global_taxonomy,,ZZZoeH,all merge into health_condition
 DEV-032,numbered_health_information,artifact_call_02401,"Do health_condition1, health_condition2, and similar labels refer to a fixed condition dictionary or to question order within each call? How should these labels be assigned consistently across calls?",fixed_global_taxonomy | call_local_question_order | needs_explicit_code_dictionary | annotation_error,"{""turn_index"": 4, ""requested_info"": [""health_condition1""], ""persuasion"": [], ""complementary_persuasion"": [], ""functional_states"": [""qualification""]}","[3] CALLEE: Yes, I have Medicare. Is this something that affects my benefits?
 [4] CALLER: okay and have you ever been diagnosed with rheumatoid arthritis in your whole life 
 [5] CALLEE: No, I haven't been diagnosed with that. Is there something I should be concerned about?
@@ -191,4 +191,4 @@ DEV-032,numbered_health_information,artifact_call_02401,"Do health_condition1, h
 [7] CALLEE: I've had a sinus infection a couple of times. Does that matter here?
 [9] CALLEE: I see. What's this awareness about exactly?
 [10] CALLER: regarding genetic disorders and how long ago you had a sinus infection lost time 
-[11] CALLEE: It was quite a while ago, maybe over a year. Why do you need to know?",,,,
+[11] CALLEE: It was quite a while ago, maybe over a year. Why do you need to know?",fixed_global_taxonomy,,ZZZoeH,all merge into health_condition
