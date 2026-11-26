@@ -1,0 +1,19 @@
+{
+ "inputs": {
+  "runs/agent/reviewed_20261126/design.json": "cc6ee20230b4441c5119be41b333fd55044ab3efecc26905226fbb6a498742bc",
+  "runs/agent/reviewed_20261126/profile_v4.json": "54ddb5b269f05f8a6636c27dbedb6b3bd86aa42b02f7a6c92e845772d95718ce",
+  "runs/agent/reviewed_20261126/test_run/manifest.json": "fed4aa42fa1462f57afcec5da264b636ad7a6c8558eec816d5826bfa8c2185e9",
+  "runs/agent/reviewed_20261126/test_run/predictions.json": "b1e0741e5da6ede771397627694c4b67f588fc4f6a3849b1da749fb530031e1c",
+  "runs/agent/reviewed_20261126/test_run/failures.json": "789f7c36eb181ca3b8fa1783565d832a5fe099883c1e428e7a3a6ef66838943f",
+  "/Users/pinjunLiu/src/transcript_coding_agent/tools/evaluate_reviewed_results.py": "6de04d158d45948cff6a0449aa934ade7d2b7b22d6aef35e529fb4eed14e7871",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/baseline/test_predictions.json": "87a6d5a8cc26ce6dcd02797c16aeae8c843503863e4d6576555081904b0f12a1",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/test_gpt41_20261123_w8/analysis/scoring_predictions.json": "d72c9b996f5e0a37ee62f7eee2b73296fc293f746a7a5b235c80f61ae7cca10b",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/qualification_review/adjudicated_after_C_v1/adjudicated_sheet.csv": "77569f5b8e7ad11ea068eb8935b84cfbcf9247c91fe3b8eb88f2a4c369d92087"
+ },
+ "outputs": {
+  "summary.json": "30e882f780a60a5433aefebf9a834862e046910d2ff0f7c79e20d8031cd6d97f",
+  "reviewed_scoring.json": "440d17318d1db3482b1209667792ff6988132aa287ad87272da21693073cbc6d",
+  "original_labels_metrics.csv": "132ad4f3731abd452da62fdb5f92c75f7301c42e157995ad1456d45b58578bb3",
+  "reviewed_projection_metrics.csv": "6e16ddc23a3706c4ff543c9eef2dc40802371a04627af3af7e03421ceb7aadfe"
+ }
+}

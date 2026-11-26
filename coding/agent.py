@@ -17,6 +17,7 @@ from .novelty import attach
 from .output_normalization import normalize_output
 from .dev_profiles import load_profile, augment_query, normalize_labels, source_bound_schema, restrict_turn_schema, profile_contract_errors
 from .schema import SCHEMA, VERSION as SCHEMA_VERSION, check_model_output
+from .reviewed_policies import effective_system
 
 PROJECT = "ecc2a166ce994c6280373e494d39aa28"
 ENDPOINT = "https://api-main.aiml.asu.edu/query"
@@ -45,6 +46,8 @@ def payload_for(record, reference, vocabulary, config):
             "query": json.dumps(query, ensure_ascii=False)}
 
     if config.get("profile_file"):
+        profile = load_profile(config["profile_file"])
+        payload["model_params"]["system_prompt"] = effective_system(prompts.SYSTEM, profile)
         payload["model_params"]["response_format"]["json_schema"]["schema"] = source_bound_schema(SCHEMA,record)
     return payload
 
@@ -255,13 +258,19 @@ def run(ids_file, reference_file, output_dir, config, dry_run=False, limit=None,
     if config.get("profile_file"):
         profile = load_profile(config["profile_file"])
         if not set(ids) <= set(dev):
-            raise ValueError("development profiles may only run on development IDs")
+            if not config.get("allow_exploratory_test") or not set(ids) <= set(test):
+                raise ValueError("development profiles may only run on development IDs unless an explicit exploratory test is authorized")
         if set(ids) & set(profile["fit_call_ids"]):
             raise ValueError("comparison calls must be disjoint from profile fitting calls")
         if set(profile["fit_call_ids"]) != set(reference["included_ids"]):
             raise ValueError("profile fitting IDs must match the development-only reference pool")
         if not set(profile["example_call_ids"]) <= set(profile["fit_call_ids"]):
             raise ValueError("profile examples escape the fitting pool")
+        actual_examples = {e["call_id"] for e in profile["examples"]}
+        if actual_examples != set(profile["example_call_ids"]):
+            raise ValueError("actual fitting examples differ from declared fitting IDs")
+        aliases = profile.get("aliases", {}).get("requested_info", {})
+        vocabulary = sorted({aliases.get(label, label) for label in vocabulary})
         inputs.append(str(config["profile_file"]))
     fingerprints = {os.path.relpath(p, ROOT): file_hash(p) for p in inputs}
     identity = {"config": config, "ids": ids, "inputs": fingerprints, "dry_run": dry_run,
@@ -324,12 +333,15 @@ def main():
     parser.add_argument("--turns-per-chunk", type=int, default=32)
     parser.add_argument("--validation-repairs", type=int, default=2)
     parser.add_argument("--profile-file", type=Path)
+    parser.add_argument("--allow-exploratory-test", action="store_true",
+                        help="Explicit opt-in for a profile on the previously inspected test set; not a fresh holdout")
     args = parser.parse_args()
     if args.timeout <= 0: parser.error("timeout must be positive")
     config = {"provider": args.provider, "model": args.model, "project_id": args.project_id,
               "endpoint": args.endpoint, "timeout": args.timeout, "workers": args.workers,
               "turns_per_chunk": args.turns_per_chunk, "validation_repairs": args.validation_repairs}
     if args.profile_file: config["profile_file"] = str(args.profile_file.resolve())
+    if args.allow_exploratory_test: config["allow_exploratory_test"] = True
     try:
         failures = run(args.ids_file, args.reference_file, args.output_dir, config,
                        args.dry_run, args.limit, args.resume)

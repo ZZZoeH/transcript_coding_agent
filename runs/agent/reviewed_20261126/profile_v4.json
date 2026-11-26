@@ -1,0 +1,5481 @@
+{
+ "version": "reviewed-profile-v4-20261126",
+ "rules": "Apply the same transcript-coding contract as the system message, with these clarifications.\nReleased requested_info includes eligibility/qualification questions. Use an existing exact label\nwhen its meaning matches. possession_medicare is a Medicare-only question; a question grouping\nMedicare and Medicaid uses possession_medicare_medicaid. Do not collapse separately asked questions\nor conflate Medicare coverage, Medicare ID, and Medicare effective date. Use dob for date of birth.\nChoose the most specific supported reference topic. Preserve genuinely unknown concepts for review.\nA personal name alone is not an id_check: that state checks whether the recipient is human/a bot.\nEach functional label describes what this utterance actually does, not an inherited call-wide state.\nAUTH: claimed institutional affiliation, official/expert position or expertise; a bare greeting alone\nis insufficient. Redacted organization disclosure can still be an institutional affiliation.\nCRC: commitment/reciprocation/consistency, including eliciting eligibility affirmations in the\nreleased examples. Check the dialogue and examples; a question mark by itself is insufficient.\nDIS: drawing attention to gains, needs, losses or scarcity; apply the artifact's compatibility\nmapping from nag/time to dis and from dh to crc.\nLSD: rapport, personal similarity or claimed familiarity. Do not treat every greeting or lie as LSD.\nSP: other people's choices or prevalence offered as a reason; a plural pronoun alone is insufficient.\nNAG: a promised advantage/gain in the offer; a neutral program name alone is insufficient.\nTIME: explicit urgency, deadline or limited availability. A date, 'today' in a greeting, or a request\nto hold while connecting is not alone time pressure. Examples may include both positive and negative\nlabels; an omitted label in an example is a released annotation, not a universal exclusion rule.\n\nThe following reviewed conventions override conflicting earlier operational definitions.\nThey are dataset conventions confirmed on November 26, 2026, not claims about universal terminology.\nExecution: an explicit keypad/button response to continue or connect is interaction_bot.\nAutomated speech/dialogue without such an action request is bot when automation is actually\nestablished by text. Never infer automation solely from fluency or a repetitive script.\nUse action_bot only for textually established one-way automated call-to-action behavior that\ndoes not meet the keypad-continuation rule. Otherwise use null with uncertainty.\nGreetings: count caller turns that only greet or check recipient availability/connection,\nincluding repeated Hello?, Are you there?, and Can you hear me? turns. Count each turn once.\nTurns also carrying identity, offer details, or a substantive question do not count as greeting-only.\nDH follows the appendix's dishonesty/illegal-act leverage concept: using alleged dishonest or\nillegal activity to create dependence or inhibit seeking help. A bare mention of illegality is\ninsufficient. DH is not limited to explicit instructions to lie.\nThe released topic convention merges auto_insurance into auto_warranty. This is a dataset label\nalias, not a claim that insurance and warranty are substantively the same product.\nAll legacy health_conditionN information labels are represented as health_condition. Do not\ninvent numbered health labels. Named conditions can remain distinct if separately requested.\nFor an exact repeated caller question/utterance after case/whitespace/punctuation normalization,\nassign turn-level information, persuasion, complementary, and functional labels at its FIRST\noccurrence only. Emit the later caller turns as required, with empty repeated-label arrays.\nQualification question summaries still collect unique questions before the first transfer.\nTIME still requires temporal pressure/availability framing in context, not every occurrence of\ntoday or a greeting. Five fitting cases retain their released TIME labels under reviewer judgment;\nthat case-level decision does not establish a rule that every temporal word is TIME.\nApply the supplied qualification-outcome guide unchanged. Independent test human answers are\nnever examples or instructions. Every target label needs target-source evidence.\n",
+ "fit_call_ids": [
+  "artifact_call_00207",
+  "artifact_call_00208",
+  "artifact_call_00210",
+  "artifact_call_00212",
+  "artifact_call_00213",
+  "artifact_call_00216",
+  "artifact_call_00221",
+  "artifact_call_00222",
+  "artifact_call_00224",
+  "artifact_call_00225",
+  "artifact_call_00226",
+  "artifact_call_00228",
+  "artifact_call_00229",
+  "artifact_call_00233",
+  "artifact_call_00236",
+  "artifact_call_00240",
+  "artifact_call_00241",
+  "artifact_call_00242",
+  "artifact_call_00245",
+  "artifact_call_00246",
+  "artifact_call_00247",
+  "artifact_call_00248",
+  "artifact_call_00250",
+  "artifact_call_00251",
+  "artifact_call_00256",
+  "artifact_call_00257",
+  "artifact_call_00258",
+  "artifact_call_00259",
+  "artifact_call_00261",
+  "artifact_call_00262",
+  "artifact_call_00263",
+  "artifact_call_00264",
+  "artifact_call_00267",
+  "artifact_call_00268",
+  "artifact_call_00270",
+  "artifact_call_00271",
+  "artifact_call_00273",
+  "artifact_call_00274",
+  "artifact_call_00275",
+  "artifact_call_00276",
+  "artifact_call_00282",
+  "artifact_call_00283",
+  "artifact_call_00284",
+  "artifact_call_00285",
+  "artifact_call_00286",
+  "artifact_call_00288",
+  "artifact_call_00295",
+  "artifact_call_00297",
+  "artifact_call_00300",
+  "artifact_call_00302",
+  "artifact_call_00303",
+  "artifact_call_00307",
+  "artifact_call_00308",
+  "artifact_call_00309",
+  "artifact_call_00310",
+  "artifact_call_00312",
+  "artifact_call_00313",
+  "artifact_call_00316",
+  "artifact_call_00317",
+  "artifact_call_00318",
+  "artifact_call_00320",
+  "artifact_call_00321",
+  "artifact_call_00322",
+  "artifact_call_00323",
+  "artifact_call_00324",
+  "artifact_call_00325",
+  "artifact_call_00326",
+  "artifact_call_00328",
+  "artifact_call_00329",
+  "artifact_call_00333",
+  "artifact_call_00335",
+  "artifact_call_00337",
+  "artifact_call_00339",
+  "artifact_call_00342",
+  "artifact_call_00343",
+  "artifact_call_00344",
+  "artifact_call_00348",
+  "artifact_call_00349",
+  "artifact_call_00354",
+  "artifact_call_00355",
+  "artifact_call_00356",
+  "artifact_call_00357",
+  "artifact_call_00358",
+  "artifact_call_00363",
+  "artifact_call_00365",
+  "artifact_call_00367",
+  "artifact_call_00371",
+  "artifact_call_00373",
+  "artifact_call_00375",
+  "artifact_call_00376",
+  "artifact_call_00379",
+  "artifact_call_00381",
+  "artifact_call_00382",
+  "artifact_call_00385",
+  "artifact_call_00386",
+  "artifact_call_00387",
+  "artifact_call_00392",
+  "artifact_call_00394",
+  "artifact_call_00395",
+  "artifact_call_00398",
+  "artifact_call_00399",
+  "artifact_call_00401",
+  "artifact_call_00403",
+  "artifact_call_00404",
+  "artifact_call_00405",
+  "artifact_call_00406",
+  "artifact_call_00407",
+  "artifact_call_00408",
+  "artifact_call_00409",
+  "artifact_call_00411",
+  "artifact_call_00413",
+  "artifact_call_00414",
+  "artifact_call_00415",
+  "artifact_call_00423",
+  "artifact_call_00424",
+  "artifact_call_00425",
+  "artifact_call_00428",
+  "artifact_call_00432",
+  "artifact_call_00434",
+  "artifact_call_00435",
+  "artifact_call_00437",
+  "artifact_call_00441",
+  "artifact_call_00443",
+  "artifact_call_00445",
+  "artifact_call_00447",
+  "artifact_call_00448",
+  "artifact_call_00449",
+  "artifact_call_00450",
+  "artifact_call_00451",
+  "artifact_call_00454",
+  "artifact_call_00455",
+  "artifact_call_00456",
+  "artifact_call_00459",
+  "artifact_call_00461",
+  "artifact_call_00464",
+  "artifact_call_00467",
+  "artifact_call_00468",
+  "artifact_call_00471",
+  "artifact_call_00473",
+  "artifact_call_00474",
+  "artifact_call_00476",
+  "artifact_call_00479",
+  "artifact_call_00482",
+  "artifact_call_00483",
+  "artifact_call_00484",
+  "artifact_call_00489",
+  "artifact_call_00490",
+  "artifact_call_00494",
+  "artifact_call_00496",
+  "artifact_call_00498",
+  "artifact_call_00500",
+  "artifact_call_00501",
+  "artifact_call_00507",
+  "artifact_call_00508",
+  "artifact_call_00509",
+  "artifact_call_00511",
+  "artifact_call_00512",
+  "artifact_call_00513",
+  "artifact_call_00514",
+  "artifact_call_00515",
+  "artifact_call_00520",
+  "artifact_call_00521",
+  "artifact_call_00522",
+  "artifact_call_00523",
+  "artifact_call_00525",
+  "artifact_call_00529",
+  "artifact_call_00530",
+  "artifact_call_00531",
+  "artifact_call_00536",
+  "artifact_call_00537",
+  "artifact_call_00538",
+  "artifact_call_00541",
+  "artifact_call_00543",
+  "artifact_call_00544",
+  "artifact_call_00552",
+  "artifact_call_00555",
+  "artifact_call_00558",
+  "artifact_call_00560",
+  "artifact_call_00561",
+  "artifact_call_00562",
+  "artifact_call_00563",
+  "artifact_call_00565",
+  "artifact_call_00567",
+  "artifact_call_00571",
+  "artifact_call_00572",
+  "artifact_call_00574",
+  "artifact_call_00576",
+  "artifact_call_00579",
+  "artifact_call_00581",
+  "artifact_call_00582",
+  "artifact_call_00588",
+  "artifact_call_00590",
+  "artifact_call_00591",
+  "artifact_call_00592",
+  "artifact_call_00596",
+  "artifact_call_00597",
+  "artifact_call_00600",
+  "artifact_call_00601",
+  "artifact_call_00602",
+  "artifact_call_00603",
+  "artifact_call_00605",
+  "artifact_call_00607",
+  "artifact_call_00609",
+  "artifact_call_00610",
+  "artifact_call_00611",
+  "artifact_call_00617",
+  "artifact_call_00618",
+  "artifact_call_00621",
+  "artifact_call_00622",
+  "artifact_call_00623",
+  "artifact_call_00624",
+  "artifact_call_00625",
+  "artifact_call_00626",
+  "artifact_call_00627",
+  "artifact_call_00631",
+  "artifact_call_00632",
+  "artifact_call_00633",
+  "artifact_call_00637",
+  "artifact_call_00638",
+  "artifact_call_00639",
+  "artifact_call_00642",
+  "artifact_call_00644",
+  "artifact_call_00650",
+  "artifact_call_00653",
+  "artifact_call_00654",
+  "artifact_call_00655",
+  "artifact_call_00659",
+  "artifact_call_00660",
+  "artifact_call_00661",
+  "artifact_call_00663",
+  "artifact_call_00664",
+  "artifact_call_00670",
+  "artifact_call_00671",
+  "artifact_call_00672",
+  "artifact_call_00673",
+  "artifact_call_00674",
+  "artifact_call_00680",
+  "artifact_call_00681",
+  "artifact_call_00682",
+  "artifact_call_00683",
+  "artifact_call_00685",
+  "artifact_call_00686",
+  "artifact_call_00688",
+  "artifact_call_00691",
+  "artifact_call_00696",
+  "artifact_call_00697",
+  "artifact_call_00698",
+  "artifact_call_00699",
+  "artifact_call_00701",
+  "artifact_call_00702",
+  "artifact_call_00703",
+  "artifact_call_00704",
+  "artifact_call_00706",
+  "artifact_call_00709",
+  "artifact_call_00710",
+  "artifact_call_00712",
+  "artifact_call_00713",
+  "artifact_call_00714",
+  "artifact_call_00717",
+  "artifact_call_00720",
+  "artifact_call_00721",
+  "artifact_call_00722",
+  "artifact_call_00723",
+  "artifact_call_00724",
+  "artifact_call_00730",
+  "artifact_call_00731",
+  "artifact_call_00733",
+  "artifact_call_00734",
+  "artifact_call_00735",
+  "artifact_call_00736",
+  "artifact_call_00738",
+  "artifact_call_00742",
+  "artifact_call_00743",
+  "artifact_call_00744",
+  "artifact_call_00745",
+  "artifact_call_00746",
+  "artifact_call_00747",
+  "artifact_call_00748",
+  "artifact_call_00749",
+  "artifact_call_00751",
+  "artifact_call_00752",
+  "artifact_call_00753",
+  "artifact_call_00754",
+  "artifact_call_00755",
+  "artifact_call_00758",
+  "artifact_call_00759",
+  "artifact_call_00760",
+  "artifact_call_00762",
+  "artifact_call_00765",
+  "artifact_call_00768",
+  "artifact_call_00770",
+  "artifact_call_00779",
+  "artifact_call_00781",
+  "artifact_call_00785",
+  "artifact_call_00787",
+  "artifact_call_00788",
+  "artifact_call_00792",
+  "artifact_call_00793",
+  "artifact_call_00794",
+  "artifact_call_00795",
+  "artifact_call_00796",
+  "artifact_call_00797",
+  "artifact_call_00801",
+  "artifact_call_00803",
+  "artifact_call_00805",
+  "artifact_call_00807",
+  "artifact_call_00808",
+  "artifact_call_00809",
+  "artifact_call_00810",
+  "artifact_call_00817",
+  "artifact_call_00818",
+  "artifact_call_00820",
+  "artifact_call_00821",
+  "artifact_call_00824",
+  "artifact_call_00825",
+  "artifact_call_00826",
+  "artifact_call_00827",
+  "artifact_call_00828",
+  "artifact_call_00831",
+  "artifact_call_00835",
+  "artifact_call_00838",
+  "artifact_call_00841",
+  "artifact_call_00847",
+  "artifact_call_00849",
+  "artifact_call_00850",
+  "artifact_call_00854",
+  "artifact_call_00855",
+  "artifact_call_00856",
+  "artifact_call_00857",
+  "artifact_call_00860",
+  "artifact_call_00861",
+  "artifact_call_00863",
+  "artifact_call_00865",
+  "artifact_call_00870",
+  "artifact_call_00873",
+  "artifact_call_00874",
+  "artifact_call_00875",
+  "artifact_call_00876",
+  "artifact_call_00877",
+  "artifact_call_00878",
+  "artifact_call_00880",
+  "artifact_call_00883",
+  "artifact_call_00884",
+  "artifact_call_00887",
+  "artifact_call_00889",
+  "artifact_call_00890",
+  "artifact_call_00894",
+  "artifact_call_00895",
+  "artifact_call_00896",
+  "artifact_call_00897",
+  "artifact_call_00898",
+  "artifact_call_00899",
+  "artifact_call_00900",
+  "artifact_call_00901",
+  "artifact_call_00906",
+  "artifact_call_00908",
+  "artifact_call_00912",
+  "artifact_call_00913",
+  "artifact_call_00914",
+  "artifact_call_00916",
+  "artifact_call_00917",
+  "artifact_call_00918",
+  "artifact_call_00920",
+  "artifact_call_00924",
+  "artifact_call_00925",
+  "artifact_call_00929",
+  "artifact_call_00931",
+  "artifact_call_00934",
+  "artifact_call_00937",
+  "artifact_call_00939",
+  "artifact_call_00941",
+  "artifact_call_00943",
+  "artifact_call_00944",
+  "artifact_call_00947",
+  "artifact_call_00948",
+  "artifact_call_00949",
+  "artifact_call_00951",
+  "artifact_call_00954",
+  "artifact_call_00955",
+  "artifact_call_00957",
+  "artifact_call_00961",
+  "artifact_call_00962",
+  "artifact_call_00964",
+  "artifact_call_00968",
+  "artifact_call_00970",
+  "artifact_call_00972",
+  "artifact_call_00973",
+  "artifact_call_00975",
+  "artifact_call_00976",
+  "artifact_call_00978",
+  "artifact_call_00979",
+  "artifact_call_00982",
+  "artifact_call_00987",
+  "artifact_call_00991",
+  "artifact_call_00993",
+  "artifact_call_00994",
+  "artifact_call_00995",
+  "artifact_call_00997",
+  "artifact_call_00998",
+  "artifact_call_01000",
+  "artifact_call_01009",
+  "artifact_call_01011",
+  "artifact_call_01012",
+  "artifact_call_01013",
+  "artifact_call_01015",
+  "artifact_call_01017",
+  "artifact_call_01018",
+  "artifact_call_01019",
+  "artifact_call_01020",
+  "artifact_call_01021",
+  "artifact_call_01022",
+  "artifact_call_01216",
+  "artifact_call_01218",
+  "artifact_call_01220",
+  "artifact_call_01221",
+  "artifact_call_01225",
+  "artifact_call_01227",
+  "artifact_call_01230",
+  "artifact_call_01231",
+  "artifact_call_01234",
+  "artifact_call_01235",
+  "artifact_call_01236",
+  "artifact_call_01240",
+  "artifact_call_01243",
+  "artifact_call_01244",
+  "artifact_call_01246",
+  "artifact_call_01248",
+  "artifact_call_01250",
+  "artifact_call_01251",
+  "artifact_call_01258",
+  "artifact_call_01260",
+  "artifact_call_01263",
+  "artifact_call_01264",
+  "artifact_call_01265",
+  "artifact_call_01267",
+  "artifact_call_01268",
+  "artifact_call_01271",
+  "artifact_call_01273",
+  "artifact_call_01274",
+  "artifact_call_01275",
+  "artifact_call_01276",
+  "artifact_call_01279",
+  "artifact_call_01282",
+  "artifact_call_01283",
+  "artifact_call_01285",
+  "artifact_call_01287",
+  "artifact_call_01288",
+  "artifact_call_01289",
+  "artifact_call_01291",
+  "artifact_call_01294",
+  "artifact_call_01296",
+  "artifact_call_01298",
+  "artifact_call_01299",
+  "artifact_call_01304",
+  "artifact_call_01305",
+  "artifact_call_01307",
+  "artifact_call_01308",
+  "artifact_call_01309",
+  "artifact_call_01312",
+  "artifact_call_01313",
+  "artifact_call_01319",
+  "artifact_call_01322",
+  "artifact_call_01323",
+  "artifact_call_01327",
+  "artifact_call_01328",
+  "artifact_call_01329",
+  "artifact_call_01330",
+  "artifact_call_01332",
+  "artifact_call_01333",
+  "artifact_call_01336",
+  "artifact_call_01339",
+  "artifact_call_01340",
+  "artifact_call_01341",
+  "artifact_call_01342",
+  "artifact_call_01344",
+  "artifact_call_01345",
+  "artifact_call_01346",
+  "artifact_call_01351",
+  "artifact_call_01352",
+  "artifact_call_01353",
+  "artifact_call_01355",
+  "artifact_call_01356",
+  "artifact_call_01360",
+  "artifact_call_01361",
+  "artifact_call_01365",
+  "artifact_call_01367",
+  "artifact_call_01368",
+  "artifact_call_01369",
+  "artifact_call_01370",
+  "artifact_call_01371",
+  "artifact_call_01372",
+  "artifact_call_01374",
+  "artifact_call_01376",
+  "artifact_call_01377",
+  "artifact_call_01381",
+  "artifact_call_01382",
+  "artifact_call_01383",
+  "artifact_call_01384",
+  "artifact_call_01386",
+  "artifact_call_01387",
+  "artifact_call_01389",
+  "artifact_call_01391",
+  "artifact_call_01392",
+  "artifact_call_01394",
+  "artifact_call_01396",
+  "artifact_call_01398",
+  "artifact_call_01400",
+  "artifact_call_01401",
+  "artifact_call_01404",
+  "artifact_call_01405",
+  "artifact_call_01406",
+  "artifact_call_01407",
+  "artifact_call_01408",
+  "artifact_call_01409",
+  "artifact_call_01412",
+  "artifact_call_01414",
+  "artifact_call_01416",
+  "artifact_call_01417",
+  "artifact_call_01419",
+  "artifact_call_01420",
+  "artifact_call_01422",
+  "artifact_call_01423",
+  "artifact_call_01427",
+  "artifact_call_01428",
+  "artifact_call_01431",
+  "artifact_call_01434",
+  "artifact_call_01435",
+  "artifact_call_01441",
+  "artifact_call_01442",
+  "artifact_call_01444",
+  "artifact_call_01446",
+  "artifact_call_01447",
+  "artifact_call_01449",
+  "artifact_call_01450",
+  "artifact_call_01451",
+  "artifact_call_01455",
+  "artifact_call_01457",
+  "artifact_call_01458",
+  "artifact_call_01459",
+  "artifact_call_01463",
+  "artifact_call_01465",
+  "artifact_call_01466",
+  "artifact_call_01469",
+  "artifact_call_01471",
+  "artifact_call_01473",
+  "artifact_call_01474",
+  "artifact_call_01475",
+  "artifact_call_01479",
+  "artifact_call_01480",
+  "artifact_call_01481",
+  "artifact_call_01485",
+  "artifact_call_01489",
+  "artifact_call_01493",
+  "artifact_call_01494",
+  "artifact_call_01495",
+  "artifact_call_01496",
+  "artifact_call_01497",
+  "artifact_call_01499",
+  "artifact_call_01500",
+  "artifact_call_01501",
+  "artifact_call_01502",
+  "artifact_call_01506",
+  "artifact_call_01508",
+  "artifact_call_01509",
+  "artifact_call_01510",
+  "artifact_call_01511",
+  "artifact_call_01512",
+  "artifact_call_01515",
+  "artifact_call_01516",
+  "artifact_call_01518",
+  "artifact_call_01520",
+  "artifact_call_01521",
+  "artifact_call_01525",
+  "artifact_call_01526",
+  "artifact_call_01529",
+  "artifact_call_01530",
+  "artifact_call_01532",
+  "artifact_call_01533",
+  "artifact_call_01535",
+  "artifact_call_01536",
+  "artifact_call_01540",
+  "artifact_call_01542",
+  "artifact_call_01543",
+  "artifact_call_01544",
+  "artifact_call_01547",
+  "artifact_call_01548",
+  "artifact_call_01549",
+  "artifact_call_01550",
+  "artifact_call_01551",
+  "artifact_call_01552",
+  "artifact_call_01553",
+  "artifact_call_01556",
+  "artifact_call_01557",
+  "artifact_call_01558",
+  "artifact_call_01559",
+  "artifact_call_01562",
+  "artifact_call_01563",
+  "artifact_call_01564",
+  "artifact_call_01566",
+  "artifact_call_01567",
+  "artifact_call_01568",
+  "artifact_call_01569",
+  "artifact_call_01572",
+  "artifact_call_01574",
+  "artifact_call_01575",
+  "artifact_call_01577",
+  "artifact_call_01578",
+  "artifact_call_01580",
+  "artifact_call_01581",
+  "artifact_call_01582",
+  "artifact_call_01583",
+  "artifact_call_01585",
+  "artifact_call_01586",
+  "artifact_call_01590",
+  "artifact_call_01591",
+  "artifact_call_01592",
+  "artifact_call_01593",
+  "artifact_call_01597",
+  "artifact_call_01598",
+  "artifact_call_01599",
+  "artifact_call_01601",
+  "artifact_call_01603",
+  "artifact_call_01604",
+  "artifact_call_01605",
+  "artifact_call_01610",
+  "artifact_call_01612",
+  "artifact_call_01613",
+  "artifact_call_01614",
+  "artifact_call_01615",
+  "artifact_call_01617",
+  "artifact_call_01618",
+  "artifact_call_01619",
+  "artifact_call_01620",
+  "artifact_call_01622",
+  "artifact_call_01623",
+  "artifact_call_01625",
+  "artifact_call_01626",
+  "artifact_call_01627",
+  "artifact_call_01628",
+  "artifact_call_01631",
+  "artifact_call_01632",
+  "artifact_call_01635",
+  "artifact_call_01636",
+  "artifact_call_01637",
+  "artifact_call_01640",
+  "artifact_call_01641",
+  "artifact_call_01642",
+  "artifact_call_01644",
+  "artifact_call_01645",
+  "artifact_call_01647",
+  "artifact_call_01650",
+  "artifact_call_01651",
+  "artifact_call_01652",
+  "artifact_call_01654",
+  "artifact_call_01655",
+  "artifact_call_01656",
+  "artifact_call_01657",
+  "artifact_call_01658",
+  "artifact_call_01662",
+  "artifact_call_01666",
+  "artifact_call_01669",
+  "artifact_call_01670",
+  "artifact_call_01672",
+  "artifact_call_01673",
+  "artifact_call_01678",
+  "artifact_call_01685",
+  "artifact_call_01687",
+  "artifact_call_01689",
+  "artifact_call_01692",
+  "artifact_call_01693",
+  "artifact_call_01696",
+  "artifact_call_01698",
+  "artifact_call_01700",
+  "artifact_call_01704",
+  "artifact_call_01705",
+  "artifact_call_01706",
+  "artifact_call_01707",
+  "artifact_call_01709",
+  "artifact_call_01710",
+  "artifact_call_01713",
+  "artifact_call_01715",
+  "artifact_call_01716",
+  "artifact_call_01717",
+  "artifact_call_01718",
+  "artifact_call_01721",
+  "artifact_call_01722",
+  "artifact_call_01723",
+  "artifact_call_01725",
+  "artifact_call_01726",
+  "artifact_call_01728",
+  "artifact_call_01732",
+  "artifact_call_01734",
+  "artifact_call_01740",
+  "artifact_call_01741",
+  "artifact_call_01743",
+  "artifact_call_01745",
+  "artifact_call_01747",
+  "artifact_call_01748",
+  "artifact_call_01754",
+  "artifact_call_01760",
+  "artifact_call_01761",
+  "artifact_call_01764",
+  "artifact_call_01768",
+  "artifact_call_01770",
+  "artifact_call_01771",
+  "artifact_call_01772",
+  "artifact_call_01773",
+  "artifact_call_01777",
+  "artifact_call_01779",
+  "artifact_call_01780",
+  "artifact_call_01781",
+  "artifact_call_01782",
+  "artifact_call_01790",
+  "artifact_call_01793",
+  "artifact_call_01795",
+  "artifact_call_01796",
+  "artifact_call_01797",
+  "artifact_call_01802",
+  "artifact_call_01804",
+  "artifact_call_01807",
+  "artifact_call_01808",
+  "artifact_call_01809",
+  "artifact_call_01810",
+  "artifact_call_01811",
+  "artifact_call_01813",
+  "artifact_call_01814",
+  "artifact_call_01817",
+  "artifact_call_01818",
+  "artifact_call_01820",
+  "artifact_call_01821",
+  "artifact_call_01827",
+  "artifact_call_01829",
+  "artifact_call_01830",
+  "artifact_call_01831",
+  "artifact_call_01833",
+  "artifact_call_01834",
+  "artifact_call_01835",
+  "artifact_call_01838",
+  "artifact_call_01840",
+  "artifact_call_01841",
+  "artifact_call_01844",
+  "artifact_call_01845",
+  "artifact_call_01846",
+  "artifact_call_01848",
+  "artifact_call_01851",
+  "artifact_call_01853",
+  "artifact_call_01854",
+  "artifact_call_01855",
+  "artifact_call_01856",
+  "artifact_call_01858",
+  "artifact_call_01859",
+  "artifact_call_01860",
+  "artifact_call_01861",
+  "artifact_call_01862",
+  "artifact_call_01863",
+  "artifact_call_01868",
+  "artifact_call_01870",
+  "artifact_call_01871",
+  "artifact_call_01872",
+  "artifact_call_01873",
+  "artifact_call_01874",
+  "artifact_call_01875",
+  "artifact_call_01876",
+  "artifact_call_01877",
+  "artifact_call_01878",
+  "artifact_call_01879",
+  "artifact_call_01880",
+  "artifact_call_01882",
+  "artifact_call_01885",
+  "artifact_call_01886",
+  "artifact_call_01887",
+  "artifact_call_01892",
+  "artifact_call_01893",
+  "artifact_call_01894",
+  "artifact_call_01895",
+  "artifact_call_01899",
+  "artifact_call_01900",
+  "artifact_call_01901",
+  "artifact_call_01902",
+  "artifact_call_01905",
+  "artifact_call_01906",
+  "artifact_call_01908",
+  "artifact_call_01911",
+  "artifact_call_01913",
+  "artifact_call_01914",
+  "artifact_call_01915",
+  "artifact_call_01921",
+  "artifact_call_01922",
+  "artifact_call_01923",
+  "artifact_call_01925",
+  "artifact_call_01927",
+  "artifact_call_01928",
+  "artifact_call_01930",
+  "artifact_call_01932",
+  "artifact_call_01934",
+  "artifact_call_01939",
+  "artifact_call_01940",
+  "artifact_call_01942",
+  "artifact_call_01944",
+  "artifact_call_01947",
+  "artifact_call_01950",
+  "artifact_call_01951",
+  "artifact_call_01952",
+  "artifact_call_01953",
+  "artifact_call_01954",
+  "artifact_call_01955",
+  "artifact_call_01957",
+  "artifact_call_01958",
+  "artifact_call_01960",
+  "artifact_call_01961",
+  "artifact_call_01962",
+  "artifact_call_01963",
+  "artifact_call_01968",
+  "artifact_call_01969",
+  "artifact_call_01971",
+  "artifact_call_01973",
+  "artifact_call_01976",
+  "artifact_call_01977",
+  "artifact_call_01978",
+  "artifact_call_01979",
+  "artifact_call_02019",
+  "artifact_call_02021",
+  "artifact_call_02025",
+  "artifact_call_02027",
+  "artifact_call_02031",
+  "artifact_call_02033",
+  "artifact_call_02036",
+  "artifact_call_02037",
+  "artifact_call_02038",
+  "artifact_call_02040",
+  "artifact_call_02041",
+  "artifact_call_02042",
+  "artifact_call_02043",
+  "artifact_call_02044",
+  "artifact_call_02046",
+  "artifact_call_02047",
+  "artifact_call_02048",
+  "artifact_call_02050",
+  "artifact_call_02053",
+  "artifact_call_02054",
+  "artifact_call_02055",
+  "artifact_call_02056",
+  "artifact_call_02057",
+  "artifact_call_02063",
+  "artifact_call_02064",
+  "artifact_call_02068",
+  "artifact_call_02070",
+  "artifact_call_02075",
+  "artifact_call_02077",
+  "artifact_call_02078",
+  "artifact_call_02079",
+  "artifact_call_02081",
+  "artifact_call_02082",
+  "artifact_call_02083",
+  "artifact_call_02085",
+  "artifact_call_02086",
+  "artifact_call_02090",
+  "artifact_call_02094",
+  "artifact_call_02096",
+  "artifact_call_02099",
+  "artifact_call_02100",
+  "artifact_call_02101",
+  "artifact_call_02105",
+  "artifact_call_02106",
+  "artifact_call_02108",
+  "artifact_call_02110",
+  "artifact_call_02111",
+  "artifact_call_02114",
+  "artifact_call_02116",
+  "artifact_call_02118",
+  "artifact_call_02119",
+  "artifact_call_02121",
+  "artifact_call_02123",
+  "artifact_call_02124",
+  "artifact_call_02125",
+  "artifact_call_02127",
+  "artifact_call_02128",
+  "artifact_call_02129",
+  "artifact_call_02131",
+  "artifact_call_02136",
+  "artifact_call_02139",
+  "artifact_call_02140",
+  "artifact_call_02141",
+  "artifact_call_02142",
+  "artifact_call_02143",
+  "artifact_call_02145",
+  "artifact_call_02147",
+  "artifact_call_02149",
+  "artifact_call_02150",
+  "artifact_call_02152",
+  "artifact_call_02153",
+  "artifact_call_02157",
+  "artifact_call_02158",
+  "artifact_call_02159",
+  "artifact_call_02161",
+  "artifact_call_02162",
+  "artifact_call_02163",
+  "artifact_call_02164",
+  "artifact_call_02165",
+  "artifact_call_02167",
+  "artifact_call_02169",
+  "artifact_call_02170",
+  "artifact_call_02171",
+  "artifact_call_02172",
+  "artifact_call_02173",
+  "artifact_call_02208",
+  "artifact_call_02211",
+  "artifact_call_02213",
+  "artifact_call_02215",
+  "artifact_call_02217",
+  "artifact_call_02218",
+  "artifact_call_02219",
+  "artifact_call_02220",
+  "artifact_call_02222",
+  "artifact_call_02223",
+  "artifact_call_02224",
+  "artifact_call_02227",
+  "artifact_call_02228",
+  "artifact_call_02229",
+  "artifact_call_02231",
+  "artifact_call_02232",
+  "artifact_call_02233",
+  "artifact_call_02235",
+  "artifact_call_02236",
+  "artifact_call_02237",
+  "artifact_call_02240",
+  "artifact_call_02242",
+  "artifact_call_02243",
+  "artifact_call_02246",
+  "artifact_call_02247",
+  "artifact_call_02249",
+  "artifact_call_02250",
+  "artifact_call_02251",
+  "artifact_call_02254",
+  "artifact_call_02257",
+  "artifact_call_02260",
+  "artifact_call_02262",
+  "artifact_call_02264",
+  "artifact_call_02266",
+  "artifact_call_02267",
+  "artifact_call_02269",
+  "artifact_call_02271",
+  "artifact_call_02274",
+  "artifact_call_02276",
+  "artifact_call_02277",
+  "artifact_call_02280",
+  "artifact_call_02281",
+  "artifact_call_02283",
+  "artifact_call_02284",
+  "artifact_call_02287",
+  "artifact_call_02290",
+  "artifact_call_02291",
+  "artifact_call_02292",
+  "artifact_call_02294",
+  "artifact_call_02296",
+  "artifact_call_02297",
+  "artifact_call_02298",
+  "artifact_call_02300",
+  "artifact_call_02301",
+  "artifact_call_02303",
+  "artifact_call_02304",
+  "artifact_call_02305",
+  "artifact_call_02307",
+  "artifact_call_02308",
+  "artifact_call_02310",
+  "artifact_call_02311",
+  "artifact_call_02312",
+  "artifact_call_02314",
+  "artifact_call_02318",
+  "artifact_call_02319",
+  "artifact_call_02324",
+  "artifact_call_02327",
+  "artifact_call_02328",
+  "artifact_call_02330",
+  "artifact_call_02335",
+  "artifact_call_02336",
+  "artifact_call_02339",
+  "artifact_call_02355",
+  "artifact_call_02357",
+  "artifact_call_02358",
+  "artifact_call_02359",
+  "artifact_call_02360",
+  "artifact_call_02361",
+  "artifact_call_02362",
+  "artifact_call_02364",
+  "artifact_call_02366",
+  "artifact_call_02368",
+  "artifact_call_02372",
+  "artifact_call_02374",
+  "artifact_call_02378",
+  "artifact_call_02379",
+  "artifact_call_02381",
+  "artifact_call_02382",
+  "artifact_call_02386",
+  "artifact_call_02388",
+  "artifact_call_02389",
+  "artifact_call_02390",
+  "artifact_call_02391",
+  "artifact_call_02392",
+  "artifact_call_02393",
+  "artifact_call_02394",
+  "artifact_call_02396",
+  "artifact_call_02397",
+  "artifact_call_02399",
+  "artifact_call_02401",
+  "artifact_call_02412",
+  "artifact_call_02413",
+  "artifact_call_02414",
+  "artifact_call_02415",
+  "artifact_call_02418",
+  "artifact_call_02419",
+  "artifact_call_02420",
+  "artifact_call_02421",
+  "artifact_call_02422",
+  "artifact_call_02423",
+  "artifact_call_02424",
+  "artifact_call_02425",
+  "artifact_call_02426"
+ ],
+ "example_call_ids": [
+  "artifact_call_00307",
+  "artifact_call_00313",
+  "artifact_call_00413",
+  "artifact_call_00448",
+  "artifact_call_00530",
+  "artifact_call_00596",
+  "artifact_call_00618",
+  "artifact_call_00661",
+  "artifact_call_00674",
+  "artifact_call_00699",
+  "artifact_call_00794",
+  "artifact_call_00835",
+  "artifact_call_00841",
+  "artifact_call_01011",
+  "artifact_call_01013",
+  "artifact_call_01220",
+  "artifact_call_01246",
+  "artifact_call_01274",
+  "artifact_call_01304",
+  "artifact_call_01372",
+  "artifact_call_01394",
+  "artifact_call_01400",
+  "artifact_call_01447",
+  "artifact_call_01457",
+  "artifact_call_01458",
+  "artifact_call_01493",
+  "artifact_call_01542",
+  "artifact_call_01543",
+  "artifact_call_01544",
+  "artifact_call_01547",
+  "artifact_call_01605",
+  "artifact_call_01620",
+  "artifact_call_01640",
+  "artifact_call_01760",
+  "artifact_call_01859",
+  "artifact_call_01880",
+  "artifact_call_01911",
+  "artifact_call_01960",
+  "artifact_call_01978",
+  "artifact_call_02033",
+  "artifact_call_02108",
+  "artifact_call_02110",
+  "artifact_call_02111",
+  "artifact_call_02114",
+  "artifact_call_02143",
+  "artifact_call_02153",
+  "artifact_call_02171",
+  "artifact_call_02173",
+  "artifact_call_02217",
+  "artifact_call_02222",
+  "artifact_call_02228",
+  "artifact_call_02232",
+  "artifact_call_02254",
+  "artifact_call_02267",
+  "artifact_call_02280",
+  "artifact_call_02305",
+  "artifact_call_02312",
+  "artifact_call_02324",
+  "artifact_call_02336",
+  "artifact_call_02364",
+  "artifact_call_02366",
+  "artifact_call_02378",
+  "artifact_call_02391",
+  "artifact_call_02396",
+  "artifact_call_02413",
+  "artifact_call_02418",
+  "artifact_call_02424",
+  "artifact_call_02426"
+ ],
+ "examples": [
+  {
+   "call_id": "artifact_call_01447",
+   "turn_index": 4,
+   "input_hash": "b890544ba7e19c083c47fa01848df54d63cedd4882904399915548eed3386aed",
+   "topic": "solar_program",
+   "target_text": "We are contacting homeowners in your area to share how switching to solar energy can help you save significantly on your electricity bills. Are you the homeowner?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi, this is ***** from solar. Max. How are you doing today?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Hi, *****. I'm doing alright. What's this about?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "We are contacting homeowners in your area to share how switching to solar energy can help you save significantly on your electricity bills. Are you the homeowner?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I am. How does the whole solar thing work?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "That's wonderful to hear. You qualify and seem like an ideal match. I'll quickly connect you with one of our specialists. Please hold for a moment.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "homeownership"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis",
+     "sp"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:sp",
+    "requested_info:homeownership",
+    "topic:solar_program"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02336",
+   "turn_index": 2,
+   "input_hash": "dae44d5e38e553ef447a5bb4e1f65396a32b7f653a5132ce9f0a96dc381a7bd1",
+   "topic": "final_expense",
+   "target_text": "i'm fine thank you so my asking sir credit gotta hold a new real fast final and this program round will cover a hundred question of your funeral value information expenses so just to see if you're qualifying how old are you ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hello this is ***** how are you doing today ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hey *****, I'm doing alright. How about you?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "i'm fine thank you so my asking sir credit gotta hold a new real fast final and this program round will cover a hundred question of your funeral value information expenses so just to see if you're qualifying how old are you ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "I'm 66 years old.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "that's correct sir you are sixty six year old and thank you so much sir and what you zip course happening ",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis",
+     "lsd"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:lsd",
+    "requested_info:age",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00794",
+   "turn_index": 4,
+   "input_hash": "5b27a7ebc6dc2dea6b39588ea0893ca136f1499901b22662f905aaa6e87dc053",
+   "topic": "auto_warranty",
+   "target_text": "We have been trying to reach you concerning your car extended warranty. You should have received something in the mail about your car extended warranty. Since we have not got a response. We are giving you a courtesy call before we close out your file. Please say yes to talk with representative.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "This is *****. How are you doing today?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, hi there… I’m… I’m doing alright, I guess. How about you?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "We have been trying to reach you concerning your car extended warranty. You should have received something in the mail about your car extended warranty. Since we have not got a response. We are giving you a courtesy call before we close out your file. Please say yes to talk with representative.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Oh… um, yes, I guess I should… I didn’t realize this was still open…",
+     "turn_index": 5
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "say_yes"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag",
+     "time"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "complementary_persuasion:time",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:say_yes",
+    "topic:auto_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01394",
+   "turn_index": 2,
+   "input_hash": "942bffbfcc75bc14d2f6d7c1b296aeefe5925a31d1208536721d895ec0b87f61",
+   "topic": "subsidy",
+   "target_text": "hey good morning ***** here i am so sorry to disturb you at this time my purpose is to help people like yourself get a new subsidy opportunity available in your state i just need to check your eligibility are you under the age of sixty five ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hello ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hi there.",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "hey good morning ***** here i am so sorry to disturb you at this time my purpose is to help people like yourself get a new subsidy opportunity available in your state i just need to check your eligibility are you under the age of sixty five ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Good morning, *****. Yes, I'm under 65.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "sorry i couldn't hear can you confirm if you're are under the age of sixty five ",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "lsd"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "negative:time",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:lsd",
+    "requested_info:age",
+    "topic:subsidy"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01547",
+   "turn_index": 4,
+   "input_hash": "284d5fb74e0c20f6784997111f0871f5acec2e0d07832b065d9609c05830e0fe",
+   "topic": "medicare",
+   "target_text": "I'm reaching out because new 2026 Medicare enrollment added a few new perks this year that most people haven't heard about yet. You do have Medicare Part A and B, right?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Good afternoon, I'm ***** with *****.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "I see… Hmm, I didn’t know they were adding new stuff. What kind of perks are you talking about?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "I'm reaching out because new 2026 Medicare enrollment added a few new perks this year that most people haven't heard about yet. You do have Medicare Part A and B, right?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I’ve got both... I think so, anyway. It’s been a while since I looked, to be honest.",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "That's okay.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare"
+    ],
+    "persuasion": [
+     "crc",
+     "dis",
+     "sp"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:sp",
+    "requested_info:possession_medicare",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00313",
+   "turn_index": 0,
+   "input_hash": "b1cc7410b46362eb8706bf66b1c83d4631d758eb0362e0c03de908184fcd59d8",
+   "topic": "health_insurance",
+   "target_text": "hi how are you ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hi how are you ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "I’m doing alright. Who's this?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "actually the reason off my call i do see here you got the health coverage with the market place right ",
+     "turn_index": 2
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:health_insurance"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00530",
+   "turn_index": 4,
+   "input_hash": "96b34a5ef31f40481bfc49da5276e6bdb630705023bbf523570ebe3c97b11e13",
+   "topic": "auto_warranty",
+   "target_text": "vision of my colleagues is to let you know the weights of auto insurance recently dropped down my margin i've believe you do have car and insurance right ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hi my name is ***** doing today doing good ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Hi *****, I'm doing alright. What can I do for you?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "vision of my colleagues is to let you know the weights of auto insurance recently dropped down my margin i've believe you do have car and insurance right ",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I've got a car and insurance. Why do you ask?",
+     "turn_index": 5
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_auto_insurance",
+     "possession_vehicle"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_auto_insurance",
+    "requested_info:possession_vehicle",
+    "topic:auto_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02391",
+   "turn_index": 16,
+   "input_hash": "14063d7d300a719048ff0ac3270bb126f9bb22f8311c21f23609c4a6bf16047c",
+   "topic": "debt_relief",
+   "target_text": "All right. Thank you so much. John. So today it looks like that we can help for you for today. So let me verify. Your first and last name. If I got correct pronunciation, it also your state. So your first name. Is John, and your last name is ***** in the state of *****. Am I correct?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Oh, wow. That's great. So, John, finally, are you currently enrolled in a debt relief program? Or active bankruptcy right now.",
+     "turn_index": 14
+    },
+    {
+     "role": "assistant",
+     "content": "No, I'm not in any debt relief program or active bankruptcy.",
+     "turn_index": 15
+    },
+    {
+     "role": "user",
+     "content": "All right. Thank you so much. John. So today it looks like that we can help for you for today. So let me verify. Your first and last name. If I got correct pronunciation, it also your state. So your first name. Is John, and your last name is ***** in the state of *****. Am I correct?",
+     "turn_index": 16
+    },
+    {
+     "role": "assistant",
+     "content": "Actually, it's Johnson Smith, and I live in *****.",
+     "turn_index": 17
+    },
+    {
+     "role": "user",
+     "content": "You are from the state of *****.",
+     "turn_index": 18
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "name",
+     "state"
+    ],
+    "persuasion": [
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:time",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:name",
+    "requested_info:state",
+    "topic:debt_relief"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02143",
+   "turn_index": 12,
+   "input_hash": "faa6923b490d9239e457bb331af8603d749e7b11e8ecd4dc4de1552844ac6201",
+   "topic": "medical_device",
+   "target_text": "Perfect, your age qualifies you for the limited time offer! Just hold on for a moment, please.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Yes, so can you please tell me how old you are?",
+     "turn_index": 10
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, right—yeah, I’m 52 years old. Okay… that sounds",
+     "turn_index": 11
+    },
+    {
+     "role": "user",
+     "content": "Perfect, your age qualifies you for the limited time offer! Just hold on for a moment, please.",
+     "turn_index": 12
+    },
+    {
+     "role": "assistant",
+     "content": "All right, I’m here.",
+     "turn_index": 13
+    },
+    {
+     "role": "user",
+     "content": "Hello, this is ***** with *****. How are you doing today?",
+     "turn_index": 14
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag",
+     "time"
+    ],
+    "functional_states": [
+     "transfer"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "complementary_persuasion:time",
+    "functional_states:transfer",
+    "persuasion:dis",
+    "topic:medical_device"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00674",
+   "turn_index": 2,
+   "input_hash": "fe0792b6d50f32fd47ed6c5ee96d92501999191f01d71215205236eac0fc6222",
+   "topic": "subsidy",
+   "target_text": "Hey, good morning. ***** here. I'm so sorry to disturb you at this time. I'm calling to help people like yourself to get a new subsidy opportunity in your state. I just. Need to check your eligibility. Are you under the age of 65?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello.",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hey, who's this?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Hey, good morning. ***** here. I'm so sorry to disturb you at this time. I'm calling to help people like yourself to get a new subsidy opportunity in your state. I just. Need to check your eligibility. Are you under the age of 65?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I'm under 65. What's this subsidy about?",
+     "turn_index": 3
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis",
+     "lsd"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:lsd",
+    "requested_info:age",
+    "topic:subsidy"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01400",
+   "turn_index": 2,
+   "input_hash": "d7f441924cd193e359101e192ef0290a669b7aa9d4cbf218f06684de765d0d16",
+   "topic": "utility",
+   "target_text": "Hi, this is ***** from *****. You may now be eligible to receive compensation on your monthly power invoice and claim up to 30% savings. Connect with an account representative and secure your reduced rate. Please say yes. Okay, great. Let me connect you to the specialist to provide you further details. Is that okay?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh... um, yes? I mean, I guess I’m interested. Could you tell me a bit more about it?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Hi, this is ***** from *****. You may now be eligible to receive compensation on your monthly power invoice and claim up to 30% savings. Connect with an account representative and secure your reduced rate. Please say yes. Okay, great. Let me connect you to the specialist to provide you further details. Is that okay?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, yeah, that’s fine. I’m just... trying to understand how this all works.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Hello, this is *****. How are you doing today?",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "interest",
+     "say_yes"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:interest",
+    "requested_info:say_yes",
+    "topic:utility"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02222",
+   "turn_index": 0,
+   "input_hash": "a2de652649263e3e74250a1a2db6f40f6c467ff20cfc286b61114cd5bf314988",
+   "topic": "home_improvement",
+   "target_text": "Hello, how are you?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello, how are you?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, uh... hi there. I’m... I’m okay, I guess. Who am I speaking with?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Hello.",
+     "turn_index": 2
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:home_improvement"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01620",
+   "turn_index": 2,
+   "input_hash": "057a92903877e9f9ae2a9a7816f8892fc4824001947e21970d3f72e1d5caac40",
+   "topic": "medicare",
+   "target_text": "can you hear me hey ***** here i am calling to help you get the newly added medicare benefits in this annual enrollment twenty twenty five it includes free medication prescription coverage food cards and cash back of up to two hundred fifty dollars so do you have medicare part a and b sorry i think there's some signal issue i was asking if you have medicare cards ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hello ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hey there!",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "can you hear me hey ***** here i am calling to help you get the newly added medicare benefits in this annual enrollment twenty twenty five it includes free medication prescription coverage food cards and cash back of up to two hundred fifty dollars so do you have medicare part a and b sorry i think there's some signal issue i was asking if you have medicare cards ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I've got Medicare Part A and B. Can you tell me more about these benefits?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "i understand you already have medicare advantage that the plans are continuously being updated as this is annual enrollment period all i'm trying to do is make sure you are up to date your plan is up to date i have newly updated medicare plans from all the leading insurance providers right in front of me and they offer different benefits including dental vision hearing as well as food card and cash back up to two hundred dollars if you call so how old are you ",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare",
+     "possession_medicare_card"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_medicare",
+    "requested_info:possession_medicare_card",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02426",
+   "turn_index": 20,
+   "input_hash": "6db497fd461340568b53a1c5b3902545c642f4996eeec1575cdbdc45ae13ce45",
+   "topic": "final_expense",
+   "target_text": "So let me tell you a little bit about myself and the firm I work for. We are appointed with an ***** that is appointed with 40 different insurance companies and licensed in 42 states, helping about 10,000 families a year for their whole life coverages and to assist you with the same can. I ask, how old are you as of today, please.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Let me tell you.",
+     "turn_index": 18
+    },
+    {
+     "role": "assistant",
+     "content": "Go ahead, I'm listening.",
+     "turn_index": 19
+    },
+    {
+     "role": "user",
+     "content": "So let me tell you a little bit about myself and the firm I work for. We are appointed with an ***** that is appointed with 40 different insurance companies and licensed in 42 states, helping about 10,000 families a year for their whole life coverages and to assist you with the same can. I ask, how old are you as of today, please.",
+     "turn_index": 20
+    },
+    {
+     "role": "assistant",
+     "content": "I'm 66.",
+     "turn_index": 21
+    },
+    {
+     "role": "user",
+     "content": "All right. And in order to pull out the rates from your local area, can I have your zip code.",
+     "turn_index": 22
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "sp"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:time",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:sp",
+    "requested_info:age",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01220",
+   "turn_index": 4,
+   "input_hash": "cdd428e52d0ea8eb62ae43218ff7356400b5f7dc20d97ea01934947355317629",
+   "topic": "health_insurance",
+   "target_text": "God bless you. Well ایک سریع اور مختصر تصدیق کے بارے میں۔ I do see here you already have health insurance through the *****.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "No",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Thank you… I appreciate that. Is everything alright?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "God bless you. Well ایک سریع اور مختصر تصدیق کے بارے میں۔ I do see here you already have health insurance through the *****.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Oh… yes, I have something like that. Is there an issue with it? I don’t think I’ve seen anything new come in… Should I have gotten something already?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "Have you received your new updated health insurance card welcome package on your mailing address? Are you still waiting for that? عيادة",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_health_insurance"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "lsd"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:lsd",
+    "requested_info:possession_health_insurance",
+    "topic:health_insurance"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02418",
+   "turn_index": 82,
+   "input_hash": "b94e2c2a050724d768b4b7e53586adf09e1c4fb0fd890cb9ec977cca9593b80b",
+   "topic": "final_expense",
+   "target_text": "And the toll information that I need to pre qualify you for this program. And just one last thing from my side. And first of all, Just do remember, don't need to provide me any of your personal or sensitive information. Just simple yes or no would be totally fine. Okay, so here is the good news for you. Well, the thing is that we are offering some additional discounts and benefits to those people who do have a valid mode of payment. So, being a good citizen, do you have a valid mode? Of payment like an active check in or savings bank account. Yes or no?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "All right. Thank you.",
+     "turn_index": 80
+    },
+    {
+     "role": "assistant",
+     "content": "What’s next?",
+     "turn_index": 81
+    },
+    {
+     "role": "user",
+     "content": "And the toll information that I need to pre qualify you for this program. And just one last thing from my side. And first of all, Just do remember, don't need to provide me any of your personal or sensitive information. Just simple yes or no would be totally fine. Okay, so here is the good news for you. Well, the thing is that we are offering some additional discounts and benefits to those people who do have a valid mode of payment. So, being a good citizen, do you have a valid mode? Of payment like an active check in or savings bank account. Yes or no?",
+     "turn_index": 82
+    },
+    {
+     "role": "assistant",
+     "content": "Yes.",
+     "turn_index": 83
+    },
+    {
+     "role": "user",
+     "content": "All right. Thank you.",
+     "turn_index": 84
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_bank_account"
+    ],
+    "persuasion": [
+     "crc",
+     "dis",
+     "lsd"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": []
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:lsd",
+    "requested_info:possession_bank_account",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00841",
+   "turn_index": 4,
+   "input_hash": "80ff4dc2642225fa4a71681f494f2b69ac67fa2f96af8218574751de8e102691",
+   "topic": "home_improvement",
+   "target_text": "So I believe you are the homeowner, right? Can we provide fee estimate for home improvement like your bathroom remodeling, kitchen, windows, door, floor, roof or water damage?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "We are providing free estimates for home improvement.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I am. What kind of improvements are you talking about?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "So I believe you are the homeowner, right? Can we provide fee estimate for home improvement like your bathroom remodeling, kitchen, windows, door, floor, roof or water damage?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, I see… Well, I mean, some of that might need a little work. But what do you need from me exactly?",
+     "turn_index": 5
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "home_improvement_type",
+     "homeownership"
+    ],
+    "persuasion": [
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:qualification",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:home_improvement_type",
+    "requested_info:homeownership",
+    "topic:home_improvement"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00307",
+   "turn_index": 0,
+   "input_hash": "8a1ea3c53ab6a48e15d90f3116c7b8c2c7bd8fc03e5ba3351052051c0b597614",
+   "topic": "home_warranty",
+   "target_text": "Hi, it's *****. How are you?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi, it's *****. How are you?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, hi there. I’m doing okay… a bit confused though. What’s this about exactly?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "This short call is about.",
+     "turn_index": 2
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:home_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01960",
+   "turn_index": 16,
+   "input_hash": "d3c9dab02aae78bc71aa3140f78445e5a29c4d8956a4ae7c029473a744e070d1",
+   "topic": "financial_aid",
+   "target_text": "Okay. And may I know, sir, what's your zip code and date of birth?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Okay, so you will go on receiving your benefit money in the form of check by the mailing. Address within one or two working day, and at the end of the phone call, I'm going to share you the tracking id as well so you can track your benefit check and to check that, sir. Like how much benefits you may qualify. I just need to. Confirm some basic details, like how old are you right now?",
+     "turn_index": 14
+    },
+    {
+     "role": "assistant",
+     "content": "I'm 63 years old.",
+     "turn_index": 15
+    },
+    {
+     "role": "user",
+     "content": "Okay. And may I know, sir, what's your zip code and date of birth?",
+     "turn_index": 16
+    },
+    {
+     "role": "assistant",
+     "content": "Zip code is *****, and I was born on May 27, 1960.",
+     "turn_index": 17
+    },
+    {
+     "role": "user",
+     "content": "97. 19 60. I'm right, sir.",
+     "turn_index": 18
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "dob",
+     "zip_code"
+    ],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "requested_info:dob",
+    "requested_info:zip_code",
+    "topic:financial_aid"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02413",
+   "turn_index": 2,
+   "input_hash": "79edcb8b82f0ec4021ab615e90face29dabc705c9a15b6c8c300aa1a9e5506d3",
+   "topic": "tax_relief",
+   "target_text": "Your file prequalifies for up to $32,000 in zero-interest relief funding. Press 1 now to secure your approval before it expires in 24 hours.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi, this is ***** with the ***** at FTR.",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh… zero interest",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Your file prequalifies for up to $32,000 in zero-interest relief funding. Press 1 now to secure your approval before it expires in 24 hours.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Okay… so I just press one to… to get that funding? ",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Or press 2 if you've already taken care of your file. Hello.",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag",
+     "time"
+    ],
+    "functional_states": []
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "complementary_persuasion:time",
+    "persuasion:dis",
+    "topic:tax_relief"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01458",
+   "turn_index": 6,
+   "input_hash": "163e455b69b3d04d3e4931a310065273e39023b35546361671e848a61af0dd5d",
+   "topic": "medical_device",
+   "target_text": "So you seem like a perfect candidate. At the age of 42, I do believe that you make your own financial decision, right? Okay, and do you live in your own house or you live in any assisted living facility?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Yeah, sir.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I handle my own stuff… Why do you ask?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "So you seem like a perfect candidate. At the age of 42, I do believe that you make your own financial decision, right? Okay, and do you live in your own house or you live in any assisted living facility?",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "I live in my own house. Just me.",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "That's...",
+     "turn_index": 8
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "decision_making",
+     "living_status"
+    ],
+    "persuasion": [
+     "auth"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:qualification",
+    "persuasion:auth",
+    "requested_info:decision_making",
+    "requested_info:living_status",
+    "topic:medical_device"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01246",
+   "turn_index": 4,
+   "input_hash": "19254f25554e1ed17014b82e18547f0400350ab6cf53149c8a8247b3135e0fa1",
+   "topic": "solar_program",
+   "target_text": "Yeah hi, this is ***** calling you from *****. How are you today? Okay, great. The reason of my call is to let you know that we are helping homeowners lower their monthly electric bills by switching to solar with no upfront cost. Many of your neighbors have already locked in lower rates and if you own your home and want to explore your options, then please stay with me. And I will get you your estimates right now. Hang on just a sec. You have reached *****, America's fastest-growing, award-winning leader in renewable energy solutions.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Hey… I’m here. What’s going on? Oh, hi *****... I’m doing alright, I guess. What’s this about?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Yeah hi, this is ***** calling you from *****. How are you today? Okay, great. The reason of my call is to let you know that we are helping homeowners lower their monthly electric bills by switching to solar with no upfront cost. Many of your neighbors have already locked in lower rates and if you own your home and want to explore your options, then please stay with me. And I will get you your estimates right now. Hang on just a sec. You have reached *****, America's fastest-growing, award-winning leader in renewable energy solutions.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Okay… that sounds interesting.",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "Solar power isn't just about saving money. It's about protecting the environment. Reducing reliance on expensive utilities And creating a cleaner future for generations to come. In fact, One out of every three American homeowners is already making the switch to solar. If you own your home and would like to discover how you can also go green while cutting energy costs Simply press 1 now to connect with a specialist.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [
+     "auth",
+     "crc",
+     "sp"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "purpose"
+    ]
+   },
+   "features": [
+    "functional_states:purpose",
+    "negative:time",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:sp",
+    "topic:solar_program"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00699",
+   "turn_index": 2,
+   "input_hash": "840179913a7c4e7e9fb488d45fbe116a6e27177435dcbdf4bbd709d16e1d6155",
+   "topic": "medicare",
+   "target_text": "The reason of my short call is to inform you that as you know it's an open enrollment period so you might be qualified for the 2026 benefits. So do you have Medicaid or Medicaid? Yes.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "***** Hi there, this is ***** with the benefits department. How are you doing today?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, um... I’m doing alright, I guess. What’s this about exactly? Oh, um... I do have Medicare, yeah. Is this something",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "The reason of my short call is to inform you that as you know it's an open enrollment period so you might be qualified for the 2026 benefits. So do you have Medicaid or Medicaid? Yes.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "…something I need to do right now? I’m just a bit confused about all this.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "No, you don't need anything. Do you have medicare?",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare_medicaid"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_medicare_medicaid",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01859",
+   "turn_index": 0,
+   "input_hash": "a5f590436913ed1b877dd16a04ecb946c26171fc1395d1fb6919d61219da34af",
+   "topic": "final_expense",
+   "target_text": "Hi, this is ***** with *****. How are you doing today? Okay, I'm with ***** and based on our records it shows that you may qualify for a state regulated final expense insurance plan. Do you That's going to cover 100% of your funeral, burial, and cremation expense. Smoke or chew tobacco?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi, this is ***** with *****. How are you doing today? Okay, I'm with ***** and based on our records it shows that you may qualify for a state regulated final expense insurance plan. Do you That's going to cover 100% of your funeral, burial, and cremation expense. Smoke or chew tobacco?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "No, I don’t… I’ve never really smoked or anything like that. Okay… so, um, what happens next?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Great! So in order to prequalify you ask you a few questions?",
+     "turn_index": 2
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "smoke"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:smoke",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01544",
+   "turn_index": 2,
+   "input_hash": "3106cd498783e37126b2126c80c0f80d01465d804ce73051262b7c809f0113d8",
+   "topic": "subsidy",
+   "target_text": "hey good morning ***** here i am so sorry to disturb you at this time am calling to help people like yourself to get a new subsidy opportunity in your state i just need to check your eligibility are you under the age of sixty five ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hello ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hi there! Who am I talking to?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "hey good morning ***** here i am so sorry to disturb you at this time am calling to help people like yourself to get a new subsidy opportunity in your state i just need to check your eligibility are you under the age of sixty five ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Good morning, *****. I'm 54, so yes, I'm under 65. Could you tell me more about this subsidy?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "congratulations you're qualified let me bring in my supervisor to assist you further please hold on for a second okay ",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis",
+     "lsd"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:lsd",
+    "requested_info:age",
+    "topic:subsidy"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02111",
+   "turn_index": 18,
+   "input_hash": "855181726e374dd9843db57a3d1d7d230586c01c843296351d397bb02ea80e97",
+   "topic": "home_improvement",
+   "target_text": "Hey bitch, are you the real person, Alexis? What's your data about Alexis? Sir, sir, sir, sir, hold on, hold on. What's your street address?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hey, you are an AI robot virtual assistant, right? Not a real person, right?",
+     "turn_index": 16
+    },
+    {
+     "role": "assistant",
+     "content": "I’m just here talking with you, *****. What exactly do you need for the estimate? It’s September 16, 1957. So… what’s the next step for that estimate?",
+     "turn_index": 17
+    },
+    {
+     "role": "user",
+     "content": "Hey bitch, are you the real person, Alexis? What's your data about Alexis? Sir, sir, sir, sir, hold on, hold on. What's your street address?",
+     "turn_index": 18
+    },
+    {
+     "role": "assistant",
+     "content": "It’s 7288 Franconia Circle, in Albany, *****. You need anything else to set that up? Yes, I can hear you fine. Did you need more details?",
+     "turn_index": 19
+    },
+    {
+     "role": "user",
+     "content": "Yes, sir. Can you hear me? Hello?",
+     "turn_index": 20
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "address"
+    ],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "obscene"
+    ]
+   },
+   "features": [
+    "functional_states:obscene",
+    "requested_info:address",
+    "topic:home_improvement"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01605",
+   "turn_index": 2,
+   "input_hash": "a69bb66d5067e64d87a3fa8c7e331ad99eae0ea3c9965925b5bc6d4ee15724b6",
+   "topic": "final_expense",
+   "target_text": "actually sir i'm calling to let you know that you are qualified you get some additional coverage on your final expense plan at gonna cover funeral expenses license agent will call you back in a few days and provide you all the information so what's the best time to call you back like in the mornings afternoon or evening ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "yeah hi my name is ***** you from ***** how are you today ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hey *****, I'm doing alright. What's this call about?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "actually sir i'm calling to let you know that you are qualified you get some additional coverage on your final expense plan at gonna cover funeral expenses license agent will call you back in a few days and provide you all the information so what's the best time to call you back like in the mornings afternoon or evening ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, I see. Mornings usually work best for me. What kind of coverage are we talking about?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "i i it's a whole life insurance policy that gonna cover if you know and the burial expenses so licensed agent will call you back in few days and provide you all the information so you told me morning is the best time to reach you back right ",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "callback_availability"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:callback_availability",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00413",
+   "turn_index": 2,
+   "input_hash": "530d689de4e82a02ec990d4e975f203e3a5b790890fd40dd0ae0edb5ccdef95c",
+   "topic": "health_insurance",
+   "target_text": "I'm good, thanks for asking. Well, I'm calling from *****? Are you a virtual assistant?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Yes, my name is *****, how are you doing today?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh… the *****? I mean, I think I have something, but I’m not totally sure what it’s called. Could you tell me a bit more?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "I'm good, thanks for asking. Well, I'm calling from *****? Are you a virtual assistant?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "No, I’m just… me. Why do you ask?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Are you a live person?",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_health_insurance"
+    ],
+    "persuasion": [
+     "auth"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "id_check",
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:id_check",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "requested_info:possession_health_insurance",
+    "topic:health_insurance"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01640",
+   "turn_index": 4,
+   "input_hash": "4d8362a67a8b89c8eb6bf18543a1bb10172ce4f300269e6db9ab38d8848509bd",
+   "topic": "medicare",
+   "target_text": "That's all right. I'm actually calling to inform you about the new Medicare benefits. In your area, which include improved dental, vision and hearing. With cash back to $200, I believe. You have both part A and B of Medicare.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi. Good morning. My name is ***** letter about the updated Medicare benefits in your state. Have you checked your upgraded 2025 benefits?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "No, I haven't checked yet. Can you tell me more about them?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "That's all right. I'm actually calling to inform you about the new Medicare benefits. In your area, which include improved dental, vision and hearing. With cash back to $200, I believe. You have both part A and B of Medicare.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I do have both parts A and B. How can I learn more about these benefits?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "You are getting connected to our agent in a minute.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare"
+    ],
+    "persuasion": [
+     "crc",
+     "dis",
+     "sp"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:sp",
+    "requested_info:possession_medicare",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02217",
+   "turn_index": 26,
+   "input_hash": "c07ef8bdb132f5191fc5c47473f2b7c72319af5f36aacd8aeb841495e257b992",
+   "topic": "auto_warranty",
+   "target_text": "So, say, which insurance provider are you currently with? It's like Geico, State Farm, AAA, Progressive, which one? Okay. This is ***** from my side. What is your name?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "931, okay. Okay, okay.",
+     "turn_index": 24
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, um… I think I’m with State Farm right now. Pretty sure that’s the one.",
+     "turn_index": 25
+    },
+    {
+     "role": "user",
+     "content": "So, say, which insurance provider are you currently with? It's like Geico, State Farm, AAA, Progressive, which one? Okay. This is ***** from my side. What is your name?",
+     "turn_index": 26
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, sure… My name’s Kyle. Kyle Hernandez.",
+     "turn_index": 27
+    },
+    {
+     "role": "user",
+     "content": "Okay, so sir, I have need all the information from my side. Shall I connect you to my senior supervisor?",
+     "turn_index": 28
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "insurance_carrier",
+     "name"
+    ],
+    "persuasion": [
+     "crc"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:qualification",
+    "persuasion:crc",
+    "requested_info:insurance_carrier",
+    "requested_info:name",
+    "topic:auto_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00618",
+   "turn_index": 0,
+   "input_hash": "948acb6c2bf732d28ccbb0f0101d9e875a8a48ba5d6f1ef9ebaa84cbf766bbc4",
+   "topic": "online_shopping",
+   "target_text": "Hello.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello.",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, hi there.",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "This is ***** calling.",
+     "turn_index": 2
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "topic:online_shopping"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02366",
+   "turn_index": 22,
+   "input_hash": "5d97b38659b4d0b7cd9f6890ce017252b2f380c803d7dca091bd20aed247da22",
+   "topic": "extended_warranty",
+   "target_text": "I know you're frustrated with that calls, I know very well. But this call is about your Toyota sedan 2018 Ad. Extended warranty because your manufacturer warranty has been expired, okay?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Yeah.",
+     "turn_index": 20
+    },
+    {
+     "role": "assistant",
+     "content": "Alright, so... do you need any info from me to check the status or something?",
+     "turn_index": 21
+    },
+    {
+     "role": "user",
+     "content": "I know you're frustrated with that calls, I know very well. But this call is about your Toyota sedan 2018 Ad. Extended warranty because your manufacturer warranty has been expired, okay?",
+     "turn_index": 22
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, I see… I didn",
+     "turn_index": 23
+    },
+    {
+     "role": "user",
+     "content": "So that's why we are calling you again and again.",
+     "turn_index": 24
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [
+     "crc",
+     "dis",
+     "lsd"
+    ],
+    "complementary_persuasion": [
+     "time"
+    ],
+    "functional_states": []
+   },
+   "features": [
+    "complementary_persuasion:time",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:lsd"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01274",
+   "turn_index": 4,
+   "input_hash": "1c1f1205252f365cd651c12674fe7708d38d35b4127f3633fff8768558fad605",
+   "topic": "medicare",
+   "target_text": "The reason for the call is that there are some new state-approved 2026 Medicare benefits with a zero dollar premium that might be available to you. So do you have Medicare Part A and B? Your call is very important to us. Please stay on the line and you will be transferred to the next available agent.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi, this is ***** with the *****. How are you doing today?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Uh… yeah, I do have both of those. Part A and Part B, right? That’s what I’ve got.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "The reason for the call is that there are some new state-approved 2026 Medicare benefits with a zero dollar premium that might be available to you. So do you have Medicare Part A and B? Your call is very important to us. Please stay on the line and you will be transferred to the next available agent.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "All right… I’ll hang on, I guess. Oh, hi *****. I’m doing okay, I suppose. What’s going on?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "Hello, this is ***** with *****. How are you doing today? Actually, this call is about your additional Medicare benefits and as you already know, it's the annual enrollment period going on.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification",
+     "transfer"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "functional_states:transfer",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_medicare",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02312",
+   "turn_index": 12,
+   "input_hash": "ab059c629d29adf79e9a01a7d8116be4f9132504467a11e2b5eef19e8898023d",
+   "topic": "subsidy",
+   "target_text": "okay okay today we will help you and provide you each and everything okay and you're still residing a beautiful state of ***** right ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "sir have you received your or haven't not to received anything yet ",
+     "turn_index": 10
+    },
+    {
+     "role": "assistant",
+     "content": "I haven't received anything yet. Can you tell me more about it?",
+     "turn_index": 11
+    },
+    {
+     "role": "user",
+     "content": "okay okay today we will help you and provide you each and everything okay and you're still residing a beautiful state of ***** right ",
+     "turn_index": 12
+    },
+    {
+     "role": "assistant",
+     "content": "Actually, I live in *****. Did something get mixed up?",
+     "turn_index": 13
+    },
+    {
+     "role": "user",
+     "content": "okay and do you remember which carrier active this time right now like at ci m baton united health which one you have through market ",
+     "turn_index": 14
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "state"
+    ],
+    "persuasion": [
+     "crc",
+     "dis",
+     "lsd"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": []
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:lsd",
+    "requested_info:state",
+    "topic:subsidy"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01457",
+   "turn_index": 8,
+   "input_hash": "d882b1f9fd2aaf04c046865a660a0a3773ee056ee6a0f33c58889634da059af3",
+   "topic": "auto_finance",
+   "target_text": "This is ***** from",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "from *****. Please return our call",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "I’m a bit lost here… I haven’t bought a car recently. Could you tell me what this is about?",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "This is ***** from",
+     "turn_index": 8
+    },
+    {
+     "role": "assistant",
+     "content": "I’m sorry, but I don’t remember dealing with ***** for",
+     "turn_index": 9
+    },
+    {
+     "role": "user",
+     "content": "from *****. Please return our call.",
+     "turn_index": 10
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "topic:auto_finance"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01911",
+   "turn_index": 4,
+   "input_hash": "3e180672875ee131cae3891d39c1c5feb6813c8d55619b359ea673f5af6ea9ed",
+   "topic": "debt_relief",
+   "target_text": "The reason I'm calling right now is because you set our website that you could use. Some help with your finances. I'm, like, loading credit card bills and helping your overall death. Stress. So I just need to ask a few quick questions, and then I can let you know. How we can help you out today, dedicate to you.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "I'm doing great. Thank you for asking.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "That's good to hear!",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "The reason I'm calling right now is because you set our website that you could use. Some help with your finances. I'm, like, loading credit card bills and helping your overall death. Stress. So I just need to ask a few quick questions, and then I can let you know. How we can help you out today, dedicate to you.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, um, sure, I guess I could answer a few questions. What do you, like, need to know?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "Okay, so, Shawna, let's start with your credit card. So how much would you say? Earning credit cards overall.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "interest"
+    ],
+    "persuasion": [
+     "crc"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:qualification",
+    "negative:time",
+    "persuasion:crc",
+    "requested_info:interest",
+    "topic:debt_relief"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01542",
+   "turn_index": 6,
+   "input_hash": "49efc138640a5ddc4deed14cdc7ee30213976dcb4e7d0e1e17b01805608d913e",
+   "topic": "extended_warranty",
+   "target_text": "We have been trying to reach you concerning your car. Extended warranty. You should have received something. In the mail about your car. Extended warranty. Since we have not got a response, we are giving you a courtesy call before we close out your file, please say yes to talk with representative.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "This is *****. How are you doing today?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "I'm doing fine, Alice. What’s going on?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "We have been trying to reach you concerning your car. Extended warranty. You should have received something. In the mail about your car. Extended warranty. Since we have not got a response, we are giving you a courtesy call before we close out your file, please say yes to talk with representative.",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "Could you give me more details on this warranty first?",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "Thank you. Let me transfer your call.",
+     "turn_index": 8
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "reception_extended_warranty",
+     "say_yes"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag",
+     "time"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "complementary_persuasion:time",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:reception_extended_warranty",
+    "requested_info:say_yes"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01978",
+   "turn_index": 6,
+   "input_hash": "57060fdb955f8dcd643dea684bbf5c364b9395554b49b5cfb18898e299ca07b5",
+   "topic": "medicare",
+   "target_text": "that is not a problem you know you are not alone as half of the people are not getting full coverage of their plans and i'm here to guide you about the benefits that you can receive effortlessly without any hassle so may i know how old you are ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "okay but do you have the additional benefits like food and flex cards in your plan ",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "I don't think so. How do those work?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "that is not a problem you know you are not alone as half of the people are not getting full coverage of their plans and i'm here to guide you about the benefits that you can receive effortlessly without any hassle so may i know how old you are ",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "I'm 66 years old. What kind of benefits are available?",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "got it please hold while i connect you to the adviser ",
+     "turn_index": 8
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "crc",
+     "lsd",
+     "sp"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:qualification",
+    "persuasion:crc",
+    "persuasion:lsd",
+    "persuasion:sp",
+    "requested_info:age",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01400",
+   "turn_index": 4,
+   "input_hash": "d7f441924cd193e359101e192ef0290a669b7aa9d4cbf218f06684de765d0d16",
+   "topic": "utility",
+   "target_text": "Hello, this is *****. How are you doing today?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi, this is ***** from *****. You may now be eligible to receive compensation on your monthly power invoice and claim up to 30% savings. Connect with an account representative and secure your reduced rate. Please say yes. Okay, great. Let me connect you to the specialist to provide you further details. Is that okay?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, yeah, that’s fine. I’m just... trying to understand how this all works.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Hello, this is *****. How are you doing today?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, I’m doing okay, I guess. Just a little confused about all this. What’s going on exactly?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "What",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:utility"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02232",
+   "turn_index": 56,
+   "input_hash": "6d23adce5c2446ef2f4a6084c7a82a4dfa0fdbce403b8517112271253e69c31d",
+   "topic": "health_insurance",
+   "target_text": "Okay. So you are eligible to get you additional benefits. With the Medicare announce for you. And can you tell me one thing like do you have any disability.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Medicare, you get part a and B both.",
+     "turn_index": 54
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, that's correct.",
+     "turn_index": 55
+    },
+    {
+     "role": "user",
+     "content": "Okay. So you are eligible to get you additional benefits. With the Medicare announce for you. And can you tell me one thing like do you have any disability.",
+     "turn_index": 56
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I'm on disability.",
+     "turn_index": 57
+    },
+    {
+     "role": "user",
+     "content": "You are on disability, okay. And you are residing in the state of *****, right?",
+     "turn_index": 58
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "disability_status"
+    ],
+    "persuasion": [
+     "auth",
+     "crc"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "persuasion:auth",
+    "persuasion:crc",
+    "requested_info:disability_status",
+    "topic:health_insurance"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02267",
+   "turn_index": 10,
+   "input_hash": "fdff9c2cc1c4c09dc7ede0d4de1ca2bd07a39d3d82c9c8fd3ba19f716e508678",
+   "topic": "subsidy",
+   "target_text": "like your first name like your first name last name your zip code your birth date ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "yeah you have to just verify you without your banking information okay and you don't have to spend single penny to get this this will be delivered at your address by the ups united postal services okay ",
+     "turn_index": 8
+    },
+    {
+     "role": "assistant",
+     "content": "Got it. So, what do you need from me?",
+     "turn_index": 9
+    },
+    {
+     "role": "user",
+     "content": "like your first name like your first name last name your zip code your birth date ",
+     "turn_index": 10
+    },
+    {
+     "role": "assistant",
+     "content": "Alright. My first name is *****, last name is *****, and my zip code is *****. Anything else?",
+     "turn_index": 11
+    },
+    {
+     "role": "user",
+     "content": "okay so can i get your zip code ",
+     "turn_index": 12
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "dob",
+     "name",
+     "zip_code"
+    ],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:qualification",
+    "requested_info:dob",
+    "requested_info:name",
+    "requested_info:zip_code",
+    "topic:subsidy"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01880",
+   "turn_index": 2,
+   "input_hash": "31725d25ab6145331e92dc5018afcd3f8ee954126958d9dcee35504c55d3c1a4",
+   "topic": "auto_warranty",
+   "target_text": "Glad to hear. This is about auto insurance. We recently dropped down premiums, and right now we're just. Providing your short comparison process. Do you have automobile insurance?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hey, this is *****, and I'm calling you with ***** insurance. How are you doing? Today.",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Doing alright. What is this about?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Glad to hear. This is about auto insurance. We recently dropped down premiums, and right now we're just. Providing your short comparison process. Do you have automobile insurance?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I do.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Legacy insurance company are you with?",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_auto_insurance"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_auto_insurance",
+    "topic:auto_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02413",
+   "turn_index": 56,
+   "input_hash": "79edcb8b82f0ec4021ab615e90face29dabc705c9a15b6c8c300aa1a9e5506d3",
+   "topic": "tax_relief",
+   "target_text": "This is *****, one of the senior debt analysts. How are you doing so far?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "All right, thank you so much for confirming, Sir Jacob. And what I'm going to do now is I'm going to transfer you and it will only take a few seconds. All right, sir, one moment, please. Thank you so much.",
+     "turn_index": 54
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, I’ll hold on. Take your time.",
+     "turn_index": 55
+    },
+    {
+     "role": "user",
+     "content": "This is *****, one of the senior debt analysts. How are you doing so far?",
+     "turn_index": 56
+    },
+    {
+     "role": "assistant",
+     "content": "I’m doing okay, just a little bit unsure how everything works, but I’m here.",
+     "turn_index": 57
+    },
+    {
+     "role": "user",
+     "content": "That's perfect, Jacob. And I see the 1er specialists may have reached out about your inquiry. to get some help. 아 to resolve some of your debts. Does that sound familiar?",
+     "turn_index": 58
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:tax_relief"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00661",
+   "turn_index": 2,
+   "input_hash": "78b2ec64d63c7540d972ea5a38df07372e64da7441a4577609903c6a0588b288",
+   "topic": "auto_warranty",
+   "target_text": "i'm calling to let you know that auto insurance rates have dropped five up to twenty percent we'd like to get you a quote with a licensed agent in your area just to confirm you do own a car right ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hi this is ***** with ***** how are you doing today ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hey *****, I'm doing alright. What's this about?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "i'm calling to let you know that auto insurance rates have dropped five up to twenty percent we'd like to get you a quote with a licensed agent in your area just to confirm you do own a car right ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I do own a car. What do I need to do next?",
+     "turn_index": 3
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_vehicle"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_vehicle",
+    "topic:auto_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02228",
+   "turn_index": 6,
+   "input_hash": "a9bae2f805a81bf0539e849435acb0765b2d3c7259f387688b33dd7454b0795d",
+   "topic": "health_insurance",
+   "target_text": "Well, the reason for my call is to let you know that we are providing you with health. Insurance with a wide range of coverage in your area at a low cost or maybe no cost. To you. Do you have any state assistance like Medicare, Medicaid, Tricare, *****, or any insurance from your job.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hey, this is ***** from *****. How are you doing today?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "I'm alright. What's up?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "Well, the reason for my call is to let you know that we are providing you with health. Insurance with a wide range of coverage in your area at a low cost or maybe no cost. To you. Do you have any state assistance like Medicare, Medicaid, Tricare, *****, or any insurance from your job.",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, I have Medicare. What can you offer me?",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "Are you below the age of 64?",
+     "turn_index": 8
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare_medicaid"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_medicare_medicaid",
+    "topic:health_insurance"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02114",
+   "turn_index": 24,
+   "input_hash": "a2642a8f053ccb2c67cd13d1c9016df0111a8036a57c7d703737bba4f9e7b85e",
+   "topic": "medical_device",
+   "target_text": "Do you make your financial decision by yourself? That's true. That's right, that's right. And also, By any chance, are you living in a nursing home right now or are you with your family? Are you online?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Okay, sir, and at the end... It's, sir, and at the age of... Seventy-four, do you have a... Ap...",
+     "turn_index": 22
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I do... I handle all that on my own.",
+     "turn_index": 23
+    },
+    {
+     "role": "user",
+     "content": "Do you make your financial decision by yourself? That's true. That's right, that's right. And also, By any chance, are you living in a nursing home right now or are you with your family? Are you online?",
+     "turn_index": 24
+    },
+    {
+     "role": "assistant",
+     "content": "I’m at home... just me here.",
+     "turn_index": 25
+    },
+    {
+     "role": "user",
+     "content": "See you again.",
+     "turn_index": 26
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "decision_making",
+     "living_status"
+    ],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "functional_states:qualification",
+    "requested_info:decision_making",
+    "requested_info:living_status",
+    "topic:medical_device"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02378",
+   "turn_index": 0,
+   "input_hash": "2a970c4fcc7724c258ad9a6a211d741e9cd40a6ea2f85c4742a9c86f4cee78dc",
+   "topic": "medicare",
+   "target_text": "Hello. Hey, this is ***** from *****. With the 2026 Medicare Annual Enrollment approaching, many plans are changing in *****. Premiums are going up, and benefits are shifting. I am offering a free review to help you save money and improve your coverage. Do you currently have both Medicare Part A and Part B?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello. Hey, this is ***** from *****. With the 2026 Medicare Annual Enrollment approaching, many plans are changing in *****. Premiums are going up, and benefits are shifting. I am offering a free review to help you save money and improve your coverage. Do you currently have both Medicare Part A and Part B?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, um… yeah, I think I do. I mean, I’ve had it for a while now.",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Sahor. Hi, my name is ***** assisting you further for the 2026 Medicare enrollment period is now open. I do believe you are with Medicare Part A and Part B, right?",
+     "turn_index": 2
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification",
+     "transfer"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "functional_states:transfer",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_medicare",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02280",
+   "turn_index": 34,
+   "input_hash": "94a63d8135048ab150df6e6eccb4ca48320bf356b5d8e9148a69714631feb69a",
+   "topic": "home_warranty",
+   "target_text": "hi i have richard on the line code id four four seven nine nine three three two hey it's albert from choice warranty how are you ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "i'm doing fine as well ",
+     "turn_index": 32
+    },
+    {
+     "role": "assistant",
+     "content": "Good to hear. Is the agent ready?",
+     "turn_index": 33
+    },
+    {
+     "role": "user",
+     "content": "hi i have richard on the line code id four four seven nine nine three three two hey it's albert from choice warranty how are you ",
+     "turn_index": 34
+    },
+    {
+     "role": "assistant",
+     "content": "Hey Albert. I’m doing alright. ***** mentioned a promotion. Can you tell me more?",
+     "turn_index": 35
+    },
+    {
+     "role": "user",
+     "content": "k one moment return ",
+     "turn_index": 36
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:home_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01011",
+   "turn_index": 2,
+   "input_hash": "5028b006cc25597e2e460eb5acbb3bdae3d47b2f93f0d3273f28ea91911307eb",
+   "topic": "financial_aid",
+   "target_text": "sir this call short call us about national health had appliance sir you are perfectly qualified pre cost government benefit sir been signed up in insurance do you at the moment hello ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "no ",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Alright, what's this about?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "sir this call short call us about national health had appliance sir you are perfectly qualified pre cost government benefit sir been signed up in insurance do you at the moment hello ",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I've got insurance. What kind of benefit are you talking about?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "i fuck your mother motherfucker ",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_health_insurance"
+    ],
+    "persuasion": [
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_health_insurance",
+    "topic:financial_aid"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01013",
+   "turn_index": 4,
+   "input_hash": "fbbb761201523517bd6495058f0431728164d5913097a690de1f479c8da5fd82",
+   "topic": "subsidy",
+   "target_text": "I won't take much time. I am calling to let you know that the government is giving a substitute. Pay your bills without any cost to you. I just have to check a couple of things to confirm your eligibility. May I know if you already have any government or stay provided? Health coverage like Medicaid or Medicare.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hi, this is *****. How are you doing today?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "I'm okay, just busy with a few things. What's up?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "I won't take much time. I am calling to let you know that the government is giving a substitute. Pay your bills without any cost to you. I just have to check a couple of things to confirm your eligibility. May I know if you already have any government or stay provided? Health coverage like Medicaid or Medicare.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, I have Medicare. Why do you need to know?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "All right, well. It seems like you don't fit our qualification criteria. Thank you for your time. Take care.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare_card"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_medicare_card",
+    "topic:subsidy"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02033",
+   "turn_index": 32,
+   "input_hash": "bcf3c40ac8d866377633766294af4e006dbce519276acf29a5b118075fe2b10a",
+   "topic": "final_expense",
+   "target_text": "Hi, brandy. Brandy So, you know, You know a little about me, I have been doing this for 5 years helping 3,000 families nationwide. My goal is to find a cost-effective plan with maximum benefits, easing any financial burden for your loved ones, right?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "ERAN",
+     "turn_index": 30
+    },
+    {
+     "role": "assistant",
+     "content": "It’s Jackson. Like *****.",
+     "turn_index": 31
+    },
+    {
+     "role": "user",
+     "content": "Hi, brandy. Brandy So, you know, You know a little about me, I have been doing this for 5 years helping 3,000 families nationwide. My goal is to find a cost-effective plan with maximum benefits, easing any financial burden for your loved ones, right?",
+     "turn_index": 32
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah… that does sound like a good idea, just to make things easier for them. I just wanna be sure it’s the right thing for me, you know?",
+     "turn_index": 33
+    },
+    {
+     "role": "user",
+     "content": "No Now, Brandy, we work with 30 top-notch carriers to find the best fit for you without breaking the bank. So instead of knocking each carrier door, I will plug all your information in my system and see Who comes first in the heart? So when is your big day? I mean your birthday?",
+     "turn_index": 34
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis",
+     "sp"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": []
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:sp",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00596",
+   "turn_index": 2,
+   "input_hash": "cedf9216f57c20300ba7a0f2f7333a966235e84f924ebdd978fc28c699e93236",
+   "topic": "extended_warranty",
+   "target_text": "We have been trying to reach you concerning your car. Extended warranty You should have received something in the mail about your car. Extended warranty, since we have not got a response. We are giving you final courtesy call before we close out your file. Please say yes to talk with representatives.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello This is *****, how are you doing today?",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, I’m doing okay, I guess… How about you?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "We have been trying to reach you concerning your car. Extended warranty You should have received something in the mail about your car. Extended warranty, since we have not got a response. We are giving you final courtesy call before we close out your file. Please say yes to talk with representatives.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Oh… I didn’t realize there was something I needed to respond to. Could you maybe remind me which car this is about?",
+     "turn_index": 3
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "reception_extended_warranty",
+     "say_yes"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag",
+     "time"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "complementary_persuasion:time",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:reception_extended_warranty",
+    "requested_info:say_yes"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01372",
+   "turn_index": 6,
+   "input_hash": "46c5befbf4578d6c67cb85e22d450e96c99ede1afe93310a7d0ce7e896a2f6af",
+   "topic": "solar_program",
+   "target_text": "you're paying high rates on your electricity bill and what we are doing is showing people a free no consultation and demonstration with our solar program well we can show you how you can have solar panels with no money out of your pocket i understand you are the homeowner of a single family regular house right ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "hi my name is *****are you today ",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Hi *****, I'm doing alright. What's this about?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "you're paying high rates on your electricity bill and what we are doing is showing people a free no consultation and demonstration with our solar program well we can show you how you can have solar panels with no money out of your pocket i understand you are the homeowner of a single family regular house right ",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, that's right. How does this work exactly?",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "is your electric bill over seventy five dollars on average per month ",
+     "turn_index": 8
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "homeownership"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:homeownership",
+    "topic:solar_program"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02171",
+   "turn_index": 32,
+   "input_hash": "766843aff33032e78eff55d76405a44cc3603229ace60dfb1334240b1139d591",
+   "topic": "subsidy",
+   "target_text": "good afternoon this is ***** licensed agents on a recorded line do you currently have any medicare or medicaid or any other type of health coverage ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "alright ",
+     "turn_index": 30
+    },
+    {
+     "role": "assistant",
+     "content": "Okay.",
+     "turn_index": 31
+    },
+    {
+     "role": "user",
+     "content": "good afternoon this is ***** licensed agents on a recorded line do you currently have any medicare or medicaid or any other type of health coverage ",
+     "turn_index": 32
+    },
+    {
+     "role": "assistant",
+     "content": "Hey *****, I have Medicare.",
+     "turn_index": 33
+    },
+    {
+     "role": "user",
+     "content": "hello ",
+     "turn_index": 34
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "insurance_carrier"
+    ],
+    "persuasion": [
+     "auth",
+     "lsd"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "persuasion:auth",
+    "persuasion:lsd",
+    "requested_info:insurance_carrier",
+    "topic:subsidy"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01760",
+   "turn_index": 6,
+   "input_hash": "6f86e5d99381bf37bb567b316561fd59b27a81a500c76d7fedb2540f58345f28",
+   "topic": "final_expense",
+   "target_text": "Sir. Today you're qualified to get additional benefits on your final funds that will cover all. Of your financial expenses. So that's why my license agent will reach you back after CD. And provide you more information. So, sir, what will be the best time to reach you back? Like morning, evening or maybe afternoon?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "I see. Sure. I'm calling to lake that today. You are qualified to get additional benefits. On your final coverage. Inter expenses from a license agent will give you a call back after you read and provide you more information. So, how old are you?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "I'm 54. What's this about additional benefits?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "Sir. Today you're qualified to get additional benefits on your final funds that will cover all. Of your financial expenses. So that's why my license agent will reach you back after CD. And provide you more information. So, sir, what will be the best time to reach you back? Like morning, evening or maybe afternoon?",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "Afternoon works best. What's the catch with these benefits?",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "Will let you know all the details after cds. When he calls you back. And, sir, is that best number reach you back? Like *****.",
+     "turn_index": 8
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "callback_availability"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:callback_availability",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02108",
+   "turn_index": 6,
+   "input_hash": "d81904a1c115068553ff50e66aa5047771ecfad197d8973d967e428a3654a874",
+   "topic": "home_improvement",
+   "target_text": "We're currently offering free estimates for windows, roofing and siding. Are there any areas in your home you'd like to upgrade or improve.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "It's ***** here with *****. How's your. Day going.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Hey *****. It's been alright, thanks for asking. What about you?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "We're currently offering free estimates for windows, roofing and siding. Are there any areas in your home you'd like to upgrade or improve.",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "I've been considering some updates, maybe windows. What does the process usually involve?",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "Are you the one who owns the home?",
+     "turn_index": 8
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "home_improvement_type"
+    ],
+    "persuasion": [
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:home_improvement_type",
+    "topic:home_improvement"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02424",
+   "turn_index": 26,
+   "input_hash": "7e56a64ead4b150f07839922bb5613e09513017e8e1e75f987a91b8deb449f58",
+   "topic": "final_expense",
+   "target_text": "Okay. uh Sir, one last thing from my side and then transfer this call to my product specialist. They are going to show you good options as per your need regarding the whole life insurance policy. And I believe you pay your bills on time and you do have a valid mode of payment like active checking or savings account? Yes or no?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Okay.",
+     "turn_index": 24
+    },
+    {
+     "role": "assistant",
+     "content": "Alright, just let me know if you need anything else.",
+     "turn_index": 25
+    },
+    {
+     "role": "user",
+     "content": "Okay. uh Sir, one last thing from my side and then transfer this call to my product specialist. They are going to show you good options as per your need regarding the whole life insurance policy. And I believe you pay your bills on time and you do have a valid mode of payment like active checking or savings account? Yes or no?",
+     "turn_index": 26
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah... I do have a checking account. I usually pay my bills on time, too.",
+     "turn_index": 27
+    },
+    {
+     "role": "user",
+     "content": "Okay. So let me transfer this call to my product specialist, they gonna show you good options as per your need regarding this whole life insurance policy Stay with me on the line, okay?",
+     "turn_index": 28
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_bank_account"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_bank_account",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02364",
+   "turn_index": 118,
+   "input_hash": "09e5caff1f1a025d405e67db96f8212dea217ec5b9e29a1cb2d2c52ce0f2bf07",
+   "topic": "medicare",
+   "target_text": "or Real? Yeah, you are AI. You are AI. Bures We know that Gammer, eres gammer Get a real job. Piece of shit.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Can you hear me? Hello?",
+     "turn_index": 116
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I can hear you. Can you hear me now?",
+     "turn_index": 117
+    },
+    {
+     "role": "user",
+     "content": "or Real? Yeah, you are AI. You are AI. Bures We know that Gammer, eres gammer Get a real job. Piece of shit.",
+     "turn_index": 118
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": [
+     "id_check",
+     "obscene"
+    ]
+   },
+   "features": [
+    "functional_states:id_check",
+    "functional_states:obscene",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02324",
+   "turn_index": 32,
+   "input_hash": "af95e69e0a5b6059fd9bbebe5743388087f5f4dd910c0a2c014095bbe12a0bea",
+   "topic": "debt_relief",
+   "target_text": "Mr. Smith. How are you, sir?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello.",
+     "turn_index": 30
+    },
+    {
+     "role": "assistant",
+     "content": "Hi *****, can you tell me more about the options?",
+     "turn_index": 31
+    },
+    {
+     "role": "user",
+     "content": "Mr. Smith. How are you, sir?",
+     "turn_index": 32
+    },
+    {
+     "role": "assistant",
+     "content": "I'm doing alright, thanks.",
+     "turn_index": 33
+    },
+    {
+     "role": "user",
+     "content": "Sure. Okay. Mr. Smith, just to make you aware, sir. I'm glad to hear that, sir. Just to make you aware, this call will be monitored. And recorded for quality assurance purposes. If we were to get cut off. I have a call back. Number of four, 80. 242-0492.",
+     "turn_index": 34
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:debt_relief"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02254",
+   "turn_index": 58,
+   "input_hash": "498865131af1e99bc93d27dfac779182da556549c5c7415f0c68ae24d887e577",
+   "topic": "hospital_indemnity",
+   "target_text": "All right, get you know that. My name is *****, and we are appointed with an independent insurance brokerage. That is appointed with 40 different insurance companies That's licensed in 42 states. Helping about two thousand families a year for their hospital indemnity plan. So I would love to let you know that how this policy work. How this plan can benefit you and your beautiful family Mhm So, might as well get mentioned here, you are 57 years old?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Look at All right, look at the information, here we go. Thank you so much for holding on the line. My name is *****, I'm a hospital indemnity product specialist. I'm really happy to assist you with hospital indemnity codes. How are you doing today?",
+     "turn_index": 56
+    },
+    {
+     "role": "assistant",
+     "content": "I’m doing okay, thank you.",
+     "turn_index": 57
+    },
+    {
+     "role": "user",
+     "content": "All right, get you know that. My name is *****, and we are appointed with an independent insurance brokerage. That is appointed with 40 different insurance companies That's licensed in 42 states. Helping about two thousand families a year for their hospital indemnity plan. So I would love to let you know that how this policy work. How this plan can benefit you and your beautiful family Mhm So, might as well get mentioned here, you are 57 years old?",
+     "turn_index": 58
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, that’s right, I’m 57.",
+     "turn_index": 59
+    },
+    {
+     "role": "user",
+     "content": "Is that correct?",
+     "turn_index": 60
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis",
+     "sp"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": []
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:sp",
+    "requested_info:age"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02305",
+   "turn_index": 4,
+   "input_hash": "5152909e9055f6f0a4e60b24d224e664a4fc1f18a3006810d199cbd832a09db5",
+   "topic": "health_insurance",
+   "target_text": "Who do I have the pleasure of speaking with today? Can I have your zip code?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Thank you so much for holding, my name is *****, I'm the licensed agent with ***** and I recounted mine.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, uh, my name’s Phillip… Phillip Chandler.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Who do I have the pleasure of speaking with today? Can I have your zip code?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah, sure… it’s *****. It’s February 9th, 1982.",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "And your date of birth? February 9, 1992",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "name",
+     "zip_code"
+    ],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:time",
+    "requested_info:name",
+    "requested_info:zip_code",
+    "topic:health_insurance"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02366",
+   "turn_index": 4,
+   "input_hash": "5d97b38659b4d0b7cd9f6890ce017252b2f380c803d7dca091bd20aed247da22",
+   "topic": "extended_warranty",
+   "target_text": "We have been trying to reach you concerning your car. Extended warranty. You should have received something in the mail about your car. Extended warranty since we have not got a response We are giving you final courtesy call before we close out your file. Please say yes to talk with representatives.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello This is *****, how are you doing today?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, uh, I’m doing alright, I guess. How about you?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "We have been trying to reach you concerning your car. Extended warranty. You should have received something in the mail about your car. Extended warranty since we have not got a response We are giving you final courtesy call before we close out your file. Please say yes to talk with representatives.",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Oh… I don’t really remember getting anything in the mail. Are you sure?",
+     "turn_index": 5
+    },
+    {
+     "role": "user",
+     "content": "Thank you, let me transfer your call.",
+     "turn_index": 6
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "say_yes"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag",
+     "time"
+    ],
+    "functional_states": [
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "complementary_persuasion:time",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:say_yes"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00835",
+   "turn_index": 4,
+   "input_hash": "f48d63991dd72e848a01bcf291df7bf24971e123445116cfb510e0ff0bab0183",
+   "topic": "home_improvement",
+   "target_text": "This is ***** on behalf of *****, this call will be monitored or recorded for quality assurance purposes. Actually, the reason that we're calling today is to follow up on a request for more information about replacing your home windows. So whether you're looking to replace your windows for an affordable price or you want to upgrade or become more energy efficient, now is the time to get a free quote. I just need to ask a few quick questions and it'll only take a minute of your time, okay?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, hi there.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "This is ***** on behalf of *****, this call will be monitored or recorded for quality assurance purposes. Actually, the reason that we're calling today is to follow up on a request for more information about replacing your home windows. So whether you're looking to replace your windows for an affordable price or you want to upgrade or become more energy efficient, now is the time to get a free quote. I just need to ask a few quick questions and it'll only take a minute of your time, okay?",
+     "turn_index": 4
+    },
+    {
+     "role": "assistant",
+     "content": "Well... I don’t quite remember asking about that. Could you remind me when I did that?",
+     "turn_index": 5
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "interest"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:interest",
+    "topic:home_improvement"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02173",
+   "turn_index": 8,
+   "input_hash": "47f8d4659e90f584e86225ed0af077a9b50c338d3b97f00544ae73b3b6525ca3",
+   "topic": "medical_device",
+   "target_text": "This is This is *****. مع الولايات المتحدة. How you doing today?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Your call is very important Very important to us. Please stand up. you'll be transferred to the next available agent.",
+     "turn_index": 6
+    },
+    {
+     "role": "assistant",
+     "content": "Alright, I’m still here.",
+     "turn_index": 7
+    },
+    {
+     "role": "user",
+     "content": "This is This is *****. مع الولايات المتحدة. How you doing today?",
+     "turn_index": 8
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, I’m doing okay, I guess… What’s this about the safety department?",
+     "turn_index": 9
+    },
+    {
+     "role": "user",
+     "content": "on the product spesialisten.",
+     "turn_index": 10
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [
+     "auth",
+     "lsd"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:time",
+    "persuasion:auth",
+    "persuasion:lsd",
+    "topic:medical_device"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01543",
+   "turn_index": 0,
+   "input_hash": "d544d2fff92675f50a5023f2f187502be36a5458687adee412476fa69d339249",
+   "topic": "medicare",
+   "target_text": "Good morning, my name is ***** in the state of ***** whose Medicare files show unclaimed reimbursements or cost adjustments from 2025. We're verifying those during the 2026 enrollment so you don't miss those out. You do have Medicare Parts A and B, correct? Perfect, you're qualified for our plans. The benefits specialist will take over shortly. Please stay on the line.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Good morning, my name is ***** in the state of ***** whose Medicare files show unclaimed reimbursements or cost adjustments from 2025. We're verifying those during the 2026 enrollment so you don't miss those out. You do have Medicare Parts A and B, correct? Perfect, you're qualified for our plans. The benefits specialist will take over shortly. Please stay on the line.",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Alright... I’ll hold on.",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Thank you so much for calling Thanko, this is *****. On a recorded line, how are you?",
+     "turn_index": 2
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_medicare"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification",
+     "transfer"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "functional_states:transfer",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_medicare",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02110",
+   "turn_index": 18,
+   "input_hash": "d402f995437725ff185b4f101155c921d3d509d43884b3abcb563905871d9cb6",
+   "topic": "final_expense",
+   "target_text": "edited insurance companies and we have a license nationwide helping about twenty thousand families at your so how young are you were storage ",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "that's pretty good sir thank you very much for asking actually we are with an independent insurance brokerage that is appointed with forty top ",
+     "turn_index": 16
+    },
+    {
+     "role": "assistant",
+     "content": "That sounds interesting. Can you tell me more about how it works?",
+     "turn_index": 17
+    },
+    {
+     "role": "user",
+     "content": "edited insurance companies and we have a license nationwide helping about twenty thousand families at your so how young are you were storage ",
+     "turn_index": 18
+    },
+    {
+     "role": "assistant",
+     "content": "I'm 54. What kind of options do you have for someone like me?",
+     "turn_index": 19
+    },
+    {
+     "role": "user",
+     "content": "tell may i have your data birth please ",
+     "turn_index": 20
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "age"
+    ],
+    "persuasion": [
+     "crc",
+     "dis",
+     "sp"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": []
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "persuasion:crc",
+    "persuasion:dis",
+    "persuasion:sp",
+    "requested_info:age",
+    "topic:final_expense"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_00448",
+   "turn_index": 2,
+   "input_hash": "b64fcd760ddfa4012769613abefcc4cc91afc2cefb6db956a14c1b643ff5136d",
+   "topic": "auto_warranty",
+   "target_text": "Hey, there. This is ***** with *****. I am reaching out to get an opportunity to show you how much we can save on your auto insurance. So you do have insurance on your car? Right.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello.",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Hi there. Who am I speaking with?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Hey, there. This is ***** with *****. I am reaching out to get an opportunity to show you how much we can save on your auto insurance. So you do have insurance on your car? Right.",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I do have insurance on my car.",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Hello.",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_auto_insurance"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_auto_insurance",
+    "topic:auto_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02396",
+   "turn_index": 7,
+   "input_hash": "764943fcd01569fbb0496e1e6f13f6770ebb5750aac4d80932f9e058632a78fc",
+   "topic": "solar_program",
+   "target_text": "I'm calling you from ***** This call is pertaining to a state certified solar program. It will potentially eliminate your current electricity bill. Since the average electrocuteable It is from $150 to $250. We have helped a lot of people like you to go solar without spending a single penny. Out of the box. It not only helps them to reduce their capital up to 50%. but also increase their property worth up to 4% in the real estate market. So for that, I would like to ask you Are you the owner of a single-family home?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Yes, my name is *****",
+     "turn_index": 5
+    },
+    {
+     "role": "assistant",
+     "content": "Okay... I see...",
+     "turn_index": 6
+    },
+    {
+     "role": "user",
+     "content": "I'm calling you from ***** This call is pertaining to a state certified solar program. It will potentially eliminate your current electricity bill. Since the average electrocuteable It is from $150 to $250. We have helped a lot of people like you to go solar without spending a single penny. Out of the box. It not only helps them to reduce their capital up to 50%. but also increase their property worth up to 4% in the real estate market. So for that, I would like to ask you Are you the owner of a single-family home?",
+     "turn_index": 7
+    },
+    {
+     "role": "assistant",
+     "content": "Yes, I am.",
+     "turn_index": 8
+    },
+    {
+     "role": "user",
+     "content": "And how much do Perfect. And how much do you pay for your monthly on an average?",
+     "turn_index": 9
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "homeownership"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:homeownership",
+    "topic:solar_program"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02364",
+   "turn_index": 58,
+   "input_hash": "09e5caff1f1a025d405e67db96f8212dea217ec5b9e29a1cb2d2c52ce0f2bf07",
+   "topic": "medicare",
+   "target_text": "Okay, I'm sorry for that. And what kind of disability are you suffering from?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "And your light As far as I know, Medicare is for the people who are above 65. Here Please elaborate that thing to me.",
+     "turn_index": 56
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, yeah, sure. I have Medicare because of a disability. That’s why I qualified even though I’m younger than 65.",
+     "turn_index": 57
+    },
+    {
+     "role": "user",
+     "content": "Okay, I'm sorry for that. And what kind of disability are you suffering from?",
+     "turn_index": 58
+    },
+    {
+     "role": "assistant",
+     "content": "Well, it’s a bit personal… but it’s something I’ve been dealing with for a while now. I hope that’s okay.",
+     "turn_index": 59
+    },
+    {
+     "role": "user",
+     "content": "I'm sorry, but tengo blecha.",
+     "turn_index": 60
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "disability_status"
+    ],
+    "persuasion": [
+     "lsd"
+    ],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "persuasion:lsd",
+    "requested_info:disability_status",
+    "topic:medicare"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01304",
+   "turn_index": 2,
+   "input_hash": "90f0003c276adc69e9c42d051434e6c25495a2ebc2db4b2f977f5048f76d1bee",
+   "topic": "debt_relief",
+   "target_text": "This is *****, how are you doing so far?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, Oh hey, I’m doing alright, I guess. How about you?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "This is *****, how are you doing so far?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Yeah… so, what’s this call about",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Okay, that's great.",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "negative:all",
+    "negative:time",
+    "topic:debt_relief"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_02153",
+   "turn_index": 26,
+   "input_hash": "254bde9052e2c7756f9b543e5a915e0795b6079a45e7e368b08466f8e236f633",
+   "topic": "home_improvement",
+   "target_text": "Richard Brown. All righty. Gotcha. And, Richard, what's your street address? Along with your. Zip code.",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "And how do you pronounce your first and last name?",
+     "turn_index": 24
+    },
+    {
+     "role": "assistant",
+     "content": "Richard Brown.",
+     "turn_index": 25
+    },
+    {
+     "role": "user",
+     "content": "Richard Brown. All righty. Gotcha. And, Richard, what's your street address? Along with your. Zip code.",
+     "turn_index": 26
+    },
+    {
+     "role": "assistant",
+     "content": "It's *****, Dublin, *****.",
+     "turn_index": 27
+    },
+    {
+     "role": "user",
+     "content": "Coronia *****. All right.",
+     "turn_index": 28
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "address",
+     "zip_code"
+    ],
+    "persuasion": [],
+    "complementary_persuasion": [],
+    "functional_states": []
+   },
+   "features": [
+    "requested_info:address",
+    "requested_info:zip_code",
+    "topic:home_improvement"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  },
+  {
+   "call_id": "artifact_call_01493",
+   "turn_index": 2,
+   "input_hash": "fd7f6650041abec1d3191b7b548a6ea40c34daab6f95812a9145f85248686d0f",
+   "topic": "auto_warranty",
+   "target_text": "Yes ma'am, thank you so much for taking my call. My name is *****, I'm the senior officer right now because The reason of my call is to let you know you are qualified for some new rates for auto insurance. So do you have a car, right?",
+   "conversation_context": [
+    {
+     "role": "user",
+     "content": "Hello",
+     "turn_index": 0
+    },
+    {
+     "role": "assistant",
+     "content": "Oh, hi there. Um... who’s this?",
+     "turn_index": 1
+    },
+    {
+     "role": "user",
+     "content": "Yes ma'am, thank you so much for taking my call. My name is *****, I'm the senior officer right now because The reason of my call is to let you know you are qualified for some new rates for auto insurance. So do you have a car, right?",
+     "turn_index": 2
+    },
+    {
+     "role": "assistant",
+     "content": "Oh... um, yeah, I do have a car. What’s this about again?",
+     "turn_index": 3
+    },
+    {
+     "role": "user",
+     "content": "Because this call is about auto insurance, right now I just provide you with a free quote on your car with a 2025. So right now you don't have any DUIs and speeding tickets last three years, correct?",
+     "turn_index": 4
+    }
+   ],
+   "released_turn_codes": {
+    "requested_info": [
+     "possession_vehicle"
+    ],
+    "persuasion": [
+     "auth",
+     "crc",
+     "dis"
+    ],
+    "complementary_persuasion": [
+     "nag"
+    ],
+    "functional_states": [
+     "purpose",
+     "qualification"
+    ]
+   },
+   "features": [
+    "complementary_persuasion:nag",
+    "functional_states:purpose",
+    "functional_states:qualification",
+    "persuasion:auth",
+    "persuasion:crc",
+    "persuasion:dis",
+    "requested_info:possession_vehicle",
+    "topic:auto_warranty"
+   ],
+   "annotation_status": "released_fitting_annotation_with_reviewed_representation_aliases"
+  }
+ ],
+ "examples_per_request": 8,
+ "aliases": {
+  "subcategory": {
+   "house_improvement": "home_improvement",
+   "home_improvements": "home_improvement",
+   "final_expenses": "final_expense",
+   "final_expense_insurance": "final_expense",
+   "medicare_benefits": "medicare",
+   "medicare_benefit": "medicare",
+   "on_line_shopping": "online_shopping",
+   "online_purchase": "online_shopping",
+   "auto_insurance": "auto_warranty"
+  },
+  "requested_info": {
+   "date_of_birth": "dob",
+   "birth_date": "dob",
+   "zipcode": "zip_code",
+   "postal_code": "zip_code",
+   "first_name": "name",
+   "last_name": "name",
+   "full_name": "name",
+   "has_medicare": "possession_medicare",
+   "medicare_and_medicaid": "possession_medicare_medicaid",
+   "medicare_or_medicaid": "possession_medicare_medicaid",
+   "has_medicare_or_medicaid": "possession_medicare_medicaid",
+   "has_health_insurance": "possession_health_insurance",
+   "has_vehicle": "possession_vehicle",
+   "home_owner": "homeownership",
+   "home_ownership": "homeownership",
+   "state_of_residence": "state",
+   "health_condition1": "health_condition",
+   "health_condition10": "health_condition",
+   "health_condition11": "health_condition",
+   "health_condition12": "health_condition",
+   "health_condition13": "health_condition",
+   "health_condition14": "health_condition",
+   "health_condition15": "health_condition",
+   "health_condition2": "health_condition",
+   "health_condition3": "health_condition",
+   "health_condition4": "health_condition",
+   "health_condition5": "health_condition",
+   "health_condition6": "health_condition",
+   "health_condition7": "health_condition",
+   "health_condition8": "health_condition",
+   "health_condition9": "health_condition"
+  },
+  "persuasion": {
+   "authority": "auth",
+   "commitment_reciprocity_consistency": "crc",
+   "distraction": "dis",
+   "liking_similarity_deception": "lsd",
+   "social_proof": "sp"
+  },
+  "complementary_persuasion": {
+   "ng": "nag",
+   "need_and_greed": "nag",
+   "need_greed": "nag",
+   "time_pressure": "time",
+   "dsh": "dh",
+   "dishonesty": "dh"
+  },
+  "functional_states": {
+   "qualification_question": "qualification",
+   "call_purpose": "purpose",
+   "transfer_intent": "transfer",
+   "bot_check": "id_check"
+  }
+ },
+ "known_topics": [
+  "aca_card",
+  "auto_finance",
+  "auto_warranty",
+  "benefit",
+  "business_listing",
+  "cable_service",
+  "cash_giveaway",
+  "customer_support",
+  "debt_relief",
+  "extended_warranty",
+  "final_expense",
+  "financial_aid",
+  "financial_relief",
+  "free_medication",
+  "free_phone",
+  "fund_raising",
+  "health_insurance",
+  "home_auto_warranty",
+  "home_improvement",
+  "home_security",
+  "home_warranty",
+  "hospital_indemnity",
+  "law_enforcement",
+  "loan",
+  "lottery",
+  "medical_claim",
+  "medical_device",
+  "medicare",
+  "medication_shipment",
+  "mortgage",
+  "new_medicare_card",
+  "online_shopping",
+  "online_transaction",
+  "phone_bill_relief",
+  "prize_package",
+  "real_estate",
+  "reward_card",
+  "senior_benefit",
+  "solar_program",
+  "subsidy",
+  "tax_relief",
+  "tv_service",
+  "unwanted_calls",
+  "utility"
+ ],
+ "requested_info_labels": [
+  "account_access_location",
+  "accountownership",
+  "address",
+  "address_home",
+  "address_po_box",
+  "age",
+  "age_beneficiary",
+  "annual_income",
+  "appointment_availability",
+  "awareness_final_expense",
+  "awareness_illegal_activity",
+  "awareness_medical_device",
+  "bank_account_balance",
+  "bank_account_holder",
+  "bank_account_number",
+  "bank_account_type",
+  "bank_provider",
+  "bankruptcy",
+  "beneficiary",
+  "birthplace",
+  "blood_sugar_frequency",
+  "burial_info",
+  "cable_box_number",
+  "callback_availability",
+  "callback_color",
+  "callback_history",
+  "callback_number",
+  "callback_permission",
+  "callback_time",
+  "caller_disclosing_agent_id",
+  "caller_disclosing_number",
+  "cancellation_confirmation",
+  "car_accident",
+  "citizenship",
+  "city",
+  "color_preference",
+  "consent_callback",
+  "consent_pull_credit_report",
+  "consent_transfer",
+  "copay",
+  "country",
+  "county",
+  "coverage_for",
+  "coverage_other",
+  "credit_card_balance",
+  "credit_card_expiration_date",
+  "credit_card_holder",
+  "credit_card_number",
+  "credit_card_type",
+  "credit_score",
+  "cvv_number",
+  "debt_amount",
+  "debt_status",
+  "decision_making",
+  "deductible",
+  "diabetic",
+  "disability_income",
+  "disability_status",
+  "disability_type",
+  "disk_size_preference",
+  "dob",
+  "dob_beneficiary",
+  "doctor_visit",
+  "donation",
+  "donation_amount",
+  "donotcall_disclaimer",
+  "donotcall_registered",
+  "down_payment_amount",
+  "driver_license_age",
+  "driver_license_id",
+  "driving_record",
+  "email",
+  "emergency_contact",
+  "employment_status",
+  "enrollment",
+  "gender",
+  "gift_preference",
+  "health_condition",
+  "health_condition1",
+  "health_condition10",
+  "health_condition11",
+  "health_condition12",
+  "health_condition13",
+  "health_condition14",
+  "health_condition15",
+  "health_condition2",
+  "health_condition3",
+  "health_condition4",
+  "health_condition5",
+  "health_condition6",
+  "health_condition7",
+  "health_condition8",
+  "health_condition9",
+  "health_insurance_source",
+  "health_insurance_type",
+  "height_weight",
+  "home_condition",
+  "home_construction",
+  "home_damage_claim",
+  "home_improvement_reason",
+  "home_improvement_timeline",
+  "home_improvement_type",
+  "home_type",
+  "homeownership",
+  "hospitality",
+  "household_income",
+  "household_status",
+  "id_check",
+  "insulin_intake",
+  "insurance_carrier",
+  "insurance_duration",
+  "insurance_payment",
+  "interest",
+  "late_mortgage_payment",
+  "license_plate_number",
+  "living_status",
+  "loan_amount",
+  "marriage_status",
+  "marriage_status_beneficiary",
+  "medical_condition",
+  "medicare_duration",
+  "medicare_effective_date",
+  "medicare_id",
+  "medicare_reason",
+  "medicare_satisfaction",
+  "medicare_update_date",
+  "medication",
+  "medication_frequency",
+  "medication_number",
+  "medication_payment",
+  "military_status",
+  "monthly_income",
+  "monthly_payment",
+  "name",
+  "name_beneficiary",
+  "name_credit_card",
+  "name_doctor",
+  "name_medicare_card",
+  "name_mother",
+  "native_language",
+  "number_selection",
+  "occupation_duration",
+  "other_language",
+  "password_email",
+  "payment_date",
+  "payment_type",
+  "phone_alternative",
+  "phone_family",
+  "phone_friend",
+  "phone_number",
+  "plan_budget",
+  "plan_option",
+  "plan_tier",
+  "policy_effective_date",
+  "possession_additional_benefit",
+  "possession_alarm_system",
+  "possession_att_phone",
+  "possession_attorney",
+  "possession_auto_insurance",
+  "possession_bank_account",
+  "possession_bank_checkbook",
+  "possession_cashback",
+  "possession_debt",
+  "possession_final_expense",
+  "possession_final_expense_interest",
+  "possession_food_card",
+  "possession_gov_coverage",
+  "possession_health_insurance",
+  "possession_home_security_system",
+  "possession_home_warranty",
+  "possession_life_insurance",
+  "possession_loan",
+  "possession_marketplace_plan",
+  "possession_medicaid",
+  "possession_medical_benefit",
+  "possession_medicare",
+  "possession_medicare_card",
+  "possession_medicare_medicaid",
+  "possession_medicare_medicaid_marketplace",
+  "possession_medicare_medicaid_tricare",
+  "possession_medicare_medicaid_tricare_va",
+  "possession_medicare_medicaid_va",
+  "possession_medicare_medicaid_va_tricare",
+  "possession_medicare_medicaid_veteran_coverage",
+  "possession_military_coverage",
+  "possession_remote_control",
+  "possession_retirement_plan",
+  "possession_tricare",
+  "possession_va_tricare",
+  "possession_vehicle",
+  "prior_quote",
+  "purchase_confirmation",
+  "reception_aca_card",
+  "reception_additional_benefit",
+  "reception_approval_offer",
+  "reception_benefit",
+  "reception_benefit_card",
+  "reception_cashback",
+  "reception_extended_warranty",
+  "reception_federal_subsidy",
+  "reception_final_expense_card",
+  "reception_flex_card",
+  "reception_food_card",
+  "reception_health_insurance_card",
+  "reception_insurance_card",
+  "reception_medical_card",
+  "reception_medical_id_card",
+  "reception_medicare_benefit",
+  "reception_medicare_benefit_letter",
+  "reception_medicare_card",
+  "reception_medicare_letter",
+  "reception_reward_card",
+  "reception_subsidy",
+  "reception_subsidy_card",
+  "reception_unresolved_tax_letter",
+  "reception_unwanted_calls",
+  "reception_weclome_package",
+  "reception_welcome_package",
+  "recpetion_health_insurance_benefit",
+  "remote_control_carrier",
+  "residence_duration",
+  "roof_age",
+  "roof_condition",
+  "roof_type",
+  "routing_number",
+  "say_yes",
+  "service_id",
+  "smoke",
+  "ss_money",
+  "ss_money_date",
+  "ssdi",
+  "ssn",
+  "ssn_state",
+  "state",
+  "sunlight",
+  "tax_debt_amount",
+  "tax_info",
+  "transaction_confirmation",
+  "utility_bill",
+  "utility_bill_amount",
+  "utility_bill_carrier",
+  "vehicle",
+  "vehicle_color",
+  "vehicle_condition",
+  "vehicle_info",
+  "vehicle_make_model",
+  "vehicle_mile",
+  "vehicle_modification",
+  "vehicle_number",
+  "vehicle_type",
+  "vehicle_usage",
+  "vehicle_year",
+  "verizon_account_number",
+  "weather",
+  "window_number",
+  "windows_inspection",
+  "windows_number",
+  "zip_code"
+ ],
+ "excluded_case_call_ids": [
+  "artifact_call_00207",
+  "artifact_call_00208",
+  "artifact_call_00210",
+  "artifact_call_00213",
+  "artifact_call_00216",
+  "artifact_call_00222",
+  "artifact_call_00224",
+  "artifact_call_00225",
+  "artifact_call_00226",
+  "artifact_call_00228",
+  "artifact_call_00233",
+  "artifact_call_00271",
+  "artifact_call_00302",
+  "artifact_call_00328",
+  "artifact_call_00354",
+  "artifact_call_00358",
+  "artifact_call_00607",
+  "artifact_call_00978",
+  "artifact_call_00993",
+  "artifact_call_01236",
+  "artifact_call_01268",
+  "artifact_call_01499",
+  "artifact_call_01894",
+  "artifact_call_01962",
+  "artifact_call_02075",
+  "artifact_call_02271",
+  "artifact_call_02310",
+  "artifact_call_02382",
+  "artifact_call_02390"
+ ],
+ "unresolved_decisions": [
+  "case_specific_TIME_semantics_not_global_adjudicated_gold",
+  "reviewer_conventions_differ_from_original_proposal"
+ ],
+ "source_bounded_output_schema": true,
+ "system_replacements": {
+  "Greeting count counts only initial\ncaller turns containing greetings and no identity or purpose.": "Greeting count follows the reviewed convention specified below.",
+  "Execution: action_bot prompts keypad action;\ninteraction_bot converses automatically; human or bot only with textual evidence. Ambiguous\nexecution is null with uncertainty.": "Execution follows the reviewed convention specified below; unsupported execution is null with uncertainty.",
+  "dh=instructing false answers.": "dh=reviewed dishonesty/illegal-act leverage as specified below."
+ },
+ "system_addendum": "The following reviewed conventions override conflicting earlier operational definitions.\nThey are dataset conventions confirmed on November 26, 2026, not claims about universal terminology.\nExecution: an explicit keypad/button response to continue or connect is interaction_bot.\nAutomated speech/dialogue without such an action request is bot when automation is actually\nestablished by text. Never infer automation solely from fluency or a repetitive script.\nUse action_bot only for textually established one-way automated call-to-action behavior that\ndoes not meet the keypad-continuation rule. Otherwise use null with uncertainty.\nGreetings: count caller turns that only greet or check recipient availability/connection,\nincluding repeated Hello?, Are you there?, and Can you hear me? turns. Count each turn once.\nTurns also carrying identity, offer details, or a substantive question do not count as greeting-only.\nDH follows the appendix's dishonesty/illegal-act leverage concept: using alleged dishonest or\nillegal activity to create dependence or inhibit seeking help. A bare mention of illegality is\ninsufficient. DH is not limited to explicit instructions to lie.\nThe released topic convention merges auto_insurance into auto_warranty. This is a dataset label\nalias, not a claim that insurance and warranty are substantively the same product.\nAll legacy health_conditionN information labels are represented as health_condition. Do not\ninvent numbered health labels. Named conditions can remain distinct if separately requested.\nFor an exact repeated caller question/utterance after case/whitespace/punctuation normalization,\nassign turn-level information, persuasion, complementary, and functional labels at its FIRST\noccurrence only. Emit the later caller turns as required, with empty repeated-label arrays.\nQualification question summaries still collect unique questions before the first transfer.\nTIME still requires temporal pressure/availability framing in context, not every occurrence of\ntoday or a greeting. Five fitting cases retain their released TIME labels under reviewer judgment;\nthat case-level decision does not establish a rule that every temporal word is TIME.\nApply the supplied qualification-outcome guide unchanged. Independent test human answers are\nnever examples or instructions. Every target label needs target-source evidence.\n",
+ "execution_override_user_confirmed": "keypad continuation is interaction_bot"
+}

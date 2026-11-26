@@ -1,0 +1,9 @@
+{
+ "effective_HTTP_concurrency": 2,
+ "source_and_prompt_unchanged": true,
+ "reason": "Two-request recovery was stable without HTTP 500; stepped up to four requests with circuit breaker",
+ "stopped_utc": "2026-11-26T19:12:40.547853+00:00",
+ "started_utc": "2026-11-26T19:09:49.658056+00:00",
+ "completed_valid_predictions_at_stop": 194,
+ "failed_calls_at_stop": 1
+}

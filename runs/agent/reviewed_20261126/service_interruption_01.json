@@ -1,0 +1,16 @@
+{
+ "time_utc": "2026-11-26T19:09:13.689523+00:00",
+ "reason": "Stopped after consecutive upstream ASU HTTP 500 responses",
+ "completed_valid_predictions": 153,
+ "recorded_failed_calls": 25,
+ "failure_reasons": {
+  "chunk validation failed: missing evidence: caller_utterances.4.requested_info; missing evidence: caller_utterances.2.functional_states": 1,
+  "ASU HTTP 500; check access/model/quota": 24
+ },
+ "checkpoint_file_hashes": {
+  "manifest.json": "4979e23ea582509d5ebe7b40d1085cbac68b4b784f7e044e819925fac70a2f51",
+  "predictions.json": "896ced3458bc11c369aeb9e11147da2fa8e574c027d640c6ed77d962eb67baf7",
+  "failures.json": "3ff57d0db6575ae0cca1939202e1195d337a141fe279b9ae73f36e67b63fe287"
+ },
+ "source_or_prompt_changed": false
+}

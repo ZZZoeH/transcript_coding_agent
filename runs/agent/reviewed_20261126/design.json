@@ -1,0 +1,21 @@
+{
+ "version": "reviewed-profile-v4-20261126",
+ "dev_calls": 80,
+ "test_calls": 583,
+ "fitting_calls": 1018,
+ "examples": 72,
+ "profile_sha256": "54ddb5b269f05f8a6636c27dbedb6b3bd86aa42b02f7a6c92e845772d95718ce",
+ "development_is_reused": true,
+ "test_is_previously_inspected_exploratory": true,
+ "primary": "unchanged released-label metrics",
+ "secondary": "symmetric topic/health aliases and exact repeated-utterance union; coarser scoring unit",
+ "qualification": "independently completed A/B/C 50-call outcome labels; no examples from these calls",
+ "source_reviews_sha256": "7945eea1842cc15cf084136c30a82ce512735c327c7f9d50f1f7c288bcb8abe4",
+ "source_transcripts_sha256": {
+  "transcript_inputs/input5.json": "d0f891b54682effb296ebe47ef27256627920773ab95b4fb4d522555b3e43981",
+  "transcript_inputs/input4.json": "074917cc0244a7e2b4df8a2d60420ca27a7e770c8dbbff73b94fbb6509fc368b",
+  "transcript_inputs/input3.json": "0b238c49e1f7771630fbb4ccb8c2d76afc523815c3d2f7ae87e3dc9f881226fe",
+  "transcript_inputs/input2.json": "f778f4f5f37b6f4678216b8e19a366ba896f77456d067336dae2969f7d654d30",
+  "transcript_inputs/input1.json": "d125db24b4933598bca714dc72149c1b4991e7bffd138805490191e558595d2a"
+ }
+}

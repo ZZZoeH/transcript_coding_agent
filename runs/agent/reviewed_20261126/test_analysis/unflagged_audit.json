@@ -1,0 +1,149 @@
+{
+ "original_model": {
+  "unflagged_calls": 9,
+  "with_any_released_label_disagreement": 9,
+  "details": [
+   {
+    "call_id": "artifact_call_00439",
+    "released_label_disagreements": [
+     "category",
+     "hook_phase.execution",
+     "hook_phase.only_greeting_turns",
+     "persuasion",
+     "complementary_persuasion"
+    ]
+   },
+   {
+    "call_id": "artifact_call_00647",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.only_greeting_turns",
+     "persuasion",
+     "complementary_persuasion"
+    ]
+   },
+   {
+    "call_id": "artifact_call_00986",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "persuasion",
+     "complementary_persuasion",
+     "requested_info",
+     "hook_phase.qualification.question"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01487",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.only_greeting_turns",
+     "persuasion",
+     "complementary_persuasion",
+     "functional_states",
+     "hook_phase.qualification.question"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01492",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.transfer.failure_reason",
+     "persuasion",
+     "functional_states",
+     "hook_phase.qualification.question"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01595",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "persuasion",
+     "complementary_persuasion",
+     "functional_states",
+     "hook_phase.qualification.question"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01671",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.only_greeting_turns",
+     "persuasion",
+     "complementary_persuasion",
+     "functional_states",
+     "requested_info",
+     "hook_phase.qualification.question"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01898",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.consent",
+     "persuasion",
+     "complementary_persuasion",
+     "functional_states"
+    ]
+   },
+   {
+    "call_id": "artifact_call_02151",
+    "released_label_disagreements": [
+     "hook_phase.only_greeting_turns",
+     "persuasion",
+     "functional_states",
+     "hook_phase.qualification.question"
+    ]
+   }
+  ],
+  "note": "Automatic comparison with imperfect released labels; not an independent manual error adjudication."
+ },
+ "reviewed_v4": {
+  "unflagged_calls": 4,
+  "with_any_released_label_disagreement": 4,
+  "details": [
+   {
+    "call_id": "artifact_call_01624",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.only_greeting_turns",
+     "hook_phase.transfer.success",
+     "persuasion",
+     "functional_states"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01671",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.only_greeting_turns",
+     "persuasion",
+     "requested_info"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01691",
+    "released_label_disagreements": [
+     "category",
+     "subcategory",
+     "hook_phase.only_greeting_turns",
+     "persuasion",
+     "functional_states",
+     "requested_info",
+     "hook_phase.qualification.question"
+    ]
+   },
+   {
+    "call_id": "artifact_call_01789",
+    "released_label_disagreements": [
+     "hook_phase.execution",
+     "hook_phase.only_greeting_turns",
+     "hook_phase.caller_identification.organization",
+     "persuasion",
+     "complementary_persuasion",
+     "functional_states"
+    ]
+   }
+  ],
+  "note": "Automatic comparison with imperfect released labels; not an independent manual error adjudication."
+ }
+}
