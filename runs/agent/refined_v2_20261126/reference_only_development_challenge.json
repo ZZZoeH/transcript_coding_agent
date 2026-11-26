@@ -1,0 +1,20 @@
+{
+ "inputs": {
+  "reference_sha256": "2e14b0a1b18e4f101ef8031834f64883a6c8267ac518008e836409c8ca896688",
+  "dev_ids_sha256": "f43e60ca70d3a9e83fb4ebab69d3b75763a6d9953d637ce714111ad3ab0653fd"
+ },
+ "reference_only": {
+  "known_calibration": {
+   "calls": 240,
+   "flagged": 13,
+   "rate": 0.05416666666666667
+  },
+  "withheld_development": {
+   "calls": 100,
+   "flagged": 1,
+   "rate": 0.01
+  }
+ },
+ "purpose": "Assess the frozen lexical reference on existing development labels. This does not validate model-candidate suppression on unknown topics and does not select a new threshold.",
+ "new_annotations": 0
+}

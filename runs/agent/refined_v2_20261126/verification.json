@@ -1,0 +1,76 @@
+{
+ "all_checks_passed": true,
+ "verified_manifests": [
+  "runs/agent/refined_v2_20261126/dev_run/manifest.json",
+  "runs/agent/refined_v2_20261126/dev_analysis/manifest.json",
+  "runs/agent/refined_v2_20261126/dev_ablations/manifest.json",
+  "runs/agent/refined_v2_20261126/test_run/manifest.json",
+  "runs/agent/refined_v2_20261126/test_analysis/manifest.json",
+  "runs/agent/refined_v2_20261126/test_ablations/manifest.json"
+ ],
+ "accepted_raw_duplicate_key_checks": 90,
+ "scanned_new_files_for_actual_key": 504,
+ "scanned_tracked_files_for_actual_key": 158,
+ "api_key_ignored": true,
+ "api_key_untracked": true,
+ "credential_matches_outside_key_file": 0,
+ "source_transcripts_unchanged": true,
+ "new_human_annotations": 0,
+ "offline_tests": {
+  "passed": 65,
+  "log": "/private/tmp/refinement-final-tests.log"
+ },
+ "current_branch": "pinjun/reviewed-evaluation-20261126",
+ "provider_usage": {
+  "interrupted_development_probe": {
+   "saved_responses": 14,
+   "provider_reported_cost": 0.438268,
+   "input_tokens": 54326,
+   "output_tokens": 41202,
+   "by_mode": {
+    "global": {
+     "saved_responses": 4,
+     "provider_reported_cost": 0.406682
+    },
+    "qualification": {
+     "saved_responses": 10,
+     "provider_reported_cost": 0.031586
+    }
+   }
+  },
+  "development": {
+   "saved_responses": 23,
+   "provider_reported_cost": 0.67827,
+   "input_tokens": 228295,
+   "output_tokens": 27710,
+   "by_mode": {
+    "global": {
+     "saved_responses": 17,
+     "provider_reported_cost": 0.6603860000000001
+    },
+    "qualification": {
+     "saved_responses": 6,
+     "provider_reported_cost": 0.017884
+    }
+   }
+  },
+  "exploratory_test": {
+   "saved_responses": 116,
+   "provider_reported_cost": 5.54328,
+   "input_tokens": 928028,
+   "output_tokens": 460903,
+   "by_mode": {
+    "qualification": {
+     "saved_responses": 51,
+     "provider_reported_cost": 0.15306000000000006
+    },
+    "global": {
+     "saved_responses": 65,
+     "provider_reported_cost": 5.390219999999997
+    }
+   }
+  }
+ },
+ "total_provider_reported_incremental_cost": 6.659818,
+ "cost_note": "Includes saved rejected attempts and interrupted development probe. Unreturned requests may be billed but are not measurable from saved responses. Excludes reused v4 cost."
+}

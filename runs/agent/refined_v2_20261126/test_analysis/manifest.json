@@ -1,0 +1,16 @@
+{
+ "inputs": {
+  "runs/agent/refined_v2_20261126/test_run/manifest.json": "30ab4746a5b80984becc395861b205ae263fab963c840ce8cf65e146f49fcd66",
+  "runs/agent/refined_v2_20261126/test_run/predictions.json": "7264df61d95b02d82f5cc9548bac758bea7363a6adeb52a3fb1baba1d8f01545",
+  "runs/agent/refined_v2_20261126/design.json": "fdc7f726200993529175a8f1861160871600a4cb8d5585d929c10096c2933292",
+  "runs/agent/refined_v2_20261126/novelty_policy.json": "3282695aa4981c6d5be0c97180fe4d2e9e6c83b33efd70b4094f20bbd83e8cc8",
+  "/Users/pinjunLiu/src/transcript_coding_agent/tools/evaluate_refinement.py": "e7dbfde475ae0eef79d24d9460aa45e7645ac46063feb62f96b64f9465736da4",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/qualification_review/adjudicated_after_C_v1/adjudicated_sheet.csv": "77569f5b8e7ad11ea068eb8935b84cfbcf9247c91fe3b8eb88f2a4c369d92087"
+ },
+ "outputs": {
+  "summary.json": "92c36b58dc745dec92be0d7a877331b7d2945a660165ff96a34a0aa389fa0dd5",
+  "review_triage.csv": "92fc3413dcfc22955e584261d2b40f79ee0c4b7e300b17ea19621c4fb174c858",
+  "refined_scoring.json": "7264df61d95b02d82f5cc9548bac758bea7363a6adeb52a3fb1baba1d8f01545",
+  "original_label_metrics.csv": "9491ce41799ae79db07348ff2149e30a41571360d42b68ef83d720dd41f90fe8"
+ }
+}

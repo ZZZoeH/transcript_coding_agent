@@ -1,0 +1,39 @@
+{
+ "known_calls": 240,
+ "withheld_calls": 100,
+ "ood_auroc": 0.7654791666666667,
+ "threshold_tradeoffs": [
+  {
+   "target_known_fpr": 0.05,
+   "threshold": 0.066026,
+   "known_fpr": 0.05,
+   "withheld_recall": 0.01
+  },
+  {
+   "target_known_fpr": 0.1,
+   "threshold": 0.086619,
+   "known_fpr": 0.1,
+   "withheld_recall": 0.15
+  },
+  {
+   "target_known_fpr": 0.2,
+   "threshold": 0.115688,
+   "known_fpr": 0.2,
+   "withheld_recall": 0.47
+  },
+  {
+   "target_known_fpr": 0.3,
+   "threshold": 0.139104,
+   "known_fpr": 0.3,
+   "withheld_recall": 0.7
+  },
+  {
+   "target_known_fpr": 0.5,
+   "threshold": 0.183889,
+   "known_fpr": 0.5,
+   "withheld_recall": 0.97
+  }
+ ],
+ "selected_threshold_changed": false,
+ "note": "Reference-only development diagnostic using existing labels. One withheld topic; this does not validate the model novelty candidates. No threshold was selected or changed."
+}

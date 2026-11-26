@@ -1,0 +1,17 @@
+{
+ "inputs": {
+  "runs/agent/refined_v2_20261126/ablation_design.json": "3cb8a2e08a23eb7ee9240b0a8217be05b8c2ea04be15e2f4001c17f7b6479ef6",
+  "runs/agent/refined_v2_20261126/novelty_policy.json": "3282695aa4981c6d5be0c97180fe4d2e9e6c83b33efd70b4094f20bbd83e8cc8",
+  "runs/agent/refined_v2_20261126/dev_analysis/refined_scoring.json": "6428b34f93225b9175bc0f5eea61078d07e6198ebf2e4fb4b0166fa84365678e",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/reviewed_20261126/dev_run/predictions.json": "aee4a38aa367c53b2a9c5fbc45591f8c8b2f6b7e2b336c36abde893f380c23f3",
+  "/Users/pinjunLiu/src/transcript_coding_agent/tools/evaluate_refinement_ablations.py": "fe29712519586dc38edca10a2f31a7e683f1f8c1e681e0ce9470cad12ac34b6f"
+ },
+ "outputs": {
+  "summary.json": "e90fa5b15f44ef98f1dae1150aaa567bc7ba46cee9d0cfc3ce1c1e2e1657d417",
+  "full_refinement_predictions.json": "6428b34f93225b9175bc0f5eea61078d07e6198ebf2e4fb4b0166fa84365678e",
+  "gaps_only_review_triage.csv": "f7d9c9362df010485d96954cb46a7df151da122085b85a6dd10441c6fa9aa925",
+  "comparison.csv": "5e61a9857ec26683dc4d6080a2e59fcb916baa24c8f07fa6fcf07db8953d6d45",
+  "alias_only_predictions.json": "47a3bfd6f7cfa95558d4d5033f58ad82ab198f525933d12c0faaa09c5a84db26",
+  "gaps_only_predictions.json": "e3910e2afd52934606874633e6c369105903ce45bbf247de32167160983e012a"
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "version": "targeted-refinement-v1-20261126",
+ "base_experiment": "runs/agent/reviewed_20261126",
+ "refinement_eligibility": "global if base turn_chunks>1; otherwise outcome-only if existing qualification questions and null outcome; pipeline failures retained as explicit abstentions",
+ "preserved": "Every original turn label, source transcript, split and human answer; no new human labels or target labels in requests",
+ "global_pass": "One independent whole-call metadata judgment replaces contradictory chunk globals",
+ "qualification_pass": "Unchanged qualification guide; outcome is independent of hook presence",
+ "review_triage": "Additional evidence-gap/actionable breakdown; original complete-call review remains visible",
+ "novelty_candidates": [
+  {
+   "minimum": null,
+   "margin": 0.0
+  },
+  {
+   "minimum": 0.25,
+   "margin": 0.05
+  },
+  {
+   "minimum": 0.25,
+   "margin": 0.15
+  },
+  {
+   "minimum": 0.4,
+   "margin": 0.05
+  },
+  {
+   "minimum": 0.4,
+   "margin": 0.15
+  },
+  {
+   "minimum": 0.55,
+   "margin": 0.05
+  },
+  {
+   "minimum": 0.55,
+   "margin": 0.15
+  }
+ ],
+ "novelty_selection": "Minimize development known-topic false positives subject to preserving baseline withheld-topic hits. Tie: fewer lexical overrides, then higher threshold and margin. Always show recall and false positives together.",
+ "test_status": "Previously inspected exploratory comparison. Freeze selected novelty policy after development and before test refinement.",
+ "base_inputs": {
+  "runs/agent/reviewed_20261126/dev_run/predictions.json": "aee4a38aa367c53b2a9c5fbc45591f8c8b2f6b7e2b336c36abde893f380c23f3",
+  "runs/agent/reviewed_20261126/dev_run/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "runs/agent/reviewed_20261126/dev_run/manifest.json": "8057037e91ba91c3f5cee703b8f6622b89d0d8a9787984c2cd7785f31325fdfe",
+  "runs/agent/reviewed_20261126/test_run/predictions.json": "b1e0741e5da6ede771397627694c4b67f588fc4f6a3849b1da749fb530031e1c",
+  "runs/agent/reviewed_20261126/test_run/failures.json": "789f7c36eb181ca3b8fa1783565d832a5fe099883c1e428e7a3a6ef66838943f",
+  "runs/agent/reviewed_20261126/test_run/manifest.json": "fed4aa42fa1462f57afcec5da264b636ad7a6c8558eec816d5826bfa8c2185e9"
+ },
+ "source_transcripts": {
+  "/Users/pinjunLiu/src/transcript_coding_agent/transcript_inputs/input1.json": "d125db24b4933598bca714dc72149c1b4991e7bffd138805490191e558595d2a",
+  "/Users/pinjunLiu/src/transcript_coding_agent/transcript_inputs/input2.json": "f778f4f5f37b6f4678216b8e19a366ba896f77456d067336dae2969f7d654d30",
+  "/Users/pinjunLiu/src/transcript_coding_agent/transcript_inputs/input3.json": "0b238c49e1f7771630fbb4ccb8c2d76afc523815c3d2f7ae87e3dc9f881226fe",
+  "/Users/pinjunLiu/src/transcript_coding_agent/transcript_inputs/input4.json": "074917cc0244a7e2b4df8a2d60420ca27a7e770c8dbbff73b94fbb6509fc368b",
+  "/Users/pinjunLiu/src/transcript_coding_agent/transcript_inputs/input5.json": "d0f891b54682effb296ebe47ef27256627920773ab95b4fb4d522555b3e43981"
+ },
+ "development_probe": {
+  "path": "runs/agent/refined_20261126",
+  "status": "interrupted_after_contract_failures",
+  "reason": "Global evidence row repetition and noncanonical qualification uncertainty paths; fixed-key evidence and constrained uncertainty added before this run."
+ }
+}

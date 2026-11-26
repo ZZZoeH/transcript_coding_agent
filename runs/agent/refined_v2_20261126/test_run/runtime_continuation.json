@@ -1,0 +1,9 @@
+{
+ "time_utc": "2026-11-26T22:53:20.227617+00:00",
+ "reason": "Use four concurrent requests after stable service behavior to finish remaining long-call passes. Frozen prompts, parameters, source and predictions unchanged. Resume retains completed outputs and existing fallback records.",
+ "completed_before_resume": 572,
+ "previous_workers": 2,
+ "resumed_workers": 4,
+ "previous_invocation_started": "2026-11-26T22:42:51.103658+00:00",
+ "billing_note": "An interrupted in-flight request can have unreported provider usage."
+}

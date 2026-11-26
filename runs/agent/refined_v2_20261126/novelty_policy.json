@@ -1,0 +1,306 @@
+{
+ "selected": {
+  "minimum": null,
+  "margin": 0.0
+ },
+ "selection_partition": "development_only",
+ "baseline": {
+  "groups": {
+   "known": {
+    "n": 80,
+    "flagged": 23,
+    "rate": 0.2875,
+    "ci95": [
+     0.175,
+     0.388
+    ]
+   },
+   "withheld": {
+    "n": 0,
+    "flagged": 0,
+    "rate": null,
+    "ci95": null
+   },
+   "naturally_unseen": {
+    "n": 0,
+    "flagged": 0,
+    "rate": null,
+    "ci95": null
+   }
+  },
+  "topic_flagged": 23,
+  "organization_flagged": 4,
+  "all_flagged": 25,
+  "candidate_alias_matches": 0
+ },
+ "variants": [
+  {
+   "policy": {
+    "minimum": null,
+    "margin": 0.0
+   },
+   "metrics": {
+    "groups": {
+     "known": {
+      "n": 80,
+      "flagged": 21,
+      "rate": 0.2625,
+      "ci95": [
+       0.175,
+       0.362
+      ]
+     },
+     "withheld": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     },
+     "naturally_unseen": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     }
+    },
+    "topic_flagged": 21,
+    "organization_flagged": 4,
+    "all_flagged": 23,
+    "candidate_alias_matches": 14
+   },
+   "eligible": true,
+   "lexical_overrides": 0
+  },
+  {
+   "policy": {
+    "minimum": 0.25,
+    "margin": 0.05
+   },
+   "metrics": {
+    "groups": {
+     "known": {
+      "n": 80,
+      "flagged": 21,
+      "rate": 0.2625,
+      "ci95": [
+       0.175,
+       0.362
+      ]
+     },
+     "withheld": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     },
+     "naturally_unseen": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     }
+    },
+    "topic_flagged": 21,
+    "organization_flagged": 4,
+    "all_flagged": 23,
+    "candidate_alias_matches": 14
+   },
+   "eligible": false,
+   "lexical_overrides": 0
+  },
+  {
+   "policy": {
+    "minimum": 0.25,
+    "margin": 0.15
+   },
+   "metrics": {
+    "groups": {
+     "known": {
+      "n": 80,
+      "flagged": 21,
+      "rate": 0.2625,
+      "ci95": [
+       0.175,
+       0.362
+      ]
+     },
+     "withheld": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     },
+     "naturally_unseen": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     }
+    },
+    "topic_flagged": 21,
+    "organization_flagged": 4,
+    "all_flagged": 23,
+    "candidate_alias_matches": 14
+   },
+   "eligible": false,
+   "lexical_overrides": 0
+  },
+  {
+   "policy": {
+    "minimum": 0.4,
+    "margin": 0.05
+   },
+   "metrics": {
+    "groups": {
+     "known": {
+      "n": 80,
+      "flagged": 21,
+      "rate": 0.2625,
+      "ci95": [
+       0.175,
+       0.362
+      ]
+     },
+     "withheld": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     },
+     "naturally_unseen": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     }
+    },
+    "topic_flagged": 21,
+    "organization_flagged": 4,
+    "all_flagged": 23,
+    "candidate_alias_matches": 14
+   },
+   "eligible": false,
+   "lexical_overrides": 0
+  },
+  {
+   "policy": {
+    "minimum": 0.4,
+    "margin": 0.15
+   },
+   "metrics": {
+    "groups": {
+     "known": {
+      "n": 80,
+      "flagged": 21,
+      "rate": 0.2625,
+      "ci95": [
+       0.175,
+       0.362
+      ]
+     },
+     "withheld": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     },
+     "naturally_unseen": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     }
+    },
+    "topic_flagged": 21,
+    "organization_flagged": 4,
+    "all_flagged": 23,
+    "candidate_alias_matches": 14
+   },
+   "eligible": false,
+   "lexical_overrides": 0
+  },
+  {
+   "policy": {
+    "minimum": 0.55,
+    "margin": 0.05
+   },
+   "metrics": {
+    "groups": {
+     "known": {
+      "n": 80,
+      "flagged": 21,
+      "rate": 0.2625,
+      "ci95": [
+       0.175,
+       0.362
+      ]
+     },
+     "withheld": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     },
+     "naturally_unseen": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     }
+    },
+    "topic_flagged": 21,
+    "organization_flagged": 4,
+    "all_flagged": 23,
+    "candidate_alias_matches": 14
+   },
+   "eligible": false,
+   "lexical_overrides": 0
+  },
+  {
+   "policy": {
+    "minimum": 0.55,
+    "margin": 0.15
+   },
+   "metrics": {
+    "groups": {
+     "known": {
+      "n": 80,
+      "flagged": 21,
+      "rate": 0.2625,
+      "ci95": [
+       0.175,
+       0.362
+      ]
+     },
+     "withheld": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     },
+     "naturally_unseen": {
+      "n": 0,
+      "flagged": 0,
+      "rate": null,
+      "ci95": null
+     }
+    },
+    "topic_flagged": 21,
+    "organization_flagged": 4,
+    "all_flagged": 23,
+    "candidate_alias_matches": 14
+   },
+   "eligible": false,
+   "lexical_overrides": 0
+  }
+ ],
+ "development_withheld_calls": 0,
+ "unknown_recall_validated_in_this_development_comparison": false,
+ "selection_guard": "Without unknown-topic development examples, accept canonical existing aliases only; do not select a lexical threshold from known negatives alone.",
+ "inputs": {
+  "runs/agent/refined_v2_20261126/dev_run/predictions.json": "6428b34f93225b9175bc0f5eea61078d07e6198ebf2e4fb4b0166fa84365678e",
+  "runs/agent/refined_v2_20261126/design.json": "fdc7f726200993529175a8f1861160871600a4cb8d5585d929c10096c2933292",
+  "/Users/pinjunLiu/src/transcript_coding_agent/tools/evaluate_refinement.py": "e7dbfde475ae0eef79d24d9460aa45e7645ac46063feb62f96b64f9465736da4"
+ },
+ "note": "Uses existing released development topic labels, not new human annotations. No qualification test answers enter selection. Small reused development sample; uncertainty remains."
+}

@@ -1,0 +1,18 @@
+{
+ "inputs": {
+  "runs/agent/refined_v2_20261126/ablation_design.json": "3cb8a2e08a23eb7ee9240b0a8217be05b8c2ea04be15e2f4001c17f7b6479ef6",
+  "runs/agent/refined_v2_20261126/novelty_policy.json": "3282695aa4981c6d5be0c97180fe4d2e9e6c83b33efd70b4094f20bbd83e8cc8",
+  "runs/agent/refined_v2_20261126/test_analysis/refined_scoring.json": "7264df61d95b02d82f5cc9548bac758bea7363a6adeb52a3fb1baba1d8f01545",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/reviewed_20261126/test_run/predictions.json": "b1e0741e5da6ede771397627694c4b67f588fc4f6a3849b1da749fb530031e1c",
+  "/Users/pinjunLiu/src/transcript_coding_agent/tools/evaluate_refinement_ablations.py": "fe29712519586dc38edca10a2f31a7e683f1f8c1e681e0ce9470cad12ac34b6f",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/qualification_review/adjudicated_after_C_v1/adjudicated_sheet.csv": "77569f5b8e7ad11ea068eb8935b84cfbcf9247c91fe3b8eb88f2a4c369d92087"
+ },
+ "outputs": {
+  "summary.json": "2310fdae288217a87ee8dd2612af0fe44c94466f316fe21925ccef45512e2a41",
+  "full_refinement_predictions.json": "7264df61d95b02d82f5cc9548bac758bea7363a6adeb52a3fb1baba1d8f01545",
+  "gaps_only_review_triage.csv": "4ae022839ee49035cf0d132f1a411ac43cc7c060cd170c39ff05af356290dd93",
+  "comparison.csv": "ce8d56d205aeafe0556320043869009854ba778657a4b993622395e15ea328dd",
+  "alias_only_predictions.json": "0b780504a54287d634fac2ae41626e07073d28f49a633eb9ecb0f3eadb575d91",
+  "gaps_only_predictions.json": "2094ccb6141a655475e495ce44f2a2192fa99e4dbd6ccfab3072d62f18d37a20"
+ }
+}

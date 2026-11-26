@@ -1,0 +1,8 @@
+[
+ {
+  "call_id": "artifact_call_02376",
+  "mode": "global",
+  "reason": "missing evidence: hook_phase.transfer.success",
+  "base_prediction_retained": true
+ }
+]

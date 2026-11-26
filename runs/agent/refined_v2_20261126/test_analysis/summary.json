@@ -1,0 +1,1407 @@
+{
+ "partition": "test",
+ "calls": 583,
+ "exploratory": true,
+ "new_human_annotations": 0,
+ "preserved_turn_predictions": true,
+ "base_pipeline_abstentions": 1,
+ "valid_refinement_calls": 78,
+ "refinement_fallbacks": [
+  {
+   "call_id": "artifact_call_02226",
+   "mode": "global",
+   "reason": "evidence references unknown or empty field: hook_phase.execution; evidence references unknown or empty field: hook_phase.transfer.failure_reason",
+   "base_prediction_retained": true
+  },
+  {
+   "call_id": "artifact_call_02272",
+   "mode": "global",
+   "reason": "Expecting ',' delimiter: line 1 column 1247 (char 1246)",
+   "base_prediction_retained": true
+  },
+  {
+   "call_id": "artifact_call_02273",
+   "mode": "global",
+   "reason": "Expecting value: line 1 column 25641 (char 25640)",
+   "base_prediction_retained": true
+  },
+  {
+   "call_id": "artifact_call_02293",
+   "mode": "global",
+   "reason": "missing evidence: hook_phase.transfer.success",
+   "base_prediction_retained": true
+  },
+  {
+   "call_id": "artifact_call_02316",
+   "mode": "global",
+   "reason": "Expecting value: line 50 column 21751 (char 23262)",
+   "base_prediction_retained": true
+  },
+  {
+   "call_id": "artifact_call_02367",
+   "mode": "global",
+   "reason": "Expecting value: line 1 column 27232 (char 27231)",
+   "base_prediction_retained": true
+  },
+  {
+   "call_id": "artifact_call_02387",
+   "mode": "global",
+   "reason": "Expecting ',' delimiter: line 1 column 26047 (char 26046)",
+   "base_prediction_retained": true
+  },
+  {
+   "call_id": "artifact_call_02408",
+   "mode": "global",
+   "reason": "Expecting value: line 1 column 27233 (char 27232)",
+   "base_prediction_retained": true
+  }
+ ],
+ "metrics": {
+  "original_labels": {
+   "reviewed_v4": [
+    {
+     "field": "category",
+     "metric": "kappa",
+     "score": 0.5265542666777406,
+     "ci95": [
+      0.446,
+      0.605
+     ]
+    },
+    {
+     "field": "subcategory",
+     "metric": "kappa",
+     "score": 0.7504862645487917,
+     "ci95": [
+      0.715,
+      0.787
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "metric": "kappa",
+     "score": 0.010636093863299837,
+     "ci95": [
+      -0.003,
+      0.024
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "metric": "kappa",
+     "score": 0.39558149228845413,
+     "ci95": [
+      0.233,
+      0.547
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "metric": "kappa",
+     "score": 0.4770920272347903,
+     "ci95": [
+      0.421,
+      0.534
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "metric": "kappa",
+     "score": 0.836577947833887,
+     "ci95": [
+      0.789,
+      0.877
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "metric": "kappa",
+     "score": 0.06079895942137518,
+     "ci95": [
+      0.023,
+      0.108
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "metric": "kappa",
+     "score": 0.08492519369489712,
+     "ci95": [
+      0.013,
+      0.159
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "metric": "kappa",
+     "score": 0.47179229535030714,
+     "ci95": [
+      0.355,
+      0.578
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "metric": "kappa",
+     "score": 0.4626712034998427,
+     "ci95": [
+      0.404,
+      0.523
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "metric": "kappa",
+     "score": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "metric": "micro_f1",
+     "score": 0.5717579250720461,
+     "ci95": [
+      0.547,
+      0.595
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "metric": "micro_f1",
+     "score": 0.640457469621158,
+     "ci95": [
+      0.604,
+      0.676
+     ]
+    },
+    {
+     "field": "functional_states",
+     "metric": "micro_f1",
+     "score": 0.6660998937300744,
+     "ci95": [
+      0.633,
+      0.698
+     ]
+    },
+    {
+     "field": "requested_info",
+     "metric": "micro_f1",
+     "score": 0.677903608111667,
+     "ci95": [
+      0.648,
+      0.709
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "metric": "micro_f1",
+     "score": 0.6330737517178195,
+     "ci95": [
+      0.594,
+      0.668
+     ]
+    }
+   ],
+   "refined_v5": [
+    {
+     "field": "category",
+     "metric": "kappa",
+     "score": 0.5139416396479852,
+     "ci95": [
+      0.434,
+      0.591
+     ]
+    },
+    {
+     "field": "subcategory",
+     "metric": "kappa",
+     "score": 0.7545186278126154,
+     "ci95": [
+      0.719,
+      0.791
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "metric": "kappa",
+     "score": 0.005844817093378488,
+     "ci95": [
+      -0.005,
+      0.017
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "metric": "kappa",
+     "score": 0.38052075515270534,
+     "ci95": [
+      0.215,
+      0.528
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "metric": "kappa",
+     "score": 0.4798144984134732,
+     "ci95": [
+      0.422,
+      0.535
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "metric": "kappa",
+     "score": 0.836577947833887,
+     "ci95": [
+      0.789,
+      0.877
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "metric": "kappa",
+     "score": 0.05517092592229392,
+     "ci95": [
+      0.018,
+      0.101
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "metric": "kappa",
+     "score": 0.0827023306126464,
+     "ci95": [
+      0.011,
+      0.156
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "metric": "kappa",
+     "score": 0.49281895728243175,
+     "ci95": [
+      0.377,
+      0.606
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "metric": "kappa",
+     "score": 0.4677830986723253,
+     "ci95": [
+      0.409,
+      0.529
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "metric": "kappa",
+     "score": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "metric": "micro_f1",
+     "score": 0.5717579250720461,
+     "ci95": [
+      0.547,
+      0.595
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "metric": "micro_f1",
+     "score": 0.640457469621158,
+     "ci95": [
+      0.604,
+      0.676
+     ]
+    },
+    {
+     "field": "functional_states",
+     "metric": "micro_f1",
+     "score": 0.6660998937300744,
+     "ci95": [
+      0.633,
+      0.698
+     ]
+    },
+    {
+     "field": "requested_info",
+     "metric": "micro_f1",
+     "score": 0.677903608111667,
+     "ci95": [
+      0.648,
+      0.709
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "metric": "micro_f1",
+     "score": 0.620253164556962,
+     "ci95": [
+      0.582,
+      0.657
+     ]
+    }
+   ]
+  },
+  "reviewed_projection": {
+   "reviewed_v4": [
+    {
+     "field": "category",
+     "metric": "kappa",
+     "score": 0.5265542666777406,
+     "ci95": [
+      0.446,
+      0.605
+     ]
+    },
+    {
+     "field": "subcategory",
+     "metric": "kappa",
+     "score": 0.7504862645487917,
+     "ci95": [
+      0.715,
+      0.787
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "metric": "kappa",
+     "score": 0.010636093863299837,
+     "ci95": [
+      -0.003,
+      0.024
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "metric": "kappa",
+     "score": 0.39558149228845413,
+     "ci95": [
+      0.233,
+      0.547
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "metric": "kappa",
+     "score": 0.4770920272347903,
+     "ci95": [
+      0.421,
+      0.534
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "metric": "kappa",
+     "score": 0.836577947833887,
+     "ci95": [
+      0.789,
+      0.877
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "metric": "kappa",
+     "score": 0.06079895942137518,
+     "ci95": [
+      0.023,
+      0.108
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "metric": "kappa",
+     "score": 0.08492519369489712,
+     "ci95": [
+      0.013,
+      0.159
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "metric": "kappa",
+     "score": 0.47179229535030714,
+     "ci95": [
+      0.355,
+      0.578
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "metric": "kappa",
+     "score": 0.4626712034998427,
+     "ci95": [
+      0.404,
+      0.523
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "metric": "kappa",
+     "score": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "metric": "micro_f1",
+     "score": 0.5717579250720461,
+     "ci95": [
+      0.547,
+      0.595
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "metric": "micro_f1",
+     "score": 0.640457469621158,
+     "ci95": [
+      0.604,
+      0.676
+     ]
+    },
+    {
+     "field": "functional_states",
+     "metric": "micro_f1",
+     "score": 0.6665248830284984,
+     "ci95": [
+      0.634,
+      0.698
+     ]
+    },
+    {
+     "field": "requested_info",
+     "metric": "micro_f1",
+     "score": 0.690200210748156,
+     "ci95": [
+      0.661,
+      0.721
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "metric": "micro_f1",
+     "score": 0.6412844036697248,
+     "ci95": [
+      0.604,
+      0.676
+     ]
+    }
+   ],
+   "refined_v5": [
+    {
+     "field": "category",
+     "metric": "kappa",
+     "score": 0.5139416396479852,
+     "ci95": [
+      0.434,
+      0.591
+     ]
+    },
+    {
+     "field": "subcategory",
+     "metric": "kappa",
+     "score": 0.7545186278126154,
+     "ci95": [
+      0.719,
+      0.791
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "metric": "kappa",
+     "score": 0.005844817093378488,
+     "ci95": [
+      -0.005,
+      0.017
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "metric": "kappa",
+     "score": 0.38052075515270534,
+     "ci95": [
+      0.215,
+      0.528
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "metric": "kappa",
+     "score": 0.4798144984134732,
+     "ci95": [
+      0.422,
+      0.535
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "metric": "kappa",
+     "score": 0.836577947833887,
+     "ci95": [
+      0.789,
+      0.877
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "metric": "kappa",
+     "score": 0.05517092592229392,
+     "ci95": [
+      0.018,
+      0.101
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "metric": "kappa",
+     "score": 0.0827023306126464,
+     "ci95": [
+      0.011,
+      0.156
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "metric": "kappa",
+     "score": 0.49281895728243175,
+     "ci95": [
+      0.377,
+      0.606
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "metric": "kappa",
+     "score": 0.4677830986723253,
+     "ci95": [
+      0.409,
+      0.529
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "metric": "kappa",
+     "score": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "metric": "micro_f1",
+     "score": 0.5717579250720461,
+     "ci95": [
+      0.547,
+      0.595
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "metric": "micro_f1",
+     "score": 0.640457469621158,
+     "ci95": [
+      0.604,
+      0.676
+     ]
+    },
+    {
+     "field": "functional_states",
+     "metric": "micro_f1",
+     "score": 0.6665248830284984,
+     "ci95": [
+      0.634,
+      0.698
+     ]
+    },
+    {
+     "field": "requested_info",
+     "metric": "micro_f1",
+     "score": 0.690200210748156,
+     "ci95": [
+      0.661,
+      0.721
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "metric": "micro_f1",
+     "score": 0.6283386147578088,
+     "ci95": [
+      0.589,
+      0.665
+     ]
+    }
+   ]
+  }
+ },
+ "paired_refined_minus_v4": {
+  "original_labels": [
+   {
+    "field": "category",
+    "difference": -0.012612627029755408,
+    "ci95": [
+     -0.034,
+     0.0
+    ]
+   },
+   {
+    "field": "subcategory",
+    "difference": 0.004032363263823613,
+    "ci95": [
+     0.0,
+     0.01
+    ]
+   },
+   {
+    "field": "hook_phase.execution",
+    "difference": -0.0047912767699213495,
+    "ci95": [
+     -0.012,
+     0.002
+    ]
+   },
+   {
+    "field": "hook_phase.consent",
+    "difference": -0.015060737135748792,
+    "ci95": [
+     -0.04,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.only_greeting_turns",
+    "difference": 0.002722471178682906,
+    "ci95": [
+     -0.006,
+     0.013
+    ]
+   },
+   {
+    "field": "hook_phase.transfer.intent",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.transfer.success",
+    "difference": -0.00562803349908126,
+    "ci95": [
+     -0.017,
+     0.003
+    ]
+   },
+   {
+    "field": "hook_phase.exists",
+    "difference": -0.0022228630822507256,
+    "ci95": [
+     -0.007,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.caller_identification.name",
+    "difference": 0.021026661932124602,
+    "ci95": [
+     0.005,
+     0.045
+    ]
+   },
+   {
+    "field": "hook_phase.caller_identification.organization",
+    "difference": 0.005111895172482617,
+    "ci95": [
+     -0.005,
+     0.016
+    ]
+   },
+   {
+    "field": "hook_phase.transfer.failure_reason",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "persuasion",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "complementary_persuasion",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "functional_states",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "requested_info",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.qualification.question",
+    "difference": -0.012820587160857544,
+    "ci95": [
+     -0.028,
+     -0.0
+    ]
+   }
+  ],
+  "reviewed_projection": [
+   {
+    "field": "category",
+    "difference": -0.012612627029755408,
+    "ci95": [
+     -0.034,
+     0.0
+    ]
+   },
+   {
+    "field": "subcategory",
+    "difference": 0.004032363263823613,
+    "ci95": [
+     0.0,
+     0.01
+    ]
+   },
+   {
+    "field": "hook_phase.execution",
+    "difference": -0.0047912767699213495,
+    "ci95": [
+     -0.012,
+     0.002
+    ]
+   },
+   {
+    "field": "hook_phase.consent",
+    "difference": -0.015060737135748792,
+    "ci95": [
+     -0.04,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.only_greeting_turns",
+    "difference": 0.002722471178682906,
+    "ci95": [
+     -0.006,
+     0.013
+    ]
+   },
+   {
+    "field": "hook_phase.transfer.intent",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.transfer.success",
+    "difference": -0.00562803349908126,
+    "ci95": [
+     -0.017,
+     0.003
+    ]
+   },
+   {
+    "field": "hook_phase.exists",
+    "difference": -0.0022228630822507256,
+    "ci95": [
+     -0.007,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.caller_identification.name",
+    "difference": 0.021026661932124602,
+    "ci95": [
+     0.005,
+     0.045
+    ]
+   },
+   {
+    "field": "hook_phase.caller_identification.organization",
+    "difference": 0.005111895172482617,
+    "ci95": [
+     -0.005,
+     0.016
+    ]
+   },
+   {
+    "field": "hook_phase.transfer.failure_reason",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "persuasion",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "complementary_persuasion",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "functional_states",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "requested_info",
+    "difference": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "field": "hook_phase.qualification.question",
+    "difference": -0.012945788911916,
+    "ci95": [
+     -0.028,
+     -0.001
+    ]
+   }
+  ]
+ },
+ "novelty": {
+  "reviewed_v4": {
+   "groups": {
+    "known": {
+     "n": 545,
+     "flagged": 128,
+     "rate": 0.23486238532110093,
+     "ci95": [
+      0.202,
+      0.272
+     ]
+    },
+    "withheld": {
+     "n": 30,
+     "flagged": 11,
+     "rate": 0.36666666666666664,
+     "ci95": [
+      0.2,
+      0.533
+     ]
+    },
+    "naturally_unseen": {
+     "n": 8,
+     "flagged": 5,
+     "rate": 0.625,
+     "ci95": [
+      0.25,
+      1.0
+     ]
+    }
+   },
+   "topic_flagged": 144,
+   "organization_flagged": 31,
+   "all_flagged": 163,
+   "candidate_alias_matches": 0
+  },
+  "refined_v5": {
+   "groups": {
+    "known": {
+     "n": 545,
+     "flagged": 130,
+     "rate": 0.23853211009174313,
+     "ci95": [
+      0.206,
+      0.272
+     ]
+    },
+    "withheld": {
+     "n": 30,
+     "flagged": 11,
+     "rate": 0.36666666666666664,
+     "ci95": [
+      0.2,
+      0.533
+     ]
+    },
+    "naturally_unseen": {
+     "n": 8,
+     "flagged": 5,
+     "rate": 0.625,
+     "ci95": [
+      0.25,
+      1.0
+     ]
+    }
+   },
+   "topic_flagged": 146,
+   "organization_flagged": 32,
+   "all_flagged": 165,
+   "candidate_alias_matches": 111
+  }
+ },
+ "review": {
+  "reviewed_v4": {
+   "calls": 583,
+   "complete_call_review_required": 579,
+   "actionable_review_calls": 391,
+   "evidence_gap_calls": 544,
+   "evidence_gap_only_calls": 188,
+   "fully_unflagged_calls": 4,
+   "uncertainty_call_counts": {
+    "hook_phase.execution": 560,
+    "hook_phase.transfer.success": 204,
+    "hook_phase.transfer.failure_reason": 165,
+    "novelty": 163,
+    "qualification_outcome": 80,
+    "subcategory": 47,
+    "category": 13,
+    "hook_phase.transfer.intent": 20,
+    "novelty_candidates": 3,
+    "caller_utterances.6.requested_info": 3,
+    "hook_phase.only_greeting_turns": 11,
+    "caller_utterances.4.requested_info": 4,
+    "caller_utterances.2.requested_info": 2,
+    "caller_utterances.16.requested_info": 2,
+    "caller_utterances.22.requested_info": 4,
+    "pipeline": 1,
+    "caller_utterances.10.requested_info": 2,
+    "hook_phase.qualification.question": 1,
+    "hook_phase.caller_identification.organization": 9,
+    "caller_utterances.14.requested_info": 4,
+    "caller_utterances.8.requested_info": 2,
+    "caller_utterances.24.requested_info": 2,
+    "caller_utterances.40.requested_info": 3,
+    "caller_utterances.12.requested_info": 1,
+    "caller_utterances.26.requested_info": 3,
+    "caller_utterances.30.requested_info": 3,
+    "hook_phase": 34,
+    "caller_utterances.38.requested_info": 4,
+    "caller_utterances.36.requested_info": 2,
+    "hook_phase.caller_identification.name": 3,
+    "caller_utterances.28.requested_info": 2,
+    "caller_utterances.54.requested_info": 3,
+    "caller_utterances.70.requested_info": 1,
+    "caller_utterances.56.requested_info": 2,
+    "caller_utterances.18.requested_info": 2,
+    "caller_utterances.32.requested_info": 1,
+    "caller_utterances.44.requested_info": 1,
+    "caller_utterances.104.requested_info": 2,
+    "caller_utterances.46.requested_info": 1,
+    "caller_utterances.94.requested_info": 1,
+    "caller_utterances.92.requested_info": 1,
+    "caller_utterances.112.requested_info": 1,
+    "caller_utterances.106.requested_info": 2,
+    "caller_utterances.90.requested_info": 1,
+    "caller_utterances.58.requested_info": 3,
+    "caller_utterances.128.requested_info": 1,
+    "caller_utterances.60.requested_info": 2,
+    "caller_utterances.62.requested_info": 2,
+    "caller_utterances.34.requested_info": 1,
+    "caller_utterances.116.requested_info": 1,
+    "caller_utterances.68.requested_info": 1,
+    "caller_utterances.66.requested_info": 1,
+    "caller_utterances.64.requested_info": 1,
+    "caller_utterances.98.requested_info": 1,
+    "caller_utterances.76.requested_info": 1,
+    "caller_utterances.114.requested_info": 1
+   },
+   "field_acceptance_audit": {
+    "category": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 569,
+     "coverage": 0.9759862778730704,
+     "accepted_reference_disagreements": 78,
+     "accepted_reference_disagreement_rate": 0.13708260105448156
+    },
+    "subcategory": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 535,
+     "coverage": 0.9176672384219554,
+     "accepted_reference_disagreements": 76,
+     "accepted_reference_disagreement_rate": 0.14205607476635515
+    },
+    "hook_phase.execution": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 19,
+     "coverage": 0.032590051457975985,
+     "accepted_reference_disagreements": 9,
+     "accepted_reference_disagreement_rate": 0.47368421052631576
+    },
+    "hook_phase.consent": {
+     "reference_annotated_calls": 580,
+     "accepted_calls": 545,
+     "coverage": 0.9396551724137931,
+     "accepted_reference_disagreements": 30,
+     "accepted_reference_disagreement_rate": 0.05504587155963303
+    },
+    "hook_phase.only_greeting_turns": {
+     "reference_annotated_calls": 576,
+     "accepted_calls": 536,
+     "coverage": 0.9305555555555556,
+     "accepted_reference_disagreements": 167,
+     "accepted_reference_disagreement_rate": 0.31156716417910446
+    },
+    "hook_phase.transfer.intent": {
+     "reference_annotated_calls": 530,
+     "accepted_calls": 486,
+     "coverage": 0.9169811320754717,
+     "accepted_reference_disagreements": 33,
+     "accepted_reference_disagreement_rate": 0.06790123456790123
+    },
+    "hook_phase.transfer.success": {
+     "reference_annotated_calls": 259,
+     "accepted_calls": 66,
+     "coverage": 0.2548262548262548,
+     "accepted_reference_disagreements": 12,
+     "accepted_reference_disagreement_rate": 0.18181818181818182
+    },
+    "hook_phase.exists": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 548,
+     "coverage": 0.9399656946826758,
+     "accepted_reference_disagreements": 93,
+     "accepted_reference_disagreement_rate": 0.16970802919708028
+    },
+    "hook_phase.caller_identification.name": {
+     "reference_annotated_calls": 582,
+     "accepted_calls": 547,
+     "coverage": 0.9398625429553265,
+     "accepted_reference_disagreements": 45,
+     "accepted_reference_disagreement_rate": 0.08226691042047532
+    },
+    "hook_phase.caller_identification.organization": {
+     "reference_annotated_calls": 580,
+     "accepted_calls": 541,
+     "coverage": 0.9327586206896552,
+     "accepted_reference_disagreements": 143,
+     "accepted_reference_disagreement_rate": 0.2643253234750462
+    },
+    "hook_phase.transfer.failure_reason": {
+     "reference_annotated_calls": 55,
+     "accepted_calls": 19,
+     "coverage": 0.34545454545454546,
+     "accepted_reference_disagreements": 19,
+     "accepted_reference_disagreement_rate": 1.0
+    }
+   },
+   "note": "Acceptance means no emitted uncertainty on that field, not correctness. Reference disagreement is not independently adjudicated error. Evidence-gap-only calls still require review for complete-call coding."
+  },
+  "refined_v5": {
+   "calls": 583,
+   "complete_call_review_required": 579,
+   "actionable_review_calls": 380,
+   "evidence_gap_calls": 559,
+   "evidence_gap_only_calls": 199,
+   "fully_unflagged_calls": 4,
+   "uncertainty_call_counts": {
+    "hook_phase.execution": 563,
+    "hook_phase.transfer.success": 201,
+    "hook_phase.transfer.failure_reason": 165,
+    "novelty": 165,
+    "qualification_outcome": 53,
+    "subcategory": 45,
+    "category": 12,
+    "hook_phase.transfer.intent": 19,
+    "novelty_candidates": 3,
+    "caller_utterances.6.requested_info": 3,
+    "hook_phase.only_greeting_turns": 6,
+    "caller_utterances.4.requested_info": 4,
+    "caller_utterances.2.requested_info": 2,
+    "caller_utterances.16.requested_info": 2,
+    "caller_utterances.22.requested_info": 4,
+    "pipeline": 1,
+    "caller_utterances.10.requested_info": 2,
+    "hook_phase.qualification.question": 1,
+    "hook_phase.caller_identification.organization": 5,
+    "caller_utterances.14.requested_info": 4,
+    "caller_utterances.8.requested_info": 2,
+    "caller_utterances.24.requested_info": 2,
+    "caller_utterances.40.requested_info": 3,
+    "caller_utterances.12.requested_info": 1,
+    "caller_utterances.26.requested_info": 3,
+    "caller_utterances.30.requested_info": 3,
+    "caller_utterances.38.requested_info": 4,
+    "caller_utterances.36.requested_info": 2,
+    "caller_utterances.28.requested_info": 2,
+    "hook_phase": 8,
+    "caller_utterances.54.requested_info": 3,
+    "caller_utterances.70.requested_info": 1,
+    "caller_utterances.56.requested_info": 2,
+    "caller_utterances.18.requested_info": 2,
+    "caller_utterances.32.requested_info": 1,
+    "caller_utterances.44.requested_info": 1,
+    "caller_utterances.104.requested_info": 2,
+    "caller_utterances.94.requested_info": 1,
+    "caller_utterances.46.requested_info": 1,
+    "caller_utterances.92.requested_info": 1,
+    "caller_utterances.112.requested_info": 1,
+    "caller_utterances.106.requested_info": 2,
+    "caller_utterances.90.requested_info": 1,
+    "caller_utterances.58.requested_info": 3,
+    "caller_utterances.128.requested_info": 1,
+    "caller_utterances.60.requested_info": 2,
+    "caller_utterances.62.requested_info": 2,
+    "caller_utterances.34.requested_info": 1,
+    "caller_utterances.116.requested_info": 1,
+    "caller_utterances.68.requested_info": 1,
+    "caller_utterances.66.requested_info": 1,
+    "caller_utterances.64.requested_info": 1,
+    "caller_utterances.98.requested_info": 1,
+    "caller_utterances.76.requested_info": 1,
+    "caller_utterances.114.requested_info": 1
+   },
+   "field_acceptance_audit": {
+    "category": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 570,
+     "coverage": 0.9777015437392796,
+     "accepted_reference_disagreements": 79,
+     "accepted_reference_disagreement_rate": 0.13859649122807016
+    },
+    "subcategory": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 537,
+     "coverage": 0.9210977701543739,
+     "accepted_reference_disagreements": 76,
+     "accepted_reference_disagreement_rate": 0.14152700186219738
+    },
+    "hook_phase.execution": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 19,
+     "coverage": 0.032590051457975985,
+     "accepted_reference_disagreements": 9,
+     "accepted_reference_disagreement_rate": 0.47368421052631576
+    },
+    "hook_phase.consent": {
+     "reference_annotated_calls": 580,
+     "accepted_calls": 571,
+     "coverage": 0.9844827586206897,
+     "accepted_reference_disagreements": 35,
+     "accepted_reference_disagreement_rate": 0.06129597197898424
+    },
+    "hook_phase.only_greeting_turns": {
+     "reference_annotated_calls": 576,
+     "accepted_calls": 562,
+     "coverage": 0.9756944444444444,
+     "accepted_reference_disagreements": 177,
+     "accepted_reference_disagreement_rate": 0.31494661921708184
+    },
+    "hook_phase.transfer.intent": {
+     "reference_annotated_calls": 530,
+     "accepted_calls": 512,
+     "coverage": 0.9660377358490566,
+     "accepted_reference_disagreements": 35,
+     "accepted_reference_disagreement_rate": 0.068359375
+    },
+    "hook_phase.transfer.success": {
+     "reference_annotated_calls": 259,
+     "accepted_calls": 83,
+     "coverage": 0.3204633204633205,
+     "accepted_reference_disagreements": 17,
+     "accepted_reference_disagreement_rate": 0.20481927710843373
+    },
+    "hook_phase.exists": {
+     "reference_annotated_calls": 583,
+     "accepted_calls": 574,
+     "coverage": 0.9845626072041166,
+     "accepted_reference_disagreements": 95,
+     "accepted_reference_disagreement_rate": 0.16550522648083624
+    },
+    "hook_phase.caller_identification.name": {
+     "reference_annotated_calls": 582,
+     "accepted_calls": 573,
+     "coverage": 0.9845360824742269,
+     "accepted_reference_disagreements": 48,
+     "accepted_reference_disagreement_rate": 0.08376963350785341
+    },
+    "hook_phase.caller_identification.organization": {
+     "reference_annotated_calls": 580,
+     "accepted_calls": 567,
+     "coverage": 0.9775862068965517,
+     "accepted_reference_disagreements": 152,
+     "accepted_reference_disagreement_rate": 0.26807760141093473
+    },
+    "hook_phase.transfer.failure_reason": {
+     "reference_annotated_calls": 55,
+     "accepted_calls": 19,
+     "coverage": 0.34545454545454546,
+     "accepted_reference_disagreements": 19,
+     "accepted_reference_disagreement_rate": 1.0
+    }
+   },
+   "note": "Acceptance means no emitted uncertainty on that field, not correctness. Reference disagreement is not independently adjudicated error. Evidence-gap-only calls still require review for complete-call coding."
+  }
+ },
+ "qualification_outcome_nulls": {
+  "reviewed_v4": 125,
+  "refined_v5": 83
+ },
+ "new_api_usage_only": {
+  "run_status": "complete",
+  "requested_calls": 583,
+  "validated_calls": 582,
+  "failed_calls": 1,
+  "recorded_model_responses": 116,
+  "provider_models": {
+   "openai/gpt4_1": 116
+  },
+  "reported_usage_all_recorded_responses": {
+   "input_token_count": 928028,
+   "output_token_count": 460903,
+   "total_token_count": 1388931,
+   "input_token_cost": 1.8560560000000002,
+   "output_token_cost": 3.6872239999999996,
+   "total_token_cost": 5.5432799999999975
+  },
+  "wall_seconds_this_invocation": 169.47,
+  "reviewed_calls": 579,
+  "review_fraction": 0.9931389365351629,
+  "multi_chunk_calls": 35,
+  "normalization_operations": 6498,
+  "note": "Usage includes every saved model response, including rejected validation attempts; requests that failed without a usage response may not be included.",
+  "retained_base_pipeline_abstentions": 1
+ },
+ "novelty_policy": {
+  "minimum": null,
+  "margin": 0.0
+ },
+ "cost_note": "Incremental refinement cost only, excludes the reused v4 run. Provider-reported saved responses, not complete billing.",
+ "qualification": {
+  "reviewed_v4": {
+   "calls": 50,
+   "model_abstentions": 11,
+   "kappa": 0.5167286245353159,
+   "ci95": [
+    0.328,
+    0.703
+   ],
+   "accuracy": 0.74,
+   "disagreements": [
+    "artifact_call_00218",
+    "artifact_call_00477",
+    "artifact_call_00540",
+    "artifact_call_00586",
+    "artifact_call_00616",
+    "artifact_call_00707",
+    "artifact_call_00767",
+    "artifact_call_00864",
+    "artifact_call_00985",
+    "artifact_call_01004",
+    "artifact_call_01347",
+    "artifact_call_01357",
+    "artifact_call_01432"
+   ],
+   "coverage": 0.78,
+   "answered_accuracy": 0.9487179487179487,
+   "all_errors_are_abstentions": false,
+   "confusion_rows_human_columns_model": {
+    "matches_profile": {
+     "matches_profile": 28,
+     "mismatch_call_continues": 0,
+     "call_terminates": 0,
+     "abstain": 7
+    },
+    "mismatch_call_continues": {
+     "matches_profile": 0,
+     "mismatch_call_continues": 0,
+     "call_terminates": 1,
+     "abstain": 0
+    },
+    "call_terminates": {
+     "matches_profile": 1,
+     "mismatch_call_continues": 0,
+     "call_terminates": 9,
+     "abstain": 4
+    }
+   },
+   "always_matches_profile_accuracy": 0.7,
+   "note": "Abstentions remain errors in full-denominator accuracy and kappa. Answered accuracy is conditional; not evidence of superhuman reliability."
+  },
+  "refined_v5": {
+   "calls": 50,
+   "model_abstentions": 5,
+   "kappa": 0.6601529311809685,
+   "ci95": [
+    0.467,
+    0.842
+   ],
+   "accuracy": 0.84,
+   "disagreements": [
+    "artifact_call_00218",
+    "artifact_call_00586",
+    "artifact_call_00707",
+    "artifact_call_00767",
+    "artifact_call_00864",
+    "artifact_call_00985",
+    "artifact_call_01347",
+    "artifact_call_01432"
+   ],
+   "coverage": 0.9,
+   "answered_accuracy": 0.9333333333333333,
+   "all_errors_are_abstentions": false,
+   "confusion_rows_human_columns_model": {
+    "matches_profile": {
+     "matches_profile": 32,
+     "mismatch_call_continues": 0,
+     "call_terminates": 1,
+     "abstain": 2
+    },
+    "mismatch_call_continues": {
+     "matches_profile": 0,
+     "mismatch_call_continues": 0,
+     "call_terminates": 1,
+     "abstain": 0
+    },
+    "call_terminates": {
+     "matches_profile": 1,
+     "mismatch_call_continues": 0,
+     "call_terminates": 10,
+     "abstain": 3
+    }
+   },
+   "always_matches_profile_accuracy": 0.7,
+   "note": "Abstentions remain errors in full-denominator accuracy and kappa. Answered accuracy is conditional; not evidence of superhuman reliability."
+  }
+ }
+}
