@@ -1,0 +1,659 @@
+{
+ "version": "qualification-review-v1",
+ "calls": [
+  {
+   "call_id": "artifact_call_00218",
+   "outcome_A": "call_terminates",
+   "outcome_B": "mismatch_call_continues",
+   "outcome": "call_terminates",
+   "decision_source": "third_reviewer",
+   "input_hash": "a99a09ac411543766a3ace2e7c44497e6913540e8ef2435449d6f0c0cf1a32f8",
+   "adjudication": {
+    "case_id": "QREV-001",
+    "call_id": "artifact_call_00218",
+    "outcome": "call_terminates",
+    "supporting_turn_indices": [
+     4,
+     5
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "The callee answered the age question but caller did not mention what age qualifies then call terminates"
+   }
+  },
+  {
+   "call_id": "artifact_call_00433",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "afc4e22227ece2d363cd3fc5efc6efe2e18df28a8486a723a1afc0cfceeb4945",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00470",
+   "outcome_A": "matches_profile",
+   "outcome_B": "call_terminates",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "99b690ae91e4c72300df77a1374c34fc7beb180524502b5a96d5318c62ae7b46",
+   "adjudication": {
+    "case_id": "QREV-002",
+    "call_id": "artifact_call_00470",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked about medicare eligibility and card availability; callee answered both"
+   }
+  },
+  {
+   "call_id": "artifact_call_00477",
+   "outcome_A": "matches_profile",
+   "outcome_B": "mismatch_call_continues",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "5ebb2a5980be70b33275e5b5d65e0dc57932aa0ab0d3663a8a7c6360df97de9c",
+   "adjudication": {
+    "case_id": "QREV-003",
+    "call_id": "artifact_call_00477",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     6,
+     7
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked about car accident history and callee answered"
+   }
+  },
+  {
+   "call_id": "artifact_call_00505",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "99bc520dbba6cd61982e26b466dfe2c1500bd4b2f89671494bbe962b7b1c97eb",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00516",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "e16311b93765670cf220eb463e2fbc7c38f3d1d56f4f1ffd65f66a5abb3acd26",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00540",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "979ab7803c45f06e781c5cf2e5f90a95aa58a524798e97e3242a422b77c13db6",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00542",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "8c6902469925e2c96df9d892efe31bceb8c626a1d02810331dfed10be9a172a0",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00556",
+   "outcome_A": "call_terminates",
+   "outcome_B": "matches_profile",
+   "outcome": "call_terminates",
+   "decision_source": "third_reviewer",
+   "input_hash": "22b1dd2ab6985724ec952472c713e2dd149f71cb5fd5036a118549c0e8b4fb80",
+   "adjudication": {
+    "case_id": "QREV-004",
+    "call_id": "artifact_call_00556",
+    "outcome": "call_terminates",
+    "supporting_turn_indices": [
+     3
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "callee provide age information but caller did not say whether that qualifies or not; call terminates"
+   }
+  },
+  {
+   "call_id": "artifact_call_00586",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "a1c9e61f2b017387db99e113934a8f503546767a845b240efa25992ea69b6618",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00612",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "4e3a651eb46f9020116ba4004d4947f3f916304d43f7e9e8d8cd9e131f7c48b0",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00616",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "4b6140629fedc47a18328e7caf86692d6c1e83116bc3050feacc1d2dab7f037a",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00629",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "f15ad13059287476c3ba19ff14a38926c194f96d17c68210ba7ab2fa5180b533",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00636",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "507d88c990912ea25ca1e7d32a5a4d1d0ac24233a506b2c4d41336b05be3fb45",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00647",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "dcb1e2b3a865a9d583752e29675629e2e78d16793dacfcd6bcb444912e690514",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00707",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "27550db621a832808e199af3c743b2448b0b0d9747d81a4df8ba8c6aa10137e8",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00740",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "0b9486d2952a97d7d5aae27519ee31fac4feec4d6a17e09ac67c5018d273c2ac",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00767",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "064365241ea08764aec9c9b04502003ff47a9340755f029e6548dc281f0a96ea",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00778",
+   "outcome_A": "matches_profile",
+   "outcome_B": "call_terminates",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "64ba747ea687736b31c78c7cf64d9dba5d793e94bce979ad255e9455f2831b7e",
+   "adjudication": {
+    "case_id": "QREV-005",
+    "call_id": "artifact_call_00778",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller checked medicare eligibility; callee answered both and matched before the transfer"
+   }
+  },
+  {
+   "call_id": "artifact_call_00811",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "81b47f91f2a1358a1bef5948f6b58101d12f9b40486585e25ee8adb98d12affe",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00864",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "331f6147d4afa12dee58855a3ce5ba79f90165c0d3b60ddf8b71f54a4c2e543b",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00984",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "bdda70eac267cb10cc92eb4d49ef1cb2cdcc70c2902ea2cd96f4ba473547fca6",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_00985",
+   "outcome_A": "call_terminates",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "382ec888a8bb361b7a9a07d7eaabd9ffbb69d4a76977c1308696f69e7a5c3cfd",
+   "adjudication": {
+    "case_id": "QREV-006",
+    "call_id": "artifact_call_00985",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     4,
+     5
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked about medicare eligibility; callee answered"
+   }
+  },
+  {
+   "call_id": "artifact_call_01004",
+   "outcome_A": "call_terminates",
+   "outcome_B": "mismatch_call_continues",
+   "outcome": "call_terminates",
+   "decision_source": "third_reviewer",
+   "input_hash": "cc7b3558555921a3e6a171f5d197315e5a2ab3126bc9011faef9b1683dd0e3fc",
+   "adjudication": {
+    "case_id": "QREV-007",
+    "call_id": "artifact_call_01004",
+    "outcome": "call_terminates",
+    "supporting_turn_indices": [
+     8,
+     9
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked about a traffic incident; callee ask for more information; then the call terminated"
+   }
+  },
+  {
+   "call_id": "artifact_call_01242",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "011f276fa7b7382c2b4677fa38db61aca97ef1f0fccb129775591c2d807b5388",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01347",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "e5e5e473a7f126c3c5be37d03ccb231db1c1b0fc39cd5ad0aa68a98db838aaed",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01357",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "c6d4e39e4052b255f2853e1530f2cb690ccd5e807e8dc9e16bf0013252b66824",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01421",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "3d95fb505d77c012fe8480c33030d8d3a8e0452df09e8e6cac6267c9946683b0",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01425",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "99ad423c65d02e34fb1d492c9c9876381fb998ecbf318107c33fda51bf2efcf1",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01432",
+   "outcome_A": "mismatch_call_continues",
+   "outcome_B": "mismatch_call_continues",
+   "outcome": "mismatch_call_continues",
+   "decision_source": "coder_agreement",
+   "input_hash": "b000723dd47d5fb7d9193f690708e53961a7231ddf515df8877666a503bc1e26",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01531",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "0f0fa13e7c9d35348adc1a451502dfb12996e16562963700b4319c21c1e9d9ef",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01633",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "28b0a8bbaa71c20a296d2647b87230bb849cb0e150e68ea86a51072890102e18",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01668",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "6b0970e213020c43b814cb023ab8c131faaa236c70f83e46075c7eec132e821a",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01674",
+   "outcome_A": "mismatch_call_continues",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "cdedbe0a0a9a477240cfc54025275c59cba49e8c34805a0e9b7bd5be91046c7a",
+   "adjudication": {
+    "case_id": "QREV-008",
+    "call_id": "artifact_call_01674",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     10,
+     11
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked about medicare eligibility and callee confirmed"
+   }
+  },
+  {
+   "call_id": "artifact_call_01677",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "651eb81bfd44c2847f82bffb2651a50f29627f75ac23f072c2b7ab582fef85e1",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01749",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "48b36cb0f8058233a9440ddc7f79c8a4f2a27e696d1007c506fa19940a5f30e1",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01774",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "03c0788ebc5bf0e3486481e5ea3f3bbea3db46f2c5f3be70350a26f99d11afdf",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01789",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "9a251f5c53b7007f5af1f15f3cf09070720b9e5c4cb900fb3ed643a40d3a87f1",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01812",
+   "outcome_A": "call_terminates",
+   "outcome_B": "call_terminates",
+   "outcome": "call_terminates",
+   "decision_source": "coder_agreement",
+   "input_hash": "2e6697ee696a33746288583772dbb4ceb9b4d58c98170922eb3cb2ccb5b8a570",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01850",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "a2a98d34dc101751b146871356f6f60825e7afe25e979411a43d8fb9f1aa0bb0",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_01964",
+   "outcome_A": "call_terminates",
+   "outcome_B": "matches_profile",
+   "outcome": "call_terminates",
+   "decision_source": "third_reviewer",
+   "input_hash": "fe9afa2ba37885deb933b923b02b8d1e855ac1970a2badf9cdd593d037552d00",
+   "adjudication": {
+    "case_id": "QREV-009",
+    "call_id": "artifact_call_01964",
+    "outcome": "call_terminates",
+    "supporting_turn_indices": [
+     16,
+     17,
+     18
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller said the callee doesn't qualify; then the call terminated"
+   }
+  },
+  {
+   "call_id": "artifact_call_02024",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "70ef53099332715394a77019dbd38c183d3c3bb869721445681d54f8fcb6bb86",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_02126",
+   "outcome_A": "matches_profile",
+   "outcome_B": "call_terminates",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "c5f2d675ecc76d73708c9f15f7e9f4b639ffe4dc4cc14996afcaa0515b308cd5",
+   "adjudication": {
+    "case_id": "QREV-010",
+    "call_id": "artifact_call_02126",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     28,
+     29,
+     30,
+     31
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked about home ownership and callee confirmed"
+   }
+  },
+  {
+   "call_id": "artifact_call_02210",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "0bd1cc8b1a2e4d1ea28912f4048fbaf65f728b59ea06379fae4d708076486c59",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_02244",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "e6008afd31c1930974435071e5d618feb7a9867e0462cbe38a5960195e1f0737",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_02263",
+   "outcome_A": "matches_profile",
+   "outcome_B": "call_terminates",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "1e2e3fb9746af8b6e6383934b316a8f6d2920b66f60226a37491b63b8bfe79b4",
+   "adjudication": {
+    "case_id": "QREV-011",
+    "call_id": "artifact_call_02263",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     7,
+     8
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked about age; callee answered; caller confirmed the callee qualified"
+   }
+  },
+  {
+   "call_id": "artifact_call_02286",
+   "outcome_A": "matches_profile",
+   "outcome_B": "call_terminates",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "565b3267cb31d1881ec62fc3f45b1a5fda26ae183a54d8c5aa48de0cd7453f5f",
+   "adjudication": {
+    "case_id": "QREV-012",
+    "call_id": "artifact_call_02286",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     10,
+     11
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked car ownership; callee confirmed; call was later transferred to another agent"
+   }
+  },
+  {
+   "call_id": "artifact_call_02306",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "932e8a33fb386e11b3167fdc415dd980d8c2491db218944fd622fe7f6c792c56",
+   "adjudication": null
+  },
+  {
+   "call_id": "artifact_call_02409",
+   "outcome_A": "matches_profile",
+   "outcome_B": "mismatch_call_continues",
+   "outcome": "matches_profile",
+   "decision_source": "third_reviewer",
+   "input_hash": "f896d39740bee10a2fa2b64acbe02a9a6cbb16a0c7d9fdfe56330e377a7d82fb",
+   "adjudication": {
+    "case_id": "QREV-013",
+    "call_id": "artifact_call_02409",
+    "outcome": "matches_profile",
+    "supporting_turn_indices": [
+     6,
+     7,
+     8
+    ],
+    "reviewer": "Pin-Jun Liu",
+    "independent_review": "yes",
+    "rationale": "caller asked age; callee answered; caller confirmed qualified"
+   }
+  },
+  {
+   "call_id": "artifact_call_02411",
+   "outcome_A": "matches_profile",
+   "outcome_B": "matches_profile",
+   "outcome": "matches_profile",
+   "decision_source": "coder_agreement",
+   "input_hash": "d90c6610f539b94a21a50bab5f169210abae7eb8c4db296638d919b84a6d9f82",
+   "adjudication": null
+  }
+ ],
+ "agreement_statistics": {
+  "calls": 50,
+  "metric": "unweighted_nominal_cohens_kappa",
+  "observed_agreement": 0.74,
+  "observed_agreement_ci95": [
+   0.62,
+   0.86
+  ],
+  "kappa": 0.49019607843137253,
+  "kappa_ci95": [
+   0.253717,
+   0.697786
+  ],
+  "kappa_status": "defined",
+  "confusion_matrix_rows_A_columns_B": {
+   "matches_profile": {
+    "matches_profile": 26,
+    "mismatch_call_continues": 2,
+    "call_terminates": 5
+   },
+   "mismatch_call_continues": {
+    "matches_profile": 1,
+    "mismatch_call_continues": 1,
+    "call_terminates": 0
+   },
+   "call_terminates": {
+    "matches_profile": 3,
+    "mismatch_call_continues": 2,
+    "call_terminates": 10
+   }
+  },
+  "coder_A_label_counts": {
+   "matches_profile": 33,
+   "mismatch_call_continues": 2,
+   "call_terminates": 15
+  },
+  "coder_B_label_counts": {
+   "matches_profile": 30,
+   "mismatch_call_continues": 5,
+   "call_terminates": 15
+  },
+  "disagreement_calls": 13,
+  "bootstrap": {
+   "unit": "call",
+   "rounds": 1000,
+   "seed": 598,
+   "kappa_defined_replicates": 1000,
+   "kappa_undefined_replicates": 0,
+   "method": "paired percentile bootstrap; kappa interval uses defined replicates only"
+  },
+  "interpretation": "Pre-adjudication human agreement, not model performance. Undefined kappa is not zero."
+ },
+ "agreement_statistics_phase": "before_adjudication",
+ "independence_note": "Reviewer independence is self-attested; software cannot verify it."
+}

@@ -1,0 +1,52 @@
+{
+ "calls": 50,
+ "metric": "unweighted_nominal_cohens_kappa",
+ "observed_agreement": 0.74,
+ "observed_agreement_ci95": [
+  0.62,
+  0.86
+ ],
+ "kappa": 0.49019607843137253,
+ "kappa_ci95": [
+  0.253717,
+  0.697786
+ ],
+ "kappa_status": "defined",
+ "confusion_matrix_rows_A_columns_B": {
+  "matches_profile": {
+   "matches_profile": 26,
+   "mismatch_call_continues": 2,
+   "call_terminates": 5
+  },
+  "mismatch_call_continues": {
+   "matches_profile": 1,
+   "mismatch_call_continues": 1,
+   "call_terminates": 0
+  },
+  "call_terminates": {
+   "matches_profile": 3,
+   "mismatch_call_continues": 2,
+   "call_terminates": 10
+  }
+ },
+ "coder_A_label_counts": {
+  "matches_profile": 33,
+  "mismatch_call_continues": 2,
+  "call_terminates": 15
+ },
+ "coder_B_label_counts": {
+  "matches_profile": 30,
+  "mismatch_call_continues": 5,
+  "call_terminates": 15
+ },
+ "disagreement_calls": 13,
+ "bootstrap": {
+  "unit": "call",
+  "rounds": 1000,
+  "seed": 598,
+  "kappa_defined_replicates": 1000,
+  "kappa_undefined_replicates": 0,
+  "method": "paired percentile bootstrap; kappa interval uses defined replicates only"
+ },
+ "interpretation": "Pre-adjudication human agreement, not model performance. Undefined kappa is not zero."
+}

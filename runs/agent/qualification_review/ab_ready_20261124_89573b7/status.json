@@ -1,0 +1,12 @@
+{
+ "status": "ready_for_adjudication",
+ "sample_calls": 50,
+ "coder_A_completed": 50,
+ "coder_B_completed": 50,
+ "coder_A_missing_call_ids": [],
+ "coder_B_missing_call_ids": [],
+ "agreement_computed": true,
+ "model_predictions_accessed": false,
+ "test_inference_or_model_scoring_performed": false,
+ "disagreement_calls": 13
+}

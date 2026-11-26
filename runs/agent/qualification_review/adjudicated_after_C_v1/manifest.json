@@ -1,0 +1,23 @@
+{
+ "status": "complete",
+ "calls": 50,
+ "consensus_calls": 37,
+ "third_reviewer_calls": 13,
+ "model_predictions_accessed": false,
+ "test_inference_or_model_scoring_performed": false,
+ "version": "qualification-review-v1",
+ "inputs": {
+  "bundle_manifest": {
+   "path": "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/qualification_review/ab_ready_20261124_89573b7/private/manifest.json",
+   "sha256": "2a795dc124496370f5cc136cb42c1ee6d22eb8b396cbc41beec7fc88755de0d8"
+  },
+  "decisions": {
+   "path": "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/qualification_review/ab_ready_20261124_89573b7/reviewer/decisions.csv",
+   "sha256": "ad1cce10f64c85baae1e386a2afd44541e0c680a0f77d09fb21d5981b3f58293"
+  }
+ },
+ "outputs": {
+  "provenance.json": "545d1736b5924f6d09950a966c56c3645b8f6b49e30df8c9e4368e2584f03739",
+  "adjudicated_sheet.csv": "77569f5b8e7ad11ea068eb8935b84cfbcf9247c91fe3b8eb88f2a4c369d92087"
+ }
+}

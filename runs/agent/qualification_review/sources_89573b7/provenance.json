@@ -1,0 +1,17 @@
+{
+ "purpose": "Immutable snapshots for human-only qualification agreement and blinded adjudication",
+ "sheet_A": {
+  "repository_commit": "4b4010edb3865c802b48c235533653c78e33e7ea",
+  "repository_path": "qual_sample/sheet_A.csv",
+  "sha256": "d9158e348b696751abd0923d129dff4436e0f887d3d03b9aee4e51afb1dfab27"
+ },
+ "sheet_B": {
+  "repository_url": "https://github.com/ZZZoeH/transcript_coding_agent",
+  "branch": "mansi/qualification-human-coding",
+  "repository_commit": "89573b7687f2680b23f9a3d02a7b8eae47acdd62",
+  "repository_path": "qual_sample/sheet_B.csv",
+  "sha256": "97e44ecf935b87a058c2cdaf7a985379ceb4b77ca307c2400039148c3bfad662"
+ },
+ "original_sheets_modified": false,
+ "model_predictions_accessed": false
+}
