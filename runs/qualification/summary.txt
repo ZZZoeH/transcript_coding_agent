@@ -1,0 +1,4 @@
+A vs B: kappa 0.490  CI [0.264, 0.705]  agree 37/50
+A vs final: kappa 0.912  CI [0.76, 1.0]  agree 48/50
+B vs final: kappa 0.555  CI [0.337, 0.754]  agree 39/50
+model vs final: kappa 0.660  CI [0.467, 0.842]  agree 42/50
