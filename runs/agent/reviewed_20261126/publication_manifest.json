@@ -1,0 +1,153 @@
+{
+ "publication_scope": "Research code and exploratory evaluation artifacts only; report drafts, report generators, handoff, and documentation changes excluded.",
+ "branch": "pinjun/reviewed-evaluation-20261126",
+ "base_main_commit": "add378a4189a43a8841dc670a987ebd9763366f8",
+ "profile_version": "reviewed-profile-v4-20261126",
+ "development_calls": 80,
+ "test_calls": 583,
+ "test_valid_outputs": 582,
+ "test_abstentions": 1,
+ "offline_tests_previously_passed": 55,
+ "test_previously_inspected_exploratory": true,
+ "scoring_views": [
+  "unchanged_released_labels",
+  "symmetric_reviewed_projection"
+ ],
+ "included_files_sha256": {
+  "coding/agent.py": "d22f23e7063608cea3cdf50cda9cf3be3f42d27b38402682cc9b2c116c4cee3d",
+  "coding/reviewed_policies.py": "a897d86d25aa8cfd5d6a467f6d9d9847fed3f533fc00054dd1c944cb92fadb65",
+  "tests/test_reviewed_policies.py": "8dbd6f6bb9751a70631cd7618538f9311b80570bc42053b53f0b6cf68aa5fcfc",
+  "tests/test_reviewed_analysis.py": "c041d568dc5f0dc19cf9556ceed7da066faaf424e625d703001190fca7955ff1",
+  "tools/prepare_reviewed_experiment.py": "cb157f90600c63304f60d16fa8e350a0a986f28cacf68e63578558040339c9d3",
+  "tools/evaluate_reviewed_results.py": "6de04d158d45948cff6a0449aa934ade7d2b7b22d6aef35e529fb4eed14e7871",
+  "tools/resume_rate_limited.py": "c04db4385cb8feac6406f08af77ddf2f5ca384f23348baae00426b8e7dce3ae7",
+  "tools/restore_evaluation_artifacts.py": "f8e5f5d2d436ea1dd42e5f12e0f805d28984c45670458018f5454a0dcc61f460",
+  "tests/test_restore_evaluation.py": "cf1662cc62b57394dec36a14031b21fb27220baae281726ec67c436f8a5d07c5",
+  "runs/agent/reviewed_20261126/design.json": "cc6ee20230b4441c5119be41b333fd55044ab3efecc26905226fbb6a498742bc",
+  "runs/agent/reviewed_20261126/profile_v4.json": "54ddb5b269f05f8a6636c27dbedb6b3bd86aa42b02f7a6c92e845772d95718ce",
+  "runs/agent/reviewed_20261126/reviewed_decisions.json": "e8c2e81eb4d6ee783aa71ed9258dd724e44fb96b16d16b6f607816c3b40c4262",
+  "runs/agent/reviewed_20261126/dev_ids.txt": "7bac6d514d9bed549ea74ee0a1d024c16542d79c819050bda76e45e7a2311c3a",
+  "runs/agent/reviewed_20261126/test_ids.txt": "df65e933ca31022d3fa294c29a4fa4eaa46458a7a743a93e3abceaabf6206ce5",
+  "runs/agent/reviewed_20261126/pilot_ids.txt": "1958437ddd350304b3957eb571c87dd558af4d82b0c6ef6f5b49ab46b0b59715",
+  "runs/agent/reviewed_20261126/runtime_recovery_01.json": "0e74185cbae3be770d28774f6bd9f84d1c7cf7b745bbadb9bb8d818515d3f2db",
+  "runs/agent/reviewed_20261126/runtime_recovery_02.json": "fe9a910a4de7b313cccc8a821070336f14a3e1aac71608cc079622005c49be4f",
+  "runs/agent/reviewed_20261126/runtime_final_retry.json": "0d883c4a7a682ba838394d62788a155034a70783a4351af688aa3bf30bed6e46",
+  "runs/agent/reviewed_20261126/service_interruption_01.json": "2e6be2e73f5fe43ddbcfa21d9f9d1b6ff373adf65350160c47be2df0759ebff4",
+  "runs/agent/reviewed_20261126/dev_analysis/summary.json": "9f98f241d58f35f09d2293cb2638a6e6fdcc5f0c8012c75c754acb0ee665ff9b",
+  "runs/agent/reviewed_20261126/dev_analysis/original_labels_metrics.csv": "77459a2428c2f0fce9ac860e7794b30ef4fa176085cf73ed4ab2d9abb3c91f6e",
+  "runs/agent/reviewed_20261126/dev_analysis/reviewed_projection_metrics.csv": "6d72ae01c97c717f665b2d2653211659ed9051fa031f5e9ce5332e42da4c6639",
+  "runs/agent/reviewed_20261126/dev_analysis/manifest.json": "620b7055284ed02e6c72d1eaa912c47392dee5daf43c7326a04505ccb39550b8",
+  "runs/agent/reviewed_20261126/dev_analysis/reviewed_scoring.json.gz": "30167e6e0690395c0f4639ec9e74c02c8d7c8e0273c83e4fa4882c3cebc7f354",
+  "runs/agent/reviewed_20261126/dev_run/manifest.json": "8057037e91ba91c3f5cee703b8f6622b89d0d8a9787984c2cd7785f31325fdfe",
+  "runs/agent/reviewed_20261126/dev_run/predictions.json.gz": "46baa6e3544fc6526c4a69adcf988be1af589ae69bdbda0d7e3171ae6dbfdcbf",
+  "runs/agent/reviewed_20261126/dev_run/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "runs/agent/reviewed_20261126/test_analysis/summary.json": "30e882f780a60a5433aefebf9a834862e046910d2ff0f7c79e20d8031cd6d97f",
+  "runs/agent/reviewed_20261126/test_analysis/original_labels_metrics.csv": "132ad4f3731abd452da62fdb5f92c75f7301c42e157995ad1456d45b58578bb3",
+  "runs/agent/reviewed_20261126/test_analysis/reviewed_projection_metrics.csv": "6e16ddc23a3706c4ff543c9eef2dc40802371a04627af3af7e03421ceb7aadfe",
+  "runs/agent/reviewed_20261126/test_analysis/manifest.json": "c2035c2651515f5a6cfbed3cdf7264dabbf52084efc1ccfb6a5465530143b0b1",
+  "runs/agent/reviewed_20261126/test_analysis/reviewed_scoring.json.gz": "ed445862035829c411b8664fd48fae688b5f0d43ffc335041cfbf9d8fc13bffc",
+  "runs/agent/reviewed_20261126/test_run/manifest.json": "fed4aa42fa1462f57afcec5da264b636ad7a6c8558eec816d5826bfa8c2185e9",
+  "runs/agent/reviewed_20261126/test_run/predictions.json.gz": "2b65eed83e67573475432b125dd48331bf178d5342654516e76d346772b21241",
+  "runs/agent/reviewed_20261126/test_run/failures.json": "789f7c36eb181ca3b8fa1783565d832a5fe099883c1e428e7a3a6ef66838943f",
+  "runs/agent/reviewed_20261126/test_analysis/unflagged_audit.json": "842747596ddb4f13ceb5f1ef7a4bd9f8395fd68b0affe97d6e13fa0b51d3d61d",
+  "runs/baseline/test_predictions.json.gz": "f26a09922275008073e0f5d79ffdcca8b108a43d47912fd322eee0db14f2fc94",
+  "runs/agent/test_gpt41_20261123_w8/analysis/scoring_predictions.json.gz": "849d9166a247ad9b037436a15f654862be8b6c36cd8569231c460eb4914d41b4",
+  "runs/agent/dev_alignment_20261123/comparison/control_scoring.json.gz": "0891ae0dbeea89f81ba205318e50f2ac1e0375beeda2f71dfa2adb6ec01a6527",
+  "runs/agent/dev_alignment_20261123/comparison/rule_baseline_scoring.json.gz": "f68da92b2ccb613e8a0bf500b88a0c276ff5243e76d411e87b1e5f3bd0953f15",
+  "runs/agent/dev_alignment_20261123/comparison_v3/improved_scoring.json.gz": "b118f25bb2a53eafbac77eeb5bd9a7a4cf22ebcce92d0ad049604bf2a6b0449c"
+ },
+ "frozen_inference_source_sha256": {
+  "coding/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "coding/agent.py": "d22f23e7063608cea3cdf50cda9cf3be3f42d27b38402682cc9b2c116c4cee3d",
+  "coding/agreement.py": "88742223aa55bf94b24441a4a7326e116b8d239d11cd9d14b6de654b8078d831",
+  "coding/asu_api.py": "9f6cd9a6f80bf86b09eb88359f4415faea3414d0f80b0c6034d4a8d3ceea22e0",
+  "coding/audit.py": "cd5eb5e267913cb6dc7b58e2a17ba74e7b1fd60db52dcc8e9725f141b1bda3af",
+  "coding/baseline.py": "bb22322277c9e6d56572d7f09208df4697b73c62396fbd4fd3a35dad05753007",
+  "coding/compare.py": "e193771009f1bda25436681b98cc2b3c0d0f414b453016d6d15d74b5c8bcd567",
+  "coding/dev_profiles.py": "de0a19840edfc7069ff7f21f280191a0d1119306632b9d96f6e21d7025f8269b",
+  "coding/evaluate.py": "d018c1e1ada8544e8547a60fffe611a29a160ce80e5489d045ad5bad60fed4b8",
+  "coding/io_utils.py": "4377c66d194383c7f3aee5e230a7638148880eb9c8d1fa3fec30e5dcecc0c765",
+  "coding/label_tool.py": "6b7b5a4a1451ec2bdec0dae527e2c9611dff323d5602ed35b0c0832f90a514d5",
+  "coding/labels.py": "c6483ae06a5cea578898239a9276dde8b2cb61b2545f9af9eecd1557de878c17",
+  "coding/novelty.py": "8c72c5af9402af3084b6d2682d3a95767fca8900ef5233af502556a846512b9b",
+  "coding/novelty_eval.py": "6e733bb1d3a91f7fc7c2142e84441929a1b28d3e19a157f0c81defbb994e9baf",
+  "coding/output_normalization.py": "61d8820e2c9cd11e7a4fa3b5d3ef8999f8f1b26a9d5b74039eefb9bbd21c9334",
+  "coding/prompts.py": "ac68a4e8205ae9af0456b7fbe73791c22132b0cf5902c913191c6fc0c1e6596f",
+  "coding/qual_kit.py": "2b4a2e86a4fa4e8122af155ab084f85578b36ff0cc255caecb303c662e8e59b2",
+  "coding/qualification_eval.py": "7b815692fb461b5b9d3682a38ec2f8e3fe953084e0aab3b94e61badd86f15deb",
+  "coding/qualification_review.py": "8a583631f99bc02d4a86ba8d06f6103cc28a1ac143aab19b4db3db5739e9039b",
+  "coding/review.py": "3c079df2b821692d04dcc9c7272d935d18f4c341468f5111928e96af271eb9ae",
+  "coding/reviewed_policies.py": "a897d86d25aa8cfd5d6a467f6d9d9847fed3f533fc00054dd1c944cb92fadb65",
+  "coding/schema.py": "e29e8657886c68902af1f17e5ea3fbebb997cb1fc85f099948ffb0c69cc85ccc",
+  "coding/sensitivity.py": "91f0f8fbfb30d1b2ea3fff734a4a05d0ac313bb681ba877b2dcbcba7f8747edf",
+  "coding/split.py": "ead9e814756a43108e95dd352c6e2bfc6832121186f1065466b6f73ca481b114",
+  "coding/time_savings.py": "541380ef936601701525304f17b7590f5209d202e33641438c29ea4aeef49ecc",
+  "coding/usage.py": "b9295b942eb64f4938ff958fee8828394e53405f31c7bc9653c77c02d587a7f0",
+  "coding/validate.py": "c8a76dd6e12383ade49e533232967b1b9f6f6df1771a3c5f9dde9a85d00dfe17"
+ },
+ "raw_API_response_and_checkpoint_archive": "Local only; original run manifests retain hashes of the full original archive.",
+ "reproduction_note": "Published scoring streams support offline metric recalculation. Original run manifests may name local absolute paths and unpublished raw-response checkpoints. Recorded cost and execution summaries should be read from the saved summaries.",
+ "credential_values_included": false,
+ "archived_prediction_files": [
+  {
+   "path": "runs/agent/reviewed_20261126/dev_analysis/reviewed_scoring.json",
+   "archive": "runs/agent/reviewed_20261126/dev_analysis/reviewed_scoring.json.gz",
+   "sha256": "e166e6b1b1466e54e390739ed53195d14ff111d09066a92766791fa8ee03e042",
+   "archive_sha256": "30167e6e0690395c0f4639ec9e74c02c8d7c8e0273c83e4fa4882c3cebc7f354"
+  },
+  {
+   "path": "runs/agent/reviewed_20261126/dev_run/predictions.json",
+   "archive": "runs/agent/reviewed_20261126/dev_run/predictions.json.gz",
+   "sha256": "aee4a38aa367c53b2a9c5fbc45591f8c8b2f6b7e2b336c36abde893f380c23f3",
+   "archive_sha256": "46baa6e3544fc6526c4a69adcf988be1af589ae69bdbda0d7e3171ae6dbfdcbf"
+  },
+  {
+   "path": "runs/agent/reviewed_20261126/test_analysis/reviewed_scoring.json",
+   "archive": "runs/agent/reviewed_20261126/test_analysis/reviewed_scoring.json.gz",
+   "sha256": "440d17318d1db3482b1209667792ff6988132aa287ad87272da21693073cbc6d",
+   "archive_sha256": "ed445862035829c411b8664fd48fae688b5f0d43ffc335041cfbf9d8fc13bffc"
+  },
+  {
+   "path": "runs/agent/reviewed_20261126/test_run/predictions.json",
+   "archive": "runs/agent/reviewed_20261126/test_run/predictions.json.gz",
+   "sha256": "b1e0741e5da6ede771397627694c4b67f588fc4f6a3849b1da749fb530031e1c",
+   "archive_sha256": "2b65eed83e67573475432b125dd48331bf178d5342654516e76d346772b21241"
+  },
+  {
+   "path": "runs/baseline/test_predictions.json",
+   "archive": "runs/baseline/test_predictions.json.gz",
+   "sha256": "87a6d5a8cc26ce6dcd02797c16aeae8c843503863e4d6576555081904b0f12a1",
+   "archive_sha256": "f26a09922275008073e0f5d79ffdcca8b108a43d47912fd322eee0db14f2fc94"
+  },
+  {
+   "path": "runs/agent/test_gpt41_20261123_w8/analysis/scoring_predictions.json",
+   "archive": "runs/agent/test_gpt41_20261123_w8/analysis/scoring_predictions.json.gz",
+   "sha256": "d72c9b996f5e0a37ee62f7eee2b73296fc293f746a7a5b235c80f61ae7cca10b",
+   "archive_sha256": "849d9166a247ad9b037436a15f654862be8b6c36cd8569231c460eb4914d41b4"
+  },
+  {
+   "path": "runs/agent/dev_alignment_20261123/comparison/control_scoring.json",
+   "archive": "runs/agent/dev_alignment_20261123/comparison/control_scoring.json.gz",
+   "sha256": "bdbe4501801098c52dac159fd713167929346e07bc158a0030a438f4b004b426",
+   "archive_sha256": "0891ae0dbeea89f81ba205318e50f2ac1e0375beeda2f71dfa2adb6ec01a6527"
+  },
+  {
+   "path": "runs/agent/dev_alignment_20261123/comparison/rule_baseline_scoring.json",
+   "archive": "runs/agent/dev_alignment_20261123/comparison/rule_baseline_scoring.json.gz",
+   "sha256": "cb2341232ea0cc92e6b5bb48a11ddb94fcbaad854677c21864042a7dd659b21f",
+   "archive_sha256": "f68da92b2ccb613e8a0bf500b88a0c276ff5243e76d411e87b1e5f3bd0953f15"
+  },
+  {
+   "path": "runs/agent/dev_alignment_20261123/comparison_v3/improved_scoring.json",
+   "archive": "runs/agent/dev_alignment_20261123/comparison_v3/improved_scoring.json.gz",
+   "sha256": "ee87009b199e8cec435f6350fecc569bc57b76709922475afbe44c38d3db6b53",
+   "archive_sha256": "b118f25bb2a53eafbac77eeb5bd9a7a4cf22ebcce92d0ad049604bf2a6b0449c"
+  }
+ ],
+ "offline_restore_command": "python3 tools/restore_evaluation_artifacts.py",
+ "publication_packaging_tests": 2,
+ "publication_validation": {
+  "offline_regression_tests": 57,
+  "new_model_or_evaluation_runs": 0
+ }
+}

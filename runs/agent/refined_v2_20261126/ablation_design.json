@@ -1,0 +1,9 @@
+{
+ "frozen_before_test_refinement": true,
+ "full_refinement": "Use all accepted independent global metadata and missing-outcome passes, plus canonical existing aliases.",
+ "gaps_only": "Preserve all v4 call/turn fields except qualification_outcome when originally null with nonempty qualification questions. Fill only with a validated nonnull second-pass result. Apply canonical existing novelty aliases.",
+ "alias_only": "Preserve all v4 coding fields and apply only existing canonical novelty aliases.",
+ "selection_note": "Full development refinement was mixed. Compare all three predefined variants; retain original outputs and do not claim confirmatory test selection.",
+ "dev_summary_sha256": "18b97061460819da249a13d9c6ba009e288f77a6d2f8b22a8582118f5b633afd",
+ "novelty_policy_sha256": "3282695aa4981c6d5be0c97180fe4d2e9e6c83b33efd70b4094f20bbd83e8cc8"
+}

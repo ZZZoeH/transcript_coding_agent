@@ -1,0 +1,8 @@
+[
+ {
+  "call_id": "artifact_call_01347",
+  "input_hash": "e5e5e473a7f126c3c5be37d03ccb231db1c1b0fc39cd5ad0aa68a98db838aaed",
+  "reason": "chunk validation failed: turn label must cite its own turn: caller_utterances.4.requested_info; turn label must cite its own turn: caller_utterances.4.functional_states; missing evidence: caller_utterances.4.complementary_persuasion; missing evidence: caller_utterances.6.requested_info; missing evidence: caller_utterances.4.persuasion; missing evidence: caller_utterances.6.functional_states",
+  "review_required": true
+ }
+]

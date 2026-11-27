@@ -1,0 +1,19 @@
+{
+ "inputs": {
+  "runs/agent/reviewed_20261126/design.json": "cc6ee20230b4441c5119be41b333fd55044ab3efecc26905226fbb6a498742bc",
+  "runs/agent/reviewed_20261126/profile_v4.json": "54ddb5b269f05f8a6636c27dbedb6b3bd86aa42b02f7a6c92e845772d95718ce",
+  "runs/agent/reviewed_20261126/dev_run/manifest.json": "8057037e91ba91c3f5cee703b8f6622b89d0d8a9787984c2cd7785f31325fdfe",
+  "runs/agent/reviewed_20261126/dev_run/predictions.json": "aee4a38aa367c53b2a9c5fbc45591f8c8b2f6b7e2b336c36abde893f380c23f3",
+  "runs/agent/reviewed_20261126/dev_run/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "/Users/pinjunLiu/src/transcript_coding_agent/tools/evaluate_reviewed_results.py": "6de04d158d45948cff6a0449aa934ade7d2b7b22d6aef35e529fb4eed14e7871",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/dev_alignment_20261123/comparison/rule_baseline_scoring.json": "cb2341232ea0cc92e6b5bb48a11ddb94fcbaad854677c21864042a7dd659b21f",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/dev_alignment_20261123/comparison/control_scoring.json": "bdbe4501801098c52dac159fd713167929346e07bc158a0030a438f4b004b426",
+  "/Users/pinjunLiu/src/transcript_coding_agent/runs/agent/dev_alignment_20261123/comparison_v3/improved_scoring.json": "ee87009b199e8cec435f6350fecc569bc57b76709922475afbe44c38d3db6b53"
+ },
+ "outputs": {
+  "summary.json": "9f98f241d58f35f09d2293cb2638a6e6fdcc5f0c8012c75c754acb0ee665ff9b",
+  "reviewed_scoring.json": "e166e6b1b1466e54e390739ed53195d14ff111d09066a92766791fa8ee03e042",
+  "original_labels_metrics.csv": "77459a2428c2f0fce9ac860e7794b30ef4fa176085cf73ed4ab2d9abb3c91f6e",
+  "reviewed_projection_metrics.csv": "6d72ae01c97c717f665b2d2653211659ed9051fa031f5e9ce5332e42da4c6639"
+ }
+}

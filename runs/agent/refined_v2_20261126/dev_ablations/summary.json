@@ -1,0 +1,1875 @@
+{
+ "calls": 80,
+ "partition": "dev",
+ "exploratory": true,
+ "new_human_labels": 0,
+ "predeclared_design_sha256": "3cb8a2e08a23eb7ee9240b0a8217be05b8c2ea04be15e2f4001c17f7b6479ef6",
+ "metrics": {
+  "original_labels": {
+   "reviewed_v4": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8366680277664353
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": 0.015425008204791597
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4631261011829851
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.08829174664107486
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5544554455445542
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4688221709006929
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7021276595744682
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.6020761245674742
+    }
+   ],
+   "alias_only": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8366680277664353
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": 0.015425008204791597
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4631261011829851
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.08829174664107486
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5544554455445542
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4688221709006929
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7021276595744682
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.6020761245674742
+    }
+   ],
+   "gaps_only": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8366680277664353
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": 0.015425008204791597
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4631261011829851
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.08829174664107486
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5544554455445542
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4688221709006929
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7021276595744682
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.6020761245674742
+    }
+   ],
+   "full_refinement": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8528810788720882
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": -0.0016051364365971088
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4405665149215984
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.05175600739371536
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5870967741935484
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4886693782684486
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7021276595744682
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.5808580858085808
+    }
+   ]
+  },
+  "reviewed_projection": {
+   "reviewed_v4": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8366680277664353
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": 0.015425008204791597
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4631261011829851
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.08829174664107486
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5544554455445542
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4688221709006929
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7411347517730497
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.615916955017301
+    }
+   ],
+   "alias_only": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8366680277664353
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": 0.015425008204791597
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4631261011829851
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.08829174664107486
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5544554455445542
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4688221709006929
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7411347517730497
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.615916955017301
+    }
+   ],
+   "gaps_only": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8366680277664353
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": 0.015425008204791597
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4631261011829851
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.08829174664107486
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5544554455445542
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4688221709006929
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7411347517730497
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.615916955017301
+    }
+   ],
+   "full_refinement": [
+    {
+     "field": "category",
+     "score": 0.5733333333333335
+    },
+    {
+     "field": "subcategory",
+     "score": 0.8528810788720882
+    },
+    {
+     "field": "hook_phase.execution",
+     "score": -0.0016051364365971088
+    },
+    {
+     "field": "hook_phase.consent",
+     "score": 0.3814432989690729
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "score": 0.4405665149215984
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "score": 0.8933333333333332
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "score": 0.05175600739371536
+    },
+    {
+     "field": "hook_phase.exists",
+     "score": 0.08496732026143783
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "score": 0.5870967741935484
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "score": 0.4886693782684486
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "score": 0.0
+    },
+    {
+     "field": "persuasion",
+     "score": 0.5610859728506787
+    },
+    {
+     "field": "complementary_persuasion",
+     "score": 0.6236559139784946
+    },
+    {
+     "field": "functional_states",
+     "score": 0.6402439024390244
+    },
+    {
+     "field": "requested_info",
+     "score": 0.7411347517730497
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "score": 0.594059405940594
+    }
+   ]
+  }
+ },
+ "paired_minus_v4": {
+  "original_labels": {
+   "alias_only": [
+    {
+     "field": "category",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "subcategory",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "functional_states",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "requested_info",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "gaps_only": [
+    {
+     "field": "category",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "subcategory",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "functional_states",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "requested_info",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "full_refinement": [
+    {
+     "field": "category",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "subcategory",
+     "difference": 0.016213051105652854,
+     "ci95": [
+      0.0,
+      0.05
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "difference": -0.017030144641388707,
+     "ci95": [
+      -0.046,
+      0.01
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "difference": -0.02255958626138671,
+     "ci95": [
+      -0.072,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "difference": -0.036535739247359506,
+     "ci95": [
+      -0.1,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "difference": 0.03264132864899427,
+     "ci95": [
+      0.0,
+      0.114
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "difference": 0.019847207367755693,
+     "ci95": [
+      0.0,
+      0.066
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "functional_states",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "requested_info",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "difference": -0.021218038758893387,
+     "ci95": [
+      -0.045,
+      0.004
+     ]
+    }
+   ]
+  },
+  "reviewed_projection": {
+   "alias_only": [
+    {
+     "field": "category",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "subcategory",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "functional_states",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "requested_info",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "gaps_only": [
+    {
+     "field": "category",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "subcategory",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "functional_states",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "requested_info",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "full_refinement": [
+    {
+     "field": "category",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "subcategory",
+     "difference": 0.016213051105652854,
+     "ci95": [
+      0.0,
+      0.05
+     ]
+    },
+    {
+     "field": "hook_phase.execution",
+     "difference": -0.017030144641388707,
+     "ci95": [
+      -0.046,
+      0.01
+     ]
+    },
+    {
+     "field": "hook_phase.consent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.only_greeting_turns",
+     "difference": -0.02255958626138671,
+     "ci95": [
+      -0.072,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.intent",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.success",
+     "difference": -0.036535739247359506,
+     "ci95": [
+      -0.1,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.exists",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.name",
+     "difference": 0.03264132864899427,
+     "ci95": [
+      0.0,
+      0.114
+     ]
+    },
+    {
+     "field": "hook_phase.caller_identification.organization",
+     "difference": 0.019847207367755693,
+     "ci95": [
+      0.0,
+      0.066
+     ]
+    },
+    {
+     "field": "hook_phase.transfer.failure_reason",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "complementary_persuasion",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "functional_states",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "requested_info",
+     "difference": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "field": "hook_phase.qualification.question",
+     "difference": -0.021857549076707006,
+     "ci95": [
+      -0.046,
+      0.004
+     ]
+    }
+   ]
+  }
+ },
+ "novelty": {
+  "reviewed_v4": {
+   "groups": {
+    "known": {
+     "n": 80,
+     "flagged": 23,
+     "rate": 0.2875,
+     "ci95": [
+      0.175,
+      0.388
+     ]
+    },
+    "withheld": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    },
+    "naturally_unseen": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    }
+   },
+   "topic_flagged": 23,
+   "organization_flagged": 4,
+   "all_flagged": 25,
+   "candidate_alias_matches": 0
+  },
+  "alias_only": {
+   "groups": {
+    "known": {
+     "n": 80,
+     "flagged": 22,
+     "rate": 0.275,
+     "ci95": [
+      0.175,
+      0.375
+     ]
+    },
+    "withheld": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    },
+    "naturally_unseen": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    }
+   },
+   "topic_flagged": 22,
+   "organization_flagged": 4,
+   "all_flagged": 24,
+   "candidate_alias_matches": 14
+  },
+  "gaps_only": {
+   "groups": {
+    "known": {
+     "n": 80,
+     "flagged": 22,
+     "rate": 0.275,
+     "ci95": [
+      0.175,
+      0.375
+     ]
+    },
+    "withheld": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    },
+    "naturally_unseen": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    }
+   },
+   "topic_flagged": 22,
+   "organization_flagged": 4,
+   "all_flagged": 24,
+   "candidate_alias_matches": 14
+  },
+  "full_refinement": {
+   "groups": {
+    "known": {
+     "n": 80,
+     "flagged": 21,
+     "rate": 0.2625,
+     "ci95": [
+      0.175,
+      0.362
+     ]
+    },
+    "withheld": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    },
+    "naturally_unseen": {
+     "n": 0,
+     "flagged": 0,
+     "rate": null,
+     "ci95": null
+    }
+   },
+   "topic_flagged": 21,
+   "organization_flagged": 4,
+   "all_flagged": 23,
+   "candidate_alias_matches": 14
+  }
+ },
+ "review": {
+  "reviewed_v4": {
+   "calls": 80,
+   "complete_call_review_required": 77,
+   "actionable_review_calls": 53,
+   "evidence_gap_calls": 71,
+   "evidence_gap_only_calls": 24,
+   "fully_unflagged_calls": 3,
+   "uncertainty_call_counts": {
+    "hook_phase.transfer.intent": 4,
+    "hook_phase.caller_identification.organization": 1,
+    "novelty": 25,
+    "hook_phase.execution": 74,
+    "hook_phase.transfer.success": 27,
+    "hook_phase.transfer.failure_reason": 19,
+    "qualification_outcome": 12,
+    "subcategory": 7,
+    "category": 2,
+    "caller_utterances.18.requested_info": 1,
+    "hook_phase.only_greeting_turns": 1,
+    "caller_utterances.16.requested_info": 1,
+    "hook_phase": 6,
+    "caller_utterances.32.requested_info": 1,
+    "caller_utterances.50.requested_info": 1
+   },
+   "field_acceptance_audit": {
+    "category": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 78,
+     "coverage": 0.975,
+     "accepted_reference_disagreements": 6,
+     "accepted_reference_disagreement_rate": 0.07692307692307693
+    },
+    "subcategory": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 73,
+     "coverage": 0.9125,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.0410958904109589
+    },
+    "hook_phase.execution": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 4,
+     "coverage": 0.05,
+     "accepted_reference_disagreements": 2,
+     "accepted_reference_disagreement_rate": 0.5
+    },
+    "hook_phase.consent": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.04054054054054054
+    },
+    "hook_phase.only_greeting_turns": {
+     "reference_annotated_calls": 79,
+     "accepted_calls": 72,
+     "coverage": 0.9113924050632911,
+     "accepted_reference_disagreements": 23,
+     "accepted_reference_disagreement_rate": 0.3194444444444444
+    },
+    "hook_phase.transfer.intent": {
+     "reference_annotated_calls": 74,
+     "accepted_calls": 66,
+     "coverage": 0.8918918918918919,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.045454545454545456
+    },
+    "hook_phase.transfer.success": {
+     "reference_annotated_calls": 38,
+     "accepted_calls": 11,
+     "coverage": 0.2894736842105263,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.2727272727272727
+    },
+    "hook_phase.exists": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 14,
+     "accepted_reference_disagreement_rate": 0.1891891891891892
+    },
+    "hook_phase.caller_identification.name": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 8,
+     "accepted_reference_disagreement_rate": 0.10810810810810811
+    },
+    "hook_phase.caller_identification.organization": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 73,
+     "coverage": 0.9125,
+     "accepted_reference_disagreements": 20,
+     "accepted_reference_disagreement_rate": 0.273972602739726
+    },
+    "hook_phase.transfer.failure_reason": {
+     "reference_annotated_calls": 11,
+     "accepted_calls": 3,
+     "coverage": 0.2727272727272727,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 1.0
+    }
+   },
+   "note": "Acceptance means no emitted uncertainty on that field, not correctness. Reference disagreement is not independently adjudicated error. Evidence-gap-only calls still require review for complete-call coding."
+  },
+  "alias_only": {
+   "calls": 80,
+   "complete_call_review_required": 77,
+   "actionable_review_calls": 52,
+   "evidence_gap_calls": 71,
+   "evidence_gap_only_calls": 25,
+   "fully_unflagged_calls": 3,
+   "uncertainty_call_counts": {
+    "hook_phase.transfer.intent": 4,
+    "hook_phase.caller_identification.organization": 1,
+    "novelty": 24,
+    "hook_phase.execution": 74,
+    "hook_phase.transfer.success": 27,
+    "hook_phase.transfer.failure_reason": 19,
+    "qualification_outcome": 12,
+    "subcategory": 7,
+    "category": 2,
+    "caller_utterances.18.requested_info": 1,
+    "hook_phase.only_greeting_turns": 1,
+    "caller_utterances.16.requested_info": 1,
+    "hook_phase": 6,
+    "caller_utterances.32.requested_info": 1,
+    "caller_utterances.50.requested_info": 1
+   },
+   "field_acceptance_audit": {
+    "category": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 78,
+     "coverage": 0.975,
+     "accepted_reference_disagreements": 6,
+     "accepted_reference_disagreement_rate": 0.07692307692307693
+    },
+    "subcategory": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 73,
+     "coverage": 0.9125,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.0410958904109589
+    },
+    "hook_phase.execution": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 4,
+     "coverage": 0.05,
+     "accepted_reference_disagreements": 2,
+     "accepted_reference_disagreement_rate": 0.5
+    },
+    "hook_phase.consent": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.04054054054054054
+    },
+    "hook_phase.only_greeting_turns": {
+     "reference_annotated_calls": 79,
+     "accepted_calls": 72,
+     "coverage": 0.9113924050632911,
+     "accepted_reference_disagreements": 23,
+     "accepted_reference_disagreement_rate": 0.3194444444444444
+    },
+    "hook_phase.transfer.intent": {
+     "reference_annotated_calls": 74,
+     "accepted_calls": 66,
+     "coverage": 0.8918918918918919,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.045454545454545456
+    },
+    "hook_phase.transfer.success": {
+     "reference_annotated_calls": 38,
+     "accepted_calls": 11,
+     "coverage": 0.2894736842105263,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.2727272727272727
+    },
+    "hook_phase.exists": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 14,
+     "accepted_reference_disagreement_rate": 0.1891891891891892
+    },
+    "hook_phase.caller_identification.name": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 8,
+     "accepted_reference_disagreement_rate": 0.10810810810810811
+    },
+    "hook_phase.caller_identification.organization": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 73,
+     "coverage": 0.9125,
+     "accepted_reference_disagreements": 20,
+     "accepted_reference_disagreement_rate": 0.273972602739726
+    },
+    "hook_phase.transfer.failure_reason": {
+     "reference_annotated_calls": 11,
+     "accepted_calls": 3,
+     "coverage": 0.2727272727272727,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 1.0
+    }
+   },
+   "note": "Acceptance means no emitted uncertainty on that field, not correctness. Reference disagreement is not independently adjudicated error. Evidence-gap-only calls still require review for complete-call coding."
+  },
+  "gaps_only": {
+   "calls": 80,
+   "complete_call_review_required": 77,
+   "actionable_review_calls": 52,
+   "evidence_gap_calls": 71,
+   "evidence_gap_only_calls": 25,
+   "fully_unflagged_calls": 3,
+   "uncertainty_call_counts": {
+    "hook_phase.transfer.intent": 4,
+    "hook_phase.caller_identification.organization": 1,
+    "novelty": 24,
+    "hook_phase.execution": 74,
+    "hook_phase.transfer.success": 27,
+    "hook_phase.transfer.failure_reason": 19,
+    "qualification_outcome": 12,
+    "subcategory": 7,
+    "category": 2,
+    "caller_utterances.18.requested_info": 1,
+    "hook_phase.only_greeting_turns": 1,
+    "caller_utterances.16.requested_info": 1,
+    "hook_phase": 6,
+    "caller_utterances.32.requested_info": 1,
+    "caller_utterances.50.requested_info": 1
+   },
+   "field_acceptance_audit": {
+    "category": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 78,
+     "coverage": 0.975,
+     "accepted_reference_disagreements": 6,
+     "accepted_reference_disagreement_rate": 0.07692307692307693
+    },
+    "subcategory": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 73,
+     "coverage": 0.9125,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.0410958904109589
+    },
+    "hook_phase.execution": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 4,
+     "coverage": 0.05,
+     "accepted_reference_disagreements": 2,
+     "accepted_reference_disagreement_rate": 0.5
+    },
+    "hook_phase.consent": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.04054054054054054
+    },
+    "hook_phase.only_greeting_turns": {
+     "reference_annotated_calls": 79,
+     "accepted_calls": 72,
+     "coverage": 0.9113924050632911,
+     "accepted_reference_disagreements": 23,
+     "accepted_reference_disagreement_rate": 0.3194444444444444
+    },
+    "hook_phase.transfer.intent": {
+     "reference_annotated_calls": 74,
+     "accepted_calls": 66,
+     "coverage": 0.8918918918918919,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.045454545454545456
+    },
+    "hook_phase.transfer.success": {
+     "reference_annotated_calls": 38,
+     "accepted_calls": 11,
+     "coverage": 0.2894736842105263,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.2727272727272727
+    },
+    "hook_phase.exists": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 14,
+     "accepted_reference_disagreement_rate": 0.1891891891891892
+    },
+    "hook_phase.caller_identification.name": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 8,
+     "accepted_reference_disagreement_rate": 0.10810810810810811
+    },
+    "hook_phase.caller_identification.organization": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 73,
+     "coverage": 0.9125,
+     "accepted_reference_disagreements": 20,
+     "accepted_reference_disagreement_rate": 0.273972602739726
+    },
+    "hook_phase.transfer.failure_reason": {
+     "reference_annotated_calls": 11,
+     "accepted_calls": 3,
+     "coverage": 0.2727272727272727,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 1.0
+    }
+   },
+   "note": "Acceptance means no emitted uncertainty on that field, not correctness. Reference disagreement is not independently adjudicated error. Evidence-gap-only calls still require review for complete-call coding."
+  },
+  "full_refinement": {
+   "calls": 80,
+   "complete_call_review_required": 78,
+   "actionable_review_calls": 51,
+   "evidence_gap_calls": 75,
+   "evidence_gap_only_calls": 27,
+   "fully_unflagged_calls": 2,
+   "uncertainty_call_counts": {
+    "hook_phase.transfer.intent": 4,
+    "hook_phase.caller_identification.organization": 1,
+    "novelty": 23,
+    "hook_phase.execution": 77,
+    "hook_phase.transfer.success": 26,
+    "hook_phase.transfer.failure_reason": 20,
+    "qualification_outcome": 7,
+    "subcategory": 6,
+    "category": 2,
+    "caller_utterances.18.requested_info": 1,
+    "hook_phase.only_greeting_turns": 1,
+    "caller_utterances.16.requested_info": 1,
+    "caller_utterances.32.requested_info": 1,
+    "caller_utterances.50.requested_info": 1,
+    "hook_phase": 1
+   },
+   "field_acceptance_audit": {
+    "category": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 78,
+     "coverage": 0.975,
+     "accepted_reference_disagreements": 6,
+     "accepted_reference_disagreement_rate": 0.07692307692307693
+    },
+    "subcategory": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 74,
+     "coverage": 0.925,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.04054054054054054
+    },
+    "hook_phase.execution": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 3,
+     "coverage": 0.0375,
+     "accepted_reference_disagreements": 2,
+     "accepted_reference_disagreement_rate": 0.6666666666666666
+    },
+    "hook_phase.consent": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 79,
+     "coverage": 0.9875,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.0379746835443038
+    },
+    "hook_phase.only_greeting_turns": {
+     "reference_annotated_calls": 79,
+     "accepted_calls": 77,
+     "coverage": 0.9746835443037974,
+     "accepted_reference_disagreements": 27,
+     "accepted_reference_disagreement_rate": 0.35064935064935066
+    },
+    "hook_phase.transfer.intent": {
+     "reference_annotated_calls": 74,
+     "accepted_calls": 71,
+     "coverage": 0.9594594594594594,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.04225352112676056
+    },
+    "hook_phase.transfer.success": {
+     "reference_annotated_calls": 38,
+     "accepted_calls": 13,
+     "coverage": 0.34210526315789475,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 0.23076923076923078
+    },
+    "hook_phase.exists": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 79,
+     "coverage": 0.9875,
+     "accepted_reference_disagreements": 14,
+     "accepted_reference_disagreement_rate": 0.17721518987341772
+    },
+    "hook_phase.caller_identification.name": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 79,
+     "coverage": 0.9875,
+     "accepted_reference_disagreements": 8,
+     "accepted_reference_disagreement_rate": 0.10126582278481013
+    },
+    "hook_phase.caller_identification.organization": {
+     "reference_annotated_calls": 80,
+     "accepted_calls": 78,
+     "coverage": 0.975,
+     "accepted_reference_disagreements": 21,
+     "accepted_reference_disagreement_rate": 0.2692307692307692
+    },
+    "hook_phase.transfer.failure_reason": {
+     "reference_annotated_calls": 11,
+     "accepted_calls": 3,
+     "coverage": 0.2727272727272727,
+     "accepted_reference_disagreements": 3,
+     "accepted_reference_disagreement_rate": 1.0
+    }
+   },
+   "note": "Acceptance means no emitted uncertainty on that field, not correctness. Reference disagreement is not independently adjudicated error. Evidence-gap-only calls still require review for complete-call coding."
+  }
+ },
+ "qualification_outcome_nulls": {
+  "reviewed_v4": 17,
+  "alias_only": 17,
+  "gaps_only": 13,
+  "full_refinement": 13
+ },
+ "gaps_filled": 4,
+ "note": "No per-call selection against reference answers. Gaps-only preserves all original call/turn codes apart from eligible missing qualification outcomes. Full refinement is experimental after mixed development results."
+}

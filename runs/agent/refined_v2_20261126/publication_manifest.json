@@ -1,0 +1,160 @@
+{
+ "publication_scope": "Adopted qualification gap-filling code and exploratory evaluation artifacts. Report drafts, report generators, handoff, documentation changes, raw API responses and per-call checkpoints excluded.",
+ "branch": "pinjun/reviewed-evaluation-20261126",
+ "base_main_commit": "add378a4189a43a8841dc670a987ebd9763366f8",
+ "adopted_result": "runs/agent/refined_v2_20261126/adoption.json",
+ "default_scope": "gaps-only",
+ "development_calls": 80,
+ "test_calls": 583,
+ "new_human_annotations": 0,
+ "test_previously_inspected_exploratory": true,
+ "included_files_sha256": {
+  "coding/refinement.py": "0f743698f6ecaea020ee0d828bf8dc91ade294f47af95433d19ac4c969e41ca1",
+  "coding/novelty_refinement.py": "a9fd576ef89188bca08c9f382136472f1be211ed08b0622b7c427d1632756880",
+  "tools/refine_saved_run.py": "931b4c0669b03d34a777ac0eaa64ea4bc8450b664568e171a22c3116625045d2",
+  "tools/evaluate_refinement.py": "e7dbfde475ae0eef79d24d9460aa45e7645ac46063feb62f96b64f9465736da4",
+  "tools/evaluate_refinement_ablations.py": "fe29712519586dc38edca10a2f31a7e683f1f8c1e681e0ce9470cad12ac34b6f",
+  "tests/test_refinement.py": "cec1c9d8c87fe80d53ae2940b365b274b9a44ed823812cb7bfa626f3f017eb42",
+  "tests/test_refinement_ablations.py": "21122cea62c8942a7a08f287e294ff28eb323ac81c8fb390a0a7e6d16d2eadd3",
+  "runs/agent/refined_v2_20261126/design.json": "fdc7f726200993529175a8f1861160871600a4cb8d5585d929c10096c2933292",
+  "runs/agent/refined_v2_20261126/ablation_design.json": "3cb8a2e08a23eb7ee9240b0a8217be05b8c2ea04be15e2f4001c17f7b6479ef6",
+  "runs/agent/refined_v2_20261126/decision.json": "d92aecef474032b1a2b7c94785c9aae461053ec2750cbd19bf53962286cda3d0",
+  "runs/agent/refined_v2_20261126/dev_ids.txt": "7bac6d514d9bed549ea74ee0a1d024c16542d79c819050bda76e45e7a2311c3a",
+  "runs/agent/refined_v2_20261126/test_ids.txt": "df65e933ca31022d3fa294c29a4fa4eaa46458a7a743a93e3abceaabf6206ce5",
+  "runs/agent/refined_v2_20261126/novelty_policy.json": "3282695aa4981c6d5be0c97180fe4d2e9e6c83b33efd70b4094f20bbd83e8cc8",
+  "runs/agent/refined_v2_20261126/reference_only_development_challenge.json": "6c44b916ca8899a6aa7ae73d31640a4bcd55cb9f99023ceacfb5b20cb40e08f5",
+  "runs/agent/refined_v2_20261126/reference_threshold_diagnostic.json": "3e009add8cc805f875aa4bdb6eae5762efe9bb75d4cdfce1c8af48cdc34bc9c4",
+  "runs/agent/refined_v2_20261126/verification.json": "29c20d1dad441c79d2f09d8e43f1d2e86063a72f0e298dd237251fd697cd2caa",
+  "runs/agent/refined_v2_20261126/source_snapshot.tar.gz": "af7b4874a990d058a8434748b0cd8c6345158b8fa11d2cfb9749934238252824",
+  "runs/agent/refined_v2_20261126/source_snapshot/manifest.json": "cd0fa221d68498229893927b6684f82cdf059c19a67b399d5ca6a8f72ee0e952",
+  "runs/agent/refined_v2_20261126/dev_run/manifest.json": "8bfaf5cc95fefbdc160584186048023b0a379de01093fd6113d15e94f2ccf86a",
+  "runs/agent/refined_v2_20261126/dev_run/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "runs/agent/refined_v2_20261126/dev_run/refinement_failures.json": "e90e276757558394181671756d7e1f822f040b0eb5c88013a16a992a22b0c065",
+  "runs/agent/refined_v2_20261126/dev_analysis/manifest.json": "7d6be31777b5e9da185dc4df4f95fffe4b29706d675da2dfb5b5bda0455579ce",
+  "runs/agent/refined_v2_20261126/dev_analysis/original_label_metrics.csv": "00ea44b92f45c59f1afe590a5c0024cfb156de1e28aea1443556802d5dbf0506",
+  "runs/agent/refined_v2_20261126/dev_analysis/review_triage.csv": "9f11ee3add6882d5c2a1e362e248440d83e2e812d7df96f8565792232a7bb2b6",
+  "runs/agent/refined_v2_20261126/dev_analysis/summary.json": "18b97061460819da249a13d9c6ba009e288f77a6d2f8b22a8582118f5b633afd",
+  "runs/agent/refined_v2_20261126/dev_ablations/comparison.csv": "5e61a9857ec26683dc4d6080a2e59fcb916baa24c8f07fa6fcf07db8953d6d45",
+  "runs/agent/refined_v2_20261126/dev_ablations/gaps_only_review_triage.csv": "f7d9c9362df010485d96954cb46a7df151da122085b85a6dd10441c6fa9aa925",
+  "runs/agent/refined_v2_20261126/dev_ablations/manifest.json": "b3d593056fcecf377a8d6c5ae78e5815c147605d7d9d15e53a1c80934456b9a7",
+  "runs/agent/refined_v2_20261126/dev_ablations/summary.json": "e90fa5b15f44ef98f1dae1150aaa567bc7ba46cee9d0cfc3ce1c1e2e1657d417",
+  "runs/agent/refined_v2_20261126/test_run/manifest.json": "30ab4746a5b80984becc395861b205ae263fab963c840ce8cf65e146f49fcd66",
+  "runs/agent/refined_v2_20261126/test_run/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "runs/agent/refined_v2_20261126/test_run/refinement_failures.json": "6d9412ce47edf66e66c4463d8d177aee8b2d1476015c902b589482855429e31d",
+  "runs/agent/refined_v2_20261126/test_run/runtime_continuation.json": "22c183a6c79d4dea3dffb9becd445af566a514b8ac42f6381f3cca8317739392",
+  "runs/agent/refined_v2_20261126/test_analysis/manifest.json": "507584f5d3830bb91998cf0f8f7b5b3ca253f46174bd78283a8198908224ced1",
+  "runs/agent/refined_v2_20261126/test_analysis/original_label_metrics.csv": "9491ce41799ae79db07348ff2149e30a41571360d42b68ef83d720dd41f90fe8",
+  "runs/agent/refined_v2_20261126/test_analysis/review_triage.csv": "92fc3413dcfc22955e584261d2b40f79ee0c4b7e300b17ea19621c4fb174c858",
+  "runs/agent/refined_v2_20261126/test_analysis/summary.json": "92c36b58dc745dec92be0d7a877331b7d2945a660165ff96a34a0aa389fa0dd5",
+  "runs/agent/refined_v2_20261126/test_ablations/comparison.csv": "ce8d56d205aeafe0556320043869009854ba778657a4b993622395e15ea328dd",
+  "runs/agent/refined_v2_20261126/test_ablations/gaps_only_review_triage.csv": "4ae022839ee49035cf0d132f1a411ac43cc7c060cd170c39ff05af356290dd93",
+  "runs/agent/refined_v2_20261126/test_ablations/manifest.json": "bc0a92e81845547b2fb061fba1a7bacc9f944442d88f20ed50813f09ff7ebae3",
+  "runs/agent/refined_v2_20261126/test_ablations/summary.json": "2310fdae288217a87ee8dd2612af0fe44c94466f316fe21925ccef45512e2a41",
+  "runs/agent/refined_v2_20261126/dev_run/predictions.json.gz": "7203a853c4d09109d88eef14529dd077e7c4e2547397d15a9a19b6cc07f48999",
+  "runs/agent/refined_v2_20261126/dev_ablations/alias_only_predictions.json.gz": "24123806c0480ae0c6f235cae29c48370fd012433332254bfcefb5add05eb968",
+  "runs/agent/refined_v2_20261126/dev_ablations/gaps_only_predictions.json.gz": "9aa451214f8b124c1be06ec787074733b36761adf87004a51ce4757d371fd194",
+  "runs/agent/refined_v2_20261126/test_run/predictions.json.gz": "e83aa22bd3576d1e67b6e9c0428e8d38328af4674c5791d12fc7b26fa732b695",
+  "runs/agent/refined_v2_20261126/test_ablations/alias_only_predictions.json.gz": "2e2573be13661ae154b3c78ae37b58412d27be1c18ffec599bfd2826fb231aed",
+  "runs/agent/refined_v2_20261126/test_ablations/gaps_only_predictions.json.gz": "0d10c31b26aa40ae37cf226a738fcb38dd5f1470b4d6c22f5db737ac8d89834a",
+  "runs/agent/refined_v2_20261126/adoption.json": "ec9151873578e10a0689fdccfc6e2432fcfd29d360d4f67679b24c8a3ee2f10f"
+ },
+ "archived_prediction_files": [
+  {
+   "path": "runs/agent/refined_v2_20261126/dev_run/predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/dev_run/predictions.json.gz",
+   "sha256": "6428b34f93225b9175bc0f5eea61078d07e6198ebf2e4fb4b0166fa84365678e",
+   "archive_sha256": "7203a853c4d09109d88eef14529dd077e7c4e2547397d15a9a19b6cc07f48999",
+   "bytes": 946816
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/dev_analysis/refined_scoring.json",
+   "archive": "runs/agent/refined_v2_20261126/dev_run/predictions.json.gz",
+   "sha256": "6428b34f93225b9175bc0f5eea61078d07e6198ebf2e4fb4b0166fa84365678e",
+   "archive_sha256": "7203a853c4d09109d88eef14529dd077e7c4e2547397d15a9a19b6cc07f48999",
+   "bytes": 946816
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/dev_ablations/full_refinement_predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/dev_run/predictions.json.gz",
+   "sha256": "6428b34f93225b9175bc0f5eea61078d07e6198ebf2e4fb4b0166fa84365678e",
+   "archive_sha256": "7203a853c4d09109d88eef14529dd077e7c4e2547397d15a9a19b6cc07f48999",
+   "bytes": 946816
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/dev_ablations/alias_only_predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/dev_ablations/alias_only_predictions.json.gz",
+   "sha256": "47a3bfd6f7cfa95558d4d5033f58ad82ab198f525933d12c0faaa09c5a84db26",
+   "archive_sha256": "24123806c0480ae0c6f235cae29c48370fd012433332254bfcefb5add05eb968",
+   "bytes": 920096
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/dev_ablations/gaps_only_predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/dev_ablations/gaps_only_predictions.json.gz",
+   "sha256": "e3910e2afd52934606874633e6c369105903ce45bbf247de32167160983e012a",
+   "archive_sha256": "9aa451214f8b124c1be06ec787074733b36761adf87004a51ce4757d371fd194",
+   "bytes": 922972
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/test_run/predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/test_run/predictions.json.gz",
+   "sha256": "7264df61d95b02d82f5cc9548bac758bea7363a6adeb52a3fb1baba1d8f01545",
+   "archive_sha256": "e83aa22bd3576d1e67b6e9c0428e8d38328af4674c5791d12fc7b26fa732b695",
+   "bytes": 6701904
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/test_analysis/refined_scoring.json",
+   "archive": "runs/agent/refined_v2_20261126/test_run/predictions.json.gz",
+   "sha256": "7264df61d95b02d82f5cc9548bac758bea7363a6adeb52a3fb1baba1d8f01545",
+   "archive_sha256": "e83aa22bd3576d1e67b6e9c0428e8d38328af4674c5791d12fc7b26fa732b695",
+   "bytes": 6701904
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/test_ablations/full_refinement_predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/test_run/predictions.json.gz",
+   "sha256": "7264df61d95b02d82f5cc9548bac758bea7363a6adeb52a3fb1baba1d8f01545",
+   "archive_sha256": "e83aa22bd3576d1e67b6e9c0428e8d38328af4674c5791d12fc7b26fa732b695",
+   "bytes": 6701904
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/test_ablations/alias_only_predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/test_ablations/alias_only_predictions.json.gz",
+   "sha256": "0b780504a54287d634fac2ae41626e07073d28f49a633eb9ecb0f3eadb575d91",
+   "archive_sha256": "2e2573be13661ae154b3c78ae37b58412d27be1c18ffec599bfd2826fb231aed",
+   "bytes": 6508603
+  },
+  {
+   "path": "runs/agent/refined_v2_20261126/test_ablations/gaps_only_predictions.json",
+   "archive": "runs/agent/refined_v2_20261126/test_ablations/gaps_only_predictions.json.gz",
+   "sha256": "2094ccb6141a655475e495ce44f2a2192fa99e4dbd6ccfab3072d62f18d37a20",
+   "archive_sha256": "0d10c31b26aa40ae37cf226a738fcb38dd5f1470b4d6c22f5db737ac8d89834a",
+   "bytes": 6536652
+  }
+ ],
+ "unique_prediction_archives": 6,
+ "restore_command": "python3 tools/restore_evaluation_artifacts.py --manifest runs/agent/refined_v2_20261126/publication_manifest.json",
+ "deduplication_note": "Byte-identical experimental full prediction streams share one lossless archive. Restore verifies each target hash and refuses overwriting different local files.",
+ "frozen_inference_source_snapshot": "runs/agent/refined_v2_20261126/source_snapshot/manifest.json",
+ "frozen_source_archive": "runs/agent/refined_v2_20261126/source_snapshot.tar.gz",
+ "frozen_source_restore_command": "tar -xzf runs/agent/refined_v2_20261126/source_snapshot.tar.gz -C runs/agent/refined_v2_20261126",
+ "current_default_source_changes": {
+  "coding/refinement.py": {
+   "frozen_sha256": "3b81a1a455911472aafa210a6bd015eb7c89bc33f693a8ddd8e328e415fc4ffe",
+   "published_sha256": "0f743698f6ecaea020ee0d828bf8dc91ade294f47af95433d19ac4c969e41ca1"
+  },
+  "tools/refine_saved_run.py": {
+   "frozen_sha256": "b68bb0737c44e82046acb13c0265c109cc587ecfb95734d57ed37417943894dc",
+   "published_sha256": "931b4c0669b03d34a777ac0eaa64ea4bc8450b664568e171a22c3116625045d2"
+  },
+  "tests/test_refinement.py": {
+   "frozen_sha256": "169d1e674fc00a07674c28de9c88baca6541082bf8a282fa6b4f8e3664279866",
+   "published_sha256": "cec1c9d8c87fe80d53ae2940b365b274b9a44ed823812cb7bfa626f3f017eb42"
+  }
+ },
+ "local_only_note": "Raw API envelopes, credential file, checkpoints and interrupted development probe remain local. Historical run manifests include hashes for unpublished raw files and local paths; saved usage summaries retain recorded costs.",
+ "offline_tests_passed": 67,
+ "api_key_ignored": true,
+ "api_key_untracked": true,
+ "actual_key_matches_in_included_files_and_decompressed_archives": 0,
+ "compressed_prediction_bytes": 1228208,
+ "uncompressed_prediction_target_bytes": 37834483
+}

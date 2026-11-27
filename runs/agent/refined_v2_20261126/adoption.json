@@ -1,0 +1,22 @@
+{
+ "status": "adopted_by_user",
+ "version": "qualification-gaps-only-v1-20261126",
+ "default_cli_scope": "gaps-only",
+ "experimental_cli_scope": "experimental-full",
+ "selected_predictions": "runs/agent/refined_v2_20261126/test_ablations/gaps_only_predictions.json",
+ "selected_predictions_sha256": "2094ccb6141a655475e495ce44f2a2192fa99e4dbd6ccfab3072d62f18d37a20",
+ "development_predictions": "runs/agent/refined_v2_20261126/dev_ablations/gaps_only_predictions.json",
+ "original_call_and_turn_codes_preserved": true,
+ "fills_only_missing_qualification_outcomes_with_existing_questions": true,
+ "unknowns_and_pipeline_abstentions_retained": true,
+ "canonical_existing_topic_aliases_only": true,
+ "qualification_test_sample_calls": 50,
+ "qualification_accuracy": 0.84,
+ "qualification_kappa": 0.6601529311809685,
+ "qualification_gaps_filled_in_583_calls": 43,
+ "complete_call_review_required": 579,
+ "full_global_recode_adopted": false,
+ "test_previously_inspected_exploratory": true,
+ "publication_validation": "67 offline tests passed; no new inference, scoring or API requests during adoption/publication.",
+ "history_note": "Original experiment sources and manifests are preserved. Current CLI adds the adopted default and includes scope in resume identity, so historical experiments cannot be silently resumed with a changed scope."
+}

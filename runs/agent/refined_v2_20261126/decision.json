@@ -1,0 +1,28 @@
+{
+ "recommended_saved_output": "test_ablations/gaps_only_predictions.json",
+ "recommendation_basis": "Predeclared conservative variant after mixed development results. Test is exploratory and previously inspected; no per-call selection from gold answers.",
+ "all_calls": 583,
+ "new_human_annotations": 0,
+ "qualification_gaps_filled": 43,
+ "existing_C_sample_calls": 50,
+ "qualification_accuracy": {
+  "reviewed_v4": 0.74,
+  "gaps_only": 0.84
+ },
+ "qualification_kappa": {
+  "reviewed_v4": 0.5167286245353159,
+  "gaps_only": 0.6601529311809685
+ },
+ "all_16_original_label_metrics_preserved": true,
+ "full_global_refinement_promoted": false,
+ "global_experiment_note": "27 of 35 selected long calls passed validation; eight retained v4 outputs. Several coding metrics regressed, and novelty known-topic false positives increased. Do not use full refinement as the default result.",
+ "novelty_note": "Canonical aliases remove one known-topic false positive (128 to 127 of 545); withheld recall remains 11 of 30. No threshold changed.",
+ "review_note": "Complete-call review remains 579 of 583; 387 have actionable issues and 192 have only unresolved evidence-gap issues. This does not establish labor savings.",
+ "total_recorded_incremental_provider_cost": 6.659818,
+ "test_qualification_pass_recorded_cost": 0.15306000000000006,
+ "inputs": {
+  "runs/agent/refined_v2_20261126/test_ablations/summary.json": "2310fdae288217a87ee8dd2612af0fe44c94466f316fe21925ccef45512e2a41",
+  "runs/agent/refined_v2_20261126/verification.json": "29c20d1dad441c79d2f09d8e43f1d2e86063a72f0e298dd237251fd697cd2caa",
+  "runs/agent/refined_v2_20261126/ablation_design.json": "3cb8a2e08a23eb7ee9240b0a8217be05b8c2ea04be15e2f4001c17f7b6479ef6"
+ }
+}

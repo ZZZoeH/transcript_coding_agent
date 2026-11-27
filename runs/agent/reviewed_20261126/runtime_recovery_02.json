@@ -1,0 +1,14 @@
+{
+ "effective_HTTP_concurrency": 4,
+ "thread_workers_in_frozen_config": 8,
+ "failure_limit": 6,
+ "state": {
+  "requests": 458,
+  "upstream_errors": 0,
+  "consecutive": 0,
+  "circuit_open": false
+ },
+ "wall_seconds": 963.029,
+ "source_and_prompt_unchanged": true,
+ "wrapper_sha256": "c04db4385cb8feac6406f08af77ddf2f5ca384f23348baae00426b8e7dce3ae7"
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "call_id": "artifact_call_02226",
+  "mode": "global",
+  "reason": "evidence references unknown or empty field: hook_phase.execution; evidence references unknown or empty field: hook_phase.transfer.failure_reason",
+  "base_prediction_retained": true
+ },
+ {
+  "call_id": "artifact_call_02272",
+  "mode": "global",
+  "reason": "Expecting ',' delimiter: line 1 column 1247 (char 1246)",
+  "base_prediction_retained": true
+ },
+ {
+  "call_id": "artifact_call_02273",
+  "mode": "global",
+  "reason": "Expecting value: line 1 column 25641 (char 25640)",
+  "base_prediction_retained": true
+ },
+ {
+  "call_id": "artifact_call_02293",
+  "mode": "global",
+  "reason": "missing evidence: hook_phase.transfer.success",
+  "base_prediction_retained": true
+ },
+ {
+  "call_id": "artifact_call_02316",
+  "mode": "global",
+  "reason": "Expecting value: line 50 column 21751 (char 23262)",
+  "base_prediction_retained": true
+ },
+ {
+  "call_id": "artifact_call_02367",
+  "mode": "global",
+  "reason": "Expecting value: line 1 column 27232 (char 27231)",
+  "base_prediction_retained": true
+ },
+ {
+  "call_id": "artifact_call_02387",
+  "mode": "global",
+  "reason": "Expecting ',' delimiter: line 1 column 26047 (char 26046)",
+  "base_prediction_retained": true
+ },
+ {
+  "call_id": "artifact_call_02408",
+  "mode": "global",
+  "reason": "Expecting value: line 1 column 27233 (char 27232)",
+  "base_prediction_retained": true
+ }
+]
